@@ -83,10 +83,10 @@ Partial Class LoginForm
         '
         'LoginBTN
         '
-        Me.LoginBTN.Location = New System.Drawing.Point(508, 434)
-        Me.LoginBTN.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.LoginBTN.Location = New System.Drawing.Point(381, 353)
+        Me.LoginBTN.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.LoginBTN.Name = "LoginBTN"
-        Me.LoginBTN.Size = New System.Drawing.Size(235, 39)
+        Me.LoginBTN.Size = New System.Drawing.Size(176, 32)
         Me.LoginBTN.TabIndex = 3
         Me.LoginBTN.Text = "LOGIN"
         Me.LoginBTN.UseVisualStyleBackColor = True
@@ -94,11 +94,11 @@ Partial Class LoginForm
         'txtUsername
         '
         Me.txtUsername.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.txtUsername.Location = New System.Drawing.Point(508, 345)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtUsername.Location = New System.Drawing.Point(381, 280)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtUsername.Multiline = True
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(233, 41)
+        Me.txtUsername.Size = New System.Drawing.Size(176, 34)
         Me.txtUsername.TabIndex = 4
         '
         'Button1
@@ -107,25 +107,24 @@ Partial Class LoginForm
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(332, 171)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button1.Location = New System.Drawing.Point(394, 139)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(200, 126)
+        Me.Button1.Size = New System.Drawing.Size(150, 102)
         Me.Button1.TabIndex = 5
         Me.Button1.UseVisualStyleBackColor = True
         '
         'LoginForm
         '
         Me.AllowDrop = True
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1261, 673)
+        Me.ClientSize = New System.Drawing.Size(946, 547)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.LoginBTN)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "LoginForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "LoginForm"
