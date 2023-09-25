@@ -84,7 +84,7 @@ Partial Class LoginForm
         'LoginBTN
         '
         Me.LoginBTN.Location = New System.Drawing.Point(381, 353)
-        Me.LoginBTN.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.LoginBTN.Margin = New System.Windows.Forms.Padding(2)
         Me.LoginBTN.Name = "LoginBTN"
         Me.LoginBTN.Size = New System.Drawing.Size(176, 32)
         Me.LoginBTN.TabIndex = 3
@@ -95,7 +95,7 @@ Partial Class LoginForm
         '
         Me.txtUsername.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.txtUsername.Location = New System.Drawing.Point(381, 280)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUsername.Multiline = True
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(176, 34)
@@ -107,8 +107,8 @@ Partial Class LoginForm
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(394, 139)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Location = New System.Drawing.Point(205, 148)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(150, 102)
         Me.Button1.TabIndex = 5
