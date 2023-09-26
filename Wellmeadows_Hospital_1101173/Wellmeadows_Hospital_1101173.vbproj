@@ -111,6 +111,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RegisterPatient.Designer.vb">
+      <DependentUpon>RegisterPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PatientMenu.Designer.vb">
       <DependentUpon>PatientMenu.vb</DependentUpon>
     </Compile>
@@ -153,6 +159,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="RegisterPatient.resx">
+      <DependentUpon>RegisterPatient.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PatientMenu.resx">
       <DependentUpon>PatientMenu.vb</DependentUpon>
     </EmbeddedResource>

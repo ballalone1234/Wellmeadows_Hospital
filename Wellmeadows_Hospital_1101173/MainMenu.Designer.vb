@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Mainmenu
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class MainMenu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,20 +20,20 @@ Partial Class Mainmenu
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Mainmenu))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainMenu))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.patienticon = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.stafficon = New System.Windows.Forms.Button()
-        Me.dashboardicon = New System.Windows.Forms.Button()
-        Me.wardicon = New System.Windows.Forms.Button()
-        Me.supileicon = New System.Windows.Forms.Button()
         Me.supilericon = New System.Windows.Forms.Button()
+        Me.supileicon = New System.Windows.Forms.Button()
+        Me.wardicon = New System.Windows.Forms.Button()
+        Me.patienticon = New System.Windows.Forms.Button()
+        Me.stafficon = New System.Windows.Forms.Button()
         Me.requisionicon = New System.Windows.Forms.Button()
+        Me.dashboardicon = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -69,21 +69,6 @@ Partial Class Mainmenu
         Me.Panel2.Size = New System.Drawing.Size(919, 681)
         Me.Panel2.TabIndex = 1
         '
-        'patienticon
-        '
-        Me.patienticon.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.patienticon.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.patienticon.BackgroundImage = CType(resources.GetObject("patienticon.BackgroundImage"), System.Drawing.Image)
-        Me.patienticon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.patienticon.FlatAppearance.BorderSize = 0
-        Me.patienticon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.patienticon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.patienticon.Location = New System.Drawing.Point(85, 47)
-        Me.patienticon.Name = "patienticon"
-        Me.patienticon.Size = New System.Drawing.Size(130, 133)
-        Me.patienticon.TabIndex = 0
-        Me.patienticon.UseVisualStyleBackColor = False
-        '
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.ColumnCount = 3
@@ -107,50 +92,20 @@ Partial Class Mainmenu
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(919, 681)
         Me.TableLayoutPanel1.TabIndex = 1
         '
-        'stafficon
+        'supilericon
         '
-        Me.stafficon.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.stafficon.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.stafficon.BackgroundImage = CType(resources.GetObject("stafficon.BackgroundImage"), System.Drawing.Image)
-        Me.stafficon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.stafficon.FlatAppearance.BorderSize = 0
-        Me.stafficon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.stafficon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.stafficon.Location = New System.Drawing.Point(390, 47)
-        Me.stafficon.Name = "stafficon"
-        Me.stafficon.Size = New System.Drawing.Size(130, 133)
-        Me.stafficon.TabIndex = 1
-        Me.stafficon.UseVisualStyleBackColor = False
-        '
-        'dashboardicon
-        '
-        Me.dashboardicon.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.dashboardicon.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.dashboardicon.BackgroundImage = CType(resources.GetObject("dashboardicon.BackgroundImage"), System.Drawing.Image)
-        Me.dashboardicon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.dashboardicon.FlatAppearance.BorderSize = 0
-        Me.dashboardicon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.dashboardicon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.dashboardicon.Location = New System.Drawing.Point(700, 47)
-        Me.dashboardicon.Name = "dashboardicon"
-        Me.dashboardicon.Size = New System.Drawing.Size(130, 133)
-        Me.dashboardicon.TabIndex = 2
-        Me.dashboardicon.UseVisualStyleBackColor = False
-        '
-        'wardicon
-        '
-        Me.wardicon.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.wardicon.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.wardicon.BackgroundImage = CType(resources.GetObject("wardicon.BackgroundImage"), System.Drawing.Image)
-        Me.wardicon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.wardicon.FlatAppearance.BorderSize = 0
-        Me.wardicon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.wardicon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.wardicon.Location = New System.Drawing.Point(85, 274)
-        Me.wardicon.Name = "wardicon"
-        Me.wardicon.Size = New System.Drawing.Size(130, 133)
-        Me.wardicon.TabIndex = 3
-        Me.wardicon.UseVisualStyleBackColor = False
+        Me.supilericon.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.supilericon.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.supilericon.BackgroundImage = CType(resources.GetObject("supilericon.BackgroundImage"), System.Drawing.Image)
+        Me.supilericon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.supilericon.FlatAppearance.BorderSize = 0
+        Me.supilericon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.supilericon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.supilericon.Location = New System.Drawing.Point(85, 501)
+        Me.supilericon.Name = "supilericon"
+        Me.supilericon.Size = New System.Drawing.Size(130, 133)
+        Me.supilericon.TabIndex = 6
+        Me.supilericon.UseVisualStyleBackColor = False
         '
         'supileicon
         '
@@ -167,20 +122,50 @@ Partial Class Mainmenu
         Me.supileicon.TabIndex = 4
         Me.supileicon.UseVisualStyleBackColor = False
         '
-        'supilericon
+        'wardicon
         '
-        Me.supilericon.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.supilericon.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.supilericon.BackgroundImage = CType(resources.GetObject("supilericon.BackgroundImage"), System.Drawing.Image)
-        Me.supilericon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.supilericon.FlatAppearance.BorderSize = 0
-        Me.supilericon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.supilericon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.supilericon.Location = New System.Drawing.Point(85, 501)
-        Me.supilericon.Name = "supilericon"
-        Me.supilericon.Size = New System.Drawing.Size(130, 133)
-        Me.supilericon.TabIndex = 6
-        Me.supilericon.UseVisualStyleBackColor = False
+        Me.wardicon.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.wardicon.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.wardicon.BackgroundImage = CType(resources.GetObject("wardicon.BackgroundImage"), System.Drawing.Image)
+        Me.wardicon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.wardicon.FlatAppearance.BorderSize = 0
+        Me.wardicon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.wardicon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.wardicon.Location = New System.Drawing.Point(85, 274)
+        Me.wardicon.Name = "wardicon"
+        Me.wardicon.Size = New System.Drawing.Size(130, 133)
+        Me.wardicon.TabIndex = 3
+        Me.wardicon.UseVisualStyleBackColor = False
+        '
+        'patienticon
+        '
+        Me.patienticon.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.patienticon.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.patienticon.BackgroundImage = CType(resources.GetObject("patienticon.BackgroundImage"), System.Drawing.Image)
+        Me.patienticon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.patienticon.FlatAppearance.BorderSize = 0
+        Me.patienticon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.patienticon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.patienticon.Location = New System.Drawing.Point(85, 47)
+        Me.patienticon.Name = "patienticon"
+        Me.patienticon.Size = New System.Drawing.Size(130, 133)
+        Me.patienticon.TabIndex = 0
+        Me.patienticon.UseVisualStyleBackColor = False
+        '
+        'stafficon
+        '
+        Me.stafficon.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.stafficon.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.stafficon.BackgroundImage = CType(resources.GetObject("stafficon.BackgroundImage"), System.Drawing.Image)
+        Me.stafficon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.stafficon.FlatAppearance.BorderSize = 0
+        Me.stafficon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.stafficon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.stafficon.Location = New System.Drawing.Point(390, 47)
+        Me.stafficon.Name = "stafficon"
+        Me.stafficon.Size = New System.Drawing.Size(130, 133)
+        Me.stafficon.TabIndex = 1
+        Me.stafficon.UseVisualStyleBackColor = False
         '
         'requisionicon
         '
@@ -197,7 +182,22 @@ Partial Class Mainmenu
         Me.requisionicon.TabIndex = 7
         Me.requisionicon.UseVisualStyleBackColor = False
         '
-        'Mainmenu
+        'dashboardicon
+        '
+        Me.dashboardicon.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.dashboardicon.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.dashboardicon.BackgroundImage = CType(resources.GetObject("dashboardicon.BackgroundImage"), System.Drawing.Image)
+        Me.dashboardicon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.dashboardicon.FlatAppearance.BorderSize = 0
+        Me.dashboardicon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.dashboardicon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.dashboardicon.Location = New System.Drawing.Point(700, 47)
+        Me.dashboardicon.Name = "dashboardicon"
+        Me.dashboardicon.Size = New System.Drawing.Size(130, 133)
+        Me.dashboardicon.TabIndex = 2
+        Me.dashboardicon.UseVisualStyleBackColor = False
+        '
+        'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -205,7 +205,9 @@ Partial Class Mainmenu
         Me.ClientSize = New System.Drawing.Size(1264, 681)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Name = "Mainmenu"
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Name = "MainMenu"
+        Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main menu"
         Me.Panel1.ResumeLayout(False)
