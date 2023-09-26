@@ -9,14 +9,12 @@
 
     End Sub
 
-
-    Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
-        RegisterPatient2.Show()
-        Me.Hide()
-    End Sub
-
     Private Sub Back_Click(sender As Object, e As EventArgs) Handles Back.Click
         PatientMenu.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) 
+
     End Sub
 End Class
