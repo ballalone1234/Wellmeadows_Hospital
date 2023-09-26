@@ -1,5 +1,4 @@
-﻿Module PageControl
-
+﻿Module Pagecontroller
     Dim pages As New List(Of Form)
     Public Function NextPage(ByVal formMe As Form, ByVal formNext As Form) As Form
         pages.Add(formMe)
@@ -17,4 +16,5 @@
         formMe.Hide()
         formNext.Show()
     End Function
+
 End Module

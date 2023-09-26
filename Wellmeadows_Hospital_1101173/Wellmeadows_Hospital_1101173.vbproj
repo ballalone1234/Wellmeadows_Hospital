@@ -111,6 +111,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="My Project\Pagecontroller.vb" />
+    <Compile Include="AllocatePatient.Designer.vb">
+      <DependentUpon>AllocatePatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllocatePatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPatient4.Designer.vb">
+      <DependentUpon>RegisterPatient4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPatient4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPatient3.Designer.vb">
+      <DependentUpon>RegisterPatient3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPatient3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPatient2.Designer.vb">
+      <DependentUpon>RegisterPatient2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterPatient2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RegisterPatient.Designer.vb">
       <DependentUpon>RegisterPatient.vb</DependentUpon>
     </Compile>
@@ -159,6 +184,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AllocatePatient.resx">
+      <DependentUpon>AllocatePatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPatient4.resx">
+      <DependentUpon>RegisterPatient4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPatient3.resx">
+      <DependentUpon>RegisterPatient3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPatient2.resx">
+      <DependentUpon>RegisterPatient2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegisterPatient.resx">
       <DependentUpon>RegisterPatient.vb</DependentUpon>
     </EmbeddedResource>
