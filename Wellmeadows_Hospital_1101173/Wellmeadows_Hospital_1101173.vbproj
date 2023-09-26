@@ -111,18 +111,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="RegisterPatient3.Designer.vb">
-      <DependentUpon>RegisterPatient3.vb</DependentUpon>
-    </Compile>
-    <Compile Include="RegisterPatient3.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RegisterPatient2.Designer.vb">
-      <DependentUpon>RegisterPatient2.vb</DependentUpon>
-    </Compile>
-    <Compile Include="RegisterPatient2.vb">
-      <SubType>Form</SubType>
-    </Compile>
+	  <Compile Include="RegisterPatient3.Designer.vb">
+		  <DependentUpon>RegisterPatient3.vb</DependentUpon>
+	  </Compile>
+	  <Compile Include="RegisterPatient3.vb">
+		  <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Include="RegisterPatient2.Designer.vb">
+		  <DependentUpon>RegisterPatient2.vb</DependentUpon>
+	  </Compile>
+	  <Compile Include="RegisterPatient2.vb">
+		  <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Include="PageControl.vb" />
+	  <Compile Include="Staff_menu.Designer.vb">
+		  <DependentUpon>Staff_menu.vb</DependentUpon>
+	  </Compile>
+	  <Compile Include="Staff_menu.vb">
+		  <SubType>Form</SubType>
+	  </Compile>
     <Compile Include="RegisterPatient.Designer.vb">
       <DependentUpon>RegisterPatient.vb</DependentUpon>
     </Compile>
@@ -171,12 +178,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="RegisterPatient3.resx">
-      <DependentUpon>RegisterPatient3.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RegisterPatient2.resx">
-      <DependentUpon>RegisterPatient2.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="RegisterPatient.resx">
       <DependentUpon>RegisterPatient.vb</DependentUpon>
     </EmbeddedResource>
