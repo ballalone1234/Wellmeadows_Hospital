@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class RegisterPatient4
+Partial Class AssignPatient
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,21 +22,19 @@ Partial Class RegisterPatient4
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RegisterPatient4))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AssignPatient))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Home = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.AlloButton = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Back = New System.Windows.Forms.Button()
+        Me.ptno = New System.Windows.Forms.TextBox()
+        Me.searchassign = New System.Windows.Forms.Button()
+        Me.assignbtn = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -94,126 +92,62 @@ Partial Class RegisterPatient4
         Me.TableLayoutPanel1.ColumnCount = 2
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.12405!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.875952!))
-        Me.TableLayoutPanel1.Controls.Add(Me.AlloButton, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox2, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Back, 1, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox2, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 4
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.81992!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.18008!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 93.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.23706!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.76294!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 9.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(919, 681)
         Me.TableLayoutPanel1.TabIndex = 1
         '
-        'AlloButton
-        '
-        Me.AlloButton.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.AlloButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.AlloButton.BackgroundImage = CType(resources.GetObject("AlloButton.BackgroundImage"), System.Drawing.Image)
-        Me.AlloButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.AlloButton.FlatAppearance.BorderSize = 0
-        Me.AlloButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.AlloButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.AlloButton.Location = New System.Drawing.Point(268, 525)
-        Me.AlloButton.Name = "AlloButton"
-        Me.AlloButton.Size = New System.Drawing.Size(329, 59)
-        Me.AlloButton.TabIndex = 26
-        Me.AlloButton.UseVisualStyleBackColor = False
-        '
         'PictureBox2
         '
-        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(361, 18)
+        Me.PictureBox2.Location = New System.Drawing.Point(3, 154)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(143, 103)
+        Me.PictureBox2.Size = New System.Drawing.Size(859, 96)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 8
         Me.PictureBox2.TabStop = False
         '
         'TableLayoutPanel2
         '
-        Me.TableLayoutPanel2.ColumnCount = 3
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 411.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 4)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label8, 1, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label6, 1, 2)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label4, 1, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label2, 1, 0)
+        Me.TableLayoutPanel2.ColumnCount = 1
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.15833!))
+        Me.TableLayoutPanel2.Controls.Add(Me.ptno, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label1, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.searchassign, 0, 4)
+        Me.TableLayoutPanel2.Controls.Add(Me.assignbtn, 0, 5)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 143)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 256)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
-        Me.TableLayoutPanel2.RowCount = 7
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.67568!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.32433!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 143.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(859, 376)
+        Me.TableLayoutPanel2.RowCount = 6
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.73563!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.26437!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 121.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(859, 340)
         Me.TableLayoutPanel2.TabIndex = 9
         '
-        'Label10
+        'Label1
         '
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(442, 154)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(2, 21)
-        Me.Label10.TabIndex = 25
-        Me.Label10.Text = "Marital status"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label8
-        '
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(442, 95)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(2, 23)
-        Me.Label8.TabIndex = 23
-        Me.Label8.Text = "Marital status"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label6
-        '
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(442, 76)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(2, 19)
-        Me.Label6.TabIndex = 21
-        Me.Label6.Text = "Marital status"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label4
-        '
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(442, 19)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(2, 23)
-        Me.Label4.TabIndex = 19
-        Me.Label4.Text = "Marital status"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label2
-        '
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(442, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(2, 19)
-        Me.Label2.TabIndex = 17
-        Me.Label2.Text = "Patients No"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(3, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(693, 22)
+        Me.Label1.TabIndex = 16
+        Me.Label1.Text = "Patients No or Citizen ID"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Back
         '
@@ -230,7 +164,48 @@ Partial Class RegisterPatient4
         Me.Back.TabIndex = 10
         Me.Back.UseVisualStyleBackColor = False
         '
-        'RegisterPatient4
+        'ptno
+        '
+        Me.ptno.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ptno.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ptno.Location = New System.Drawing.Point(272, 28)
+        Me.ptno.Margin = New System.Windows.Forms.Padding(2)
+        Me.ptno.Multiline = True
+        Me.ptno.Name = "ptno"
+        Me.ptno.Size = New System.Drawing.Size(315, 42)
+        Me.ptno.TabIndex = 5
+        '
+        'searchassign
+        '
+        Me.searchassign.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.searchassign.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.searchassign.BackgroundImage = CType(resources.GetObject("searchassign.BackgroundImage"), System.Drawing.Image)
+        Me.searchassign.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.searchassign.FlatAppearance.BorderSize = 0
+        Me.searchassign.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.searchassign.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.searchassign.Location = New System.Drawing.Point(269, 222)
+        Me.searchassign.Name = "searchassign"
+        Me.searchassign.Size = New System.Drawing.Size(321, 49)
+        Me.searchassign.TabIndex = 11
+        Me.searchassign.UseVisualStyleBackColor = False
+        '
+        'assignbtn
+        '
+        Me.assignbtn.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.assignbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.assignbtn.BackgroundImage = CType(resources.GetObject("assignbtn.BackgroundImage"), System.Drawing.Image)
+        Me.assignbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.assignbtn.FlatAppearance.BorderSize = 0
+        Me.assignbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.assignbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.assignbtn.Location = New System.Drawing.Point(287, 286)
+        Me.assignbtn.Name = "assignbtn"
+        Me.assignbtn.Size = New System.Drawing.Size(284, 51)
+        Me.assignbtn.TabIndex = 17
+        Me.assignbtn.UseVisualStyleBackColor = False
+        '
+        'AssignPatient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -239,7 +214,7 @@ Partial Class RegisterPatient4
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "RegisterPatient4"
+        Me.Name = "AssignPatient"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patient Menu"
         Me.Panel1.ResumeLayout(False)
@@ -248,6 +223,7 @@ Partial Class RegisterPatient4
         Me.TableLayoutPanel1.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
+        Me.TableLayoutPanel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -269,10 +245,8 @@ Partial Class RegisterPatient4
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Back As Button
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents AlloButton As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents ptno As TextBox
+    Friend WithEvents searchassign As Button
+    Friend WithEvents assignbtn As Button
 End Class

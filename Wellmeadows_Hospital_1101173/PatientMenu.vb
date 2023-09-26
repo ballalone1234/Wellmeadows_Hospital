@@ -21,4 +21,20 @@
     Private Sub allocatept_Click(sender As Object, e As EventArgs) Handles allocatept.Click
         Pagecontroller.NextPage(Me, AllocatePatient)
     End Sub
+
+    Private Sub prescribept_Click(sender As Object, e As EventArgs) Handles prescribept.Click
+        Pagecontroller.NextPage(Me, PrescribeMenu)
+    End Sub
+
+    Private Sub assignpt_Click(sender As Object, e As EventArgs) Handles assignpt.Click
+        Pagecontroller.NextPage(Me, AssignPatient)
+    End Sub
+
+    Private Sub listpt_Click(sender As Object, e As EventArgs) Handles listpt.Click
+        Pagecontroller.NextPage(Me, PatientList)
+    End Sub
+
+    Private Sub waitingpt_Click(sender As Object, e As EventArgs) Handles waitingpt.Click
+        Pagecontroller.NextPage(Me, WaitingListPatient)
+    End Sub
 End Class

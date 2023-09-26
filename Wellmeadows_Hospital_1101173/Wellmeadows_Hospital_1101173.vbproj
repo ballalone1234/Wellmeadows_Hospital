@@ -106,6 +106,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="WaitingListPatient.Designer.vb">
+      <DependentUpon>WaitingListPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WaitingListPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrescribeMenu.Designer.vb">
+      <DependentUpon>PrescribeMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrescribeMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DataSet1.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -116,6 +128,18 @@
       <DependentUpon>AllocatePatient.vb</DependentUpon>
     </Compile>
     <Compile Include="AllocatePatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientList.Designer.vb">
+      <DependentUpon>PatientList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PatientList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignPatient.Designer.vb">
+      <DependentUpon>AssignPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AssignPatient.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegisterPatient4.Designer.vb">
@@ -184,8 +208,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="WaitingListPatient.resx">
+      <DependentUpon>WaitingListPatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrescribeMenu.resx">
+      <DependentUpon>PrescribeMenu.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllocatePatient.resx">
       <DependentUpon>AllocatePatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientList.resx">
+      <DependentUpon>PatientList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignPatient.resx">
+      <DependentUpon>AssignPatient.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegisterPatient4.resx">
       <DependentUpon>RegisterPatient4.vb</DependentUpon>
