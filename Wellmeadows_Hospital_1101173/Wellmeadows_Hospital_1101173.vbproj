@@ -111,13 +111,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="PageControl.vb" />
-    <Compile Include="Staff_menu.Designer.vb">
-      <DependentUpon>Staff_menu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Staff_menu.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="RegisterPatient.Designer.vb">
       <DependentUpon>RegisterPatient.vb</DependentUpon>
     </Compile>
@@ -166,9 +159,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Staff_menu.resx">
-      <DependentUpon>Staff_menu.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="RegisterPatient.resx">
       <DependentUpon>RegisterPatient.vb</DependentUpon>
     </EmbeddedResource>
