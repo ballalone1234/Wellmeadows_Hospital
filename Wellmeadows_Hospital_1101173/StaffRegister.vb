@@ -42,7 +42,7 @@
         ElseIf sexfemale.Checked Then
             sex = "female"
         End If
-        Dim data() As String = {$"'{staff_no.Text}'", $"'{position.Text}'", $"'{staff_name.Text}'", $"'{address.Text}'", $"{DOB.Value}", $"'{sex}'",
+        Dim data() As String = {$"'{staff_no.Text}'", $"'{position.Text}'", $"'{staff_name.Text}'", $"'{address.Text}'", $"TO_DATE('{DOB.Value.ToString("yyyy-MM-dd")}','YYYY-MM-DD')", $"'{sex}'",
             $"'{work_location.Text}'", $"'{salary.Text}'", $"'{NIN.Text}'", $"'{tel.Text}'", $"'{worked_per_week.Text}'", $"'{work_type.Text}'", $"'{payment_type.Text}'", $"'{salary_level.Text}'"}
         Dim result As Int32 = RegisStaff(String.Join(",", data))
         If result > 0 Then
