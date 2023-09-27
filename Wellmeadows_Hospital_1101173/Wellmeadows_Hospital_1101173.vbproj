@@ -106,6 +106,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StaffRegister.Designer.vb">
+      <DependentUpon>StaffRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffMenu.Designer.vb">
+      <DependentUpon>StaffMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WaitingListPatient.Designer.vb">
       <DependentUpon>WaitingListPatient.vb</DependentUpon>
     </Compile>
@@ -208,6 +220,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="StaffRegister.resx">
+      <DependentUpon>StaffRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffMenu.resx">
+      <DependentUpon>StaffMenu.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WaitingListPatient.resx">
       <DependentUpon>WaitingListPatient.vb</DependentUpon>
     </EmbeddedResource>
