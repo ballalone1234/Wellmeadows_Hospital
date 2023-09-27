@@ -118,8 +118,8 @@
     <Compile Include="StaffMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-	  <Compile Include="GetData.vb" />
-	  <Compile Include="OC.vb" />
+    <Compile Include="GetData.vb" />
+    <Compile Include="OC.vb" />
     <Compile Include="WaitingListPatient.Designer.vb">
       <DependentUpon>WaitingListPatient.vb</DependentUpon>
     </Compile>

@@ -17,11 +17,10 @@
 
 
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
-        Dim data As String = String.Join(",", {"patient_seq.NEXTVAL", $"'{Pname.Text}'", $"'{status.Text}'", "SYSDATE", "SYSDATE", $"'{tel.Text}'", $"'{ctno.Text}'", $"'{address.Text}'"})
-        Dim result As Int32 = GetData.RegisterPatient(data)
-        If result > 0 Then
-            NextPage(Me, RegisterPatient2)
-        End If
+        Dim data As List(Of String) = New List(Of String)({"patient_seq.NEXTVAL", $"'{Pname.Text}'", $"'{status.Text}'", "SYSDATE", "SYSDATE", $"'{tel.Text}'", $"'{ctno.Text}'", $"'{address.Text}'"})
+        RegisterPatient2.param = data
+        NextPage(Me, RegisterPatient2)
+
     End Sub
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
