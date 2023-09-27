@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class StaffMenu
+Partial Class StaffList
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,15 +22,14 @@ Partial Class StaffMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StaffMenu))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StaffList))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Home = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.stafflistbtn = New System.Windows.Forms.Button()
-        Me.registerstaff = New System.Windows.Forms.Button()
         Me.Back = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -45,7 +44,7 @@ Partial Class StaffMenu
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(345, 681)
+        Me.Panel1.Size = New System.Drawing.Size(326, 681)
         Me.Panel1.TabIndex = 0
         '
         'Home
@@ -58,79 +57,43 @@ Partial Class StaffMenu
         Me.Home.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Home.Location = New System.Drawing.Point(12, 12)
         Me.Home.Name = "Home"
-        Me.Home.Size = New System.Drawing.Size(48, 53)
+        Me.Home.Size = New System.Drawing.Size(29, 53)
         Me.Home.TabIndex = 6
         Me.Home.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 261)
+        Me.PictureBox1.Location = New System.Drawing.Point(22, 277)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(336, 102)
+        Me.PictureBox1.Size = New System.Drawing.Size(283, 83)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(345, 0)
+        Me.Panel2.Location = New System.Drawing.Point(326, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(919, 681)
+        Me.Panel2.Size = New System.Drawing.Size(938, 681)
         Me.Panel2.TabIndex = 1
         '
         'TableLayoutPanel1
         '
-        Me.TableLayoutPanel1.ColumnCount = 4
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.85567!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.14433!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.stafflistbtn, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.registerstaff, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Back, 3, 3)
-        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 95.6327!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.367301!))
+        Me.TableLayoutPanel1.Controls.Add(Me.Back, 1, 1)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(6, 21)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 4
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.66849!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.96904!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.36248!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 130.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(919, 681)
+        Me.TableLayoutPanel1.RowCount = 2
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.497621!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.50238!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(893, 1004)
         Me.TableLayoutPanel1.TabIndex = 1
-        '
-        'stafflistbtn
-        '
-        Me.stafflistbtn.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.stafflistbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.stafflistbtn.BackgroundImage = CType(resources.GetObject("stafflistbtn.BackgroundImage"), System.Drawing.Image)
-        Me.stafflistbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.stafflistbtn.FlatAppearance.BorderSize = 0
-        Me.stafflistbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.stafflistbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.stafflistbtn.Location = New System.Drawing.Point(535, 118)
-        Me.stafflistbtn.Name = "stafflistbtn"
-        Me.stafflistbtn.Size = New System.Drawing.Size(150, 139)
-        Me.stafflistbtn.TabIndex = 2
-        Me.stafflistbtn.UseVisualStyleBackColor = False
-        '
-        'registerstaff
-        '
-        Me.registerstaff.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.registerstaff.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.registerstaff.BackgroundImage = CType(resources.GetObject("registerstaff.BackgroundImage"), System.Drawing.Image)
-        Me.registerstaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.registerstaff.FlatAppearance.BorderSize = 0
-        Me.registerstaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.registerstaff.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.registerstaff.Location = New System.Drawing.Point(251, 108)
-        Me.registerstaff.Name = "registerstaff"
-        Me.registerstaff.Size = New System.Drawing.Size(186, 158)
-        Me.registerstaff.TabIndex = 0
-        Me.registerstaff.UseVisualStyleBackColor = False
         '
         'Back
         '
@@ -141,13 +104,28 @@ Partial Class StaffMenu
         Me.Back.FlatAppearance.BorderSize = 0
         Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Back.Location = New System.Drawing.Point(883, 636)
+        Me.Back.Location = New System.Drawing.Point(876, 959)
         Me.Back.Name = "Back"
-        Me.Back.Size = New System.Drawing.Size(33, 42)
-        Me.Back.TabIndex = 11
+        Me.Back.Size = New System.Drawing.Size(14, 42)
+        Me.Back.TabIndex = 10
         Me.Back.UseVisualStyleBackColor = False
         '
-        'StaffMenu
+        'Button1
+        '
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Button1.Location = New System.Drawing.Point(902, 636)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(33, 42)
+        Me.Button1.TabIndex = 11
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'StaffList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -156,7 +134,7 @@ Partial Class StaffMenu
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "StaffMenu"
+        Me.Name = "StaffList"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patient Menu"
         Me.Panel1.ResumeLayout(False)
@@ -179,11 +157,8 @@ Partial Class StaffMenu
     End Sub
 
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents registerstaff As Button
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-
-
-    Friend WithEvents stafflistbtn As Button
     Friend WithEvents Home As Button
     Friend WithEvents Back As Button
+    Friend WithEvents Button1 As Button
 End Class

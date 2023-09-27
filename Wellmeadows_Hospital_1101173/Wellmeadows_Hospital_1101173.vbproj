@@ -106,6 +106,36 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SuppliesRegister.Designer.vb">
+      <DependentUpon>SuppliesRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuppliesRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppliesMenu.Designer.vb">
+      <DependentUpon>SuppliesMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuppliesMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wardlist.Designer.vb">
+      <DependentUpon>Wardlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wardlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffList.Designer.vb">
+      <DependentUpon>StaffList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffList.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="StaffRegister.Designer.vb">
       <DependentUpon>StaffRegister.vb</DependentUpon>
     </Compile>
@@ -220,6 +250,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="SuppliesRegister.resx">
+      <DependentUpon>SuppliesRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliesMenu.resx">
+      <DependentUpon>SuppliesMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wardlist.resx">
+      <DependentUpon>Wardlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffList.resx">
+      <DependentUpon>StaffList.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StaffRegister.resx">
       <DependentUpon>StaffRegister.vb</DependentUpon>
     </EmbeddedResource>

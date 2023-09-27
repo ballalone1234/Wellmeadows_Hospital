@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class StaffMenu
+Partial Class Wardlist
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,14 +22,13 @@ Partial Class StaffMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StaffMenu))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Wardlist))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Home = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.stafflistbtn = New System.Windows.Forms.Button()
-        Me.registerstaff = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Back = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -65,9 +64,9 @@ Partial Class StaffMenu
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 261)
+        Me.PictureBox1.Location = New System.Drawing.Point(-19, 276)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(336, 102)
+        Me.PictureBox1.Size = New System.Drawing.Size(376, 134)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -83,54 +82,36 @@ Partial Class StaffMenu
         '
         'TableLayoutPanel1
         '
-        Me.TableLayoutPanel1.ColumnCount = 4
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.85567!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.14433!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.stafflistbtn, 2, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.registerstaff, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Back, 3, 3)
+        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.12405!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.875952!))
+        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.Back, 1, 3)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 4
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.66849!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.96904!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.36248!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 130.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.747127!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94.25288!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 93.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(919, 681)
         Me.TableLayoutPanel1.TabIndex = 1
         '
-        'stafflistbtn
+        'TableLayoutPanel2
         '
-        Me.stafflistbtn.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.stafflistbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.stafflistbtn.BackgroundImage = CType(resources.GetObject("stafflistbtn.BackgroundImage"), System.Drawing.Image)
-        Me.stafflistbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.stafflistbtn.FlatAppearance.BorderSize = 0
-        Me.stafflistbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.stafflistbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.stafflistbtn.Location = New System.Drawing.Point(535, 118)
-        Me.stafflistbtn.Name = "stafflistbtn"
-        Me.stafflistbtn.Size = New System.Drawing.Size(150, 139)
-        Me.stafflistbtn.TabIndex = 2
-        Me.stafflistbtn.UseVisualStyleBackColor = False
-        '
-        'registerstaff
-        '
-        Me.registerstaff.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.registerstaff.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.registerstaff.BackgroundImage = CType(resources.GetObject("registerstaff.BackgroundImage"), System.Drawing.Image)
-        Me.registerstaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.registerstaff.FlatAppearance.BorderSize = 0
-        Me.registerstaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.registerstaff.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.registerstaff.Location = New System.Drawing.Point(251, 108)
-        Me.registerstaff.Name = "registerstaff"
-        Me.registerstaff.Size = New System.Drawing.Size(186, 158)
-        Me.registerstaff.TabIndex = 0
-        Me.registerstaff.UseVisualStyleBackColor = False
+        Me.TableLayoutPanel2.ColumnCount = 1
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 33)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 4
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.17021!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.82979!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 191.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(859, 486)
+        Me.TableLayoutPanel2.TabIndex = 9
         '
         'Back
         '
@@ -144,10 +125,10 @@ Partial Class StaffMenu
         Me.Back.Location = New System.Drawing.Point(883, 636)
         Me.Back.Name = "Back"
         Me.Back.Size = New System.Drawing.Size(33, 42)
-        Me.Back.TabIndex = 11
+        Me.Back.TabIndex = 10
         Me.Back.UseVisualStyleBackColor = False
         '
-        'StaffMenu
+        'Wardlist
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -156,7 +137,7 @@ Partial Class StaffMenu
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "StaffMenu"
+        Me.Name = "Wardlist"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patient Menu"
         Me.Panel1.ResumeLayout(False)
@@ -179,11 +160,8 @@ Partial Class StaffMenu
     End Sub
 
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents registerstaff As Button
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-
-
-    Friend WithEvents stafflistbtn As Button
     Friend WithEvents Home As Button
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Back As Button
 End Class

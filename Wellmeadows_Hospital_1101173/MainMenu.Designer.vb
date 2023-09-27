@@ -53,10 +53,10 @@ Partial Class MainMenu
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(21, 296)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 287)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(296, 44)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.Size = New System.Drawing.Size(303, 75)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
@@ -72,9 +72,9 @@ Partial Class MainMenu
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.ColumnCount = 3
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.62786!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.86243!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.73232!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.40588!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.8618!))
         Me.TableLayoutPanel1.Controls.Add(Me.supilericon, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.supileicon, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.wardicon, 0, 1)
@@ -101,7 +101,7 @@ Partial Class MainMenu
         Me.supilericon.FlatAppearance.BorderSize = 0
         Me.supilericon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.supilericon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.supilericon.Location = New System.Drawing.Point(85, 501)
+        Me.supilericon.Location = New System.Drawing.Point(90, 501)
         Me.supilericon.Name = "supilericon"
         Me.supilericon.Size = New System.Drawing.Size(130, 133)
         Me.supilericon.TabIndex = 6
@@ -116,7 +116,7 @@ Partial Class MainMenu
         Me.supileicon.FlatAppearance.BorderSize = 0
         Me.supileicon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.supileicon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.supileicon.Location = New System.Drawing.Point(390, 274)
+        Me.supileicon.Location = New System.Drawing.Point(398, 274)
         Me.supileicon.Name = "supileicon"
         Me.supileicon.Size = New System.Drawing.Size(130, 133)
         Me.supileicon.TabIndex = 4
@@ -131,7 +131,7 @@ Partial Class MainMenu
         Me.wardicon.FlatAppearance.BorderSize = 0
         Me.wardicon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.wardicon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.wardicon.Location = New System.Drawing.Point(85, 274)
+        Me.wardicon.Location = New System.Drawing.Point(90, 274)
         Me.wardicon.Name = "wardicon"
         Me.wardicon.Size = New System.Drawing.Size(130, 133)
         Me.wardicon.TabIndex = 3
@@ -146,7 +146,7 @@ Partial Class MainMenu
         Me.patienticon.FlatAppearance.BorderSize = 0
         Me.patienticon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.patienticon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.patienticon.Location = New System.Drawing.Point(85, 47)
+        Me.patienticon.Location = New System.Drawing.Point(90, 47)
         Me.patienticon.Name = "patienticon"
         Me.patienticon.Size = New System.Drawing.Size(130, 133)
         Me.patienticon.TabIndex = 0
@@ -161,7 +161,7 @@ Partial Class MainMenu
         Me.stafficon.FlatAppearance.BorderSize = 0
         Me.stafficon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.stafficon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.stafficon.Location = New System.Drawing.Point(390, 47)
+        Me.stafficon.Location = New System.Drawing.Point(398, 47)
         Me.stafficon.Name = "stafficon"
         Me.stafficon.Size = New System.Drawing.Size(130, 133)
         Me.stafficon.TabIndex = 1
@@ -176,7 +176,7 @@ Partial Class MainMenu
         Me.requisionicon.FlatAppearance.BorderSize = 0
         Me.requisionicon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.requisionicon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.requisionicon.Location = New System.Drawing.Point(390, 501)
+        Me.requisionicon.Location = New System.Drawing.Point(398, 501)
         Me.requisionicon.Name = "requisionicon"
         Me.requisionicon.Size = New System.Drawing.Size(130, 133)
         Me.requisionicon.TabIndex = 7
@@ -191,9 +191,9 @@ Partial Class MainMenu
         Me.dashboardicon.FlatAppearance.BorderSize = 0
         Me.dashboardicon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.dashboardicon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.dashboardicon.Location = New System.Drawing.Point(700, 47)
+        Me.dashboardicon.Location = New System.Drawing.Point(697, 47)
         Me.dashboardicon.Name = "dashboardicon"
-        Me.dashboardicon.Size = New System.Drawing.Size(130, 133)
+        Me.dashboardicon.Size = New System.Drawing.Size(141, 133)
         Me.dashboardicon.TabIndex = 2
         Me.dashboardicon.UseVisualStyleBackColor = False
         '
