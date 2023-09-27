@@ -19,4 +19,8 @@
     Private Sub supileicon_Click(sender As Object, e As EventArgs) Handles supileicon.Click
         Pagecontroller.NextPage(Me, SuppliesMenu)
     End Sub
+
+    Private Sub supilericon_Click(sender As Object, e As EventArgs) Handles supilericon.Click
+        Pagecontroller.NextPage(Me, SupplierMenu)
+    End Sub
 End Class

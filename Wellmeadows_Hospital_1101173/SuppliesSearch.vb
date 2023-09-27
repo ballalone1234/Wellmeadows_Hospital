@@ -15,7 +15,7 @@
         Pagecontroller.BackPage(Me)
     End Sub
 
-    Private Sub NextButton_Click(sender As Object, e As EventArgs) 
+    Private Sub NextButton_Click(sender As Object, e As EventArgs)
         Pagecontroller.NextPage(Me, RegisterPatient2)
     End Sub
 

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class SuppliesMenu
+Partial Class SupplierMenu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,15 +22,15 @@ Partial Class SuppliesMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SuppliesMenu))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SupplierMenu))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Home = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.suppliesreg = New System.Windows.Forms.Button()
         Me.Back = New System.Windows.Forms.Button()
-        Me.suppliessrc = New System.Windows.Forms.Button()
+        Me.suppliersrc = New System.Windows.Forms.Button()
+        Me.supilerreg = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -88,9 +88,9 @@ Partial Class SuppliesMenu
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.14433!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250.0!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.suppliesreg, 1, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Back, 3, 3)
-        Me.TableLayoutPanel1.Controls.Add(Me.suppliessrc, 2, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.suppliersrc, 2, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.supilerreg, 1, 1)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -101,21 +101,6 @@ Partial Class SuppliesMenu
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 130.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(919, 681)
         Me.TableLayoutPanel1.TabIndex = 1
-        '
-        'suppliesreg
-        '
-        Me.suppliesreg.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.suppliesreg.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.suppliesreg.BackgroundImage = CType(resources.GetObject("suppliesreg.BackgroundImage"), System.Drawing.Image)
-        Me.suppliesreg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.suppliesreg.FlatAppearance.BorderSize = 0
-        Me.suppliesreg.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.suppliesreg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.suppliesreg.Location = New System.Drawing.Point(251, 108)
-        Me.suppliesreg.Name = "suppliesreg"
-        Me.suppliesreg.Size = New System.Drawing.Size(186, 158)
-        Me.suppliesreg.TabIndex = 0
-        Me.suppliesreg.UseVisualStyleBackColor = False
         '
         'Back
         '
@@ -132,22 +117,37 @@ Partial Class SuppliesMenu
         Me.Back.TabIndex = 11
         Me.Back.UseVisualStyleBackColor = False
         '
-        'suppliessrc
+        'suppliersrc
         '
-        Me.suppliessrc.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.suppliessrc.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.suppliessrc.BackgroundImage = CType(resources.GetObject("suppliessrc.BackgroundImage"), System.Drawing.Image)
-        Me.suppliessrc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.suppliessrc.FlatAppearance.BorderSize = 0
-        Me.suppliessrc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.suppliessrc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.suppliessrc.Location = New System.Drawing.Point(531, 113)
-        Me.suppliessrc.Name = "suppliessrc"
-        Me.suppliessrc.Size = New System.Drawing.Size(157, 148)
-        Me.suppliessrc.TabIndex = 2
-        Me.suppliessrc.UseVisualStyleBackColor = False
+        Me.suppliersrc.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.suppliersrc.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.suppliersrc.BackgroundImage = CType(resources.GetObject("suppliersrc.BackgroundImage"), System.Drawing.Image)
+        Me.suppliersrc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.suppliersrc.FlatAppearance.BorderSize = 0
+        Me.suppliersrc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.suppliersrc.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.suppliersrc.Location = New System.Drawing.Point(531, 113)
+        Me.suppliersrc.Name = "suppliersrc"
+        Me.suppliersrc.Size = New System.Drawing.Size(157, 148)
+        Me.suppliersrc.TabIndex = 2
+        Me.suppliersrc.UseVisualStyleBackColor = False
         '
-        'SuppliesMenu
+        'supilerreg
+        '
+        Me.supilerreg.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.supilerreg.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.supilerreg.BackgroundImage = CType(resources.GetObject("supilerreg.BackgroundImage"), System.Drawing.Image)
+        Me.supilerreg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.supilerreg.FlatAppearance.BorderSize = 0
+        Me.supilerreg.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.supilerreg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.supilerreg.Location = New System.Drawing.Point(265, 113)
+        Me.supilerreg.Name = "supilerreg"
+        Me.supilerreg.Size = New System.Drawing.Size(157, 148)
+        Me.supilerreg.TabIndex = 12
+        Me.supilerreg.UseVisualStyleBackColor = False
+        '
+        'SupplierMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -156,7 +156,7 @@ Partial Class SuppliesMenu
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "SuppliesMenu"
+        Me.Name = "SupplierMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patient Menu"
         Me.Panel1.ResumeLayout(False)
@@ -179,11 +179,11 @@ Partial Class SuppliesMenu
     End Sub
 
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents suppliesreg As Button
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
 
 
-    Friend WithEvents suppliessrc As Button
+    Friend WithEvents suppliersrc As Button
     Friend WithEvents Home As Button
     Friend WithEvents Back As Button
+    Friend WithEvents supilerreg As Button
 End Class

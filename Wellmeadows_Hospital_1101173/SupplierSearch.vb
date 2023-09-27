@@ -1,4 +1,4 @@
-﻿Public Class SupplierRegister
+﻿Public Class SupplierSearch
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
@@ -15,7 +15,7 @@
         Pagecontroller.BackPage(Me)
     End Sub
 
-    Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
+    Private Sub NextButton_Click(sender As Object, e As EventArgs)
         Pagecontroller.NextPage(Me, RegisterPatient2)
     End Sub
 
@@ -23,7 +23,11 @@
 
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub TableLayoutPanel2_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel2.Paint
+
+    End Sub
+
+    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
 
     End Sub
 End Class

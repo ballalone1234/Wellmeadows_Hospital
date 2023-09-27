@@ -106,10 +106,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SupplierSearch.Designer.vb">
+      <DependentUpon>SupplierSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SupplierRegister.Designer.vb">
       <DependentUpon>SupplierRegister.vb</DependentUpon>
     </Compile>
     <Compile Include="SupplierRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupplierMenu.Designer.vb">
+      <DependentUpon>SupplierMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppliesMenu.Designer.vb">
+      <DependentUpon>SuppliesMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuppliesMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SuppliesSearch.Designer.vb">
@@ -122,12 +140,6 @@
       <DependentUpon>SuppliesRegister.vb</DependentUpon>
     </Compile>
     <Compile Include="SuppliesRegister.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SuppliesMenu.Designer.vb">
-      <DependentUpon>SuppliesMenu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="SuppliesMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Wardlist.Designer.vb">
@@ -264,17 +276,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="SupplierSearch.resx">
+      <DependentUpon>SupplierSearch.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SupplierRegister.resx">
       <DependentUpon>SupplierRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierMenu.resx">
+      <DependentUpon>SupplierMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliesMenu.resx">
+      <DependentUpon>SuppliesMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SuppliesSearch.resx">
       <DependentUpon>SuppliesSearch.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SuppliesRegister.resx">
       <DependentUpon>SuppliesRegister.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SuppliesMenu.resx">
-      <DependentUpon>SuppliesMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wardlist.resx">
       <DependentUpon>Wardlist.vb</DependentUpon>
