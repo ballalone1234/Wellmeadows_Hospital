@@ -1,4 +1,6 @@
 ﻿Public Class RegisterPatient
+
+    Public cid_patient As String
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
@@ -17,8 +19,9 @@
 
 
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
-        Dim data As List(Of String) = New List(Of String)({"patient_seq.NEXTVAL", $"'{Pname.Text}'", $"'{status.Text}'", "SYSDATE", "SYSDATE", $"'{tel.Text}'", $"'{ctno.Text}'", $"'{address.Text}'"})
+        Dim data As List(Of String) = New List(Of String)({"patient_seq.NEXTVAL", $"'{Pname.Text}'", $"'{status.Text}'", "SYSDATE", $"TO_DATE('{DOB.Value.ToString("yyyy-MM-dd")}','YYYY-MM-DD')", $"'{tel.Text}'", $"'{ctno.Text}'", $"'{address.Text}'"})
         RegisterPatient2.param = data
+        cid_patient = ctno.Text
         NextPage(Me, RegisterPatient2)
 
     End Sub

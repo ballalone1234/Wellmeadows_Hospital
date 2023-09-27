@@ -10,7 +10,24 @@ Module GetData
     Public Function SaveDc(ByVal data As String)
         dataAdd.Add(data)
     End Function
-    Public Function RegisPatient(ByVal data As String) As Int32
+
+    Public Function GetSeq()
+        Dim connection As New OracleConnection(Connect())
+        connection.Open()
+
+        ' สร้างคำสั่ง SQL สำหรับเรียกใช้ค่าจาก Sequence
+        Dim getSequenceSql As String = "SELECT patient_seq.CURRVAL FROM DUAL"
+        Dim cmd As New OracleCommand(getSequenceSql, connection)
+
+        ' สร้างตัวแปรเพื่อเก็บค่าที่ได้จาก Sequence
+        Dim generatedPatientNum As Decimal = Convert.ToDecimal(cmd.ExecuteScalar())
+
+        ' ตอนนี้ค่า generatedPatientNum จะเป็นค่าล่าสุดที่ได้จาก Sequence
+        Console.WriteLine("Generated PATIENT_NUM: " & generatedPatientNum)
+        Return generatedPatientNum
+        connection.Close()
+    End Function
+    Public Function RegisPatient(ByVal data As String)
         Dim col() As String = {"PATIENT_NUM", "PATIENT_NAME", "MARITAL_STATUS", "DATE_REGIST", "DOB", "TELEPHONE", "CID", "ADDRESS", "ML_NO"}
         'Dim column As String = String.Join(",", )
 
@@ -18,6 +35,33 @@ Module GetData
             Dim connection As New OracleConnection(Connect())
             connection.Open()
             Dim sql As String = $"INSERT INTO PATIENTS ({String.Join(",", col)}) VALUES ({String.Join(",", data)})"
+            Dim cmd As New OracleCommand(sql, connection)
+
+
+
+            cmd.ExecuteNonQuery()
+            connection.Close()
+
+            Return GetSeq()
+        Catch ex As OracleException When ex.Number = 1 AndAlso ex.Message.Contains("PATIENTS_UK1")
+            ' จัดการกับข้อผิดพลาดที่เกิดจาก unique constraint violation
+            MessageBox.Show("cid is already exist")
+
+        Catch ex As Exception
+            ' จัดการข้อผิดพลาดที่เกิดขึ้น
+            MessageBox.Show("เกิดข้อผิดพลาดในการเชื่อมต่อกับฐานข้อมูล: " & ex.Message)
+            Return 0
+        End Try
+
+    End Function
+
+    Public Function RegisPatientKin(ByVal data As String) As Int32
+        'Dim column As String = String.Join(",", )
+
+        Try
+            Dim connection As New OracleConnection(Connect())
+            connection.Open()
+            Dim sql As String = $"INSERT INTO PATIENTSNEXTOFKIN ({GetColumn("PATIENTSNEXTOFKIN")}) VALUES ({String.Join(",", data)})"
             Console.WriteLine(sql)
             Dim cmd As New OracleCommand(sql, connection)
             cmd.ExecuteNonQuery()

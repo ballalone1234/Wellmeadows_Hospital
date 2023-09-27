@@ -15,7 +15,11 @@
     End Sub
 
     Private Sub SumitButton_Click(sender As Object, e As EventArgs) Handles SumitButton.Click
-        Pagecontroller.NextPage(Me, RegisterPatient4)
+        Dim data() As String = {$"'{RegisterPatient2.p_id}'", $"'{kinname.Text}'", $"'{relationship.Text}'", $"'{ address.Text}'", $"'{tel.Text}'"}
+        Dim result As Integer = RegisPatientKin(String.Join(",", data))
+        If result > 0 Then
+            Pagecontroller.NextPage(Me, RegisterPatient4)
+        End If
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click

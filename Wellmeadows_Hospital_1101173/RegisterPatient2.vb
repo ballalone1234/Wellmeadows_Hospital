@@ -3,6 +3,7 @@ Imports Oracle.ManagedDataAccess.Client
 
 Public Class RegisterPatient2
     Public param As List(Of String)
+    Public p_id As Int32
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
@@ -22,7 +23,10 @@ Public Class RegisterPatient2
         param.Add($"'{ml_no.SelectedItem.ToString()}'")
         Dim result As Int32 = RegisPatient(String.Join(",", param))
         If result > 0 Then
+
             MessageBox.Show("ลงทะเบียนเสร็จสิ้น")
+            NextPage(Me, RegisterPatient3)
+            p_id = result
         End If
     End Sub
 
