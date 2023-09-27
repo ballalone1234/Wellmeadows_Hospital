@@ -4,13 +4,11 @@
 Public Class LoginForm
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles LoginBTN.Click
-        Dim host As String = "digilab.sut.ac.th:1521/XEPDB1"
-        Dim password As String = "1095"
-        Dim username As String = "B6301095"
+
         Dim table As String = "staff"
 
-        Dim connectionString As String = $"DATA SOURCE={host};PASSWORD={password};USER ID={username};"
-        Using connection As New OracleConnection(connectionString)
+
+        Using connection As New OracleConnection(Connect())
             Try
                 connection.Open()
 
@@ -23,13 +21,14 @@ Public Class LoginForm
 
                     If result > 0 Then
                         MessageBox.Show("ล็อกอินสำเร็จ!")
+                        NextPage(Me, MainMenu)
                         ' ทำสิ่งที่คุณต้องการหลังจากล็อกอินสำเร็จ
                     Else
                         MessageBox.Show("ล็อกอินล้มเหลว กรุณาตรวจสอบชื่อผู้ใช้งานและรหัสผ่าน")
                     End If
                 End Using
             Catch ex As Exception
-                MessageBox.Show("เกิดข้อผิดพลาดในการเชื่อมต่อกับฐานข้อมูล: " & connectionString & ex.Message)
+                MessageBox.Show("เกิดข้อผิดพลาดในการเชื่อมต่อกับฐานข้อมูล: " & ex.Message)
             End Try
         End Using
     End Sub

@@ -17,4 +17,8 @@
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
         Pagecontroller.NextPage(Me, RegisterPatient3)
     End Sub
+
+
+
+
 End Class
