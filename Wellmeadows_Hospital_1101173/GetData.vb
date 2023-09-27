@@ -68,4 +68,30 @@ Module GetData
         Console.WriteLine("ss" & column)
         Return column
     End Function
+
+    Public Function RegisStaff(ByVal data As String) As Int32
+        Dim col() As String = {"STAFF_NUM", "POSITION", "STAFF_NAME", "ADDRESS", "DOB", "SEX", "WORK_LOCATION", "SALARY", "NIN", "TELL", "WORKED_PER_WEEK", "WORK_TYPE", "PAYMENT_TYPE", "SALARY_LEVEL"}
+        'Dim column As String = String.Join(",", )
+
+        Try
+            Dim connection As New OracleConnection(Connect())
+            connection.Open()
+            Dim sql As String = $"INSERT INTO STAFF ({String.Join(",", col)}) VALUES ({String.Join(",", data)})"
+            Console.WriteLine(sql)
+            Dim cmd As New OracleCommand(sql, connection)
+            cmd.ExecuteNonQuery()
+
+            connection.Close()
+            Return 1
+        Catch ex As OracleException When ex.Number = 1 AndAlso ex.Message.Contains("PATIENTS_UK1")
+            ' จัดการกับข้อผิดพลาดที่เกิดจาก unique constraint violation
+            MessageBox.Show("cid is already exist")
+
+        Catch ex As Exception
+            ' จัดการข้อผิดพลาดที่เกิดขึ้น
+            MessageBox.Show("เกิดข้อผิดพลาดในการเชื่อมต่อกับฐานข้อมูล: " & ex.Message)
+            Return 0
+        End Try
+
+    End Function
 End Module
