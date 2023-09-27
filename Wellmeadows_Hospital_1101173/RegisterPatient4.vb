@@ -53,4 +53,20 @@
     Private Sub Back_Click(sender As Object, e As EventArgs) Handles Back.Click
         Pagecontroller.BackPage(Me)
     End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Private Sub Label23_Click(sender As Object, e As EventArgs) Handles Label23.Click
+
+    End Sub
+
+    Private Sub Label15_Click(sender As Object, e As EventArgs) Handles Label15.Click
+
+    End Sub
+
+    Private Sub Label28_Click(sender As Object, e As EventArgs) Handles Label28.Click
+
+    End Sub
 End Class

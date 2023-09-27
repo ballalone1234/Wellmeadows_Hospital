@@ -39,10 +39,10 @@ Partial Class RegisterPatient3
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.ptno = New System.Windows.Forms.TextBox()
+        Me.tel = New System.Windows.Forms.TextBox()
+        Me.relationship = New System.Windows.Forms.TextBox()
+        Me.address = New System.Windows.Forms.TextBox()
+        Me.kinname = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Back = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
@@ -148,7 +148,7 @@ Partial Class RegisterPatient3
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 409.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 410.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label8, 1, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.Label7, 2, 2)
@@ -157,10 +157,10 @@ Partial Class RegisterPatient3
         Me.TableLayoutPanel2.Controls.Add(Me.Label4, 1, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label3, 2, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label2, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.TextBox5, 2, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.TextBox2, 2, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.TextBox3, 0, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.ptno, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.tel, 2, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.relationship, 2, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.address, 0, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.kinname, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 143)
@@ -180,7 +180,7 @@ Partial Class RegisterPatient3
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(444, 154)
+        Me.Label10.Location = New System.Drawing.Point(443, 154)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(2, 21)
         Me.Label10.TabIndex = 25
@@ -191,7 +191,7 @@ Partial Class RegisterPatient3
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(444, 95)
+        Me.Label8.Location = New System.Drawing.Point(443, 95)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(2, 23)
         Me.Label8.TabIndex = 23
@@ -202,7 +202,7 @@ Partial Class RegisterPatient3
         '
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(452, 76)
+        Me.Label7.Location = New System.Drawing.Point(451, 76)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(141, 19)
         Me.Label7.TabIndex = 22
@@ -213,7 +213,7 @@ Partial Class RegisterPatient3
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(444, 76)
+        Me.Label6.Location = New System.Drawing.Point(443, 76)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(2, 19)
         Me.Label6.TabIndex = 21
@@ -235,7 +235,7 @@ Partial Class RegisterPatient3
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(444, 19)
+        Me.Label4.Location = New System.Drawing.Point(443, 19)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(2, 23)
         Me.Label4.TabIndex = 19
@@ -246,67 +246,67 @@ Partial Class RegisterPatient3
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(452, 0)
+        Me.Label3.Location = New System.Drawing.Point(451, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(202, 19)
         Me.Label3.TabIndex = 18
-        Me.Label3.Text = "Relatioship"
+        Me.Label3.Text = "Relationship"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(444, 0)
+        Me.Label2.Location = New System.Drawing.Point(443, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(2, 19)
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "Patients No"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'TextBox5
+        'tel
         '
-        Me.TextBox5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox5.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox5.Location = New System.Drawing.Point(510, 100)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(287, 48)
-        Me.TextBox5.TabIndex = 10
+        Me.tel.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.tel.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.tel.Location = New System.Drawing.Point(510, 100)
+        Me.tel.Margin = New System.Windows.Forms.Padding(2)
+        Me.tel.Multiline = True
+        Me.tel.Name = "tel"
+        Me.tel.Size = New System.Drawing.Size(287, 48)
+        Me.tel.TabIndex = 10
         '
-        'TextBox2
+        'relationship
         '
-        Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox2.Location = New System.Drawing.Point(510, 25)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(287, 45)
-        Me.TextBox2.TabIndex = 7
+        Me.relationship.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.relationship.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.relationship.Location = New System.Drawing.Point(510, 25)
+        Me.relationship.Margin = New System.Windows.Forms.Padding(2)
+        Me.relationship.Multiline = True
+        Me.relationship.Name = "relationship"
+        Me.relationship.Size = New System.Drawing.Size(287, 45)
+        Me.relationship.TabIndex = 7
         '
-        'TextBox3
+        'address
         '
-        Me.TextBox3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox3.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox3.Location = New System.Drawing.Point(77, 100)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(287, 48)
-        Me.TextBox3.TabIndex = 8
+        Me.address.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.address.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.address.Location = New System.Drawing.Point(76, 100)
+        Me.address.Margin = New System.Windows.Forms.Padding(2)
+        Me.address.Multiline = True
+        Me.address.Name = "address"
+        Me.address.Size = New System.Drawing.Size(287, 48)
+        Me.address.TabIndex = 8
         '
-        'ptno
+        'kinname
         '
-        Me.ptno.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ptno.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ptno.Location = New System.Drawing.Point(77, 25)
-        Me.ptno.Margin = New System.Windows.Forms.Padding(2)
-        Me.ptno.Multiline = True
-        Me.ptno.Name = "ptno"
-        Me.ptno.Size = New System.Drawing.Size(287, 45)
-        Me.ptno.TabIndex = 5
+        Me.kinname.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.kinname.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.kinname.Location = New System.Drawing.Point(76, 25)
+        Me.kinname.Margin = New System.Windows.Forms.Padding(2)
+        Me.kinname.Multiline = True
+        Me.kinname.Name = "kinname"
+        Me.kinname.Size = New System.Drawing.Size(287, 45)
+        Me.kinname.TabIndex = 5
         '
         'Label1
         '
@@ -374,10 +374,10 @@ Partial Class RegisterPatient3
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents SumitButton As Button
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents ptno As TextBox
+    Friend WithEvents tel As TextBox
+    Friend WithEvents address As TextBox
+    Friend WithEvents relationship As TextBox
+    Friend WithEvents kinname As TextBox
     Friend WithEvents Back As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label10 As Label
