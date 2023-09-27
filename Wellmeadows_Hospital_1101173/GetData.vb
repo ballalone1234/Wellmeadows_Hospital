@@ -3,23 +3,28 @@ Imports Oracle.ManagedDataAccess.Client
 
 Module GetData
     Dim textBoxArray As New List(Of String)()
-
-
-    Public Function RegisterPatient(ByVal data As String) As Int32
-
+    Dim dataAdd As New List(Of String)()
+    Public Function SavePatient(ByVal data As List(Of String))
+        dataAdd = data
+    End Function
+    Public Function SaveDc(ByVal data As String)
+        dataAdd.Add(data)
+    End Function
+    Public Function RegisPatient(ByVal data As String) As Int32
+        Dim col() As String = {"PATIENT_NUM", "PATIENT_NAME", "MARITAL_STATUS", "DATE_REGIST", "DOB", "TELEPHONE", "CID", "ADDRESS", "ML_NO"}
         'Dim column As String = String.Join(",", )
 
         Try
             Dim connection As New OracleConnection(Connect())
             connection.Open()
-            Dim sql As String = $"INSERT INTO PATIENTT ({GetColumn("PATIENTT")}) VALUES ({String.Join(",", data)})"
+            Dim sql As String = $"INSERT INTO PATIENTS ({String.Join(",", col)}) VALUES ({String.Join(",", data)})"
             Console.WriteLine(sql)
             Dim cmd As New OracleCommand(sql, connection)
             cmd.ExecuteNonQuery()
-            MessageBox.Show("Register success")
+
             connection.Close()
             Return 1
-        Catch ex As OracleException When ex.Number = 1 AndAlso ex.Message.Contains("UNI_PATIENTT")
+        Catch ex As OracleException When ex.Number = 1 AndAlso ex.Message.Contains("PATIENTS_UK1")
             ' จัดการกับข้อผิดพลาดที่เกิดจาก unique constraint violation
             MessageBox.Show("cid is already exist")
 
