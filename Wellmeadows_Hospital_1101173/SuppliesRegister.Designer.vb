@@ -31,6 +31,9 @@ Partial Class SuppliesRegister
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.suppliesreg = New System.Windows.Forms.Button()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.methodofadmin = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -40,27 +43,24 @@ Partial Class SuppliesRegister
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.ptno = New System.Windows.Forms.TextBox()
+        Me.suppliernum = New System.Windows.Forms.TextBox()
+        Me.costperunit = New System.Windows.Forms.TextBox()
+        Me.description = New System.Windows.Forms.TextBox()
+        Me.itemname = New System.Windows.Forms.TextBox()
+        Me.itemno = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Back = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.dosage = New System.Windows.Forms.TextBox()
+        Me.Back = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -158,7 +158,7 @@ Partial Class SuppliesRegister
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 409.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 410.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Panel4, 2, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.Label11, 2, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 4)
@@ -169,11 +169,11 @@ Partial Class SuppliesRegister
         Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.Label4, 1, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label2, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.TextBox6, 0, 5)
-        Me.TableLayoutPanel2.Controls.Add(Me.TextBox8, 2, 5)
-        Me.TableLayoutPanel2.Controls.Add(Me.TextBox5, 2, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.TextBox3, 0, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.ptno, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.suppliernum, 0, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.costperunit, 2, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.description, 2, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.itemname, 0, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.itemno, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel3, 0, 6)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
@@ -190,11 +190,42 @@ Partial Class SuppliesRegister
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(859, 376)
         Me.TableLayoutPanel2.TabIndex = 9
         '
+        'Panel4
+        '
+        Me.Panel4.Controls.Add(Me.Label12)
+        Me.Panel4.Controls.Add(Me.methodofadmin)
+        Me.Panel4.Location = New System.Drawing.Point(451, 235)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(404, 138)
+        Me.Panel4.TabIndex = 28
+        '
+        'Label12
+        '
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(3, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(342, 21)
+        Me.Label12.TabIndex = 25
+        Me.Label12.Text = "Method of Admin (Drugs Only)"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'methodofadmin
+        '
+        Me.methodofadmin.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.methodofadmin.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.methodofadmin.Location = New System.Drawing.Point(59, 23)
+        Me.methodofadmin.Margin = New System.Windows.Forms.Padding(2)
+        Me.methodofadmin.Multiline = True
+        Me.methodofadmin.Name = "methodofadmin"
+        Me.methodofadmin.Size = New System.Drawing.Size(287, 48)
+        Me.methodofadmin.TabIndex = 12
+        '
         'Label11
         '
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(452, 154)
+        Me.Label11.Location = New System.Drawing.Point(451, 154)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(219, 21)
         Me.Label11.TabIndex = 26
@@ -205,7 +236,7 @@ Partial Class SuppliesRegister
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(444, 154)
+        Me.Label10.Location = New System.Drawing.Point(443, 154)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(2, 21)
         Me.Label10.TabIndex = 25
@@ -227,7 +258,7 @@ Partial Class SuppliesRegister
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(444, 95)
+        Me.Label8.Location = New System.Drawing.Point(443, 95)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(2, 23)
         Me.Label8.TabIndex = 23
@@ -238,7 +269,7 @@ Partial Class SuppliesRegister
         '
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(452, 76)
+        Me.Label7.Location = New System.Drawing.Point(451, 76)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(204, 19)
         Me.Label7.TabIndex = 22
@@ -249,7 +280,7 @@ Partial Class SuppliesRegister
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(444, 76)
+        Me.Label6.Location = New System.Drawing.Point(443, 76)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(2, 19)
         Me.Label6.TabIndex = 21
@@ -271,7 +302,7 @@ Partial Class SuppliesRegister
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(444, 19)
+        Me.Label4.Location = New System.Drawing.Point(443, 19)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(2, 23)
         Me.Label4.TabIndex = 19
@@ -282,67 +313,67 @@ Partial Class SuppliesRegister
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(444, 0)
+        Me.Label2.Location = New System.Drawing.Point(443, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(2, 19)
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "Patients No"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'TextBox6
+        'suppliernum
         '
-        Me.TextBox6.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox6.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox6.Location = New System.Drawing.Point(77, 179)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox6.Multiline = True
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(287, 48)
-        Me.TextBox6.TabIndex = 11
+        Me.suppliernum.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.suppliernum.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.suppliernum.Location = New System.Drawing.Point(76, 179)
+        Me.suppliernum.Margin = New System.Windows.Forms.Padding(2)
+        Me.suppliernum.Multiline = True
+        Me.suppliernum.Name = "suppliernum"
+        Me.suppliernum.Size = New System.Drawing.Size(287, 48)
+        Me.suppliernum.TabIndex = 11
         '
-        'TextBox8
+        'costperunit
         '
-        Me.TextBox8.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox8.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox8.Location = New System.Drawing.Point(510, 179)
-        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox8.Multiline = True
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(287, 48)
-        Me.TextBox8.TabIndex = 15
+        Me.costperunit.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.costperunit.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.costperunit.Location = New System.Drawing.Point(510, 179)
+        Me.costperunit.Margin = New System.Windows.Forms.Padding(2)
+        Me.costperunit.Multiline = True
+        Me.costperunit.Name = "costperunit"
+        Me.costperunit.Size = New System.Drawing.Size(287, 48)
+        Me.costperunit.TabIndex = 15
         '
-        'TextBox5
+        'description
         '
-        Me.TextBox5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox5.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox5.Location = New System.Drawing.Point(510, 100)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(287, 48)
-        Me.TextBox5.TabIndex = 10
+        Me.description.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.description.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.description.Location = New System.Drawing.Point(510, 100)
+        Me.description.Margin = New System.Windows.Forms.Padding(2)
+        Me.description.Multiline = True
+        Me.description.Name = "description"
+        Me.description.Size = New System.Drawing.Size(287, 48)
+        Me.description.TabIndex = 10
         '
-        'TextBox3
+        'itemname
         '
-        Me.TextBox3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox3.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox3.Location = New System.Drawing.Point(77, 100)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(287, 48)
-        Me.TextBox3.TabIndex = 8
+        Me.itemname.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.itemname.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.itemname.Location = New System.Drawing.Point(76, 100)
+        Me.itemname.Margin = New System.Windows.Forms.Padding(2)
+        Me.itemname.Multiline = True
+        Me.itemname.Name = "itemname"
+        Me.itemname.Size = New System.Drawing.Size(287, 48)
+        Me.itemname.TabIndex = 8
         '
-        'ptno
+        'itemno
         '
-        Me.ptno.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ptno.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ptno.Location = New System.Drawing.Point(77, 25)
-        Me.ptno.Margin = New System.Windows.Forms.Padding(2)
-        Me.ptno.Multiline = True
-        Me.ptno.Name = "ptno"
-        Me.ptno.Size = New System.Drawing.Size(287, 45)
-        Me.ptno.TabIndex = 5
+        Me.itemno.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.itemno.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.itemno.Location = New System.Drawing.Point(76, 25)
+        Me.itemno.Margin = New System.Windows.Forms.Padding(2)
+        Me.itemno.Multiline = True
+        Me.itemno.Name = "itemno"
+        Me.itemno.Size = New System.Drawing.Size(287, 45)
+        Me.itemno.TabIndex = 5
         '
         'Label1
         '
@@ -354,6 +385,37 @@ Partial Class SuppliesRegister
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "Item/Drug No."
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.Label3)
+        Me.Panel3.Controls.Add(Me.dosage)
+        Me.Panel3.Location = New System.Drawing.Point(3, 235)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(434, 138)
+        Me.Panel3.TabIndex = 27
+        '
+        'Label3
+        '
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(3, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(300, 21)
+        Me.Label3.TabIndex = 25
+        Me.Label3.Text = "Dosage (Drugs Only)"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'dosage
+        '
+        Me.dosage.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.dosage.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.dosage.Location = New System.Drawing.Point(74, 23)
+        Me.dosage.Margin = New System.Windows.Forms.Padding(2)
+        Me.dosage.Multiline = True
+        Me.dosage.Name = "dosage"
+        Me.dosage.Size = New System.Drawing.Size(287, 48)
+        Me.dosage.TabIndex = 12
         '
         'Back
         '
@@ -369,68 +431,6 @@ Partial Class SuppliesRegister
         Me.Back.Size = New System.Drawing.Size(33, 42)
         Me.Back.TabIndex = 10
         Me.Back.UseVisualStyleBackColor = False
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.Label3)
-        Me.Panel3.Controls.Add(Me.TextBox1)
-        Me.Panel3.Location = New System.Drawing.Point(3, 235)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(435, 138)
-        Me.Panel3.TabIndex = 27
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox1.Location = New System.Drawing.Point(74, 23)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(287, 48)
-        Me.TextBox1.TabIndex = 12
-        '
-        'Label3
-        '
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(3, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(300, 21)
-        Me.Label3.TabIndex = 25
-        Me.Label3.Text = "Dosage (Drugs Only)"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Panel4
-        '
-        Me.Panel4.Controls.Add(Me.Label12)
-        Me.Panel4.Controls.Add(Me.TextBox2)
-        Me.Panel4.Location = New System.Drawing.Point(452, 235)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(404, 138)
-        Me.Panel4.TabIndex = 28
-        '
-        'Label12
-        '
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(3, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(342, 21)
-        Me.Label12.TabIndex = 25
-        Me.Label12.Text = "Method of Admin (Drugs Only)"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox2.Location = New System.Drawing.Point(59, 23)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(287, 48)
-        Me.TextBox2.TabIndex = 12
         '
         'SuppliesRegister
         '
@@ -451,10 +451,10 @@ Partial Class SuppliesRegister
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -475,11 +475,11 @@ Partial Class SuppliesRegister
     Friend WithEvents Home As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents ptno As TextBox
+    Friend WithEvents costperunit As TextBox
+    Friend WithEvents suppliernum As TextBox
+    Friend WithEvents description As TextBox
+    Friend WithEvents itemname As TextBox
+    Friend WithEvents itemno As TextBox
     Friend WithEvents Back As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label11 As Label
@@ -494,8 +494,8 @@ Partial Class SuppliesRegister
     Friend WithEvents suppliesreg As Button
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Label12 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents methodofadmin As TextBox
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents dosage As TextBox
 End Class

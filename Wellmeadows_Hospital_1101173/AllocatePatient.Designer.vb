@@ -35,7 +35,7 @@ Partial Class AllocatePatient
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.DateTimePicker5 = New System.Windows.Forms.DateTimePicker()
+        Me.actualleave = New System.Windows.Forms.DateTimePicker()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -45,21 +45,21 @@ Partial Class AllocatePatient
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.ptno = New System.Windows.Forms.TextBox()
+        Me.wardno = New System.Windows.Forms.TextBox()
+        Me.patientno = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
-        Me.ListBox2 = New System.Windows.Forms.ListBox()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.dateleave = New System.Windows.Forms.DateTimePicker()
+        Me.dateplace = New System.Windows.Forms.DateTimePicker()
+        Me.expectedstay = New System.Windows.Forms.ListBox()
+        Me.waitingdate = New System.Windows.Forms.DateTimePicker()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.ListBox3 = New System.Windows.Forms.ListBox()
+        Me.bednum = New System.Windows.Forms.ListBox()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Back = New System.Windows.Forms.Button()
         Me.Summit2Button = New System.Windows.Forms.Button()
         Me.OracleCommandBuilder1 = New Oracle.ManagedDataAccess.Client.OracleCommandBuilder()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -150,13 +150,13 @@ Partial Class AllocatePatient
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 413.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 414.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label7, 0, 8)
         Me.TableLayoutPanel2.Controls.Add(Me.Label16, 2, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.Label15, 1, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.Label14, 0, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.Label13, 1, 5)
-        Me.TableLayoutPanel2.Controls.Add(Me.DateTimePicker5, 2, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.actualleave, 2, 5)
         Me.TableLayoutPanel2.Controls.Add(Me.Label12, 2, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label11, 0, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 4)
@@ -166,15 +166,15 @@ Partial Class AllocatePatient
         Me.TableLayoutPanel2.Controls.Add(Me.Label4, 1, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label3, 2, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label2, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.TextBox2, 2, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.ptno, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.wardno, 2, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.patientno, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label1, 0, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.DateTimePicker1, 0, 5)
-        Me.TableLayoutPanel2.Controls.Add(Me.DateTimePicker3, 0, 7)
-        Me.TableLayoutPanel2.Controls.Add(Me.ListBox2, 2, 7)
-        Me.TableLayoutPanel2.Controls.Add(Me.DateTimePicker2, 0, 9)
+        Me.TableLayoutPanel2.Controls.Add(Me.dateleave, 0, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.dateplace, 0, 7)
+        Me.TableLayoutPanel2.Controls.Add(Me.expectedstay, 2, 7)
+        Me.TableLayoutPanel2.Controls.Add(Me.waitingdate, 0, 9)
         Me.TableLayoutPanel2.Controls.Add(Me.Label9, 2, 8)
-        Me.TableLayoutPanel2.Controls.Add(Me.ListBox3, 2, 9)
+        Me.TableLayoutPanel2.Controls.Add(Me.bednum, 2, 9)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel3, 0, 3)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 147)
@@ -209,7 +209,7 @@ Partial Class AllocatePatient
         '
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(448, 186)
+        Me.Label16.Location = New System.Drawing.Point(447, 186)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(226, 19)
         Me.Label16.TabIndex = 43
@@ -220,7 +220,7 @@ Partial Class AllocatePatient
         '
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(440, 186)
+        Me.Label15.Location = New System.Drawing.Point(439, 186)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(2, 19)
         Me.Label15.TabIndex = 42
@@ -242,28 +242,28 @@ Partial Class AllocatePatient
         '
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(440, 142)
+        Me.Label13.Location = New System.Drawing.Point(439, 142)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(2, 19)
         Me.Label13.TabIndex = 40
         Me.Label13.Text = "Actual Leave"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'DateTimePicker5
+        'actualleave
         '
-        Me.DateTimePicker5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.DateTimePicker5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.DateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker5.Location = New System.Drawing.Point(507, 149)
-        Me.DateTimePicker5.Name = "DateTimePicker5"
-        Me.DateTimePicker5.Size = New System.Drawing.Size(290, 29)
-        Me.DateTimePicker5.TabIndex = 37
+        Me.actualleave.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.actualleave.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.actualleave.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.actualleave.Location = New System.Drawing.Point(506, 149)
+        Me.actualleave.Name = "actualleave"
+        Me.actualleave.Size = New System.Drawing.Size(290, 29)
+        Me.actualleave.TabIndex = 37
         '
         'Label12
         '
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(448, 118)
+        Me.Label12.Location = New System.Drawing.Point(447, 118)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(216, 18)
         Me.Label12.TabIndex = 33
@@ -285,7 +285,7 @@ Partial Class AllocatePatient
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(440, 118)
+        Me.Label10.Location = New System.Drawing.Point(439, 118)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(2, 18)
         Me.Label10.TabIndex = 25
@@ -296,7 +296,7 @@ Partial Class AllocatePatient
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(440, 78)
+        Me.Label8.Location = New System.Drawing.Point(439, 78)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(2, 23)
         Me.Label8.TabIndex = 23
@@ -307,7 +307,7 @@ Partial Class AllocatePatient
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(440, 59)
+        Me.Label6.Location = New System.Drawing.Point(439, 59)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(2, 19)
         Me.Label6.TabIndex = 21
@@ -329,7 +329,7 @@ Partial Class AllocatePatient
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(440, 21)
+        Me.Label4.Location = New System.Drawing.Point(439, 21)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(2, 23)
         Me.Label4.TabIndex = 19
@@ -340,7 +340,7 @@ Partial Class AllocatePatient
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(448, 0)
+        Me.Label3.Location = New System.Drawing.Point(447, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(186, 16)
         Me.Label3.TabIndex = 18
@@ -351,34 +351,34 @@ Partial Class AllocatePatient
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(440, 0)
+        Me.Label2.Location = New System.Drawing.Point(439, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(2, 16)
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "Patients No"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'TextBox2
+        'wardno
         '
-        Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox2.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox2.Location = New System.Drawing.Point(508, 25)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(287, 30)
-        Me.TextBox2.TabIndex = 7
+        Me.wardno.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.wardno.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.wardno.Location = New System.Drawing.Point(508, 25)
+        Me.wardno.Margin = New System.Windows.Forms.Padding(2)
+        Me.wardno.Multiline = True
+        Me.wardno.Name = "wardno"
+        Me.wardno.Size = New System.Drawing.Size(287, 30)
+        Me.wardno.TabIndex = 7
         '
-        'ptno
+        'patientno
         '
-        Me.ptno.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ptno.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ptno.Location = New System.Drawing.Point(75, 25)
-        Me.ptno.Margin = New System.Windows.Forms.Padding(2)
-        Me.ptno.Multiline = True
-        Me.ptno.Name = "ptno"
-        Me.ptno.Size = New System.Drawing.Size(287, 30)
-        Me.ptno.TabIndex = 5
+        Me.patientno.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.patientno.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.patientno.Location = New System.Drawing.Point(74, 25)
+        Me.patientno.Margin = New System.Windows.Forms.Padding(2)
+        Me.patientno.Multiline = True
+        Me.patientno.Name = "patientno"
+        Me.patientno.Size = New System.Drawing.Size(287, 30)
+        Me.patientno.TabIndex = 5
         '
         'Label1
         '
@@ -388,69 +388,104 @@ Partial Class AllocatePatient
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(236, 16)
         Me.Label1.TabIndex = 16
-        Me.Label1.Text = "Patients No"
+        Me.Label1.Text = "Patient No"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'DateTimePicker1
+        'dateleave
         '
-        Me.DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(73, 149)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(290, 29)
-        Me.DateTimePicker1.TabIndex = 26
+        Me.dateleave.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.dateleave.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.dateleave.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dateleave.Location = New System.Drawing.Point(73, 149)
+        Me.dateleave.Name = "dateleave"
+        Me.dateleave.Size = New System.Drawing.Size(290, 29)
+        Me.dateleave.TabIndex = 26
         '
-        'DateTimePicker3
+        'dateplace
         '
-        Me.DateTimePicker3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.DateTimePicker3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.DateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker3.Location = New System.Drawing.Point(73, 213)
-        Me.DateTimePicker3.Name = "DateTimePicker3"
-        Me.DateTimePicker3.Size = New System.Drawing.Size(290, 29)
-        Me.DateTimePicker3.TabIndex = 45
+        Me.dateplace.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.dateplace.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.dateplace.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dateplace.Location = New System.Drawing.Point(73, 213)
+        Me.dateplace.Name = "dateplace"
+        Me.dateplace.Size = New System.Drawing.Size(290, 29)
+        Me.dateplace.TabIndex = 45
         '
-        'ListBox2
+        'expectedstay
         '
-        Me.ListBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ListBox2.FormattingEnabled = True
-        Me.ListBox2.Items.AddRange(New Object() {""})
-        Me.ListBox2.Location = New System.Drawing.Point(507, 212)
-        Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(290, 30)
-        Me.ListBox2.TabIndex = 46
+        Me.expectedstay.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.expectedstay.FormattingEnabled = True
+        Me.expectedstay.Items.AddRange(New Object() {""})
+        Me.expectedstay.Location = New System.Drawing.Point(506, 212)
+        Me.expectedstay.Name = "expectedstay"
+        Me.expectedstay.Size = New System.Drawing.Size(290, 30)
+        Me.expectedstay.TabIndex = 46
         '
-        'DateTimePicker2
+        'waitingdate
         '
-        Me.DateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.DateTimePicker2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker2.Location = New System.Drawing.Point(73, 282)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(290, 29)
-        Me.DateTimePicker2.TabIndex = 48
+        Me.waitingdate.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.waitingdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.waitingdate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.waitingdate.Location = New System.Drawing.Point(73, 282)
+        Me.waitingdate.Name = "waitingdate"
+        Me.waitingdate.Size = New System.Drawing.Size(290, 29)
+        Me.waitingdate.TabIndex = 48
         '
         'Label9
         '
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(448, 249)
+        Me.Label9.Location = New System.Drawing.Point(447, 249)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(186, 22)
         Me.Label9.TabIndex = 49
         Me.Label9.Text = "Bed num"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'ListBox3
+        'bednum
         '
-        Me.ListBox3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ListBox3.FormattingEnabled = True
-        Me.ListBox3.Items.AddRange(New Object() {""})
-        Me.ListBox3.Location = New System.Drawing.Point(507, 281)
-        Me.ListBox3.Name = "ListBox3"
-        Me.ListBox3.Size = New System.Drawing.Size(290, 30)
-        Me.ListBox3.TabIndex = 50
+        Me.bednum.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.bednum.FormattingEnabled = True
+        Me.bednum.Items.AddRange(New Object() {""})
+        Me.bednum.Location = New System.Drawing.Point(506, 281)
+        Me.bednum.Name = "bednum"
+        Me.bednum.Size = New System.Drawing.Size(290, 30)
+        Me.bednum.TabIndex = 50
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.RadioButton2)
+        Me.Panel3.Controls.Add(Me.RadioButton1)
+        Me.Panel3.Location = New System.Drawing.Point(3, 81)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(430, 34)
+        Me.Panel3.TabIndex = 51
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
+        Me.RadioButton2.ForeColor = System.Drawing.Color.White
+        Me.RadioButton2.Location = New System.Drawing.Point(215, 3)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(126, 24)
+        Me.RadioButton2.TabIndex = 1
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "OUTPATIENT"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
+        Me.RadioButton1.ForeColor = System.Drawing.Color.White
+        Me.RadioButton1.Location = New System.Drawing.Point(70, 3)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(109, 24)
+        Me.RadioButton1.TabIndex = 0
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "INPATIENT"
+        Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'Back
         '
@@ -486,41 +521,6 @@ Partial Class AllocatePatient
         '
         Me.OracleCommandBuilder1.CatalogLocation = System.Data.Common.CatalogLocation.[End]
         Me.OracleCommandBuilder1.CatalogSeparator = "@"
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.RadioButton2)
-        Me.Panel3.Controls.Add(Me.RadioButton1)
-        Me.Panel3.Location = New System.Drawing.Point(3, 81)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(431, 34)
-        Me.Panel3.TabIndex = 51
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
-        Me.RadioButton1.ForeColor = System.Drawing.Color.White
-        Me.RadioButton1.Location = New System.Drawing.Point(70, 3)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(109, 24)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "INPATIENT"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
-        Me.RadioButton2.ForeColor = System.Drawing.Color.White
-        Me.RadioButton2.Location = New System.Drawing.Point(215, 3)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(126, 24)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "OUTPATIENT"
-        Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'AllocatePatient
         '
@@ -563,7 +563,7 @@ Partial Class AllocatePatient
     Friend WithEvents Home As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents ptno As TextBox
+    Friend WithEvents patientno As TextBox
     Friend WithEvents Back As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label10 As Label
@@ -572,22 +572,22 @@ Partial Class AllocatePatient
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents dateleave As DateTimePicker
     Friend WithEvents Label11 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents DateTimePicker3 As DateTimePicker
+    Friend WithEvents dateplace As DateTimePicker
     Friend WithEvents Label16 As Label
-    Friend WithEvents DateTimePicker5 As DateTimePicker
+    Friend WithEvents actualleave As DateTimePicker
     Friend WithEvents Label12 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents ListBox2 As ListBox
-    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents wardno As TextBox
+    Friend WithEvents expectedstay As ListBox
+    Friend WithEvents waitingdate As DateTimePicker
     Friend WithEvents Label9 As Label
-    Friend WithEvents ListBox3 As ListBox
+    Friend WithEvents bednum As ListBox
     Friend WithEvents Summit2Button As Button
     Friend WithEvents OracleCommandBuilder1 As Oracle.ManagedDataAccess.Client.OracleCommandBuilder
     Friend WithEvents Panel3 As Panel
