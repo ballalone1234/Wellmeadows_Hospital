@@ -1,4 +1,6 @@
-﻿Public Class RegisterPatient3
+﻿Imports Oracle.ManagedDataAccess.Client
+
+Public Class RegisterPatient3
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
@@ -25,4 +27,5 @@
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
     End Sub
+
 End Class

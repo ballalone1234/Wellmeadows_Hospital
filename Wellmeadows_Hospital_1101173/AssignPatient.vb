@@ -24,6 +24,7 @@
     End Sub
 
     Private Sub assignbtn_Click(sender As Object, e As EventArgs) Handles assignbtn.Click
+        RegisterPatient4.pid = patientno.Text
         Pagecontroller.NextPage(Me, RegisterPatient4)
     End Sub
 
