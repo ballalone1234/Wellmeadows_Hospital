@@ -235,6 +235,7 @@ Partial Class MainMenu
     Friend WithEvents stafficon As Button
 
     Private Sub stafficon_Click(sender As Object, e As EventArgs) Handles stafficon.Click
+        Pagecontroller.NextPage(Me, StaffMenu)
 
     End Sub
     Friend WithEvents requisionicon As Button

@@ -29,7 +29,6 @@ Partial Class RegisterPatient
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.NextButton = New System.Windows.Forms.Button()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -445,7 +444,6 @@ Partial Class RegisterPatient
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Home As Button
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents NextButton As Button
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents tel As TextBox
     Friend WithEvents bd As TextBox
@@ -465,4 +463,5 @@ Partial Class RegisterPatient
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents NextButton As Button
 End Class
