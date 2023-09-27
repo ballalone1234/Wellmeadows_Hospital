@@ -106,6 +106,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SupplierRegister.Designer.vb">
+      <DependentUpon>SupplierRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppliesSearch.Designer.vb">
+      <DependentUpon>SuppliesSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuppliesSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SuppliesRegister.Designer.vb">
       <DependentUpon>SuppliesRegister.vb</DependentUpon>
     </Compile>
@@ -148,8 +160,8 @@
     <Compile Include="StaffMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-	  <Compile Include="GetData.vb" />
-	  <Compile Include="OC.vb" />
+    <Compile Include="GetData.vb" />
+    <Compile Include="OC.vb" />
     <Compile Include="WaitingListPatient.Designer.vb">
       <DependentUpon>WaitingListPatient.vb</DependentUpon>
     </Compile>
@@ -252,6 +264,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="SupplierRegister.resx">
+      <DependentUpon>SupplierRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppliesSearch.resx">
+      <DependentUpon>SuppliesSearch.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SuppliesRegister.resx">
       <DependentUpon>SuppliesRegister.vb</DependentUpon>
     </EmbeddedResource>

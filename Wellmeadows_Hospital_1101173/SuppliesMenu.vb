@@ -4,7 +4,7 @@
     End Sub
 
     Private Sub registerpt_Click(sender As Object, e As EventArgs) Handles suppliesreg.Click
-        Pagecontroller.NextPage(Me, StaffRegister)
+        Pagecontroller.NextPage(Me, SuppliesRegister)
     End Sub
 
     Private Sub Home_Click(sender As Object, e As EventArgs) Handles Home.Click
@@ -26,8 +26,8 @@
         Pagecontroller.NextPage(Me, PrescribeMenu)
     End Sub
 
-    Private Sub stafflistbtn_Click(sender As Object, e As EventArgs) Handles suppliessrc.Click
-        Pagecontroller.NextPage(Me, StaffList)
+    Private Sub suppliessrc_Click(sender As Object, e As EventArgs) Handles suppliessrc.Click
+        Pagecontroller.NextPage(Me, SuppliesSearch)
     End Sub
 
     Private Sub listpt_Click(sender As Object, e As EventArgs)

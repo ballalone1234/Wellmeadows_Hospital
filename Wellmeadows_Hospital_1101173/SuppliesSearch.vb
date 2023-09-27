@@ -1,4 +1,4 @@
-﻿Public Class SuppliesRegister
+﻿Public Class SuppliesSearch
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
@@ -15,11 +15,15 @@
         Pagecontroller.BackPage(Me)
     End Sub
 
-    Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles suppliesreg.Click
+    Private Sub NextButton_Click(sender As Object, e As EventArgs) 
         Pagecontroller.NextPage(Me, RegisterPatient2)
     End Sub
 
     Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles TextBox6.TextChanged
 
     End Sub
 End Class
