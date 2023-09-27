@@ -1,9 +1,9 @@
-﻿Public Class StaffMenu
+﻿Public Class SuppliesMenu
     Private Sub PatientMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
-    Private Sub registerpt_Click(sender As Object, e As EventArgs) Handles registerstaff.Click
+    Private Sub registerpt_Click(sender As Object, e As EventArgs) Handles suppliesreg.Click
         Pagecontroller.NextPage(Me, StaffRegister)
     End Sub
 
@@ -26,7 +26,7 @@
         Pagecontroller.NextPage(Me, PrescribeMenu)
     End Sub
 
-    Private Sub stafflistbtn_Click(sender As Object, e As EventArgs) Handles stafflistbtn.Click
+    Private Sub stafflistbtn_Click(sender As Object, e As EventArgs) Handles suppliessrc.Click
         Pagecontroller.NextPage(Me, StaffList)
     End Sub
 
