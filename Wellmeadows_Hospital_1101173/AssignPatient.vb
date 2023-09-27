@@ -27,7 +27,7 @@
         Pagecontroller.NextPage(Me, RegisterPatient4)
     End Sub
 
-    Private Sub ptno_TextChanged(sender As Object, e As EventArgs) Handles ptno.TextChanged
+    Private Sub ptno_TextChanged(sender As Object, e As EventArgs) Handles patientno.TextChanged
 
     End Sub
 End Class

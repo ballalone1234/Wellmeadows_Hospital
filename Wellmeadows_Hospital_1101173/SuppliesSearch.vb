@@ -23,7 +23,7 @@
 
     End Sub
 
-    Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles TextBox6.TextChanged
+    Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs) Handles suppliernum.TextChanged
 
     End Sub
 End Class

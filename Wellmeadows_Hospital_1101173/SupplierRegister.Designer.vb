@@ -40,11 +40,11 @@ Partial Class SupplierRegister
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.ptno = New System.Windows.Forms.TextBox()
+        Me.supplierfax = New System.Windows.Forms.TextBox()
+        Me.supplieraddress = New System.Windows.Forms.TextBox()
+        Me.suppliertel = New System.Windows.Forms.TextBox()
+        Me.suppliername = New System.Windows.Forms.TextBox()
+        Me.supplierno = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Back = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
@@ -150,7 +150,7 @@ Partial Class SupplierRegister
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 409.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 410.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label11, 2, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label9, 0, 4)
@@ -160,11 +160,11 @@ Partial Class SupplierRegister
         Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.Label4, 1, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label2, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.TextBox6, 0, 5)
-        Me.TableLayoutPanel2.Controls.Add(Me.TextBox8, 2, 5)
-        Me.TableLayoutPanel2.Controls.Add(Me.TextBox5, 2, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.TextBox3, 0, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.ptno, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.supplierfax, 0, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.supplieraddress, 2, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.suppliertel, 2, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.suppliername, 0, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.supplierno, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 143)
@@ -184,7 +184,7 @@ Partial Class SupplierRegister
         '
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(452, 154)
+        Me.Label11.Location = New System.Drawing.Point(451, 154)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(245, 21)
         Me.Label11.TabIndex = 26
@@ -195,7 +195,7 @@ Partial Class SupplierRegister
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(444, 154)
+        Me.Label10.Location = New System.Drawing.Point(443, 154)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(2, 21)
         Me.Label10.TabIndex = 25
@@ -217,7 +217,7 @@ Partial Class SupplierRegister
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(444, 95)
+        Me.Label8.Location = New System.Drawing.Point(443, 95)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(2, 23)
         Me.Label8.TabIndex = 23
@@ -228,7 +228,7 @@ Partial Class SupplierRegister
         '
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(452, 76)
+        Me.Label7.Location = New System.Drawing.Point(451, 76)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(206, 19)
         Me.Label7.TabIndex = 22
@@ -239,7 +239,7 @@ Partial Class SupplierRegister
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(444, 76)
+        Me.Label6.Location = New System.Drawing.Point(443, 76)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(2, 19)
         Me.Label6.TabIndex = 21
@@ -261,7 +261,7 @@ Partial Class SupplierRegister
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(444, 19)
+        Me.Label4.Location = New System.Drawing.Point(443, 19)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(2, 23)
         Me.Label4.TabIndex = 19
@@ -272,67 +272,67 @@ Partial Class SupplierRegister
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(444, 0)
+        Me.Label2.Location = New System.Drawing.Point(443, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(2, 19)
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "Patients No"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'TextBox6
+        'supplierfax
         '
-        Me.TextBox6.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox6.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox6.Location = New System.Drawing.Point(77, 179)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox6.Multiline = True
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(287, 48)
-        Me.TextBox6.TabIndex = 11
+        Me.supplierfax.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.supplierfax.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.supplierfax.Location = New System.Drawing.Point(76, 179)
+        Me.supplierfax.Margin = New System.Windows.Forms.Padding(2)
+        Me.supplierfax.Multiline = True
+        Me.supplierfax.Name = "supplierfax"
+        Me.supplierfax.Size = New System.Drawing.Size(287, 48)
+        Me.supplierfax.TabIndex = 11
         '
-        'TextBox8
+        'supplieraddress
         '
-        Me.TextBox8.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox8.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox8.Location = New System.Drawing.Point(510, 179)
-        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox8.Multiline = True
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(287, 48)
-        Me.TextBox8.TabIndex = 15
+        Me.supplieraddress.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.supplieraddress.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.supplieraddress.Location = New System.Drawing.Point(510, 179)
+        Me.supplieraddress.Margin = New System.Windows.Forms.Padding(2)
+        Me.supplieraddress.Multiline = True
+        Me.supplieraddress.Name = "supplieraddress"
+        Me.supplieraddress.Size = New System.Drawing.Size(287, 48)
+        Me.supplieraddress.TabIndex = 15
         '
-        'TextBox5
+        'suppliertel
         '
-        Me.TextBox5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox5.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox5.Location = New System.Drawing.Point(510, 100)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(287, 48)
-        Me.TextBox5.TabIndex = 10
+        Me.suppliertel.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.suppliertel.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.suppliertel.Location = New System.Drawing.Point(510, 100)
+        Me.suppliertel.Margin = New System.Windows.Forms.Padding(2)
+        Me.suppliertel.Multiline = True
+        Me.suppliertel.Name = "suppliertel"
+        Me.suppliertel.Size = New System.Drawing.Size(287, 48)
+        Me.suppliertel.TabIndex = 10
         '
-        'TextBox3
+        'suppliername
         '
-        Me.TextBox3.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TextBox3.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox3.Location = New System.Drawing.Point(77, 100)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(287, 48)
-        Me.TextBox3.TabIndex = 8
+        Me.suppliername.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.suppliername.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.suppliername.Location = New System.Drawing.Point(76, 100)
+        Me.suppliername.Margin = New System.Windows.Forms.Padding(2)
+        Me.suppliername.Multiline = True
+        Me.suppliername.Name = "suppliername"
+        Me.suppliername.Size = New System.Drawing.Size(287, 48)
+        Me.suppliername.TabIndex = 8
         '
-        'ptno
+        'supplierno
         '
-        Me.ptno.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ptno.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ptno.Location = New System.Drawing.Point(77, 25)
-        Me.ptno.Margin = New System.Windows.Forms.Padding(2)
-        Me.ptno.Multiline = True
-        Me.ptno.Name = "ptno"
-        Me.ptno.Size = New System.Drawing.Size(287, 45)
-        Me.ptno.TabIndex = 5
+        Me.supplierno.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.supplierno.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.supplierno.Location = New System.Drawing.Point(76, 25)
+        Me.supplierno.Margin = New System.Windows.Forms.Padding(2)
+        Me.supplierno.Multiline = True
+        Me.supplierno.Name = "supplierno"
+        Me.supplierno.Size = New System.Drawing.Size(287, 45)
+        Me.supplierno.TabIndex = 5
         '
         'Label1
         '
@@ -399,11 +399,11 @@ Partial Class SupplierRegister
     Friend WithEvents Home As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents ptno As TextBox
+    Friend WithEvents supplieraddress As TextBox
+    Friend WithEvents supplierfax As TextBox
+    Friend WithEvents suppliertel As TextBox
+    Friend WithEvents suppliername As TextBox
+    Friend WithEvents supplierno As TextBox
     Friend WithEvents Back As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label11 As Label

@@ -28,19 +28,19 @@ Partial Class AssignPatient
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.patientno = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Back = New System.Windows.Forms.Button()
-        Me.ptno = New System.Windows.Forms.TextBox()
         Me.searchassign = New System.Windows.Forms.Button()
         Me.assignbtn = New System.Windows.Forms.Button()
+        Me.Back = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -106,22 +106,11 @@ Partial Class AssignPatient
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(919, 681)
         Me.TableLayoutPanel1.TabIndex = 1
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(3, 154)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(859, 96)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 8
-        Me.PictureBox2.TabStop = False
-        '
         'TableLayoutPanel2
         '
         Me.TableLayoutPanel2.ColumnCount = 1
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 96.15833!))
-        Me.TableLayoutPanel2.Controls.Add(Me.ptno, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.patientno, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.searchassign, 0, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.assignbtn, 0, 5)
@@ -138,6 +127,17 @@ Partial Class AssignPatient
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(859, 340)
         Me.TableLayoutPanel2.TabIndex = 9
         '
+        'patientno
+        '
+        Me.patientno.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.patientno.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.patientno.Location = New System.Drawing.Point(272, 28)
+        Me.patientno.Margin = New System.Windows.Forms.Padding(2)
+        Me.patientno.Multiline = True
+        Me.patientno.Name = "patientno"
+        Me.patientno.Size = New System.Drawing.Size(315, 42)
+        Me.patientno.TabIndex = 5
+        '
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
@@ -148,32 +148,6 @@ Partial Class AssignPatient
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "Patients No or Citizen ID"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Back
-        '
-        Me.Back.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Back.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Back.BackgroundImage = CType(resources.GetObject("Back.BackgroundImage"), System.Drawing.Image)
-        Me.Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Back.FlatAppearance.BorderSize = 0
-        Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Back.Location = New System.Drawing.Point(883, 636)
-        Me.Back.Name = "Back"
-        Me.Back.Size = New System.Drawing.Size(33, 42)
-        Me.Back.TabIndex = 10
-        Me.Back.UseVisualStyleBackColor = False
-        '
-        'ptno
-        '
-        Me.ptno.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ptno.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ptno.Location = New System.Drawing.Point(272, 28)
-        Me.ptno.Margin = New System.Windows.Forms.Padding(2)
-        Me.ptno.Multiline = True
-        Me.ptno.Name = "ptno"
-        Me.ptno.Size = New System.Drawing.Size(315, 42)
-        Me.ptno.TabIndex = 5
         '
         'searchassign
         '
@@ -205,6 +179,32 @@ Partial Class AssignPatient
         Me.assignbtn.TabIndex = 17
         Me.assignbtn.UseVisualStyleBackColor = False
         '
+        'Back
+        '
+        Me.Back.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Back.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Back.BackgroundImage = CType(resources.GetObject("Back.BackgroundImage"), System.Drawing.Image)
+        Me.Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Back.FlatAppearance.BorderSize = 0
+        Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Back.Location = New System.Drawing.Point(883, 636)
+        Me.Back.Name = "Back"
+        Me.Back.Size = New System.Drawing.Size(33, 42)
+        Me.Back.TabIndex = 10
+        Me.Back.UseVisualStyleBackColor = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(3, 154)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(859, 96)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 8
+        Me.PictureBox2.TabStop = False
+        '
         'AssignPatient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -221,9 +221,9 @@ Partial Class AssignPatient
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -246,7 +246,7 @@ Partial Class AssignPatient
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Back As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents ptno As TextBox
+    Friend WithEvents patientno As TextBox
     Friend WithEvents searchassign As Button
     Friend WithEvents assignbtn As Button
 End Class
