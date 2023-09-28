@@ -2,7 +2,7 @@
 Imports Oracle.ManagedDataAccess.Client
 
 Module GetData
-    Dim textBoxArray As New List(Of String)()
+    Public pa_id As String
     Dim dataAdd As New List(Of String)()
     Public Function SavePatient(ByVal data As List(Of String))
         dataAdd = data
@@ -80,6 +80,31 @@ Module GetData
 
     End Function
 
+    Public Function Allocate(ByVal data As String, ByVal table As String) As Int32
+        'Dim column As String = String.Join(",", )
+
+        Try
+            Dim connection As New OracleConnection(Connect())
+            connection.Open()
+            Dim sql As String = $"INSERT INTO {table} ({GetColumn(table)}) VALUES ({String.Join(",", data)})"
+            Console.WriteLine(sql)
+            Dim cmd As New OracleCommand(sql, connection)
+            cmd.ExecuteNonQuery()
+
+            connection.Close()
+            Return 1
+        Catch ex As OracleException When ex.Number = 1 AndAlso ex.Message.Contains("PATIENTS_UK1")
+            ' จัดการกับข้อผิดพลาดที่เกิดจาก unique constraint violation
+            MessageBox.Show("cid is already exist")
+
+        Catch ex As Exception
+            ' จัดการข้อผิดพลาดที่เกิดขึ้น
+            MessageBox.Show("เกิดข้อผิดพลาดในการเชื่อมต่อกับฐานข้อมูล: " & ex.Message)
+            Return 0
+        End Try
+
+    End Function
+
     Public Function GetColumn(ByVal table)
         ' สร้างเชื่อมต่อกับ Oracle Database
 
@@ -138,4 +163,11 @@ Module GetData
         End Try
 
     End Function
+
+    Public Function Getdate(ByVal Dd As DateTimePicker)
+        Dim date_format As String = $"TO_DATE('{Dd.Value.ToString("yyyy-MM-dd")}','YYYY-MM-DD')"
+        Return date_format
+    End Function
+
+
 End Module

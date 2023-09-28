@@ -97,8 +97,8 @@ WHERE
         While reader.Read()
             ' ทำสิ่งที่คุณต้องการกับข้อมูลที่ถูกดึงมา ยกตัวอย่างเช่นแสดงใน TextBox หรือ ListBox
             ' ตัวอย่าง: TextBox1.Text = reader("column_name").ToString()
-            pid = reader("PATIENT_NUM").ToString()
-            patientno.Text = pid
+            pa_id = reader("PATIENT_NUM").ToString()
+            patientno.Text = pa_id
             patientname.Text = reader("PATIENT_NAME").ToString()
             address.Text = reader("ADDRESS").ToString()
             birthday.Text = reader("DOB").ToString()
