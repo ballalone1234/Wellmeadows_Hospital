@@ -49,7 +49,7 @@ Public Class RegisterPatient4
 
     End Sub
 
-    Private Sub RegisterPatient4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Sub loadData()
         Dim connection As New OracleConnection(Connect())
 
         ' สร้างคำสั่ง SQL ด้วย WHERE clause เพื่อกรองข้อมูลที่เลือก
@@ -119,6 +119,11 @@ WHERE
 
         reader.Close()
         connection.Close()
+    End Sub
+
+
+    Private Sub RegisterPatient4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        loadData()
     End Sub
 
 End Class

@@ -19,18 +19,38 @@
         Pagecontroller.NextPage(Me, RegisterPatient2)
     End Sub
 
-    Private Sub PATIENTTBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles PATIENTTBindingNavigatorSaveItem.Click
+    Private Sub PatientList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Hospital.PATIENTS' table. You can move, or remove it, as needed.
+        Me.PATIENTSTableAdapter.Fill(Me.Hospital.PATIENTS)
+
+
+    End Sub
+
+    Private Sub PATIENTSBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles PATIENTSBindingNavigatorSaveItem.Click
         Me.Validate()
-        Me.PATIENTTBindingSource.EndEdit()
+        Me.PATIENTSBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Hospital)
 
     End Sub
 
-    Private Sub PatientList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'Hospital.LOCALDOCTOR' table. You can move, or remove it, as needed.
-        Me.LOCALDOCTORTableAdapter.Fill(Me.Hospital.LOCALDOCTOR)
-        'TODO: This line of code loads data into the 'Hospital.PATIENTT' table. You can move, or remove it, as needed.
-        Me.PATIENTTTableAdapter.Fill(Me.Hospital.PATIENTT)
+    Private Sub YourButton_Click(sender As Object, e As EventArgs) Handles Fillter.Click
+        ' กำหนดเงื่อนไขการกรองข้อมูลที่คุณต้องการ
+        Dim filterExpression As String = $"[PATIENT_NUM] = '{ptno.Text}'"
 
+        ' ใช้การกรองข้อมูล
+        If ptno.Text = "" Then
+            PATIENTSBindingSource.Filter = ""
+        Else
+            PATIENTSBindingSource.Filter = filterExpression
+        End If
+
+    End Sub
+
+    Private Sub OPD_Report_Click(sender As Object, e As EventArgs) Handles OPD_Report.Click
+        PatientOPD_report.Show()
+    End Sub
+
+    Private Sub inward_Click(sender As Object, e As EventArgs) Handles inward.Click
+        PatientIn_report.Show()
     End Sub
 End Class

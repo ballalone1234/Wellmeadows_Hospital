@@ -20,7 +20,8 @@ Public Class LoginForm
                     Dim result As Integer = Convert.ToInt32(command.ExecuteScalar())
 
                     If result > 0 Then
-                        MessageBox.Show("ล็อกอินสำเร็จ!")
+                        MessageBox.Show("ล็อกอินสำเร็จ!" & txtUsername.Text)
+                        staff_id = txtUsername.Text
                         NextPage(Me, MainMenu)
                         ' ทำสิ่งที่คุณต้องการหลังจากล็อกอินสำเร็จ
                     Else
