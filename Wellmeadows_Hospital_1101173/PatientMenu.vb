@@ -19,6 +19,7 @@
     End Sub
 
     Private Sub allocatept_Click(sender As Object, e As EventArgs) Handles allocatept.Click
+        AllocatePatient.patientno.Enabled = True
         Pagecontroller.NextPage(Me, AllocatePatient)
     End Sub
 

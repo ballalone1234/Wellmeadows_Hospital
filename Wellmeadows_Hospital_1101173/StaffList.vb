@@ -40,4 +40,17 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Pagecontroller.BackPage(Me)
     End Sub
+
+    Private Sub STAFFBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles STAFFBindingNavigatorSaveItem.Click
+        Me.Validate()
+        Me.STAFFBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.Hospital)
+
+    End Sub
+
+    Private Sub StaffList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Hospital.STAFF' table. You can move, or remove it, as needed.
+        Me.STAFFTableAdapter.Fill(Me.Hospital.STAFF)
+
+    End Sub
 End Class
