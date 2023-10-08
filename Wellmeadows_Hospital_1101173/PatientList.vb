@@ -21,30 +21,14 @@
 
     Private Sub PatientList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'Hospital.PATIENTS' table. You can move, or remove it, as needed.
-        Me.PATIENTSTableAdapter.Fill(Me.Hospital.PATIENTS)
 
-
-    End Sub
-
-    Private Sub PATIENTSBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles PATIENTSBindingNavigatorSaveItem.Click
-        Me.Validate()
-        Me.PATIENTSBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.Hospital)
+        DataGridView1.DataSource = GetSeach("PATIENTS", "")
 
     End Sub
 
-    Private Sub YourButton_Click(sender As Object, e As EventArgs) Handles Fillter.Click
-        ' กำหนดเงื่อนไขการกรองข้อมูลที่คุณต้องการ
-        Dim filterExpression As String = $"[PATIENT_NUM] = '{ptno.Text}'"
 
-        ' ใช้การกรองข้อมูล
-        If ptno.Text = "" Then
-            PATIENTSBindingSource.Filter = ""
-        Else
-            PATIENTSBindingSource.Filter = filterExpression
-        End If
 
-    End Sub
+
 
     Private Sub OPD_Report_Click(sender As Object, e As EventArgs) Handles OPD_Report.Click
         PatientOPD_report.Show()
@@ -52,5 +36,14 @@
 
     Private Sub inward_Click(sender As Object, e As EventArgs) Handles inward.Click
         PatientIn_report.Show()
+    End Sub
+
+    Private Sub ptno_KeyUp(sender As Object, e As KeyEventArgs) Handles ptno.KeyUp
+        DataGridView1.DataSource = GetSeach("PATIENTS", ptno.Text)
+    End Sub
+
+    Private Sub FillByToolStripButton_Click(sender As Object, e As EventArgs)
+
+
     End Sub
 End Class

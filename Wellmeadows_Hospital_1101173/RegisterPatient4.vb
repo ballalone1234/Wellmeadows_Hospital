@@ -82,6 +82,7 @@ WHERE
     AND A3.ML_NO = A2.ML_NO
     AND (A3.PATIENT_NUM = '{pid}' OR A3.CID = '{pid}')"
 
+        Console.WriteLine(sql)
         ' สร้าง OracleCommand
         Dim command As New OracleCommand(sql, connection)
 

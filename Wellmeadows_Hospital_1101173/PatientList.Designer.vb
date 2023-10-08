@@ -30,10 +30,11 @@ Partial Class PatientList
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.PATIENTSDataGridView = New System.Windows.Forms.DataGridView()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.ptno = New System.Windows.Forms.TextBox()
         Me.Fillter = New System.Windows.Forms.Button()
+        Me.OPD_Report = New System.Windows.Forms.Button()
+        Me.inward = New System.Windows.Forms.Button()
         Me.Back = New System.Windows.Forms.Button()
         Me.PATIENTSBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
@@ -48,32 +49,22 @@ Partial Class PatientList
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.PATIENTSBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
-        Me.OPD_Report = New System.Windows.Forms.Button()
         Me.PATIENTSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Hospital = New Wellmeadows_Hospital_1101173.Hospital()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PATIENTSTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.PATIENTSTableAdapter()
         Me.TableAdapterManager = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.TableAdapterManager()
-        Me.inward = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
-        CType(Me.PATIENTSDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel3.SuspendLayout()
         CType(Me.PATIENTSBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PATIENTSBindingNavigator.SuspendLayout()
         CType(Me.PATIENTSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Hospital, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -147,8 +138,8 @@ Partial Class PatientList
         '
         Me.TableLayoutPanel2.ColumnCount = 1
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
-        Me.TableLayoutPanel2.Controls.Add(Me.PATIENTSDataGridView, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.DataGridView1, 0, 1)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(4, 41)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4)
@@ -161,26 +152,13 @@ Partial Class PatientList
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(1145, 598)
         Me.TableLayoutPanel2.TabIndex = 9
         '
-        'PATIENTSDataGridView
-        '
-        Me.PATIENTSDataGridView.AutoGenerateColumns = False
-        Me.PATIENTSDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.PATIENTSDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
-        Me.PATIENTSDataGridView.DataSource = Me.PATIENTSBindingSource
-        Me.PATIENTSDataGridView.Location = New System.Drawing.Point(3, 74)
-        Me.PATIENTSDataGridView.Name = "PATIENTSDataGridView"
-        Me.PATIENTSDataGridView.RowHeadersWidth = 51
-        Me.PATIENTSDataGridView.RowTemplate.Height = 24
-        Me.PATIENTSDataGridView.Size = New System.Drawing.Size(1139, 521)
-        Me.PATIENTSDataGridView.TabIndex = 0
-        '
         'TableLayoutPanel3
         '
         Me.TableLayoutPanel3.ColumnCount = 4
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 242.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
@@ -213,6 +191,24 @@ Partial Class PatientList
         Me.Fillter.TabIndex = 1
         Me.Fillter.Text = "Fillter"
         Me.Fillter.UseVisualStyleBackColor = True
+        '
+        'OPD_Report
+        '
+        Me.OPD_Report.Location = New System.Drawing.Point(223, 3)
+        Me.OPD_Report.Name = "OPD_Report"
+        Me.OPD_Report.Size = New System.Drawing.Size(103, 23)
+        Me.OPD_Report.TabIndex = 2
+        Me.OPD_Report.Text = "OPD Report"
+        Me.OPD_Report.UseVisualStyleBackColor = True
+        '
+        'inward
+        '
+        Me.inward.Location = New System.Drawing.Point(353, 3)
+        Me.inward.Name = "inward"
+        Me.inward.Size = New System.Drawing.Size(142, 23)
+        Me.inward.TabIndex = 3
+        Me.inward.Text = "In Ward Report"
+        Me.inward.UseVisualStyleBackColor = True
         '
         'Back
         '
@@ -343,15 +339,6 @@ Partial Class PatientList
         Me.PATIENTSBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
         Me.PATIENTSBindingNavigatorSaveItem.Text = "Save Data"
         '
-        'OPD_Report
-        '
-        Me.OPD_Report.Location = New System.Drawing.Point(223, 3)
-        Me.OPD_Report.Name = "OPD_Report"
-        Me.OPD_Report.Size = New System.Drawing.Size(103, 23)
-        Me.OPD_Report.TabIndex = 2
-        Me.OPD_Report.Text = "OPD Report"
-        Me.OPD_Report.UseVisualStyleBackColor = True
-        '
         'PATIENTSBindingSource
         '
         Me.PATIENTSBindingSource.DataMember = "PATIENTS"
@@ -361,78 +348,6 @@ Partial Class PatientList
         '
         Me.Hospital.DataSetName = "Hospital"
         Me.Hospital.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "PATIENT_NUM"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "PATIENT_NUM"
-        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.Width = 125
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "ML_NO"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "ML_NO"
-        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Width = 125
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "PATIENT_NAME"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "PATIENT_NAME"
-        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.Width = 125
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "MARITAL_STATUS"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "MARITAL_STATUS"
-        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.Width = 125
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "DATE_REGIST"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "DATE_REGIST"
-        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.Width = 125
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "DOB"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "DOB"
-        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.Width = 125
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "TELEPHONE"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "TELEPHONE"
-        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.Width = 125
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "CID"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "CID"
-        Me.DataGridViewTextBoxColumn8.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.Width = 125
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "ADDRESS"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "ADDRESS"
-        Me.DataGridViewTextBoxColumn9.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        Me.DataGridViewTextBoxColumn9.Width = 125
         '
         'PATIENTSTableAdapter
         '
@@ -457,14 +372,16 @@ Partial Class PatientList
         Me.TableAdapterManager.WORK_INTableAdapter = Nothing
         Me.TableAdapterManager.WORKEXPTableAdapter = Nothing
         '
-        'inward
+        'DataGridView1
         '
-        Me.inward.Location = New System.Drawing.Point(353, 3)
-        Me.inward.Name = "inward"
-        Me.inward.Size = New System.Drawing.Size(142, 23)
-        Me.inward.TabIndex = 3
-        Me.inward.Text = "In Ward Report"
-        Me.inward.UseVisualStyleBackColor = True
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView1.Location = New System.Drawing.Point(3, 74)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(1139, 521)
+        Me.DataGridView1.TabIndex = 2
         '
         'PatientList
         '
@@ -485,7 +402,6 @@ Partial Class PatientList
         Me.Panel2.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
-        CType(Me.PATIENTSDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
         CType(Me.PATIENTSBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
@@ -493,6 +409,7 @@ Partial Class PatientList
         Me.PATIENTSBindingNavigator.PerformLayout()
         CType(Me.PATIENTSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Hospital, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -531,19 +448,10 @@ Partial Class PatientList
     Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
     Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
     Friend WithEvents PATIENTSBindingNavigatorSaveItem As ToolStripButton
-    Friend WithEvents PATIENTSDataGridView As DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents ptno As TextBox
     Friend WithEvents Fillter As Button
     Friend WithEvents OPD_Report As Button
     Friend WithEvents inward As Button
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

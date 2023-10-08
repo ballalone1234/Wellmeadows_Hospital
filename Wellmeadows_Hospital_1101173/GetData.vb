@@ -211,5 +211,26 @@ Module GetData
         Return date_format
     End Function
 
+    Public Function GetSeach(table, textS)
+        Dim column As String = GetColumn(table)
+        Dim columArray() As String = Split(column, ",")
+
+
+        Dim sqltest As String = $"SELECT {column} FROM {table} WHERE "
+        For Each item As String In columArray
+            sqltest += item + $" like '%{textS}%' OR "
+
+        Next
+        sqltest = sqltest.Substring(0, sqltest.Length - 3)
+        Console.WriteLine(sqltest)
+        Using connection As OracleConnection = New OracleConnection(Connect())
+            Dim cmd As New OracleCommand(sqltest, connection)
+            Using sda As OracleDataAdapter = New OracleDataAdapter(cmd)
+                Dim dt As DataTable = New DataTable()
+                sda.Fill(dt)
+                Return dt
+            End Using
+        End Using
+    End Function
 
 End Module

@@ -38,7 +38,6 @@ Partial Class PrescribeMenu
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ptno = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -48,8 +47,9 @@ Partial Class PrescribeMenu
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Summit2Button = New System.Windows.Forms.Button()
-        Me.Back = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Back = New System.Windows.Forms.Button()
+        Me.ptno = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -66,7 +66,7 @@ Partial Class PrescribeMenu
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(460, 838)
         Me.Panel1.TabIndex = 0
@@ -80,7 +80,7 @@ Partial Class PrescribeMenu
         Me.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Home.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Home.Location = New System.Drawing.Point(16, 15)
-        Me.Home.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Home.Margin = New System.Windows.Forms.Padding(4)
         Me.Home.Name = "Home"
         Me.Home.Size = New System.Drawing.Size(64, 65)
         Me.Home.TabIndex = 6
@@ -90,7 +90,7 @@ Partial Class PrescribeMenu
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(-19, 326)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(499, 127)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -102,7 +102,7 @@ Partial Class PrescribeMenu
         Me.Panel2.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(460, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1225, 838)
         Me.Panel2.TabIndex = 1
@@ -119,7 +119,7 @@ Partial Class PrescribeMenu
         Me.TableLayoutPanel1.Controls.Add(Me.Back, 1, 3)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.03822!))
@@ -135,7 +135,7 @@ Partial Class PrescribeMenu
         Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(481, 26)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(191, 127)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -147,7 +147,7 @@ Partial Class PrescribeMenu
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 552.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 553.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label13, 1, 5)
         Me.TableLayoutPanel2.Controls.Add(Me.Label11, 0, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 4)
@@ -156,7 +156,6 @@ Partial Class PrescribeMenu
         Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.Label4, 1, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label2, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.ptno, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.DateTimePicker1, 0, 5)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox1, 0, 3)
@@ -165,9 +164,10 @@ Partial Class PrescribeMenu
         Me.TableLayoutPanel2.Controls.Add(Me.AddButton, 2, 5)
         Me.TableLayoutPanel2.Controls.Add(Me.Label3, 2, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.TextBox2, 2, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.ptno, 0, 1)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(4, 183)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 6
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.63636!))
@@ -183,7 +183,7 @@ Partial Class PrescribeMenu
         '
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(585, 182)
+        Me.Label13.Location = New System.Drawing.Point(584, 182)
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(3, 23)
@@ -207,7 +207,7 @@ Partial Class PrescribeMenu
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(585, 159)
+        Me.Label10.Location = New System.Drawing.Point(584, 159)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(3, 22)
@@ -219,7 +219,7 @@ Partial Class PrescribeMenu
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(585, 101)
+        Me.Label8.Location = New System.Drawing.Point(584, 101)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(3, 28)
@@ -231,7 +231,7 @@ Partial Class PrescribeMenu
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(585, 76)
+        Me.Label6.Location = New System.Drawing.Point(584, 76)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(3, 23)
@@ -255,7 +255,7 @@ Partial Class PrescribeMenu
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(585, 33)
+        Me.Label4.Location = New System.Drawing.Point(584, 33)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(3, 28)
@@ -267,24 +267,13 @@ Partial Class PrescribeMenu
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(585, 0)
+        Me.Label2.Location = New System.Drawing.Point(584, 0)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(3, 20)
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "Patients No"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'ptno
-        '
-        Me.ptno.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ptno.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ptno.Location = New System.Drawing.Point(100, 37)
-        Me.ptno.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ptno.Multiline = True
-        Me.ptno.Name = "ptno"
-        Me.ptno.Size = New System.Drawing.Size(381, 35)
-        Me.ptno.TabIndex = 5
         '
         'Label1
         '
@@ -303,8 +292,8 @@ Partial Class PrescribeMenu
         Me.DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(99, 194)
-        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(98, 194)
+        Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(383, 34)
         Me.DateTimePicker1.TabIndex = 26
@@ -313,7 +302,7 @@ Partial Class PrescribeMenu
         '
         Me.TextBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBox1.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox1.Location = New System.Drawing.Point(100, 112)
+        Me.TextBox1.Location = New System.Drawing.Point(99, 112)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
@@ -326,7 +315,7 @@ Partial Class PrescribeMenu
         Me.DateTimePicker5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
         Me.DateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.DateTimePicker5.Location = New System.Drawing.Point(676, 113)
-        Me.DateTimePicker5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DateTimePicker5.Margin = New System.Windows.Forms.Padding(4)
         Me.DateTimePicker5.Name = "DateTimePicker5"
         Me.DateTimePicker5.Size = New System.Drawing.Size(384, 34)
         Me.DateTimePicker5.TabIndex = 37
@@ -335,7 +324,7 @@ Partial Class PrescribeMenu
         '
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(596, 76)
+        Me.Label12.Location = New System.Drawing.Point(595, 76)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(268, 23)
@@ -353,7 +342,7 @@ Partial Class PrescribeMenu
         Me.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.AddButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.AddButton.Location = New System.Drawing.Point(636, 186)
-        Me.AddButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AddButton.Margin = New System.Windows.Forms.Padding(4)
         Me.AddButton.Name = "AddButton"
         Me.AddButton.Size = New System.Drawing.Size(464, 50)
         Me.AddButton.TabIndex = 12
@@ -363,7 +352,7 @@ Partial Class PrescribeMenu
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(596, 0)
+        Me.Label3.Location = New System.Drawing.Point(595, 0)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(244, 26)
@@ -375,7 +364,7 @@ Partial Class PrescribeMenu
         '
         Me.TextBox2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBox2.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.TextBox2.Location = New System.Drawing.Point(678, 37)
+        Me.TextBox2.Location = New System.Drawing.Point(677, 37)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
@@ -392,27 +381,11 @@ Partial Class PrescribeMenu
         Me.Summit2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Summit2Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Summit2Button.Location = New System.Drawing.Point(344, 738)
-        Me.Summit2Button.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Summit2Button.Margin = New System.Windows.Forms.Padding(4)
         Me.Summit2Button.Name = "Summit2Button"
         Me.Summit2Button.Size = New System.Drawing.Size(464, 62)
         Me.Summit2Button.TabIndex = 11
         Me.Summit2Button.UseVisualStyleBackColor = False
-        '
-        'Back
-        '
-        Me.Back.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Back.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Back.BackgroundImage = CType(resources.GetObject("Back.BackgroundImage"), System.Drawing.Image)
-        Me.Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Back.FlatAppearance.BorderSize = 0
-        Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Back.Location = New System.Drawing.Point(1177, 742)
-        Me.Back.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Back.Name = "Back"
-        Me.Back.Size = New System.Drawing.Size(44, 66)
-        Me.Back.TabIndex = 10
-        Me.Back.UseVisualStyleBackColor = False
         '
         'PictureBox3
         '
@@ -425,6 +398,32 @@ Partial Class PrescribeMenu
         Me.PictureBox3.TabIndex = 12
         Me.PictureBox3.TabStop = False
         '
+        'Back
+        '
+        Me.Back.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Back.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Back.BackgroundImage = CType(resources.GetObject("Back.BackgroundImage"), System.Drawing.Image)
+        Me.Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Back.FlatAppearance.BorderSize = 0
+        Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Back.Location = New System.Drawing.Point(1177, 742)
+        Me.Back.Margin = New System.Windows.Forms.Padding(4)
+        Me.Back.Name = "Back"
+        Me.Back.Size = New System.Drawing.Size(44, 66)
+        Me.Back.TabIndex = 10
+        Me.Back.UseVisualStyleBackColor = False
+        '
+        'ptno
+        '
+        Me.ptno.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ptno.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ptno.FormattingEnabled = True
+        Me.ptno.Location = New System.Drawing.Point(100, 42)
+        Me.ptno.Name = "ptno"
+        Me.ptno.Size = New System.Drawing.Size(380, 33)
+        Me.ptno.TabIndex = 52
+        '
         'PrescribeMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -434,7 +433,7 @@ Partial Class PrescribeMenu
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "PrescribeMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patient Menu"
@@ -466,7 +465,6 @@ Partial Class PrescribeMenu
     Friend WithEvents Home As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents ptno As TextBox
     Friend WithEvents Back As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label10 As Label
@@ -486,4 +484,5 @@ Partial Class PrescribeMenu
     Friend WithEvents Label12 As Label
     Friend WithEvents AddButton As Button
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents ptno As ComboBox
 End Class

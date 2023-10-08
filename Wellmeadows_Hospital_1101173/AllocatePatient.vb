@@ -32,13 +32,19 @@ Public Class AllocatePatient
         patientno.Text = pa_id
         Dim connection As New OracleConnection(Connect())
         connection.Open()
-        Dim sql As String = "SELECT WARD_NUM FROM WARD"
+        Dim sql As String = "SELECT WARD_NUM ,WARD_NAME FROM WARD"
         Dim command As New OracleCommand(sql, connection)
         Dim reader As OracleDataReader = command.ExecuteReader()
-        While reader.Read()
-            Wardno.Items.Add(reader("WARD_NUM").ToString()) ' column_name คือชื่อคอลัมน์ที่คุณต้องการใส่ใน ComboBox
-            Console.WriteLine(reader("WARD_NUM"))
+        ' เซ็ต DisplayMember เป็นชื่อคอลัมน์ที่คุณต้องการให้แสดงใน ComboBox
+        Wardno.DisplayMember = "WARD_NAME"
 
+        ' เซ็ต ValueMember เป็นชื่อคอลัมน์ที่คุณต้องการให้เป็นค่า value ของ ComboBox
+        Wardno.ValueMember = "WARD_NUM"
+
+        While reader.Read()
+            ' เพิ่มข้อมูลลงใน ComboBox โดยใช้ชื่อคอลัมน์ที่ต้องการแสดง
+            Wardno.Items.Add(New With {.WARD_NAME = reader("WARD_NAME").ToString(), .WARD_NUM = reader("WARD_NUM").ToString()})
+            Console.WriteLine(reader("WARD_NUM"))
         End While
         reader.Close()
         connection.Close()
@@ -48,7 +54,7 @@ Public Class AllocatePatient
     End Sub
 
     Private Sub Wardno_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Wardno.SelectedIndexChanged
-        Dim selectedValue As String = Wardno.SelectedItem.ToString()
+        Dim selectedValue As String = Wardno.SelectedItem.WARD_NUM.ToString()
         Dim connection As New OracleConnection(Connect())
         connection.Open()
         Dim sql As String = $"SELECT BED_NUM FROM BED WHERE WARD_NUM = '{selectedValue}'"
@@ -97,6 +103,10 @@ Public Class AllocatePatient
         dateleave.Show()
         dateplace.Show()
         BedNo.Show()
+
+    End Sub
+
+    Private Sub ExDay_TextChanged(sender As Object, e As EventArgs) Handles ExDay.TextChanged
 
     End Sub
 End Class

@@ -41,7 +41,7 @@
         Pagecontroller.BackPage(Me)
     End Sub
 
-    Private Sub STAFFBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles STAFFBindingNavigatorSaveItem.Click
+    Private Sub STAFFBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
         Me.Validate()
         Me.STAFFBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Hospital)
@@ -49,8 +49,18 @@
     End Sub
 
     Private Sub StaffList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Hospital.LIST_STAFF' table. You can move, or remove it, as needed.
+        Me.LIST_STAFFTableAdapter.Fill(Me.Hospital.LIST_STAFF)
         'TODO: This line of code loads data into the 'Hospital.STAFF' table. You can move, or remove it, as needed.
         Me.STAFFTableAdapter.Fill(Me.Hospital.STAFF)
+
+    End Sub
+
+    Private Sub TableLayoutPanel3_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel3.Paint
+
+    End Sub
+
+    Private Sub Fillter_Click(sender As Object, e As EventArgs) Handles Fillter.Click
 
     End Sub
 End Class

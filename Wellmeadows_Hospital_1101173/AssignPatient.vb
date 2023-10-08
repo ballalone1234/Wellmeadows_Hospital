@@ -26,7 +26,7 @@
     Private Sub assignbtn_Click(sender As Object, e As EventArgs) Handles assignbtn.Click
         RegisterPatient4.pid = patientno.Text
         RegisterPatient4.loadData()
-        Dim data() As String = {$"{staff_id}", $"{pa_id}", "SYSDATE"}
+        Dim data() As String = {$"{staff_id}", $"{patientno.Text}", "SYSDATE"}
         If InsetFlexible(String.Join(",", data), "ASSIGNEDTO") > 0 Then
             MessageBox.Show("assign sucess!")
             Pagecontroller.NextPage(Me, RegisterPatient4)
