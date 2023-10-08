@@ -233,4 +233,24 @@ Module GetData
         End Using
     End Function
 
+    Public Function GetDataOnceCol(table, column, id)
+
+        Using connection As New OracleConnection(Connect())
+            connection.Open()
+
+            Dim sql As String = $"SELECT {column} FROM {table} WHERE drug_num = '{id}'"
+            Debug.Write(sql)
+            Using command As New OracleCommand(sql, connection)
+                Using reader As OracleDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+                        Dim drugName As String = reader.GetString(0)
+                        Return drugName
+                    Else
+                        ' ไม่พบข้อมูลที่ต้องการ
+                    End If
+                End Using
+            End Using
+        End Using
+    End Function
+
 End Module

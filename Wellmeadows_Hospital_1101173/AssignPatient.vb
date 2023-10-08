@@ -38,6 +38,12 @@
     End Sub
 
     Private Sub searchassign_Click(sender As Object, e As EventArgs) Handles searchassign.Click
+        FormSearch.seachTable = "PATIENTS"
+        FormSearch.returnText = patientno
+        FormSearch.cellColumn = "PATIENT_NUM"
+        FormSearch.Show()
 
     End Sub
+
+
 End Class

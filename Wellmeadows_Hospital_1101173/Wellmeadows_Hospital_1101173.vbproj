@@ -124,6 +124,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormSearch.Designer.vb">
+      <DependentUpon>FormSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Hospital.vb">
       <DependentUpon>Hospital.xsd</DependentUpon>
     </Compile>
@@ -174,6 +180,12 @@
     </Compile>
     <Compile Include="SuppliesRegister.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Wardlist.Designer.vb">
       <DependentUpon>Wardlist.vb</DependentUpon>
@@ -309,6 +321,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormSearch.resx">
+      <DependentUpon>FormSearch.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OPD Report.rdlc" />
     <EmbeddedResource Include="PatientIn_report.resx">
       <DependentUpon>PatientIn_report.vb</DependentUpon>
