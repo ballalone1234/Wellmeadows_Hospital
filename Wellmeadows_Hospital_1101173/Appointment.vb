@@ -19,7 +19,7 @@
 
 
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
-        PrescribeMenu.Appointmentnum.Text = $"{ptno.Text}{examroom.Text}{wardno.Text}{examdate.Value.ToString("yyyyMMdd")}"
+        Treatment.appnum.Text = $"{ptno.Text}{examroom.Text}{wardno.Text}{examdate.Value.ToString("yyyyMMdd")}"
         Close()
     End Sub
 
@@ -35,6 +35,10 @@
         FormSearch.returnText = wardno
 
         FormSearch.Show()
+
+    End Sub
+
+    Private Sub wardno_TextChanged_1(sender As Object, e As EventArgs) Handles wardno.TextChanged
 
     End Sub
 End Class

@@ -133,6 +133,7 @@
     <Compile Include="Hospital.vb">
       <DependentUpon>Hospital.xsd</DependentUpon>
     </Compile>
+    <Compile Include="List.vb" />
     <Compile Include="PatientIn_report.Designer.vb">
       <DependentUpon>PatientIn_report.vb</DependentUpon>
     </Compile>
@@ -149,6 +150,12 @@
       <DependentUpon>Appointment.vb</DependentUpon>
     </Compile>
     <Compile Include="Appointment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Treatment.Designer.vb">
+      <DependentUpon>Treatment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Treatment.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SupplierSearch.Designer.vb">
@@ -339,6 +346,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Appointment.resx">
       <DependentUpon>Appointment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Treatment.resx">
+      <DependentUpon>Treatment.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportPatientInWard.rdlc" />
     <EmbeddedResource Include="SupplierSearch.resx">

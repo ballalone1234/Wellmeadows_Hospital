@@ -30,7 +30,6 @@ Partial Class PrescribeMenu
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Appointmentnum = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -48,13 +47,11 @@ Partial Class PrescribeMenu
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.DrugNo = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Summit2Button = New System.Windows.Forms.Button()
         Me.Back = New System.Windows.Forms.Button()
         Me.DataDrug = New System.Windows.Forms.DataGridView()
         Me.Drug_No = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Drug_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Method = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Unit_Per_date = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.StartDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.FinishDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DetailC = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -156,8 +153,7 @@ Partial Class PrescribeMenu
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 558.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.Appointmentnum, 0, 7)
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 561.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label11, 0, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label8, 1, 3)
@@ -175,7 +171,6 @@ Partial Class PrescribeMenu
         Me.TableLayoutPanel2.Controls.Add(Me.Label2, 1, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label4, 2, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.DrugNo, 2, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label7, 0, 6)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(4, 184)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4)
@@ -191,17 +186,6 @@ Partial Class PrescribeMenu
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57.0!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(1147, 326)
         Me.TableLayoutPanel2.TabIndex = 9
-        '
-        'Appointmentnum
-        '
-        Me.Appointmentnum.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Appointmentnum.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Appointmentnum.Location = New System.Drawing.Point(98, 279)
-        Me.Appointmentnum.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Appointmentnum.Multiline = True
-        Me.Appointmentnum.Name = "Appointmentnum"
-        Me.Appointmentnum.Size = New System.Drawing.Size(381, 35)
-        Me.Appointmentnum.TabIndex = 57
         '
         'Label11
         '
@@ -219,7 +203,7 @@ Partial Class PrescribeMenu
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(581, 167)
+        Me.Label10.Location = New System.Drawing.Point(578, 167)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(3, 20)
@@ -231,7 +215,7 @@ Partial Class PrescribeMenu
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(581, 119)
+        Me.Label8.Location = New System.Drawing.Point(578, 119)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(3, 28)
@@ -243,7 +227,7 @@ Partial Class PrescribeMenu
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(581, 93)
+        Me.Label6.Location = New System.Drawing.Point(578, 93)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(3, 23)
@@ -280,7 +264,7 @@ Partial Class PrescribeMenu
         Me.EndD.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.EndD.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
         Me.EndD.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.EndD.Location = New System.Drawing.Point(97, 200)
+        Me.EndD.Location = New System.Drawing.Point(95, 200)
         Me.EndD.Margin = New System.Windows.Forms.Padding(4)
         Me.EndD.Name = "EndD"
         Me.EndD.Size = New System.Drawing.Size(383, 34)
@@ -291,7 +275,7 @@ Partial Class PrescribeMenu
         Me.St.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.St.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
         Me.St.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.St.Location = New System.Drawing.Point(675, 126)
+        Me.St.Location = New System.Drawing.Point(674, 126)
         Me.St.Margin = New System.Windows.Forms.Padding(4)
         Me.St.Name = "St"
         Me.St.Size = New System.Drawing.Size(384, 34)
@@ -301,7 +285,7 @@ Partial Class PrescribeMenu
         '
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(592, 93)
+        Me.Label12.Location = New System.Drawing.Point(589, 93)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(268, 23)
@@ -312,7 +296,7 @@ Partial Class PrescribeMenu
         'ptno
         '
         Me.ptno.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ptno.Location = New System.Drawing.Point(98, 40)
+        Me.ptno.Location = New System.Drawing.Point(96, 40)
         Me.ptno.Multiline = True
         Me.ptno.Name = "ptno"
         Me.ptno.Size = New System.Drawing.Size(381, 36)
@@ -322,7 +306,7 @@ Partial Class PrescribeMenu
         '
         Me.UnitPer.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.UnitPer.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.UnitPer.Location = New System.Drawing.Point(97, 126)
+        Me.UnitPer.Location = New System.Drawing.Point(96, 126)
         Me.UnitPer.Name = "UnitPer"
         Me.UnitPer.Size = New System.Drawing.Size(382, 34)
         Me.UnitPer.TabIndex = 53
@@ -336,7 +320,7 @@ Partial Class PrescribeMenu
         Me.AddButton.FlatAppearance.BorderSize = 0
         Me.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.AddButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.AddButton.Location = New System.Drawing.Point(635, 273)
+        Me.AddButton.Location = New System.Drawing.Point(634, 273)
         Me.AddButton.Margin = New System.Windows.Forms.Padding(4)
         Me.AddButton.Name = "AddButton"
         Me.AddButton.Size = New System.Drawing.Size(464, 48)
@@ -346,7 +330,7 @@ Partial Class PrescribeMenu
         'Detail
         '
         Me.Detail.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Detail.Location = New System.Drawing.Point(677, 199)
+        Me.Detail.Location = New System.Drawing.Point(675, 199)
         Me.Detail.Multiline = True
         Me.Detail.Name = "Detail"
         Me.Detail.Size = New System.Drawing.Size(381, 36)
@@ -356,7 +340,7 @@ Partial Class PrescribeMenu
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(592, 0)
+        Me.Label3.Location = New System.Drawing.Point(589, 0)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(244, 24)
@@ -368,7 +352,7 @@ Partial Class PrescribeMenu
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(581, 24)
+        Me.Label2.Location = New System.Drawing.Point(578, 24)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(3, 20)
@@ -380,7 +364,7 @@ Partial Class PrescribeMenu
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(592, 167)
+        Me.Label4.Location = New System.Drawing.Point(589, 167)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(227, 20)
@@ -392,24 +376,12 @@ Partial Class PrescribeMenu
         '
         Me.DrugNo.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.DrugNo.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.DrugNo.Location = New System.Drawing.Point(677, 41)
+        Me.DrugNo.Location = New System.Drawing.Point(675, 41)
         Me.DrugNo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DrugNo.Multiline = True
         Me.DrugNo.Name = "DrugNo"
         Me.DrugNo.Size = New System.Drawing.Size(381, 35)
         Me.DrugNo.TabIndex = 7
-        '
-        'Label7
-        '
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(4, 244)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(298, 24)
-        Me.Label7.TabIndex = 56
-        Me.Label7.Text = "Appointment"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Summit2Button
         '
@@ -447,7 +419,7 @@ Partial Class PrescribeMenu
         '
         Me.DataDrug.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataDrug.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataDrug.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Drug_No, Me.Drug_name, Me.Method, Me.StartDate, Me.FinishDate, Me.DetailC})
+        Me.DataDrug.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Drug_No, Me.Unit_Per_date, Me.StartDate, Me.FinishDate, Me.DetailC})
         Me.DataDrug.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataDrug.Location = New System.Drawing.Point(3, 517)
         Me.DataDrug.Name = "DataDrug"
@@ -462,17 +434,11 @@ Partial Class PrescribeMenu
         Me.Drug_No.MinimumWidth = 6
         Me.Drug_No.Name = "Drug_No"
         '
-        'Drug_name
+        'Unit_Per_date
         '
-        Me.Drug_name.HeaderText = "Drug_Name"
-        Me.Drug_name.MinimumWidth = 6
-        Me.Drug_name.Name = "Drug_name"
-        '
-        'Method
-        '
-        Me.Method.HeaderText = "Method"
-        Me.Method.MinimumWidth = 6
-        Me.Method.Name = "Method"
+        Me.Unit_Per_date.HeaderText = "Unit Per Date"
+        Me.Unit_Per_date.MinimumWidth = 6
+        Me.Unit_Per_date.Name = "Unit_Per_date"
         '
         'StartDate
         '
@@ -500,7 +466,7 @@ Partial Class PrescribeMenu
         Me.ClientSize = New System.Drawing.Size(1685, 838)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "PrescribeMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -552,14 +518,11 @@ Partial Class PrescribeMenu
     Friend WithEvents ptno As TextBox
     Friend WithEvents UnitPer As NumericUpDown
     Friend WithEvents DataDrug As DataGridView
-    Friend WithEvents Drug_No As DataGridViewTextBoxColumn
-    Friend WithEvents Drug_name As DataGridViewTextBoxColumn
-    Friend WithEvents Method As DataGridViewTextBoxColumn
-    Friend WithEvents StartDate As DataGridViewTextBoxColumn
-    Friend WithEvents FinishDate As DataGridViewTextBoxColumn
     Friend WithEvents Detail As TextBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents Drug_No As DataGridViewTextBoxColumn
+    Friend WithEvents Unit_Per_date As DataGridViewTextBoxColumn
+    Friend WithEvents StartDate As DataGridViewTextBoxColumn
+    Friend WithEvents FinishDate As DataGridViewTextBoxColumn
     Friend WithEvents DetailC As DataGridViewTextBoxColumn
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Appointmentnum As TextBox
 End Class
