@@ -1,9 +1,9 @@
 ﻿Public Class Dashboard
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Home_Click(sender As Object, e As EventArgs) Handles Home.Click
+    Private Sub Home_Click(sender As Object, e As EventArgs)
         Pagecontroller.NextPage(Me, MainMenu)
 
 
@@ -17,5 +17,18 @@
 
     Private Sub NextButton_Click(sender As Object, e As EventArgs)
         Pagecontroller.NextPage(Me, RegisterPatient2)
+    End Sub
+
+    Private Sub Home_Click_1(sender As Object, e As EventArgs) Handles Home.Click
+        MainMenu.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Chart1_Click(sender As Object, e As EventArgs) 
+
+    End Sub
+
+    Private Sub Chart1_Click_1(sender As Object, e As EventArgs) Handles Chart1.Click
+
     End Sub
 End Class

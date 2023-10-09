@@ -104,6 +104,7 @@
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -459,6 +460,29 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\image.png" />
+    <None Include="Resources\image1.png" />
+    <None Include="Resources\image2.png" />
+    <None Include="Resources\image3.png" />
+    <None Include="Resources\image4.png" />
+    <None Include="Resources\image5.png" />
+    <None Include="Resources\image6.png" />
+    <None Include="Resources\image7.png" />
+    <None Include="Resources\image8.png" />
+    <None Include="Resources\image9.png" />
+    <None Include="Resources\image10.png" />
+    <None Include="Resources\imagee.png" />
+    <None Include="Resources\imagee %282%29.png" />
+    <None Include="Resources\imaage.png" />
+    <None Include="Resources\imaage1.png" />
+    <None Include="Resources\imaage2.png" />
+    <None Include="Resources\imaage3.png" />
+    <None Include="Resources\imaage4.png" />
+    <None Include="Resources\imaage5.png" />
+    <None Include="Resources\imaage6.png" />
+    <None Include="Resources\imaage7.png" />
+    <None Include="Resources\imaage8.png" />
+    <None Include="Resources\imaage9.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
