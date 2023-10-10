@@ -24,7 +24,7 @@
     End Sub
 
     Private Sub prescribept_Click(sender As Object, e As EventArgs) Handles prescribept.Click
-        Pagecontroller.NextPage(Me, PrescribeMenu)
+        Pagecontroller.NextPage(Me, Treatment)
     End Sub
 
     Private Sub assignpt_Click(sender As Object, e As EventArgs) Handles assignpt.Click

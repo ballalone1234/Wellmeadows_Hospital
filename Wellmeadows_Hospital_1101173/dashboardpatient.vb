@@ -1,4 +1,9 @@
-﻿Public Class dashboardpatient
+﻿Imports DataVisualization.Charting
+Imports System.Data
+Imports Oracle.DataAccess.Client
+Imports Oracle.ManagedDataAccess.Client
+
+Public Class dashboardpatient
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -62,5 +67,52 @@
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
         NextPage(Me, dashboarddrug)
+    End Sub
+
+    Private Sub dashboardpatient_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' ตั้งค่าการเชื่อมต่อกับ Oracle Database
+
+        ' สร้าง OracleConnection
+        Dim connection As New OracleConnection(Connect())
+
+        ' SQL Query สำหรับดึงข้อมูลจาก Oracle Database
+        Dim query As String = "SELECT SEX, COUNT(*) AS Count FROM PATIENTS GROUP BY SEX"
+
+        ' สร้าง DataTable เพื่อเก็บข้อมูล
+        Dim dataTable As New DataTable()
+
+        Try
+            ' เปิดการเชื่อมต่อกับฐานข้อมูล
+            connection.Open()
+
+            ' สร้าง OracleDataAdapter และเตรียมข้อมูลใน DataTable
+            Using adapter As New OracleDataAdapter(query, connection)
+                adapter.Fill(dataTable)
+            End Using
+
+            ' ตรวจสอบว่ามีข้อมูลใน DataTable หรือไม่
+            If dataTable.Rows.Count > 0 Then
+                ' กำหนดข้อมูลใน Chart
+                Chart1.DataSource = dataTable
+                Chart1.Series("Series1").XValueMember = "SEX"
+                Chart1.Series("Series1").YValueMembers = "Count"
+                Chart1.Series("Series1").IsValueShownAsLabel = True ' แสดงค่าเป็น Label
+                ' แสดง Chart
+                Chart1.DataBind()
+            Else
+                MessageBox.Show("No data available.")
+            End If
+        Catch ex As Exception
+            ' จัดการข้อผิดพลาด
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            ' ปิดการเชื่อมต่อ
+            connection.Close()
+        End Try
+
+    End Sub
+
+    Private Sub Chart3_Click(sender As Object, e As EventArgs) Handles Chart3.Click
+
     End Sub
 End Class
