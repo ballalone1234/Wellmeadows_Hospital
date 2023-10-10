@@ -125,6 +125,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashPatient.Designer.vb">
+      <DependentUpon>dashPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormSearch.Designer.vb">
       <DependentUpon>FormSearch.vb</DependentUpon>
     </Compile>
@@ -328,6 +334,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="dashPatient.resx">
+      <DependentUpon>dashPatient.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSearch.resx">
       <DependentUpon>FormSearch.vb</DependentUpon>
     </EmbeddedResource>
@@ -483,6 +492,18 @@
     <None Include="Resources\imaage7.png" />
     <None Include="Resources\imaage8.png" />
     <None Include="Resources\imaage9.png" />
+    <None Include="Resources\imaage10.png" />
+    <None Include="Resources\iimage.png" />
+    <None Include="Resources\iimage1.png" />
+    <None Include="Resources\iimage2.png" />
+    <None Include="Resources\iimage3.png" />
+    <None Include="Resources\iimage4.png" />
+    <None Include="Resources\iimage5.png" />
+    <None Include="Resources\iimage6.png" />
+    <None Include="Resources\iimage7.png" />
+    <None Include="Resources\iimage8.png" />
+    <None Include="Resources\iimage9.png" />
+    <None Include="Resources\iimage10.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">

@@ -28,7 +28,27 @@
 
     End Sub
 
-    Private Sub Chart1_Click_1(sender As Object, e As EventArgs) Handles Chart1.Click
+    Private Sub Chart1_Click_1(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub PictureBox1_Click_1(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+
+    End Sub
+
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub TableLayoutPanel2_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel2.Paint
+
+    End Sub
+
+    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
 
     End Sub
 End Class
