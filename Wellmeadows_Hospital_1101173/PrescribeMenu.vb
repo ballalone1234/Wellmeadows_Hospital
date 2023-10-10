@@ -6,6 +6,7 @@ Imports Oracle.ManagedDataAccess.Client
 Imports Wellmeadows_Hospital_1101173.Hospital
 
 Public Class PrescribeMenu
+    Public rowValue As New List(Of List(Of String))()
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
@@ -54,7 +55,7 @@ Public Class PrescribeMenu
     End Sub
 
     Private Sub AddButton_Click(sender As Object, e As EventArgs) Handles AddButton.Click
-        Dim row As String() = {DrugNo.Text, GetDataOnceCol("DRUG", "DRUG_NAME", $"{DrugNo.Text}"), UnitPer.Value, St.Value.ToString("yyyy-MM-dd"), EndD.Value.ToString("yyyy-MM-dd"), Detail.Text}
+        Dim row As String() = {DrugNo.Text, UnitPer.Value, St.Value.ToString("yyyy-MM-dd"), EndD.Value.ToString("yyyy-MM-dd"), Detail.Text}
 
         DataDrug.Rows.Add(row)
     End Sub
@@ -62,6 +63,7 @@ Public Class PrescribeMenu
     Private Sub Summit2Button_Click(sender As Object, e As EventArgs) Handles Summit2Button.Click
         Dim connection As New OracleConnection(Connect())
         connection.Open()
+
         For Each row As DataGridViewRow In DataDrug.Rows
             Dim columnValues As New List(Of String)()
             For Each row2 As DataGridViewCell In row.Cells
@@ -69,31 +71,36 @@ Public Class PrescribeMenu
                 Dim format As String = "yyyy-MM-dd"
                 Dim parsedDate As DateTime
 
-                If DateTime.TryParseExact(dateString, Format, Nothing, DateTimeStyles.None, parsedDate) Then
+                If DateTime.TryParseExact(dateString, format, Nothing, DateTimeStyles.None, parsedDate) Then
                     columnValues.Add($"TO_DATE('{row2.Value}','YYYY-MM-DD')")
                 Else
-                    columnValues.Add(row2.Value)
+                    columnValues.Add($"'{row2.Value}'")
                 End If
 
             Next
+            rowValue.Add(columnValues)
             Debug.WriteLine(columnValues)
 
         Next
 
+        Debug.WriteLine(rowValue)
+
+
         'Dim cmd As New OracleCommand(sql, connection)
         'cmd.ExecuteNonQuery()
         connection.Close()
-    End Sub
-
-    Private Sub Label7_Click_1(sender As Object, e As EventArgs) Handles Label7.Click
-
-    End Sub
-
-    Private Sub Appointmentnum_TextChanged(sender As Object, e As EventArgs) Handles Appointmentnum.Click
-        Appointment.ptno.Text = ptno.Text
-        Appointment.Show()
+        Treatment.Medications.Text = "add success"
+        Treatment.rowValueSave = rowValue
+        Debug.WriteLine(Treatment.rowValueSave)
+        Hide()
 
     End Sub
+
+    Private Sub Label7_Click_1(sender As Object, e As EventArgs)
+
+    End Sub
+
+
 
 
 End Class
