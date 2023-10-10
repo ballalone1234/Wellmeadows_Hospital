@@ -557,6 +557,16 @@
     <None Include="Resources\imagge.png" />
     <None Include="Resources\imagge1.png" />
     <None Include="Resources\imagge2.png" />
+    <None Include="Resources\imagge3.png" />
+    <None Include="Resources\imagge4.png" />
+    <None Include="Resources\image11.png" />
+    <None Include="Resources\image12.png" />
+    <None Include="Resources\image13.png" />
+    <None Include="Resources\image14.png" />
+    <None Include="Resources\image15.png" />
+    <None Include="Resources\image16.png" />
+    <None Include="Resources\image17.png" />
+    <None Include="Resources\image18.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
