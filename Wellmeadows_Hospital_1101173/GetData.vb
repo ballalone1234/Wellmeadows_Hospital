@@ -3,7 +3,7 @@ Imports Oracle.ManagedDataAccess.Client
 
 Module GetData
     Public pa_id As String
-    Public staff_id As String
+    Public staff_id As String = "1101"
     Dim dataAdd As New List(Of String)()
     Public Function SavePatient(ByVal data As List(Of String))
         dataAdd = data
@@ -18,6 +18,23 @@ Module GetData
 
         ' สร้างคำสั่ง SQL สำหรับเรียกใช้ค่าจาก Sequence
         Dim getSequenceSql As String = "SELECT patient_seq.CURRVAL FROM DUAL"
+        Dim cmd As New OracleCommand(getSequenceSql, connection)
+
+        ' สร้างตัวแปรเพื่อเก็บค่าที่ได้จาก Sequence
+        Dim generatedPatientNum As Decimal = Convert.ToDecimal(cmd.ExecuteScalar())
+
+        ' ตอนนี้ค่า generatedPatientNum จะเป็นค่าล่าสุดที่ได้จาก Sequence
+        Console.WriteLine("Generated PATIENT_NUM: " & generatedPatientNum)
+        Return generatedPatientNum
+        connection.Close()
+    End Function
+
+    Public Function GetSeqq(seq)
+        Dim connection As New OracleConnection(Connect())
+        connection.Open()
+
+        ' สร้างคำสั่ง SQL สำหรับเรียกใช้ค่าจาก Sequence
+        Dim getSequenceSql As String = $"SELECT {seq}.CURRVAL FROM DUAL"
         Dim cmd As New OracleCommand(getSequenceSql, connection)
 
         ' สร้างตัวแปรเพื่อเก็บค่าที่ได้จาก Sequence
@@ -142,12 +159,42 @@ Module GetData
 
         Catch ex As Exception
             ' จัดการข้อผิดพลาดที่เกิดขึ้น
+            Console.WriteLine(ex.Message)
             MessageBox.Show("เกิดข้อผิดพลาดในการเชื่อมต่อกับฐานข้อมูล: " & ex.Message)
             Return 0
         End Try
 
     End Function
+    Public Function InsetFlexibleMed(ByVal data As String, ByVal table As String) As Int32
+        'Dim column As String = String.Join(",", )
 
+        Try
+            Dim connection As New OracleConnection(Connect())
+            connection.Open()
+            Dim sql As String = $"INSERT INTO {table} ({GetColumn(table)}) VALUES ({String.Join(",", data)})"
+            Console.WriteLine(sql)
+            Dim cmd As New OracleCommand(sql, connection)
+            cmd.ExecuteNonQuery()
+            Dim getSequenceSql As String = $"SELECT MH_SEQ.CURRVAL FROM DUAL"
+            Dim cmd2 As New OracleCommand(getSequenceSql, connection)
+
+            ' สร้างตัวแปรเพื่อเก็บค่าที่ได้จาก Sequence
+            Dim generatedPatientNum As Decimal = Convert.ToDecimal(cmd2.ExecuteScalar())
+            Console.WriteLine("Generated PATIENT_NUM: " & generatedPatientNum)
+            connection.Close()
+            Return generatedPatientNum
+        Catch ex As OracleException When ex.Number = 1 AndAlso ex.Message.Contains("PATIENTS_UK1")
+            ' จัดการกับข้อผิดพลาดที่เกิดจาก unique constraint violation
+            MessageBox.Show("cid is already exist")
+
+        Catch ex As Exception
+            ' จัดการข้อผิดพลาดที่เกิดขึ้น
+            Console.WriteLine(ex.Message)
+            MessageBox.Show("เกิดข้อผิดพลาดในการเชื่อมต่อกับฐานข้อมูล: " & ex.Message)
+            Return 0
+        End Try
+
+    End Function
     Public Function GetColumn(ByVal table)
         ' สร้างเชื่อมต่อกับ Oracle Database
 
@@ -253,4 +300,18 @@ Module GetData
         End Using
     End Function
 
+    Public Sub UpdateData(table, column, column_where, id, value)
+        Dim query As String = $"UPDATE {table} SET {column} = '{value}' WHERE {column_where} = '{id}'"
+        Using connection As New OracleConnection(Connect())
+            Using command As New OracleCommand(query, connection)
+                Try
+                    connection.Open()
+                    command.ExecuteNonQuery()
+                    MessageBox.Show("Data updated successfully.")
+                Catch ex As Exception
+                    MessageBox.Show("Error: " & ex.Message)
+                End Try
+            End Using
+        End Using
+    End Sub
 End Module

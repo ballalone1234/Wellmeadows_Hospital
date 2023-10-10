@@ -5,6 +5,8 @@ Imports Wellmeadows_Hospital_1101173.Hospital
 
 Public Class Treatment
     Public rowValueSave As List(Of List(Of String))
+    Public dataApp() As String
+    Public examRoom As String
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
@@ -24,19 +26,24 @@ Public Class Treatment
         Dim connection As New OracleConnection(Connect())
         connection.Open()
         Dim data() As String = {$"MH_SEQ.NEXTVAL", $"'{ptno.Text}'", $"'{staff_id}'",
-            $"'{ward.Text}'", $"'{appnum.Text}'", $"TO_DATE('{Tdate.Value.ToString("yyyy-MM-dd")}'", $"'{Diagnosis.Text}'", $"'{tel.Text}'", $"'{DrugAllergies.Text}'"}
-        If InsetFlexible(String.Join(",", data), "MEDICAL_HISTORY") > 1 Then
+            $"'{ward.Text}'", $"TO_DATE('{Tdate.Value.ToString("yyyy-MM-dd")}','YYYY-MM-DD')", $"'{Diagnosis.Text}'", $"'{tel.Text}'", $"'{DrugAllergies.Text}'"}
+        Dim result As Int32 = InsetFlexibleMed(String.Join(",", data), "MEDICAL_HISTORY")
+        If result > 0 Then
             rowValueSave.RemoveAt(rowValueSave.Count - 1)
             For Each row In rowValueSave
                 Dim sql = $"INSERT INTO PRESCRIBED({GetColumn("PRESCRIBED")}) 
-                VALUES(MH_SEQ.CURRVAL , {String.Join(",", row)})"
+                VALUES({result} , {String.Join(",", row)})"
                 Debug.WriteLine(sql)
                 Dim cmd As New OracleCommand(sql, connection)
                 cmd.ExecuteNonQuery()
             Next
+            Dim dataApp() As String = {$"'{appnum.Text}'", $"TO_DATE('{Appointment.examdate.Value.ToString("yyyy-MM-dd")}','YYYY-MM-DD')",
+            $"'{examRoom}'", $"{result}"}
+            InsetFlexible(String.Join(",", dataApp), "PATIENTAPPOINTMENT")
+            MessageBox.Show("เพิ่มเสร็จสมบูรณ์")
         End If
 
-        Debug.WriteLine(rowValueSave)
+
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click

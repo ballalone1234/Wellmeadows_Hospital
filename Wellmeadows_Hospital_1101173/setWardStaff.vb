@@ -1,6 +1,6 @@
-﻿Imports System.Windows.Forms.AxHost
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
-Public Class Appointment
+Public Class setWardStaff
 
     Public cid_patient As String
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
@@ -21,16 +21,23 @@ Public Class Appointment
 
 
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
-        Dim genAppnum = $"{ptno.Text}{examroom.Text}{wardno.Text}{examdate.Value.ToString("yyyyMMdd")}"
-        Treatment.appnum.Text = genAppnum
-        Treatment.examRoom = examroom.Text
-        Treatment.dataApp = {$"'{genAppnum}'", $"'{ptno.Text}'", $"'{staff_id}'", $"TO_DATE('{examdate.Value.ToString("yyyy-MM-dd")}','YYYY-MM-DD')", $"{examroom.Text}"}
+
+        Dim row() As String = {$"'{staffno.Text}'", $"'{wardno.Text}'", $"'{shift.SelectedItem.ToString()}'", Getdate(stdate), Getdate(Edate)}
+
+        If InsetFlexible(String.Join(",", row), "WORK_IN") > 0 Then
+            MessageBox.Show("Set Success!")
+            UpdateData("STAFF", "WORK_LOCATION", "STAFF_NUM", staffno.Text, wardno.Text)
+        End If
+
         Close()
+
     End Sub
 
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
 
+    End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub TableLayoutPanel2_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel2.Paint
 
     End Sub
 
@@ -40,10 +47,5 @@ Public Class Appointment
         FormSearch.returnText = wardno
 
         FormSearch.Show()
-
-    End Sub
-
-    Private Sub wardno_TextChanged_1(sender As Object, e As EventArgs) Handles wardno.TextChanged
-
     End Sub
 End Class
