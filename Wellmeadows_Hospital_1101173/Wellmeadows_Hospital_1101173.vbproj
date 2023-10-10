@@ -125,6 +125,36 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashboarddrug.Designer.vb">
+      <DependentUpon>dashboarddrug.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboarddrug.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboardward.Designer.vb">
+      <DependentUpon>dashboardward.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboardward.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboardstaff.Designer.vb">
+      <DependentUpon>dashboardstaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboardstaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboardpatient.Designer.vb">
+      <DependentUpon>dashboardpatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboardpatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashPatient.Designer.vb">
+      <DependentUpon>dashPatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashPatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormSearch.Designer.vb">
       <DependentUpon>FormSearch.vb</DependentUpon>
     </Compile>
@@ -347,6 +377,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="dashboarddrug.resx">
+      <DependentUpon>dashboarddrug.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboardward.resx">
+      <DependentUpon>dashboardward.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboardstaff.resx">
+      <DependentUpon>dashboardstaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboardpatient.resx">
+      <DependentUpon>dashboardpatient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashPatient.resx">
+      <DependentUpon>dashPatient.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSearch.resx">
       <DependentUpon>FormSearch.vb</DependentUpon>
     </EmbeddedResource>
@@ -489,6 +534,48 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\image.png" />
+    <None Include="Resources\image1.png" />
+    <None Include="Resources\image2.png" />
+    <None Include="Resources\image3.png" />
+    <None Include="Resources\image4.png" />
+    <None Include="Resources\image5.png" />
+    <None Include="Resources\image6.png" />
+    <None Include="Resources\image7.png" />
+    <None Include="Resources\image8.png" />
+    <None Include="Resources\image9.png" />
+    <None Include="Resources\image10.png" />
+    <None Include="Resources\imagee.png" />
+    <None Include="Resources\imagee %282%29.png" />
+    <None Include="Resources\imaage.png" />
+    <None Include="Resources\imaage1.png" />
+    <None Include="Resources\imaage2.png" />
+    <None Include="Resources\imaage3.png" />
+    <None Include="Resources\imaage4.png" />
+    <None Include="Resources\imaage5.png" />
+    <None Include="Resources\imaage6.png" />
+    <None Include="Resources\imaage7.png" />
+    <None Include="Resources\imaage8.png" />
+    <None Include="Resources\imaage9.png" />
+    <None Include="Resources\imaage10.png" />
+    <None Include="Resources\iimage.png" />
+    <None Include="Resources\iimage1.png" />
+    <None Include="Resources\iimage2.png" />
+    <None Include="Resources\iimage3.png" />
+    <None Include="Resources\iimage4.png" />
+    <None Include="Resources\iimage5.png" />
+    <None Include="Resources\iimage6.png" />
+    <None Include="Resources\iimage7.png" />
+    <None Include="Resources\iimage8.png" />
+    <None Include="Resources\iimage9.png" />
+    <None Include="Resources\iimage10.png" />
+    <None Include="Resources\immage.png" />
+    <None Include="Resources\immage1.png" />
+    <None Include="Resources\immage2.png" />
+    <None Include="Resources\immage3.png" />
+    <None Include="Resources\imagge.png" />
+    <None Include="Resources\imagge1.png" />
+    <None Include="Resources\imagge2.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">

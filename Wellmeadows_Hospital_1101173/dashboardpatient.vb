@@ -1,4 +1,4 @@
-﻿Public Class Dashboard
+﻿Public Class dashboardpatient
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -24,7 +24,7 @@
         Me.Hide()
     End Sub
 
-    Private Sub Chart1_Click(sender As Object, e As EventArgs) 
+    Private Sub Chart1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -44,7 +44,7 @@
 
     End Sub
 
-    Private Sub TableLayoutPanel2_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel2.Paint
+    Private Sub TableLayoutPanel2_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
@@ -52,31 +52,11 @@
 
     End Sub
 
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
-        NextPage(Me, dashboardpatient)
-    End Sub
-
     Private Sub PictureBox1_Click_2(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
-
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        NextPage(Me, dashboardpatient)
-    End Sub
-
-    Private Sub PictureBox22_Click(sender As Object, e As EventArgs) Handles PictureBox22.Click
-
-    End Sub
-
-    Private Sub PictureBox13_Click(sender As Object, e As EventArgs) Handles PictureBox13.Click
-        NextPage(Me, dashboardstaff)
+        NextPage(Me, Dashboard)
     End Sub
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
-        NextPage(Me, dashboardward)
-    End Sub
-
-    Private Sub PictureBox23_Click(sender As Object, e As EventArgs) Handles PictureBox23.Click
         NextPage(Me, dashboardward)
     End Sub
 
