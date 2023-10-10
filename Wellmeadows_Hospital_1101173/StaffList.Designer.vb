@@ -28,43 +28,30 @@ Partial Class StaffList
         Me.Home = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Back = New System.Windows.Forms.Button()
-        Me.STAFFBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Hospital = New Wellmeadows_Hospital_1101173.Hospital()
-        Me.STAFFTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.STAFFTableAdapter()
-        Me.TableAdapterManager = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.TableAdapterManager()
-        Me.LIST_STAFFBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.LIST_STAFFTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.LIST_STAFFTableAdapter()
-        Me.LIST_STAFFDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.ptno = New System.Windows.Forms.TextBox()
         Me.Fillter = New System.Windows.Forms.Button()
+        Me.LIST_STAFFDataGridView = New System.Windows.Forms.DataGridView()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Back = New System.Windows.Forms.Button()
+        Me.LIST_STAFFBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Hospital = New Wellmeadows_Hospital_1101173.Hospital()
+        Me.STAFFBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.STAFFTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.STAFFTableAdapter()
+        Me.TableAdapterManager = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.TableAdapterManager()
+        Me.LIST_STAFFTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.LIST_STAFFTableAdapter()
+        Me.setWard = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.STAFFBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Hospital, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LIST_STAFFBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LIST_STAFFDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel3.SuspendLayout()
+        CType(Me.LIST_STAFFDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel1.SuspendLayout()
+        CType(Me.LIST_STAFFBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Hospital, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.STAFFBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -118,6 +105,57 @@ Partial Class StaffList
         Me.Panel2.Size = New System.Drawing.Size(1759, 1009)
         Me.Panel2.TabIndex = 1
         '
+        'TableLayoutPanel3
+        '
+        Me.TableLayoutPanel3.ColumnCount = 4
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel3.Controls.Add(Me.ptno, 0, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.Fillter, 1, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.setWard, 2, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.RadioButton2, 3, 1)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(16, 28)
+        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
+        Me.TableLayoutPanel3.RowCount = 2
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(593, 65)
+        Me.TableLayoutPanel3.TabIndex = 12
+        '
+        'ptno
+        '
+        Me.ptno.Location = New System.Drawing.Point(3, 35)
+        Me.ptno.Name = "ptno"
+        Me.ptno.Size = New System.Drawing.Size(94, 22)
+        Me.ptno.TabIndex = 0
+        '
+        'Fillter
+        '
+        Me.Fillter.Location = New System.Drawing.Point(113, 35)
+        Me.Fillter.Name = "Fillter"
+        Me.Fillter.Size = New System.Drawing.Size(75, 23)
+        Me.Fillter.TabIndex = 1
+        Me.Fillter.Text = "Search"
+        Me.Fillter.UseVisualStyleBackColor = True
+        '
+        'LIST_STAFFDataGridView
+        '
+        Me.LIST_STAFFDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
+        Me.LIST_STAFFDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.LIST_STAFFDataGridView.Location = New System.Drawing.Point(31, 117)
+        Me.LIST_STAFFDataGridView.Name = "LIST_STAFFDataGridView"
+        Me.LIST_STAFFDataGridView.RowHeadersWidth = 51
+        Me.LIST_STAFFDataGridView.RowTemplate.Height = 24
+        Me.LIST_STAFFDataGridView.Size = New System.Drawing.Size(1665, 632)
+        Me.LIST_STAFFDataGridView.TabIndex = 11
+        '
         'Button1
         '
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -165,15 +203,20 @@ Partial Class StaffList
         Me.Back.TabIndex = 10
         Me.Back.UseVisualStyleBackColor = False
         '
-        'STAFFBindingSource
+        'LIST_STAFFBindingSource
         '
-        Me.STAFFBindingSource.DataMember = "STAFF"
-        Me.STAFFBindingSource.DataSource = Me.Hospital
+        Me.LIST_STAFFBindingSource.DataMember = "LIST_STAFF"
+        Me.LIST_STAFFBindingSource.DataSource = Me.Hospital
         '
         'Hospital
         '
         Me.Hospital.DataSetName = "Hospital"
         Me.Hospital.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'STAFFBindingSource
+        '
+        Me.STAFFBindingSource.DataMember = "STAFF"
+        Me.STAFFBindingSource.DataSource = Me.Hospital
         '
         'STAFFTableAdapter
         '
@@ -198,185 +241,31 @@ Partial Class StaffList
         Me.TableAdapterManager.WORK_INTableAdapter = Nothing
         Me.TableAdapterManager.WORKEXPTableAdapter = Nothing
         '
-        'LIST_STAFFBindingSource
-        '
-        Me.LIST_STAFFBindingSource.DataMember = "LIST_STAFF"
-        Me.LIST_STAFFBindingSource.DataSource = Me.Hospital
-        '
         'LIST_STAFFTableAdapter
         '
         Me.LIST_STAFFTableAdapter.ClearBeforeFill = True
         '
-        'LIST_STAFFDataGridView
+        'setWard
         '
-        Me.LIST_STAFFDataGridView.AutoGenerateColumns = False
-        Me.LIST_STAFFDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.LIST_STAFFDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn15})
-        Me.LIST_STAFFDataGridView.DataSource = Me.LIST_STAFFBindingSource
-        Me.LIST_STAFFDataGridView.Location = New System.Drawing.Point(0, 110)
-        Me.LIST_STAFFDataGridView.Name = "LIST_STAFFDataGridView"
-        Me.LIST_STAFFDataGridView.RowHeadersWidth = 51
-        Me.LIST_STAFFDataGridView.RowTemplate.Height = 24
-        Me.LIST_STAFFDataGridView.Size = New System.Drawing.Size(1828, 615)
-        Me.LIST_STAFFDataGridView.TabIndex = 11
+        Me.setWard.AutoSize = True
+        Me.setWard.Location = New System.Drawing.Point(223, 35)
+        Me.setWard.Name = "setWard"
+        Me.setWard.Size = New System.Drawing.Size(80, 20)
+        Me.setWard.TabIndex = 2
+        Me.setWard.TabStop = True
+        Me.setWard.Text = "Set ward"
+        Me.setWard.UseVisualStyleBackColor = True
         '
-        'DataGridViewTextBoxColumn1
+        'RadioButton2
         '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "STAFF_NUM"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "STAFF_NUM"
-        Me.DataGridViewTextBoxColumn1.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.Width = 125
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "STAFF_NAME"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "STAFF_NAME"
-        Me.DataGridViewTextBoxColumn2.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.Width = 125
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "ADDRESS"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "ADDRESS"
-        Me.DataGridViewTextBoxColumn3.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.Width = 125
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "SALARY"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "SALARY"
-        Me.DataGridViewTextBoxColumn4.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.Width = 125
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "WORK_LOCATION"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "WORK_LOCATION"
-        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.Width = 125
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "TELL"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "TELL"
-        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.Width = 125
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "NIN"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "NIN"
-        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.Width = 125
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "SEX"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "SEX"
-        Me.DataGridViewTextBoxColumn8.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        Me.DataGridViewTextBoxColumn8.Width = 125
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "POSITION"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "POSITION"
-        Me.DataGridViewTextBoxColumn9.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        Me.DataGridViewTextBoxColumn9.Width = 125
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.DataPropertyName = "DOB"
-        Me.DataGridViewTextBoxColumn10.HeaderText = "DOB"
-        Me.DataGridViewTextBoxColumn10.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        Me.DataGridViewTextBoxColumn10.Width = 125
-        '
-        'DataGridViewTextBoxColumn16
-        '
-        Me.DataGridViewTextBoxColumn16.DataPropertyName = "POSITION_HISTORY"
-        Me.DataGridViewTextBoxColumn16.HeaderText = "POSITION_HISTORY"
-        Me.DataGridViewTextBoxColumn16.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
-        Me.DataGridViewTextBoxColumn16.Width = 125
-        '
-        'DataGridViewTextBoxColumn11
-        '
-        Me.DataGridViewTextBoxColumn11.DataPropertyName = "WORKED_PER_WEEK"
-        Me.DataGridViewTextBoxColumn11.HeaderText = "WORKED_PER_WEEK"
-        Me.DataGridViewTextBoxColumn11.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
-        Me.DataGridViewTextBoxColumn11.Width = 125
-        '
-        'DataGridViewTextBoxColumn12
-        '
-        Me.DataGridViewTextBoxColumn12.DataPropertyName = "WORK_TYPE"
-        Me.DataGridViewTextBoxColumn12.HeaderText = "WORK_TYPE"
-        Me.DataGridViewTextBoxColumn12.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
-        Me.DataGridViewTextBoxColumn12.Width = 125
-        '
-        'DataGridViewTextBoxColumn13
-        '
-        Me.DataGridViewTextBoxColumn13.DataPropertyName = "PAYMENT_TYPE"
-        Me.DataGridViewTextBoxColumn13.HeaderText = "PAYMENT_TYPE"
-        Me.DataGridViewTextBoxColumn13.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
-        Me.DataGridViewTextBoxColumn13.Width = 125
-        '
-        'DataGridViewTextBoxColumn15
-        '
-        Me.DataGridViewTextBoxColumn15.DataPropertyName = "SALARY_LEVEL"
-        Me.DataGridViewTextBoxColumn15.HeaderText = "SALARY_LEVEL"
-        Me.DataGridViewTextBoxColumn15.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
-        Me.DataGridViewTextBoxColumn15.Width = 125
-        '
-        'TableLayoutPanel3
-        '
-        Me.TableLayoutPanel3.ColumnCount = 4
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel3.Controls.Add(Me.ptno, 0, 1)
-        Me.TableLayoutPanel3.Controls.Add(Me.Fillter, 1, 1)
-        Me.TableLayoutPanel3.Location = New System.Drawing.Point(16, 28)
-        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
-        Me.TableLayoutPanel3.RowCount = 2
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(593, 65)
-        Me.TableLayoutPanel3.TabIndex = 12
-        '
-        'ptno
-        '
-        Me.ptno.Location = New System.Drawing.Point(3, 35)
-        Me.ptno.Name = "ptno"
-        Me.ptno.Size = New System.Drawing.Size(94, 22)
-        Me.ptno.TabIndex = 0
-        '
-        'Fillter
-        '
-        Me.Fillter.Location = New System.Drawing.Point(113, 35)
-        Me.Fillter.Name = "Fillter"
-        Me.Fillter.Size = New System.Drawing.Size(75, 23)
-        Me.Fillter.TabIndex = 1
-        Me.Fillter.Text = "Search"
-        Me.Fillter.UseVisualStyleBackColor = True
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(353, 35)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(68, 20)
+        Me.RadioButton2.TabIndex = 3
+        Me.RadioButton2.TabStop = True
+        Me.RadioButton2.Text = "Delete"
+        Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'StaffList
         '
@@ -395,13 +284,13 @@ Partial Class StaffList
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
-        Me.TableLayoutPanel1.ResumeLayout(False)
-        CType(Me.STAFFBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Hospital, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LIST_STAFFBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LIST_STAFFDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
+        CType(Me.LIST_STAFFDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        CType(Me.LIST_STAFFBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Hospital, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.STAFFBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -429,22 +318,9 @@ Partial Class StaffList
     Friend WithEvents LIST_STAFFBindingSource As BindingSource
     Friend WithEvents LIST_STAFFTableAdapter As HospitalTableAdapters.LIST_STAFFTableAdapter
     Friend WithEvents LIST_STAFFDataGridView As DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn16 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn13 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn15 As DataGridViewTextBoxColumn
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents ptno As TextBox
     Friend WithEvents Fillter As Button
+    Friend WithEvents setWard As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
 End Class

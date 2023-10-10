@@ -18,7 +18,7 @@
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataSearch.CellClick
 
 
-        Dim cellValue As Object = DataSearch.Rows(e.RowIndex).Cells(CellColumn).Value
+        Dim cellValue As Object = DataSearch.Rows(e.RowIndex).Cells(cellColumn).Value
         returnText.Text = cellValue.ToString()
 
         Debug.Write(DataSearch.Rows(e.RowIndex))
