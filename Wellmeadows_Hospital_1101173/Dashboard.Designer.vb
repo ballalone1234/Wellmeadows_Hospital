@@ -58,13 +58,10 @@ Partial Class Dashboard
         Me.TableLayoutPanel20 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel21 = New System.Windows.Forms.TableLayoutPanel()
         Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel22 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel23 = New System.Windows.Forms.TableLayoutPanel()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.TableLayoutPanel24 = New System.Windows.Forms.TableLayoutPanel()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
@@ -79,10 +76,8 @@ Partial Class Dashboard
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.PictureBox21 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
         Me.PictureBox23 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
         Me.Back = New System.Windows.Forms.Button()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
@@ -117,7 +112,6 @@ Partial Class Dashboard
         Me.TableLayoutPanel21.SuspendLayout()
         Me.TableLayoutPanel22.SuspendLayout()
         Me.TableLayoutPanel23.SuspendLayout()
-        Me.TableLayoutPanel24.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -132,10 +126,8 @@ Partial Class Dashboard
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -276,14 +268,14 @@ Partial Class Dashboard
         Me.TableLayoutPanel2.Controls.Add(Me.Panel3, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel4, 0, 2)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 71)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 163)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 4
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.46616!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 29.32331!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.20301!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.007519!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1123, 266)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1123, 394)
         Me.TableLayoutPanel2.TabIndex = 9
         '
         'Panel3
@@ -493,7 +485,7 @@ Partial Class Dashboard
         'Panel4
         '
         Me.Panel4.Controls.Add(Me.TableLayoutPanel17)
-        Me.Panel4.Location = New System.Drawing.Point(3, 178)
+        Me.Panel4.Location = New System.Drawing.Point(3, 261)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(1117, 77)
         Me.Panel4.TabIndex = 1
@@ -510,9 +502,8 @@ Partial Class Dashboard
         Me.TableLayoutPanel17.Controls.Add(Me.TableLayoutPanel18, 1, 0)
         Me.TableLayoutPanel17.Controls.Add(Me.TableLayoutPanel20, 2, 0)
         Me.TableLayoutPanel17.Controls.Add(Me.PictureBox21, 0, 0)
-        Me.TableLayoutPanel17.Controls.Add(Me.TableLayoutPanel23, 4, 0)
         Me.TableLayoutPanel17.Controls.Add(Me.PictureBox23, 3, 0)
-        Me.TableLayoutPanel17.Controls.Add(Me.TableLayoutPanel24, 5, 0)
+        Me.TableLayoutPanel17.Controls.Add(Me.TableLayoutPanel23, 4, 0)
         Me.TableLayoutPanel17.Location = New System.Drawing.Point(33, 0)
         Me.TableLayoutPanel17.Name = "TableLayoutPanel17"
         Me.TableLayoutPanel17.RowCount = 1
@@ -596,14 +587,6 @@ Partial Class Dashboard
         Me.TextBox10.Size = New System.Drawing.Size(51, 20)
         Me.TextBox10.TabIndex = 2
         '
-        'TextBox11
-        '
-        Me.TextBox11.BackColor = System.Drawing.SystemColors.Menu
-        Me.TextBox11.Location = New System.Drawing.Point(135, 3)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox11.TabIndex = 3
-        '
         'TableLayoutPanel22
         '
         Me.TableLayoutPanel22.ColumnCount = 2
@@ -618,6 +601,14 @@ Partial Class Dashboard
         Me.TableLayoutPanel22.Size = New System.Drawing.Size(189, 34)
         Me.TableLayoutPanel22.TabIndex = 1
         '
+        'TextBox11
+        '
+        Me.TextBox11.BackColor = System.Drawing.SystemColors.Menu
+        Me.TextBox11.Location = New System.Drawing.Point(135, 3)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(51, 20)
+        Me.TextBox11.TabIndex = 3
+        '
         'TableLayoutPanel23
         '
         Me.TableLayoutPanel23.ColumnCount = 1
@@ -628,49 +619,17 @@ Partial Class Dashboard
         Me.TableLayoutPanel23.Location = New System.Drawing.Point(685, 3)
         Me.TableLayoutPanel23.Name = "TableLayoutPanel23"
         Me.TableLayoutPanel23.RowCount = 2
-        Me.TableLayoutPanel23.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel23.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel23.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.25926!))
+        Me.TableLayoutPanel23.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.74074!))
         Me.TableLayoutPanel23.Size = New System.Drawing.Size(195, 81)
         Me.TableLayoutPanel23.TabIndex = 4
         '
         'TextBox14
         '
-        Me.TextBox14.Location = New System.Drawing.Point(3, 43)
+        Me.TextBox14.Location = New System.Drawing.Point(3, 51)
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.Size = New System.Drawing.Size(189, 20)
         Me.TextBox14.TabIndex = 1
-        '
-        'TableLayoutPanel24
-        '
-        Me.TableLayoutPanel24.ColumnCount = 2
-        Me.TableLayoutPanel24.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel24.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel24.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel24.Controls.Add(Me.PictureBox24, 1, 1)
-        Me.TableLayoutPanel24.Controls.Add(Me.TextBox15, 0, 0)
-        Me.TableLayoutPanel24.Controls.Add(Me.TextBox16, 1, 0)
-        Me.TableLayoutPanel24.Controls.Add(Me.PictureBox25, 0, 1)
-        Me.TableLayoutPanel24.Location = New System.Drawing.Point(886, 3)
-        Me.TableLayoutPanel24.Name = "TableLayoutPanel24"
-        Me.TableLayoutPanel24.RowCount = 2
-        Me.TableLayoutPanel24.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel24.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel24.Size = New System.Drawing.Size(198, 81)
-        Me.TableLayoutPanel24.TabIndex = 6
-        '
-        'TextBox15
-        '
-        Me.TextBox15.Location = New System.Drawing.Point(3, 3)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(93, 20)
-        Me.TextBox15.TabIndex = 3
-        '
-        'TextBox16
-        '
-        Me.TextBox16.Location = New System.Drawing.Point(102, 3)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(93, 20)
-        Me.TextBox16.TabIndex = 4
         '
         'PictureBox7
         '
@@ -821,48 +780,25 @@ Partial Class Dashboard
         Me.PictureBox21.TabIndex = 3
         Me.PictureBox21.TabStop = False
         '
+        'PictureBox23
+        '
+        Me.PictureBox23.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.immage1
+        Me.PictureBox23.Location = New System.Drawing.Point(545, 3)
+        Me.PictureBox23.Name = "PictureBox23"
+        Me.PictureBox23.Size = New System.Drawing.Size(134, 74)
+        Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox23.TabIndex = 5
+        Me.PictureBox23.TabStop = False
+        '
         'PictureBox22
         '
-        Me.PictureBox22.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.imaage4
+        Me.PictureBox22.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.immage2
         Me.PictureBox22.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox22.Name = "PictureBox22"
         Me.PictureBox22.Size = New System.Drawing.Size(183, 31)
         Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox22.TabIndex = 0
         Me.PictureBox22.TabStop = False
-        '
-        'PictureBox23
-        '
-        Me.PictureBox23.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.imaage5
-        Me.PictureBox23.Location = New System.Drawing.Point(545, 3)
-        Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(134, 81)
-        Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox23.TabIndex = 5
-        Me.PictureBox23.TabStop = False
-        '
-        'PictureBox24
-        '
-        Me.PictureBox24.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox24.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.imaage7
-        Me.PictureBox24.Location = New System.Drawing.Point(102, 43)
-        Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.Size = New System.Drawing.Size(93, 35)
-        Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox24.TabIndex = 1
-        Me.PictureBox24.TabStop = False
-        '
-        'PictureBox25
-        '
-        Me.PictureBox25.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.imaage8
-        Me.PictureBox25.Location = New System.Drawing.Point(3, 43)
-        Me.PictureBox25.Name = "PictureBox25"
-        Me.PictureBox25.Size = New System.Drawing.Size(93, 32)
-        Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox25.TabIndex = 2
-        Me.PictureBox25.TabStop = False
         '
         'Back
         '
@@ -891,7 +827,7 @@ Partial Class Dashboard
         '
         'PictureBox4
         '
-        Me.PictureBox4.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.image3
+        Me.PictureBox4.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.immage3
         Me.PictureBox4.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(52, 48)
@@ -992,8 +928,6 @@ Partial Class Dashboard
         Me.TableLayoutPanel22.PerformLayout()
         Me.TableLayoutPanel23.ResumeLayout(False)
         Me.TableLayoutPanel23.PerformLayout()
-        Me.TableLayoutPanel24.ResumeLayout(False)
-        Me.TableLayoutPanel24.PerformLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1008,10 +942,8 @@ Partial Class Dashboard
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1089,11 +1021,6 @@ Partial Class Dashboard
     Friend WithEvents PictureBox22 As PictureBox
     Friend WithEvents TextBox14 As TextBox
     Friend WithEvents PictureBox23 As PictureBox
-    Friend WithEvents TableLayoutPanel24 As TableLayoutPanel
-    Friend WithEvents PictureBox24 As PictureBox
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents PictureBox25 As PictureBox
     Friend WithEvents Back As Button
     Friend WithEvents PictureBox19 As PictureBox
     Friend WithEvents PictureBox17 As PictureBox

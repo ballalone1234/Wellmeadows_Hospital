@@ -125,6 +125,30 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashboarddrug.Designer.vb">
+      <DependentUpon>dashboarddrug.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboarddrug.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboardward.Designer.vb">
+      <DependentUpon>dashboardward.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboardward.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboardstaff.Designer.vb">
+      <DependentUpon>dashboardstaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboardstaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboardpatient.Designer.vb">
+      <DependentUpon>dashboardpatient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboardpatient.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="dashPatient.Designer.vb">
       <DependentUpon>dashPatient.vb</DependentUpon>
     </Compile>
@@ -341,6 +365,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="dashboarddrug.resx">
+      <DependentUpon>dashboarddrug.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboardward.resx">
+      <DependentUpon>dashboardward.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboardstaff.resx">
+      <DependentUpon>dashboardstaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboardpatient.resx">
+      <DependentUpon>dashboardpatient.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dashPatient.resx">
       <DependentUpon>dashPatient.vb</DependentUpon>
     </EmbeddedResource>
@@ -514,6 +550,13 @@
     <None Include="Resources\iimage8.png" />
     <None Include="Resources\iimage9.png" />
     <None Include="Resources\iimage10.png" />
+    <None Include="Resources\immage.png" />
+    <None Include="Resources\immage1.png" />
+    <None Include="Resources\immage2.png" />
+    <None Include="Resources\immage3.png" />
+    <None Include="Resources\imagge.png" />
+    <None Include="Resources\imagge1.png" />
+    <None Include="Resources\imagge2.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
