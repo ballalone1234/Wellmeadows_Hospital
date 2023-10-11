@@ -19,7 +19,7 @@
 
 
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
-        Dim data As List(Of String) = New List(Of String)({"patient_seq.NEXTVAL", $"'{Pname.Text}'", $"'{status.Text}'", "SYSDATE", $"TO_DATE('{DOB.Value.ToString("yyyy-MM-dd")}','YYYY-MM-DD')", $"'{tel.Text}'", $"'{ctno.Text}'", $"'{address.Text}'"})
+        Dim data As List(Of String) = New List(Of String)({"patient_seq.NEXTVAL", $"'{Pname.Text}'", $"'{status.Text}'", "SYSDATE", $"TO_DATE('{DOB.Value.ToString("yyyy-MM-dd")}','YYYY-MM-DD')", $"'{tel.Text}'", $"'{ctno.Text}'", $"'{address.Text}'", $"'{sex.SelectedItem}'"})
         RegisterPatient2.param = data
         cid_patient = ctno.Text
         NextPage(Me, RegisterPatient2)

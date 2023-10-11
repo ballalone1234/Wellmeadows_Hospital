@@ -27,6 +27,7 @@ Public Class RegisterPatient2
             MessageBox.Show("ลงทะเบียนเสร็จสิ้น")
             NextPage(Me, RegisterPatient3)
             p_id = result
+            RegisterPatient4.pid = result
         End If
     End Sub
 

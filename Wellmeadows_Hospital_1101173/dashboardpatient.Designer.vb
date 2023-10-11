@@ -60,6 +60,8 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
         Me.Chart3 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.PATIENTSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Hospital = New Wellmeadows_Hospital_1101173.Hospital()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
@@ -67,8 +69,6 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Chart2 = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.Hospital = New Wellmeadows_Hospital_1101173.Hospital()
-        Me.PATIENTSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.PATIENTSTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.PATIENTSTableAdapter()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
@@ -94,6 +94,8 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel5.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
         CType(Me.Chart3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PATIENTSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Hospital, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel6.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -101,8 +103,6 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel8.SuspendLayout()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Hospital, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PATIENTSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -111,7 +111,7 @@ Partial Class dashboardpatient
         Me.Panel1.Controls.Add(Me.TableLayoutPanel3)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(85, 838)
         Me.Panel1.TabIndex = 0
@@ -129,7 +129,7 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel3.Controls.Add(Me.TableLayoutPanel12, 0, 1)
         Me.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 6
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
@@ -147,7 +147,7 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel16.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel16.Controls.Add(Me.PictureBox6, 0, 0)
         Me.TableLayoutPanel16.Location = New System.Drawing.Point(4, 484)
-        Me.TableLayoutPanel16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel16.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel16.Name = "TableLayoutPanel16"
         Me.TableLayoutPanel16.RowCount = 2
         Me.TableLayoutPanel16.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.13363!))
@@ -159,7 +159,7 @@ Partial Class dashboardpatient
         '
         Me.PictureBox6.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.image4
         Me.PictureBox6.Location = New System.Drawing.Point(4, 4)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(69, 59)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -172,7 +172,7 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel15.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel15.Controls.Add(Me.PictureBox4, 0, 0)
         Me.TableLayoutPanel15.Location = New System.Drawing.Point(4, 388)
-        Me.TableLayoutPanel15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel15.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel15.Name = "TableLayoutPanel15"
         Me.TableLayoutPanel15.RowCount = 2
         Me.TableLayoutPanel15.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.13363!))
@@ -184,7 +184,7 @@ Partial Class dashboardpatient
         '
         Me.PictureBox4.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.immage3
         Me.PictureBox4.Location = New System.Drawing.Point(4, 4)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(69, 58)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -197,7 +197,7 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel14.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel14.Controls.Add(Me.PictureBox3, 0, 0)
         Me.TableLayoutPanel14.Location = New System.Drawing.Point(4, 292)
-        Me.TableLayoutPanel14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel14.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel14.Name = "TableLayoutPanel14"
         Me.TableLayoutPanel14.RowCount = 2
         Me.TableLayoutPanel14.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.13363!))
@@ -209,7 +209,7 @@ Partial Class dashboardpatient
         '
         Me.PictureBox3.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.image2
         Me.PictureBox3.Location = New System.Drawing.Point(4, 4)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(69, 58)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -226,7 +226,7 @@ Partial Class dashboardpatient
         Me.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Home.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Home.Location = New System.Drawing.Point(4, 4)
-        Me.Home.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Home.Margin = New System.Windows.Forms.Padding(4)
         Me.Home.Name = "Home"
         Me.Home.Size = New System.Drawing.Size(77, 88)
         Me.Home.TabIndex = 7
@@ -238,7 +238,7 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel13.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel13.Controls.Add(Me.PictureBox2, 0, 0)
         Me.TableLayoutPanel13.Location = New System.Drawing.Point(4, 196)
-        Me.TableLayoutPanel13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel13.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel13.Name = "TableLayoutPanel13"
         Me.TableLayoutPanel13.RowCount = 2
         Me.TableLayoutPanel13.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.13363!))
@@ -250,7 +250,7 @@ Partial Class dashboardpatient
         '
         Me.PictureBox2.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.image1
         Me.PictureBox2.Location = New System.Drawing.Point(4, 4)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(69, 58)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -263,7 +263,7 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel12.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel12.Controls.Add(Me.PictureBox1, 0, 1)
         Me.TableLayoutPanel12.Location = New System.Drawing.Point(4, 100)
-        Me.TableLayoutPanel12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel12.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel12.Name = "TableLayoutPanel12"
         Me.TableLayoutPanel12.RowCount = 3
         Me.TableLayoutPanel12.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.0!))
@@ -276,7 +276,7 @@ Partial Class dashboardpatient
         '
         Me.PictureBox1.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.image5
         Me.PictureBox1.Location = New System.Drawing.Point(4, 15)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(69, 57)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -288,7 +288,7 @@ Partial Class dashboardpatient
         Me.Panel2.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(85, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1600, 838)
         Me.Panel2.TabIndex = 1
@@ -303,7 +303,7 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel4, 0, 1)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 3
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.754772!))
@@ -322,7 +322,7 @@ Partial Class dashboardpatient
         Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Back.Location = New System.Drawing.Point(1457, 792)
-        Me.Back.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Back.Margin = New System.Windows.Forms.Padding(4)
         Me.Back.Name = "Back"
         Me.Back.Size = New System.Drawing.Size(44, 42)
         Me.Back.TabIndex = 10
@@ -337,7 +337,7 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel2.Controls.Add(Me.PictureBox5, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel9, 2, 0)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(4, 4)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
@@ -349,7 +349,7 @@ Partial Class dashboardpatient
         '
         Me.PictureBox5.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.immage
         Me.PictureBox5.Location = New System.Drawing.Point(503, 4)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(491, 40)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -365,11 +365,11 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel9.Controls.Add(Me.PictureBox10, 0, 0)
         Me.TableLayoutPanel9.Controls.Add(Me.TableLayoutPanel10, 1, 0)
         Me.TableLayoutPanel9.Location = New System.Drawing.Point(1194, 4)
-        Me.TableLayoutPanel9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel9.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
         Me.TableLayoutPanel9.RowCount = 1
         Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41.0!))
+        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40.0!))
         Me.TableLayoutPanel9.Size = New System.Drawing.Size(299, 40)
         Me.TableLayoutPanel9.TabIndex = 1
         '
@@ -377,7 +377,7 @@ Partial Class dashboardpatient
         '
         Me.PictureBox10.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.imagee
         Me.PictureBox10.Location = New System.Drawing.Point(4, 4)
-        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(53, 32)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -392,7 +392,7 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel10.Controls.Add(Me.PictureBox11, 0, 0)
         Me.TableLayoutPanel10.Controls.Add(Me.TextBox1, 0, 1)
         Me.TableLayoutPanel10.Location = New System.Drawing.Point(66, 4)
-        Me.TableLayoutPanel10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel10.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel10.Name = "TableLayoutPanel10"
         Me.TableLayoutPanel10.RowCount = 2
         Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -406,7 +406,7 @@ Partial Class dashboardpatient
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox11.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.imagee__2_
         Me.PictureBox11.Location = New System.Drawing.Point(4, 4)
-        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(221, 8)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -417,7 +417,7 @@ Partial Class dashboardpatient
         '
         Me.TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.TextBox1.Location = New System.Drawing.Point(48, 20)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(133, 22)
         Me.TextBox1.TabIndex = 2
@@ -430,7 +430,7 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel4.Controls.Add(Me.TableLayoutPanel5, 0, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.TableLayoutPanel8, 0, 1)
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(4, 60)
-        Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel4.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
         Me.TableLayoutPanel4.RowCount = 2
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -448,7 +448,7 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel5.Controls.Add(Me.TableLayoutPanel7, 1, 0)
         Me.TableLayoutPanel5.Controls.Add(Me.TableLayoutPanel6, 0, 0)
         Me.TableLayoutPanel5.Location = New System.Drawing.Point(4, 4)
-        Me.TableLayoutPanel5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel5.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
         Me.TableLayoutPanel5.RowCount = 1
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
@@ -464,7 +464,7 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel7.Controls.Add(Me.Chart3, 0, 1)
         Me.TableLayoutPanel7.Controls.Add(Me.PictureBox8, 0, 0)
         Me.TableLayoutPanel7.Location = New System.Drawing.Point(748, 4)
-        Me.TableLayoutPanel7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel7.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
         Me.TableLayoutPanel7.RowCount = 2
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.574468!))
@@ -480,7 +480,7 @@ Partial Class dashboardpatient
         Legend1.Name = "Legend1"
         Me.Chart3.Legends.Add(Legend1)
         Me.Chart3.Location = New System.Drawing.Point(4, 37)
-        Me.Chart3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Chart3.Margin = New System.Windows.Forms.Padding(4)
         Me.Chart3.Name = "Chart3"
         Series1.ChartArea = "ChartArea1"
         Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
@@ -491,11 +491,21 @@ Partial Class dashboardpatient
         Me.Chart3.TabIndex = 3
         Me.Chart3.Text = "Chart3"
         '
+        'PATIENTSBindingSource
+        '
+        Me.PATIENTSBindingSource.DataMember = "PATIENTS"
+        Me.PATIENTSBindingSource.DataSource = Me.Hospital
+        '
+        'Hospital
+        '
+        Me.Hospital.DataSetName = "Hospital"
+        Me.Hospital.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'PictureBox8
         '
         Me.PictureBox8.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.imagge1
         Me.PictureBox8.Location = New System.Drawing.Point(4, 4)
-        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(728, 25)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -510,7 +520,7 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel6.Controls.Add(Me.PictureBox7, 0, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.Chart1, 0, 1)
         Me.TableLayoutPanel6.Location = New System.Drawing.Point(4, 4)
-        Me.TableLayoutPanel6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel6.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 2
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.574468!))
@@ -523,7 +533,7 @@ Partial Class dashboardpatient
         '
         Me.PictureBox7.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.imagge
         Me.PictureBox7.Location = New System.Drawing.Point(4, 4)
-        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(728, 25)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -537,7 +547,7 @@ Partial Class dashboardpatient
         Legend2.Name = "Legend1"
         Me.Chart1.Legends.Add(Legend2)
         Me.Chart1.Location = New System.Drawing.Point(4, 37)
-        Me.Chart1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Chart1.Margin = New System.Windows.Forms.Padding(4)
         Me.Chart1.Name = "Chart1"
         Series2.ChartArea = "ChartArea1"
         Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
@@ -557,7 +567,7 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel8.Controls.Add(Me.PictureBox9, 0, 0)
         Me.TableLayoutPanel8.Controls.Add(Me.Chart2, 0, 1)
         Me.TableLayoutPanel8.Location = New System.Drawing.Point(4, 366)
-        Me.TableLayoutPanel8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel8.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel8.Name = "TableLayoutPanel8"
         Me.TableLayoutPanel8.RowCount = 2
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.72664!))
@@ -569,7 +579,7 @@ Partial Class dashboardpatient
         '
         Me.PictureBox9.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.imagge2
         Me.PictureBox9.Location = New System.Drawing.Point(4, 4)
-        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox9.Name = "PictureBox9"
         Me.PictureBox9.Size = New System.Drawing.Size(1481, 29)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -583,7 +593,7 @@ Partial Class dashboardpatient
         Legend3.Name = "Legend1"
         Me.Chart2.Legends.Add(Legend3)
         Me.Chart2.Location = New System.Drawing.Point(4, 41)
-        Me.Chart2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Chart2.Margin = New System.Windows.Forms.Padding(4)
         Me.Chart2.Name = "Chart2"
         Series3.ChartArea = "ChartArea1"
         Series3.Legend = "Legend1"
@@ -592,16 +602,6 @@ Partial Class dashboardpatient
         Me.Chart2.Size = New System.Drawing.Size(1476, 309)
         Me.Chart2.TabIndex = 1
         Me.Chart2.Text = "Chart2"
-        '
-        'Hospital
-        '
-        Me.Hospital.DataSetName = "Hospital"
-        Me.Hospital.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'PATIENTSBindingSource
-        '
-        Me.PATIENTSBindingSource.DataMember = "PATIENTS"
-        Me.PATIENTSBindingSource.DataSource = Me.Hospital
         '
         'PATIENTSTableAdapter
         '
@@ -616,7 +616,7 @@ Partial Class dashboardpatient
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "dashboardpatient"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patient Menu"
@@ -645,6 +645,8 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel5.ResumeLayout(False)
         Me.TableLayoutPanel7.ResumeLayout(False)
         CType(Me.Chart3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PATIENTSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Hospital, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel6.ResumeLayout(False)
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
@@ -652,8 +654,6 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel8.ResumeLayout(False)
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Hospital, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PATIENTSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

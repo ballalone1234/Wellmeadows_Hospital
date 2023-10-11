@@ -83,4 +83,8 @@
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
         NextPage(Me, dashboarddrug)
     End Sub
+
+    Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles Me.Load
+        TextBox1.Text = Get
+    End Sub
 End Class

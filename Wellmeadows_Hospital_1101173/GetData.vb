@@ -63,7 +63,7 @@ Module GetData
         connection.Close()
     End Function
     Public Function RegisPatient(ByVal data As String)
-        Dim col() As String = {"PATIENT_NUM", "PATIENT_NAME", "MARITAL_STATUS", "DATE_REGIST", "DOB", "TELEPHONE", "CID", "ADDRESS", "ML_NO"}
+        Dim col() As String = {"PATIENT_NUM", "PATIENT_NAME", "MARITAL_STATUS", "DATE_REGIST", "DOB", "TELEPHONE", "CID", "ADDRESS", "SEX", "ML_NO"}
         'Dim column As String = String.Join(",", )
 
         Try
@@ -314,4 +314,24 @@ Module GetData
             End Using
         End Using
     End Sub
+
+    Public Function GetDataOnceColForDash(table, column, id)
+
+        Using connection As New OracleConnection(Connect())
+            connection.Open()
+
+            Dim sql As String = $"SELECT {column} FROM {table}"
+            Debug.Write(sql)
+            Using command As New OracleCommand(sql, connection)
+                Using reader As OracleDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+                        Dim drugName As String = reader.GetString(0)
+                        Return drugName
+                    Else
+                        ' ไม่พบข้อมูลที่ต้องการ
+                    End If
+                End Using
+            End Using
+        End Using
+    End Function
 End Module

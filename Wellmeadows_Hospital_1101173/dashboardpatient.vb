@@ -109,6 +109,39 @@ Public Class dashboardpatient
             ' ปิดการเชื่อมต่อ
             connection.Close()
         End Try
+        Dim query2 As String = "SELECT PATIENT_TYPE, COUNT(*) AS Count FROM PATIENTS GROUP BY PATIENT_TYPE"
+
+        ' สร้าง DataTable เพื่อเก็บข้อมูล
+        Dim dataTable2 As New DataTable()
+
+        Try
+            ' เปิดการเชื่อมต่อกับฐานข้อมูล
+            connection.Open()
+
+            ' สร้าง OracleDataAdapter และเตรียมข้อมูลใน DataTable
+            Using adapter As New OracleDataAdapter(query2, connection)
+                adapter.Fill(dataTable2)
+            End Using
+
+            ' ตรวจสอบว่ามีข้อมูลใน DataTable หรือไม่
+            If dataTable2.Rows.Count > 0 Then
+                ' กำหนดข้อมูลใน Chart
+                Chart3.DataSource = dataTable2
+                Chart3.Series("Series1").XValueMember = "PATIENT_TYPE"
+                Chart3.Series("Series1").YValueMembers = "Count"
+                Chart3.Series("Series1").IsValueShownAsLabel = True ' แสดงค่าเป็น Label
+                ' แสดง Chart
+                Chart3.DataBind()
+            Else
+                MessageBox.Show("No data available.")
+            End If
+        Catch ex As Exception
+            ' จัดการข้อผิดพลาด
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            ' ปิดการเชื่อมต่อ
+            connection.Close()
+        End Try
 
     End Sub
 
