@@ -85,6 +85,16 @@
     End Sub
 
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles Me.Load
+        TextBox1.Text = GetCountForDash("PATIENTS", "")
+        maleC.Text = GetCountForDash("PATIENTS", "WHERE SEX like 'male'")
+        FemaleC.Text = GetCountForDash("PATIENTS", "WHERE SEX like 'female'")
+        OutC.Text = GetCountForDash("PATIENTS", "WHERE PATIENT_TYPE like 'out'")
+        InC.Text = GetCountForDash("PATIENTS", "WHERE PATIENT_TYPE like 'in'")
+        Allstaff.Text = GetCountForDash("STAFF", "")
+        BedC.Text = GetCountForDash("BED", "")
+        BedA.Text = GetCountForDash("BED", "WHERE PATIENT_NUM IS NULL")
+        BedNa.Text = GetCountForDash("BED", "WHERE PATIENT_NUM IS NOT NULL")
+        WardC.Text = GetCountForDash("WARD", "")
 
     End Sub
 End Class

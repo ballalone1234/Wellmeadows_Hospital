@@ -22,6 +22,7 @@ Public Class RegisterPatient4
     End Sub
 
     Private Sub AlloButton_Click(sender As Object, e As EventArgs) Handles AlloButton.Click
+        AllocatePatient.patientno.Text = pid
         Pagecontroller.NextPage(Me, AllocatePatient)
     End Sub
 

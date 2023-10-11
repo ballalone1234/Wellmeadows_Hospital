@@ -36,7 +36,7 @@ Partial Class FormSearch
         Me.DataSearch.Name = "DataSearch"
         Me.DataSearch.RowHeadersWidth = 51
         Me.DataSearch.RowTemplate.Height = 24
-        Me.DataSearch.Size = New System.Drawing.Size(1878, 772)
+        Me.DataSearch.Size = New System.Drawing.Size(1878, 568)
         Me.DataSearch.TabIndex = 0
         '
         'search
@@ -59,7 +59,7 @@ Partial Class FormSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1902, 853)
+        Me.ClientSize = New System.Drawing.Size(1902, 665)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.search)
         Me.Controls.Add(Me.DataSearch)

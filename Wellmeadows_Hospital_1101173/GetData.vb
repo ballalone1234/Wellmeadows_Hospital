@@ -1,5 +1,6 @@
 ﻿Imports System.Collections.ObjectModel
 Imports Oracle.ManagedDataAccess.Client
+Imports Wellmeadows_Hospital_1101173.Hospital
 
 Module GetData
     Public pa_id As String
@@ -315,12 +316,12 @@ Module GetData
         End Using
     End Sub
 
-    Public Function GetDataOnceColForDash(table, column, id)
+    Public Function GetCountForDash(table, where)
 
         Using connection As New OracleConnection(Connect())
             connection.Open()
 
-            Dim sql As String = $"SELECT {column} FROM {table}"
+            Dim sql As String = $"SELECT COUNT(*) as count FROM {table} {where}"
             Debug.Write(sql)
             Using command As New OracleCommand(sql, connection)
                 Using reader As OracleDataReader = command.ExecuteReader()
@@ -334,4 +335,25 @@ Module GetData
             End Using
         End Using
     End Function
+
+    Public Sub GetDropdown(comboBox As ComboBox, table As String, display As String, value As String)
+        Dim connection As New OracleConnection(Connect())
+        connection.Open()
+        Dim sql As String = $"SELECT {display} ,{value} FROM {table}"
+        Dim command As New OracleCommand(sql, connection)
+        Dim reader As OracleDataReader = command.ExecuteReader()
+        ' เซ็ต DisplayMember เป็นชื่อคอลัมน์ที่คุณต้องการให้แสดงใน ComboBox
+        comboBox.DisplayMember = "DISPLAY"
+        ' เซ็ต ValueMember เป็นชื่อคอลัมน์ที่คุณต้องการให้เป็นค่า value ของ ComboBox
+        comboBox.ValueMember = "VALUE"
+
+        While reader.Read()
+            ' เพิ่มข้อมูลลงใน ComboBox โดยใช้ชื่อคอลัมน์ที่ต้องการแสดง
+            comboBox.Items.Add(New With {.DISPLAY = reader(display).ToString(), .VALUE = reader(value).ToString()})
+            Console.WriteLine(reader("WARD_NUM"))
+        End While
+        reader.Close()
+        connection.Close()
+    End Sub
+
 End Module

@@ -142,6 +142,39 @@ Public Class dashboardpatient
             ' ปิดการเชื่อมต่อ
             connection.Close()
         End Try
+        Dim query3 As String = "SELECT TRUNC(MONTHS_BETWEEN(SYSDATE, TO_DATE(DOB, 'DD-MM-YYYY')) / 12) AS age ,COUNT(*) as count
+FROM PATIENTS GROUP BY TRUNC(MONTHS_BETWEEN(SYSDATE, TO_DATE(DOB, 'DD-MM-YYYY')) / 12)"
+
+        Dim dataTable3 As New DataTable()
+
+        Try
+            ' เปิดการเชื่อมต่อกับฐานข้อมูล
+            connection.Open()
+
+            ' สร้าง OracleDataAdapter และเตรียมข้อมูลใน DataTable
+            Using adapter As New OracleDataAdapter(query3, connection)
+                adapter.Fill(dataTable3)
+            End Using
+
+            ' ตรวจสอบว่ามีข้อมูลใน DataTable หรือไม่
+            If dataTable2.Rows.Count > 0 Then
+                ' กำหนดข้อมูลใน Chart
+                Chart2.DataSource = dataTable3
+                Chart2.Series("Series1").XValueMember = "age"
+                Chart2.Series("Series1").YValueMembers = "Count"
+                Chart2.Series("Series1").IsValueShownAsLabel = True ' แสดงค่าเป็น Label
+                ' แสดง Chart
+                Chart3.DataBind()
+            Else
+                MessageBox.Show("No data available.")
+            End If
+        Catch ex As Exception
+            ' จัดการข้อผิดพลาด
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            ' ปิดการเชื่อมต่อ
+            connection.Close()
+        End Try
 
     End Sub
 

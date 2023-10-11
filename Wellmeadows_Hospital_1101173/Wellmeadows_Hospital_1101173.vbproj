@@ -171,6 +171,12 @@
     <Compile Include="PatientIn_report.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="setChrageN.Designer.vb">
+      <DependentUpon>setChrageN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setChrageN.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="StaffByWardReport.Designer.vb">
       <DependentUpon>StaffByWardReport.vb</DependentUpon>
     </Compile>
@@ -398,6 +404,9 @@
     <EmbeddedResource Include="OPD Report.rdlc" />
     <EmbeddedResource Include="PatientIn_report.resx">
       <DependentUpon>PatientIn_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setChrageN.resx">
+      <DependentUpon>setChrageN.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffByWardReport.resx">
       <DependentUpon>StaffByWardReport.vb</DependentUpon>

@@ -20,24 +20,29 @@ Public Class StaffByWardReport
     End Sub
 
 
-
-
-
-
-    Private Sub ReportViewer1_Load(sender As Object, e As EventArgs) Handles ReportViewer1.Load
+    Private Sub SetReport(where)
         Me.ReportViewer1.Clear()
-
-        Dim oracleDataAdapter As New OracleDataAdapter("SELECT * FROM STAFF", Connect())
+        Dim sql As String = $"SELECT * FROM STAFF {where}"
+        Debug.Write(sql)
+        Dim oracleDataAdapter As New OracleDataAdapter(sql, Connect())
         Dim dataSet As New DataSet()
         oracleDataAdapter.Fill(dataSet)
 
         Dim rprtDS1 As New ReportDataSource("DataSet1", dataSet.Tables(0))
+        ' Clear existing data sources (if needed)
+        ReportViewer1.LocalReport.DataSources.Clear()
+
+        ' Add the new data source
         ReportViewer1.LocalReport.DataSources.Add(rprtDS1)
 
 
-        Me.ReportViewer1.RefreshReport()
 
+        Me.ReportViewer1.RefreshReport()
     End Sub
+
+
+
+
 
     Private Sub TableLayoutPanel2_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel2.Paint
 
@@ -45,5 +50,10 @@ Public Class StaffByWardReport
 
     Private Sub StaffByWardReport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        GetDropdown(wardbox, "WARD", "WARD_NAME", "WARD_NUM")
+    End Sub
+
+    Private Sub wardbox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles wardbox.SelectedIndexChanged
+        SetReport($"WHERE WORK_LOCATION = '{wardbox.SelectedItem.VALUE}'")
     End Sub
 End Class

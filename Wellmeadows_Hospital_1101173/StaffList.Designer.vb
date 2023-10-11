@@ -31,6 +31,8 @@ Partial Class StaffList
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.ptno = New System.Windows.Forms.TextBox()
         Me.Fillter = New System.Windows.Forms.Button()
+        Me.setWard = New System.Windows.Forms.RadioButton()
+        Me.setCharge = New System.Windows.Forms.RadioButton()
         Me.LIST_STAFFDataGridView = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
@@ -41,8 +43,6 @@ Partial Class StaffList
         Me.STAFFTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.STAFFTableAdapter()
         Me.TableAdapterManager = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.TableAdapterManager()
         Me.LIST_STAFFTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.LIST_STAFFTableAdapter()
-        Me.setWard = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -120,7 +120,7 @@ Partial Class StaffList
         Me.TableLayoutPanel3.Controls.Add(Me.ptno, 0, 1)
         Me.TableLayoutPanel3.Controls.Add(Me.Fillter, 1, 1)
         Me.TableLayoutPanel3.Controls.Add(Me.setWard, 2, 1)
-        Me.TableLayoutPanel3.Controls.Add(Me.RadioButton2, 3, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.setCharge, 3, 1)
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(16, 28)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 2
@@ -144,6 +144,30 @@ Partial Class StaffList
         Me.Fillter.TabIndex = 1
         Me.Fillter.Text = "Search"
         Me.Fillter.UseVisualStyleBackColor = True
+        '
+        'setWard
+        '
+        Me.setWard.AutoSize = True
+        Me.setWard.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.setWard.Location = New System.Drawing.Point(223, 35)
+        Me.setWard.Name = "setWard"
+        Me.setWard.Size = New System.Drawing.Size(107, 20)
+        Me.setWard.TabIndex = 2
+        Me.setWard.TabStop = True
+        Me.setWard.Text = "Set staff ward"
+        Me.setWard.UseVisualStyleBackColor = True
+        '
+        'setCharge
+        '
+        Me.setCharge.AutoSize = True
+        Me.setCharge.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.setCharge.Location = New System.Drawing.Point(353, 35)
+        Me.setCharge.Name = "setCharge"
+        Me.setCharge.Size = New System.Drawing.Size(161, 20)
+        Me.setCharge.TabIndex = 3
+        Me.setCharge.TabStop = True
+        Me.setCharge.Text = "Set charge nurse ward"
+        Me.setCharge.UseVisualStyleBackColor = True
         '
         'LIST_STAFFDataGridView
         '
@@ -245,28 +269,6 @@ Partial Class StaffList
         '
         Me.LIST_STAFFTableAdapter.ClearBeforeFill = True
         '
-        'setWard
-        '
-        Me.setWard.AutoSize = True
-        Me.setWard.Location = New System.Drawing.Point(223, 35)
-        Me.setWard.Name = "setWard"
-        Me.setWard.Size = New System.Drawing.Size(80, 20)
-        Me.setWard.TabIndex = 2
-        Me.setWard.TabStop = True
-        Me.setWard.Text = "Set ward"
-        Me.setWard.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(353, 35)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(68, 20)
-        Me.RadioButton2.TabIndex = 3
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Delete"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
         'StaffList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -322,5 +324,5 @@ Partial Class StaffList
     Friend WithEvents ptno As TextBox
     Friend WithEvents Fillter As Button
     Friend WithEvents setWard As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents setCharge As RadioButton
 End Class

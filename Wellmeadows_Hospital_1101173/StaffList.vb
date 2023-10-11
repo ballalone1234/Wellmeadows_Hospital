@@ -46,7 +46,7 @@
 
     Private Sub StaffList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'Hospital.LIST_STAFF' table. You can move, or remove it, as needed.
-
+        setWard.Checked = True
         LIST_STAFFDataGridView.DataSource = GetSeach("LIST_STAFF", ptno.Text)
 
     End Sub
@@ -73,8 +73,16 @@
         Dim result As DialogResult = MessageBox.Show($"Do you want to select {cellValue.ToString()} ?", "Confirmation", MessageBoxButtons.YesNoCancel)
 
         If result = DialogResult.Yes Then
-            setWardStaff.Show()
-            setWardStaff.staffno.Text = cellValue.ToString()
+            If setWard.Checked Then
+                setWardStaff.Show()
+                setWardStaff.staffno.Text = cellValue.ToString()
+            ElseIf setCharge.Checked Then
+                setChargeN.Show()
+                setChargeN.staffno.Text = cellValue.ToString()
+            End If
+
+
+
         ElseIf result = DialogResult.No Then
 
         ElseIf result = DialogResult.Cancel Then
@@ -84,5 +92,10 @@
 
     Private Sub setWard_CheckedChanged(sender As Object, e As EventArgs) Handles setWard.CheckedChanged
 
+    End Sub
+
+    Private Sub setCharge_CheckedChanged(sender As Object, e As EventArgs) Handles setCharge.CheckedChanged
+        ptno.Text = "Charge Nurse"
+        LIST_STAFFDataGridView.DataSource = GetSeach("LIST_STAFF", ptno.Text)
     End Sub
 End Class
