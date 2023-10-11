@@ -85,6 +85,6 @@
     End Sub
 
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles Me.Load
-        TextBox1.Text = Get
+
     End Sub
 End Class
