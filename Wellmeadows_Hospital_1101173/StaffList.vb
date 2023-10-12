@@ -98,4 +98,9 @@
         ptno.Text = "Charge Nurse"
         LIST_STAFFDataGridView.DataSource = GetSeach("LIST_STAFF", ptno.Text)
     End Sub
+
+    Private Sub ReporyByWard_Click(sender As Object, e As EventArgs) Handles ReporyByWard.Click
+        StaffByWardReport.Show()
+
+    End Sub
 End Class

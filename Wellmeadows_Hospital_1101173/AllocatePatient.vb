@@ -38,7 +38,7 @@ Public Class AllocatePatient
     End Sub
 
     Private Sub Wardno_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Wardno.SelectedIndexChanged
-        Dim selectedValue As String = Wardno.SelectedItem.WARD_NUM.ToString()
+        Dim selectedValue As String = Wardno.SelectedItem.VALUE.ToString()
         Debug.WriteLine(selectedValue)
         Dim connection As New OracleConnection(Connect())
         connection.Open()
@@ -58,19 +58,30 @@ Public Class AllocatePatient
     Private Sub Summit2Button_Click(sender As Object, e As EventArgs) Handles Summit2Button.Click
         Dim table As String = ""
         Dim data() As String = {}
-
+        Dim patient_type As String = ""
         If inp.Checked Then
             table = "ALLOCATEDTO"
             data = {$"'{patientno.Text}'", $"'{Wardno.SelectedItem.VALUE.ToString()}'", $"{Getdate(dateplace)}",
             $"{Getdate(dateleave)}", $"{Getdate(actualleave)}", $"'{ExDay.Text}'", $"{Getdate(waitingdate)}"}
+            patient_type = "in"
+            If UpdateBedOrInsertToWaittinglist(BedNo.SelectedItem, patientno.Text) Then
+                If Allocate(String.Join(",", data), table) > 0 Then
+                    UpdateData("PATIENTS", "PATIENT_TYPE", "PATIENT_NUM", patientno.Text, patient_type)
+                End If
+            End If
         ElseIf outp.Checked Then
             table = "ALLOCATEDTO_OPD"
             data = {$"'{patientno.Text}'", $"'{Wardno.SelectedItem.VALUE.ToString()}'", "watting_que_seq.NEXTVAL", $"{Getdate(waitingdate)}"}
+            patient_type = "out"
+            If Allocate(String.Join(",", data), table) > 0 Then
+                UpdateData("PATIENTS", "PATIENT_TYPE", "PATIENT_NUM", patientno.Text, patient_type)
+                MessageBox.Show("ส่งไปที่คลินิก OPD แล้ว")
+                PatientList.Show()
+                PatientList.Reload()
+                Close()
+            End If
         End If
-        MessageBox.Show(table)
-        If Allocate(String.Join(",", data), table) > 0 Then
-            MessageBox.Show("ส่งมอบสำเร็จ")
-        End If
+
     End Sub
 
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles outp.CheckedChanged

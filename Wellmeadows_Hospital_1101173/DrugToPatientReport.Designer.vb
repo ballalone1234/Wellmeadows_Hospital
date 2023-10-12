@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class PatientOPD_report
+Partial Class DrugToPatientReport
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,12 +23,14 @@ Partial Class PatientOPD_report
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PatientOPD_report))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DrugToPatientReport))
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.Back = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.wardbox = New System.Windows.Forms.ComboBox()
         Me.PATIENTTBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Hospital = New Wellmeadows_Hospital_1101173.Hospital()
         Me.PATIENTTTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.PATIENTTTableAdapter()
@@ -36,9 +38,11 @@ Partial Class PatientOPD_report
         Me.LOCALDOCTORBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LOCALDOCTORTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.LOCALDOCTORTableAdapter()
         Me.DETAIL_ALLOCATE_OPDBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Back = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
+        Me.TableLayoutPanel3.SuspendLayout()
         CType(Me.PATIENTTBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Hospital, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LOCALDOCTORBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,18 +61,20 @@ Partial Class PatientOPD_report
         '
         'TableLayoutPanel1
         '
-        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnCount = 3
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 99.34694!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.6530612!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Back, 1, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel3, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 4
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.747127!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94.25288!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.89109!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.10891!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1685, 838)
@@ -80,41 +86,64 @@ Partial Class PatientOPD_report
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.Controls.Add(Me.ReportViewer1, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(4, 50)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(4, 92)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 97.23183!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.768166!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 754.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 754.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1665, 754)
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 712.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 712.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1646, 712)
         Me.TableLayoutPanel2.TabIndex = 9
         '
         'ReportViewer1
         '
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Wellmeadows_Hospital_1101173.OPD Report.rdlc"
+        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Wellmeadows_Hospital_1101173.ReportDrugtoPatient.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(3, 3)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(1659, 748)
+        Me.ReportViewer1.Size = New System.Drawing.Size(1640, 706)
         Me.ReportViewer1.TabIndex = 0
         '
-        'Back
+        'TableLayoutPanel3
         '
-        Me.Back.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Back.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Back.BackgroundImage = CType(resources.GetObject("Back.BackgroundImage"), System.Drawing.Image)
-        Me.Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Back.FlatAppearance.BorderSize = 0
-        Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Back.Location = New System.Drawing.Point(1677, 822)
-        Me.Back.Margin = New System.Windows.Forms.Padding(4)
-        Me.Back.Name = "Back"
-        Me.Back.Size = New System.Drawing.Size(4, 12)
-        Me.Back.TabIndex = 10
-        Me.Back.UseVisualStyleBackColor = False
+        Me.TableLayoutPanel3.ColumnCount = 2
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.01418!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 71.98582!))
+        Me.TableLayoutPanel3.Controls.Add(Me.Label1, 0, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.wardbox, 1, 1)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(10, 3)
+        Me.TableLayoutPanel3.Margin = New System.Windows.Forms.Padding(10, 3, 3, 3)
+        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
+        Me.TableLayoutPanel3.RowCount = 2
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.36585!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.63415!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(342, 82)
+        Me.TableLayoutPanel3.TabIndex = 11
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(25, 44)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(67, 22)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Search"
+        '
+        'wardbox
+        '
+        Me.wardbox.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.wardbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.wardbox.FormattingEnabled = True
+        Me.wardbox.Location = New System.Drawing.Point(98, 38)
+        Me.wardbox.Name = "wardbox"
+        Me.wardbox.Size = New System.Drawing.Size(223, 33)
+        Me.wardbox.TabIndex = 2
         '
         'PATIENTTBindingSource
         '
@@ -137,11 +166,14 @@ Partial Class PatientOPD_report
         Me.TableAdapterManager.ASSIGNEDTOTableAdapter = Nothing
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.BEDTableAdapter = Nothing
+        Me.TableAdapterManager.DRUGTableAdapter = Nothing
         Me.TableAdapterManager.LOCALDOCTORTableAdapter = Nothing
+        Me.TableAdapterManager.MEDICAL_HISTORYTableAdapter = Nothing
         Me.TableAdapterManager.PATIENTAPPOINTMENTTableAdapter = Nothing
         Me.TableAdapterManager.PATIENTSNEXTOFKINTableAdapter = Nothing
         Me.TableAdapterManager.PATIENTSTableAdapter = Nothing
         Me.TableAdapterManager.PATIENTTTableAdapter = Me.PATIENTTTableAdapter
+        Me.TableAdapterManager.PRESCRIBEDTableAdapter = Nothing
         Me.TableAdapterManager.QUALIFICATIONTableAdapter = Nothing
         Me.TableAdapterManager.STAFFTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Wellmeadows_Hospital_1101173.HospitalTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
@@ -163,7 +195,23 @@ Partial Class PatientOPD_report
         Me.DETAIL_ALLOCATE_OPDBindingSource.DataMember = "DETAIL_ALLOCATE_OPD"
         Me.DETAIL_ALLOCATE_OPDBindingSource.DataSource = Me.Hospital
         '
-        'PatientOPD_report
+        'Back
+        '
+        Me.Back.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Back.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Back.BackgroundImage = CType(resources.GetObject("Back.BackgroundImage"), System.Drawing.Image)
+        Me.Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Back.FlatAppearance.BorderSize = 0
+        Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Back.Location = New System.Drawing.Point(1658, 822)
+        Me.Back.Margin = New System.Windows.Forms.Padding(4)
+        Me.Back.Name = "Back"
+        Me.Back.Size = New System.Drawing.Size(2, 12)
+        Me.Back.TabIndex = 10
+        Me.Back.UseVisualStyleBackColor = False
+        '
+        'DrugToPatientReport
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -172,12 +220,14 @@ Partial Class PatientOPD_report
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "PatientOPD_report"
+        Me.Name = "DrugToPatientReport"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Patient Menu"
+        Me.Text = "Drug To Patient"
         Me.Panel2.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
+        Me.TableLayoutPanel3.ResumeLayout(False)
+        Me.TableLayoutPanel3.PerformLayout()
         CType(Me.PATIENTTBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Hospital, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LOCALDOCTORBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
@@ -205,5 +255,8 @@ Partial Class PatientOPD_report
     Friend WithEvents LOCALDOCTORTableAdapter As HospitalTableAdapters.LOCALDOCTORTableAdapter
     Friend WithEvents DETAIL_ALLOCATE_OPDBindingSource As BindingSource
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents wardbox As ComboBox
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
 End Class

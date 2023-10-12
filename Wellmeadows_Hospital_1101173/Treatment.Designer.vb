@@ -31,6 +31,7 @@ Partial Class Treatment
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.SumitButton = New System.Windows.Forms.Button()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -44,15 +45,14 @@ Partial Class Treatment
         Me.Diagnosis = New System.Windows.Forms.TextBox()
         Me.ptno = New System.Windows.Forms.TextBox()
         Me.p8 = New System.Windows.Forms.Label()
-        Me.Medications = New System.Windows.Forms.TextBox()
-        Me.DrugAllergies = New System.Windows.Forms.TextBox()
         Me.appnum = New System.Windows.Forms.TextBox()
+        Me.appnumsss = New System.Windows.Forms.Label()
+        Me.DrugAllergies = New System.Windows.Forms.TextBox()
+        Me.Medications = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.appnumsss = New System.Windows.Forms.Label()
-        Me.Back = New System.Windows.Forms.Button()
         Me.Tdate = New System.Windows.Forms.DateTimePicker()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Back = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -91,10 +91,10 @@ Partial Class Treatment
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-19, 326)
+        Me.PictureBox1.Location = New System.Drawing.Point(8, 333)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(499, 127)
+        Me.PictureBox1.Size = New System.Drawing.Size(448, 107)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -163,7 +163,7 @@ Partial Class Treatment
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 553.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 554.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label11, 0, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label8, 1, 3)
@@ -202,11 +202,24 @@ Partial Class Treatment
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(1145, 463)
         Me.TableLayoutPanel2.TabIndex = 9
         '
+        'Label11
+        '
+        Me.Label11.AllowDrop = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
+        Me.Label11.ForeColor = System.Drawing.Color.White
+        Me.Label11.Location = New System.Drawing.Point(4, 189)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(341, 30)
+        Me.Label11.TabIndex = 34
+        Me.Label11.Text = "Treatment Date"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'Label10
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(584, 189)
+        Me.Label10.Location = New System.Drawing.Point(583, 189)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(3, 26)
@@ -218,7 +231,7 @@ Partial Class Treatment
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(584, 129)
+        Me.Label8.Location = New System.Drawing.Point(583, 129)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(3, 28)
@@ -230,7 +243,7 @@ Partial Class Treatment
         '
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(595, 99)
+        Me.Label7.Location = New System.Drawing.Point(594, 99)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(348, 23)
@@ -242,7 +255,7 @@ Partial Class Treatment
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(584, 99)
+        Me.Label6.Location = New System.Drawing.Point(583, 99)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(3, 23)
@@ -267,7 +280,7 @@ Partial Class Treatment
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(584, 27)
+        Me.Label4.Location = New System.Drawing.Point(583, 27)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(3, 28)
@@ -279,7 +292,7 @@ Partial Class Treatment
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(595, 0)
+        Me.Label3.Location = New System.Drawing.Point(594, 0)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(275, 23)
@@ -291,7 +304,7 @@ Partial Class Treatment
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(584, 0)
+        Me.Label2.Location = New System.Drawing.Point(583, 0)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(3, 23)
@@ -355,16 +368,29 @@ Partial Class Treatment
         Me.p8.Text = "Patient num"
         Me.p8.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Medications
+        'appnum
         '
-        Me.Medications.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Medications.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Medications.Location = New System.Drawing.Point(677, 227)
-        Me.Medications.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Medications.Multiline = True
-        Me.Medications.Name = "Medications"
-        Me.Medications.Size = New System.Drawing.Size(381, 58)
-        Me.Medications.TabIndex = 26
+        Me.appnum.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.appnum.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.appnum.Location = New System.Drawing.Point(677, 328)
+        Me.appnum.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.appnum.Multiline = True
+        Me.appnum.Name = "appnum"
+        Me.appnum.Size = New System.Drawing.Size(381, 58)
+        Me.appnum.TabIndex = 28
+        '
+        'appnumsss
+        '
+        Me.appnumsss.AllowDrop = True
+        Me.appnumsss.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
+        Me.appnumsss.ForeColor = System.Drawing.Color.White
+        Me.appnumsss.Location = New System.Drawing.Point(594, 294)
+        Me.appnumsss.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.appnumsss.Name = "appnumsss"
+        Me.appnumsss.Size = New System.Drawing.Size(326, 29)
+        Me.appnumsss.TabIndex = 32
+        Me.appnumsss.Text = "Appointment"
+        Me.appnumsss.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'DrugAllergies
         '
@@ -377,23 +403,23 @@ Partial Class Treatment
         Me.DrugAllergies.Size = New System.Drawing.Size(381, 58)
         Me.DrugAllergies.TabIndex = 27
         '
-        'appnum
+        'Medications
         '
-        Me.appnum.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.appnum.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.appnum.Location = New System.Drawing.Point(677, 328)
-        Me.appnum.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.appnum.Multiline = True
-        Me.appnum.Name = "appnum"
-        Me.appnum.Size = New System.Drawing.Size(381, 58)
-        Me.appnum.TabIndex = 28
+        Me.Medications.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Medications.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Medications.Location = New System.Drawing.Point(677, 227)
+        Me.Medications.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Medications.Multiline = True
+        Me.Medications.Name = "Medications"
+        Me.Medications.Size = New System.Drawing.Size(381, 58)
+        Me.Medications.TabIndex = 26
         '
         'Label1
         '
         Me.Label1.AllowDrop = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(595, 189)
+        Me.Label1.Location = New System.Drawing.Point(594, 189)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(291, 30)
@@ -414,18 +440,15 @@ Partial Class Treatment
         Me.Label9.Text = "Drug Allergies"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'appnumsss
+        'Tdate
         '
-        Me.appnumsss.AllowDrop = True
-        Me.appnumsss.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.appnumsss.ForeColor = System.Drawing.Color.White
-        Me.appnumsss.Location = New System.Drawing.Point(595, 294)
-        Me.appnumsss.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.appnumsss.Name = "appnumsss"
-        Me.appnumsss.Size = New System.Drawing.Size(326, 29)
-        Me.appnumsss.TabIndex = 32
-        Me.appnumsss.Text = "Appointment"
-        Me.appnumsss.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Tdate.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Tdate.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Tdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Tdate.Location = New System.Drawing.Point(100, 239)
+        Me.Tdate.Name = "Tdate"
+        Me.Tdate.Size = New System.Drawing.Size(378, 34)
+        Me.Tdate.TabIndex = 33
         '
         'Back
         '
@@ -442,29 +465,6 @@ Partial Class Treatment
         Me.Back.Size = New System.Drawing.Size(44, 52)
         Me.Back.TabIndex = 10
         Me.Back.UseVisualStyleBackColor = False
-        '
-        'Tdate
-        '
-        Me.Tdate.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Tdate.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Tdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Tdate.Location = New System.Drawing.Point(101, 239)
-        Me.Tdate.Name = "Tdate"
-        Me.Tdate.Size = New System.Drawing.Size(378, 34)
-        Me.Tdate.TabIndex = 33
-        '
-        'Label11
-        '
-        Me.Label11.AllowDrop = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(4, 189)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(341, 30)
-        Me.Label11.TabIndex = 34
-        Me.Label11.Text = "Treatment Date"
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Treatment
         '

@@ -42,8 +42,15 @@
         DataGridView1.DataSource = GetSeach("PATIENTS", ptno.Text)
     End Sub
 
+    Public Sub Reload()
+        DataGridView1.DataSource = GetSeach("PATIENTS", ptno.Text)
+    End Sub
     Private Sub FillByToolStripButton_Click(sender As Object, e As EventArgs)
 
 
+    End Sub
+
+    Private Sub drugtopa_Click(sender As Object, e As EventArgs) Handles drugtopa.Click
+        DrugToPatientReport.Show()
     End Sub
 End Class

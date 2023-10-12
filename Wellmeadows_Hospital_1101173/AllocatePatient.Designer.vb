@@ -24,11 +24,8 @@ Partial Class AllocatePatient
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AllocatePatient))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Home = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -57,16 +54,19 @@ Partial Class AllocatePatient
         Me.Wardno = New System.Windows.Forms.ComboBox()
         Me.BedNo = New System.Windows.Forms.ComboBox()
         Me.ExDay = New System.Windows.Forms.TextBox()
+        Me.OracleCommandBuilder1 = New Oracle.ManagedDataAccess.Client.OracleCommandBuilder()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Back = New System.Windows.Forms.Button()
         Me.Summit2Button = New System.Windows.Forms.Button()
-        Me.OracleCommandBuilder1 = New Oracle.ManagedDataAccess.Client.OracleCommandBuilder()
+        Me.Home = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -80,32 +80,6 @@ Partial Class AllocatePatient
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(460, 838)
         Me.Panel1.TabIndex = 0
-        '
-        'Home
-        '
-        Me.Home.BackColor = System.Drawing.Color.White
-        Me.Home.BackgroundImage = CType(resources.GetObject("Home.BackgroundImage"), System.Drawing.Image)
-        Me.Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Home.FlatAppearance.BorderSize = 0
-        Me.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Home.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Home.Location = New System.Drawing.Point(16, 15)
-        Me.Home.Margin = New System.Windows.Forms.Padding(4)
-        Me.Home.Name = "Home"
-        Me.Home.Size = New System.Drawing.Size(64, 65)
-        Me.Home.TabIndex = 6
-        Me.Home.UseVisualStyleBackColor = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-19, 326)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(499, 127)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'Panel2
         '
@@ -139,24 +113,12 @@ Partial Class AllocatePatient
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1225, 838)
         Me.TableLayoutPanel1.TabIndex = 1
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(481, 25)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(191, 127)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 8
-        Me.PictureBox2.TabStop = False
-        '
         'TableLayoutPanel2
         '
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 556.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 558.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label7, 0, 8)
         Me.TableLayoutPanel2.Controls.Add(Me.Label16, 2, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.Label15, 1, 6)
@@ -217,7 +179,7 @@ Partial Class AllocatePatient
         '
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(592, 228)
+        Me.Label16.Location = New System.Drawing.Point(590, 228)
         Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(301, 23)
@@ -229,7 +191,7 @@ Partial Class AllocatePatient
         '
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(581, 228)
+        Me.Label15.Location = New System.Drawing.Point(579, 228)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(3, 23)
@@ -253,7 +215,7 @@ Partial Class AllocatePatient
         '
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(581, 174)
+        Me.Label13.Location = New System.Drawing.Point(579, 174)
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(3, 23)
@@ -266,7 +228,7 @@ Partial Class AllocatePatient
         Me.actualleave.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.actualleave.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
         Me.actualleave.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.actualleave.Location = New System.Drawing.Point(674, 184)
+        Me.actualleave.Location = New System.Drawing.Point(673, 184)
         Me.actualleave.Margin = New System.Windows.Forms.Padding(4)
         Me.actualleave.Name = "actualleave"
         Me.actualleave.Size = New System.Drawing.Size(385, 34)
@@ -276,7 +238,7 @@ Partial Class AllocatePatient
         '
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(592, 144)
+        Me.Label12.Location = New System.Drawing.Point(590, 144)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(288, 22)
@@ -300,7 +262,7 @@ Partial Class AllocatePatient
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(581, 144)
+        Me.Label10.Location = New System.Drawing.Point(579, 144)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(3, 22)
@@ -312,7 +274,7 @@ Partial Class AllocatePatient
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(581, 95)
+        Me.Label8.Location = New System.Drawing.Point(579, 95)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(3, 28)
@@ -324,7 +286,7 @@ Partial Class AllocatePatient
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(581, 72)
+        Me.Label6.Location = New System.Drawing.Point(579, 72)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(3, 23)
@@ -348,7 +310,7 @@ Partial Class AllocatePatient
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(581, 26)
+        Me.Label4.Location = New System.Drawing.Point(579, 26)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(3, 28)
@@ -360,7 +322,7 @@ Partial Class AllocatePatient
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(592, 0)
+        Me.Label3.Location = New System.Drawing.Point(590, 0)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(248, 20)
@@ -372,7 +334,7 @@ Partial Class AllocatePatient
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(581, 0)
+        Me.Label2.Location = New System.Drawing.Point(579, 0)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(3, 20)
@@ -386,7 +348,7 @@ Partial Class AllocatePatient
         Me.patientno.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.patientno.Enabled = False
         Me.patientno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.patientno.Location = New System.Drawing.Point(98, 31)
+        Me.patientno.Location = New System.Drawing.Point(97, 31)
         Me.patientno.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.patientno.Multiline = True
         Me.patientno.Name = "patientno"
@@ -411,7 +373,7 @@ Partial Class AllocatePatient
         Me.dateleave.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.dateleave.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
         Me.dateleave.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dateleave.Location = New System.Drawing.Point(96, 184)
+        Me.dateleave.Location = New System.Drawing.Point(95, 184)
         Me.dateleave.Margin = New System.Windows.Forms.Padding(4)
         Me.dateleave.Name = "dateleave"
         Me.dateleave.Size = New System.Drawing.Size(385, 34)
@@ -422,7 +384,7 @@ Partial Class AllocatePatient
         Me.dateplace.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.dateplace.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
         Me.dateplace.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dateplace.Location = New System.Drawing.Point(96, 262)
+        Me.dateplace.Location = New System.Drawing.Point(95, 262)
         Me.dateplace.Margin = New System.Windows.Forms.Padding(4)
         Me.dateplace.Name = "dateplace"
         Me.dateplace.Size = New System.Drawing.Size(385, 34)
@@ -433,7 +395,7 @@ Partial Class AllocatePatient
         Me.waitingdate.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.waitingdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
         Me.waitingdate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.waitingdate.Location = New System.Drawing.Point(96, 347)
+        Me.waitingdate.Location = New System.Drawing.Point(95, 347)
         Me.waitingdate.Margin = New System.Windows.Forms.Padding(4)
         Me.waitingdate.Name = "waitingdate"
         Me.waitingdate.Size = New System.Drawing.Size(385, 34)
@@ -443,7 +405,7 @@ Partial Class AllocatePatient
         '
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(592, 306)
+        Me.Label9.Location = New System.Drawing.Point(590, 306)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(248, 27)
@@ -458,7 +420,7 @@ Partial Class AllocatePatient
         Me.Panel3.Location = New System.Drawing.Point(4, 99)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(569, 41)
+        Me.Panel3.Size = New System.Drawing.Size(567, 41)
         Me.Panel3.TabIndex = 51
         '
         'outp
@@ -494,7 +456,7 @@ Partial Class AllocatePatient
         Me.Wardno.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Wardno.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Wardno.FormattingEnabled = True
-        Me.Wardno.Location = New System.Drawing.Point(675, 30)
+        Me.Wardno.Location = New System.Drawing.Point(674, 30)
         Me.Wardno.Name = "Wardno"
         Me.Wardno.Size = New System.Drawing.Size(383, 37)
         Me.Wardno.TabIndex = 52
@@ -504,7 +466,7 @@ Partial Class AllocatePatient
         Me.BedNo.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.BedNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.BedNo.FormattingEnabled = True
-        Me.BedNo.Location = New System.Drawing.Point(675, 346)
+        Me.BedNo.Location = New System.Drawing.Point(674, 346)
         Me.BedNo.Name = "BedNo"
         Me.BedNo.Size = New System.Drawing.Size(383, 37)
         Me.BedNo.TabIndex = 53
@@ -513,12 +475,29 @@ Partial Class AllocatePatient
         '
         Me.ExDay.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ExDay.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ExDay.Location = New System.Drawing.Point(673, 259)
+        Me.ExDay.Location = New System.Drawing.Point(672, 259)
         Me.ExDay.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ExDay.Multiline = True
         Me.ExDay.Name = "ExDay"
         Me.ExDay.Size = New System.Drawing.Size(386, 41)
         Me.ExDay.TabIndex = 54
+        '
+        'OracleCommandBuilder1
+        '
+        Me.OracleCommandBuilder1.CatalogLocation = System.Data.Common.CatalogLocation.[End]
+        Me.OracleCommandBuilder1.CatalogSeparator = "@"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(481, 25)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(191, 127)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 8
+        Me.PictureBox2.TabStop = False
         '
         'Back
         '
@@ -552,10 +531,31 @@ Partial Class AllocatePatient
         Me.Summit2Button.TabIndex = 11
         Me.Summit2Button.UseVisualStyleBackColor = False
         '
-        'OracleCommandBuilder1
+        'Home
         '
-        Me.OracleCommandBuilder1.CatalogLocation = System.Data.Common.CatalogLocation.[End]
-        Me.OracleCommandBuilder1.CatalogSeparator = "@"
+        Me.Home.BackColor = System.Drawing.Color.White
+        Me.Home.BackgroundImage = CType(resources.GetObject("Home.BackgroundImage"), System.Drawing.Image)
+        Me.Home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Home.FlatAppearance.BorderSize = 0
+        Me.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Home.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Home.Location = New System.Drawing.Point(16, 15)
+        Me.Home.Margin = New System.Windows.Forms.Padding(4)
+        Me.Home.Name = "Home"
+        Me.Home.Size = New System.Drawing.Size(64, 65)
+        Me.Home.TabIndex = 6
+        Me.Home.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(-19, 326)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(499, 127)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'AllocatePatient
         '
@@ -571,14 +571,14 @@ Partial Class AllocatePatient
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patient Menu"
         Me.Panel1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

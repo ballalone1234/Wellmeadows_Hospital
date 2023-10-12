@@ -63,4 +63,8 @@
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
         NextPage(Me, dashboardward)
     End Sub
+
+    Private Sub Chart1_Click_2(sender As Object, e As EventArgs) Handles Chart1.Click
+
+    End Sub
 End Class

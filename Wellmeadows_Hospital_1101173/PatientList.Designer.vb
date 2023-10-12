@@ -32,9 +32,9 @@ Partial Class PatientList
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.ptno = New System.Windows.Forms.TextBox()
-        Me.Fillter = New System.Windows.Forms.Button()
-        Me.OPD_Report = New System.Windows.Forms.Button()
         Me.inward = New System.Windows.Forms.Button()
+        Me.OPD_Report = New System.Windows.Forms.Button()
+        Me.drugtopa = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Back = New System.Windows.Forms.Button()
         Me.PATIENTSBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
@@ -154,61 +154,63 @@ Partial Class PatientList
         '
         'TableLayoutPanel3
         '
-        Me.TableLayoutPanel3.ColumnCount = 4
+        Me.TableLayoutPanel3.ColumnCount = 5
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 231.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 214.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel3.Controls.Add(Me.inward, 1, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.OPD_Report, 2, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.drugtopa, 3, 1)
         Me.TableLayoutPanel3.Controls.Add(Me.ptno, 0, 1)
-        Me.TableLayoutPanel3.Controls.Add(Me.Fillter, 1, 1)
-        Me.TableLayoutPanel3.Controls.Add(Me.OPD_Report, 2, 0)
-        Me.TableLayoutPanel3.Controls.Add(Me.inward, 3, 0)
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 2
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(593, 65)
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.92308!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.07692!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(800, 65)
         Me.TableLayoutPanel3.TabIndex = 1
         '
         'ptno
         '
-        Me.ptno.Location = New System.Drawing.Point(3, 35)
+        Me.ptno.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ptno.Location = New System.Drawing.Point(3, 27)
         Me.ptno.Name = "ptno"
-        Me.ptno.Size = New System.Drawing.Size(94, 22)
+        Me.ptno.Size = New System.Drawing.Size(94, 30)
         Me.ptno.TabIndex = 0
         '
-        'Fillter
+        'inward
         '
-        Me.Fillter.Location = New System.Drawing.Point(113, 35)
-        Me.Fillter.Name = "Fillter"
-        Me.Fillter.Size = New System.Drawing.Size(75, 23)
-        Me.Fillter.TabIndex = 1
-        Me.Fillter.Text = "Fillter"
-        Me.Fillter.UseVisualStyleBackColor = True
+        Me.inward.Location = New System.Drawing.Point(124, 27)
+        Me.inward.Name = "inward"
+        Me.inward.Size = New System.Drawing.Size(115, 35)
+        Me.inward.TabIndex = 4
+        Me.inward.Text = "In Ward Report"
+        Me.inward.UseVisualStyleBackColor = True
         '
         'OPD_Report
         '
-        Me.OPD_Report.Location = New System.Drawing.Point(223, 3)
+        Me.OPD_Report.Location = New System.Drawing.Point(245, 27)
         Me.OPD_Report.Name = "OPD_Report"
-        Me.OPD_Report.Size = New System.Drawing.Size(103, 23)
+        Me.OPD_Report.Size = New System.Drawing.Size(103, 35)
         Me.OPD_Report.TabIndex = 2
         Me.OPD_Report.Text = "OPD Report"
         Me.OPD_Report.UseVisualStyleBackColor = True
         '
-        'inward
+        'drugtopa
         '
-        Me.inward.Location = New System.Drawing.Point(353, 3)
-        Me.inward.Name = "inward"
-        Me.inward.Size = New System.Drawing.Size(142, 23)
-        Me.inward.TabIndex = 3
-        Me.inward.Text = "In Ward Report"
-        Me.inward.UseVisualStyleBackColor = True
+        Me.drugtopa.Location = New System.Drawing.Point(358, 27)
+        Me.drugtopa.Name = "drugtopa"
+        Me.drugtopa.Size = New System.Drawing.Size(161, 35)
+        Me.drugtopa.TabIndex = 3
+        Me.drugtopa.Text = "Drug to patient report"
+        Me.drugtopa.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -252,7 +254,7 @@ Partial Class PatientList
         Me.PATIENTSBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.PATIENTSBindingNavigator.Name = "PATIENTSBindingNavigator"
         Me.PATIENTSBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.PATIENTSBindingNavigator.Size = New System.Drawing.Size(1225, 31)
+        Me.PATIENTSBindingNavigator.Size = New System.Drawing.Size(1225, 27)
         Me.PATIENTSBindingNavigator.TabIndex = 2
         Me.PATIENTSBindingNavigator.Text = "BindingNavigator1"
         '
@@ -262,7 +264,7 @@ Partial Class PatientList
         Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 28)
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorAddNewItem.Text = "Add new"
         '
         'PATIENTSBindingSource
@@ -278,7 +280,7 @@ Partial Class PatientList
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 28)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
         Me.BindingNavigatorCountItem.Text = "of {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
@@ -288,7 +290,7 @@ Partial Class PatientList
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 28)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'BindingNavigatorMoveFirstItem
@@ -297,7 +299,7 @@ Partial Class PatientList
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 28)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveFirstItem.Text = "Move first"
         '
         'BindingNavigatorMovePreviousItem
@@ -306,13 +308,13 @@ Partial Class PatientList
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 28)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 31)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
         '
         'BindingNavigatorPositionItem
         '
@@ -327,7 +329,7 @@ Partial Class PatientList
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 31)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -335,7 +337,7 @@ Partial Class PatientList
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 28)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveNextItem.Text = "Move next"
         '
         'BindingNavigatorMoveLastItem
@@ -344,20 +346,20 @@ Partial Class PatientList
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 28)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
         Me.BindingNavigatorMoveLastItem.Text = "Move last"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 31)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
         '
         'PATIENTSBindingNavigatorSaveItem
         '
         Me.PATIENTSBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.PATIENTSBindingNavigatorSaveItem.Image = CType(resources.GetObject("PATIENTSBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.PATIENTSBindingNavigatorSaveItem.Name = "PATIENTSBindingNavigatorSaveItem"
-        Me.PATIENTSBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 28)
+        Me.PATIENTSBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
         Me.PATIENTSBindingNavigatorSaveItem.Text = "Save Data"
         '
         'PATIENTSTableAdapter
@@ -371,11 +373,14 @@ Partial Class PatientList
         Me.TableAdapterManager.ASSIGNEDTOTableAdapter = Nothing
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.BEDTableAdapter = Nothing
+        Me.TableAdapterManager.DRUGTableAdapter = Nothing
         Me.TableAdapterManager.LOCALDOCTORTableAdapter = Nothing
+        Me.TableAdapterManager.MEDICAL_HISTORYTableAdapter = Nothing
         Me.TableAdapterManager.PATIENTAPPOINTMENTTableAdapter = Nothing
         Me.TableAdapterManager.PATIENTSNEXTOFKINTableAdapter = Nothing
         Me.TableAdapterManager.PATIENTSTableAdapter = Me.PATIENTSTableAdapter
         Me.TableAdapterManager.PATIENTTTableAdapter = Nothing
+        Me.TableAdapterManager.PRESCRIBEDTableAdapter = Nothing
         Me.TableAdapterManager.QUALIFICATIONTableAdapter = Nothing
         Me.TableAdapterManager.STAFFTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Wellmeadows_Hospital_1101173.HospitalTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
@@ -450,8 +455,8 @@ Partial Class PatientList
     Friend WithEvents PATIENTSBindingNavigatorSaveItem As ToolStripButton
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents ptno As TextBox
-    Friend WithEvents Fillter As Button
     Friend WithEvents OPD_Report As Button
-    Friend WithEvents inward As Button
+    Friend WithEvents drugtopa As Button
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents inward As Button
 End Class

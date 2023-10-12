@@ -1,6 +1,4 @@
-﻿Imports System.Collections.ObjectModel
-Imports Oracle.ManagedDataAccess.Client
-Imports Wellmeadows_Hospital_1101173.Hospital
+﻿Imports Oracle.ManagedDataAccess.Client
 
 Module GetData
     Public pa_id As String
@@ -316,6 +314,22 @@ Module GetData
         End Using
     End Sub
 
+
+    Public Function UpdateBedOrInsertToWaittinglist(bed_num, patient_num) As Boolean
+        ' สร้าง Connection String สำหรับ Oracle Database
+        Dim checkBed = GetCountForDash("BED", $" WHERE patient_num IS NULL AND bed_num = '{bed_num}'")
+        If checkBed = 1 Then
+            UpdateData("BED", "PATIENT_NUM", "BED_NUM", bed_num, patient_num)
+            MessageBox.Show("เตียงว่าง")
+            Return True
+        Else
+            Dim data() As String = {"q_seq.NEXTVAL", bed_num, patient_num, "'false'"}
+            InsetFlexible(String.Join(",", data), "WATTING_LIST")
+            MessageBox.Show("เตียงไม่ว่าง")
+            Return False
+        End If
+
+    End Function
     Public Function GetCountForDash(table, where)
 
         Using connection As New OracleConnection(Connect())
@@ -339,7 +353,7 @@ Module GetData
     Public Sub GetDropdown(comboBox As ComboBox, table As String, display As String, value As String)
         Dim connection As New OracleConnection(Connect())
         connection.Open()
-        Dim sql As String = $"SELECT {display} ,{value} FROM {table}"
+        Dim sql As String = $"SELECT DISTINCT {display} ,{value} FROM {table}"
         Dim command As New OracleCommand(sql, connection)
         Dim reader As OracleDataReader = command.ExecuteReader()
         ' เซ็ต DisplayMember เป็นชื่อคอลัมน์ที่คุณต้องการให้แสดงใน ComboBox
@@ -350,10 +364,12 @@ Module GetData
         While reader.Read()
             ' เพิ่มข้อมูลลงใน ComboBox โดยใช้ชื่อคอลัมน์ที่ต้องการแสดง
             comboBox.Items.Add(New With {.DISPLAY = reader(display).ToString(), .VALUE = reader(value).ToString()})
-            Console.WriteLine(reader("WARD_NUM"))
+
         End While
         reader.Close()
         connection.Close()
     End Sub
+
+
 
 End Module

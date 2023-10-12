@@ -2,7 +2,7 @@
 Imports Oracle.ManagedDataAccess.Client
 Imports System.Data.SqlClient
 
-Public Class StaffByWardReport
+Public Class DrugToPatientReport
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -22,7 +22,7 @@ Public Class StaffByWardReport
 
     Private Sub SetReport(where)
         Me.ReportViewer1.Clear()
-        Dim sql As String = $"SELECT * FROM STAFF {where}"
+        Dim sql As String = $"SELECT * FROM DRUG_TO_PATIENT {where}"
         Debug.Write(sql)
         Dim oracleDataAdapter As New OracleDataAdapter(sql, Connect())
         Dim dataSet As New DataSet()
@@ -50,10 +50,10 @@ Public Class StaffByWardReport
 
     Private Sub StaffByWardReport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SetReport("")
-        GetDropdown(wardbox, "WARD", "WARD_NAME", "WARD_NUM")
+        GetDropdown(wardbox, "drug_to_patient", "patient_name", "patient_num")
     End Sub
 
     Private Sub wardbox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles wardbox.SelectedIndexChanged
-        SetReport($"WHERE WORK_LOCATION = '{wardbox.SelectedItem.VALUE}'")
+        SetReport($"WHERE PATIENT_NUM = '{wardbox.SelectedItem.VALUE}'")
     End Sub
 End Class

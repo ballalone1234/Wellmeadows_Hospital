@@ -125,7 +125,11 @@ WHERE
 
 
     Private Sub RegisterPatient4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         loadData()
+
     End Sub
+
+
 
 End Class

@@ -26,8 +26,8 @@ Partial Class PatientIn_report
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Back = New System.Windows.Forms.Button()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
+        Me.Back = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -79,6 +79,17 @@ Partial Class PatientIn_report
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(1665, 754)
         Me.TableLayoutPanel2.TabIndex = 9
         '
+        'ReportViewer1
+        '
+        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ReportViewer1.DocumentMapWidth = 1
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Wellmeadows_Hospital_1101173.ReportPatientInWard.rdlc"
+        Me.ReportViewer1.Location = New System.Drawing.Point(3, 3)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.ServerReport.BearerToken = Nothing
+        Me.ReportViewer1.Size = New System.Drawing.Size(1659, 748)
+        Me.ReportViewer1.TabIndex = 0
+        '
         'Back
         '
         Me.Back.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -95,17 +106,6 @@ Partial Class PatientIn_report
         Me.Back.TabIndex = 10
         Me.Back.UseVisualStyleBackColor = False
         '
-        'ReportViewer1
-        '
-        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ReportViewer1.DocumentMapWidth = 1
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Wellmeadows_Hospital_1101173.ReportPatientInWard.rdlc"
-        Me.ReportViewer1.Location = New System.Drawing.Point(3, 3)
-        Me.ReportViewer1.Name = "ReportViewer1"
-        Me.ReportViewer1.ServerReport.BearerToken = Nothing
-        Me.ReportViewer1.Size = New System.Drawing.Size(1659, 748)
-        Me.ReportViewer1.TabIndex = 0
-        '
         'PatientIn_report
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -113,7 +113,6 @@ Partial Class PatientIn_report
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1685, 838)
         Me.Controls.Add(Me.Panel2)
-        Me.Enabled = False
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "PatientIn_report"
