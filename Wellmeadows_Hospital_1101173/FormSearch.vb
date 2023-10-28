@@ -1,6 +1,7 @@
 ﻿Public Class FormSearch
     Public seachTable As String = ""
     Public returnText As TextBox
+    Public returnMode As Boolean = False
     Public returnRows As Object
     Public cellColumn As String
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
@@ -26,6 +27,9 @@
 
         If result = DialogResult.Yes Then
             returnText.Text = cellValue.ToString()
+            If returnMode Then
+                Treatment.FetchData()
+            End If
             Me.Close()
         ElseIf result = DialogResult.No Then
 

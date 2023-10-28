@@ -61,10 +61,10 @@ Public Class AllocatePatient
         Dim patient_type As String = ""
         If inp.Checked Then
             table = "ALLOCATEDTO"
-            data = {$"'{patientno.Text}'", $"'{Wardno.SelectedItem.VALUE.ToString()}'", $"{Getdate(dateplace)}",
-            $"{Getdate(dateleave)}", $"{Getdate(actualleave)}", $"'{ExDay.Text}'", $"{Getdate(waitingdate)}"}
+            data = {BedNo.SelectedItem, $"'{patientno.Text}'", $"'{Wardno.SelectedItem.VALUE.ToString()}'", $"{Getdate(dateplace)}",
+            $"{Getdate(dateleave)}", $"{Getdate(actualleave)}", $"'{ExDay.Text}'"}
             patient_type = "in"
-            If UpdateBedOrInsertToWaittinglist(BedNo.SelectedItem, patientno.Text) Then
+            If UpdateBedOrInsertToWaittinglist(BedNo.SelectedItem, patientno.Text, Wardno.SelectedItem.VALUE) Then
                 If Allocate(String.Join(",", data), table) > 0 Then
                     UpdateData("PATIENTS", "PATIENT_TYPE", "PATIENT_NUM", patientno.Text, patient_type)
                 End If

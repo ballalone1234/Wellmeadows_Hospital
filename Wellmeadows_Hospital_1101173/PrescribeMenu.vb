@@ -89,7 +89,7 @@ Public Class PrescribeMenu
         'Dim cmd As New OracleCommand(sql, connection)
         'cmd.ExecuteNonQuery()
         connection.Close()
-        Treatment.Medications.Text = "add success"
+        Treatment.DrugStatus.Text = "Complete the medication list."
         Treatment.rowValueSave = rowValue
         Debug.WriteLine(Treatment.rowValueSave)
         Hide()

@@ -28,8 +28,6 @@ Partial Class Treatment
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.SumitButton = New System.Windows.Forms.Button()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -45,20 +43,30 @@ Partial Class Treatment
         Me.Diagnosis = New System.Windows.Forms.TextBox()
         Me.ptno = New System.Windows.Forms.TextBox()
         Me.p8 = New System.Windows.Forms.Label()
-        Me.appnum = New System.Windows.Forms.TextBox()
-        Me.appnumsss = New System.Windows.Forms.Label()
         Me.DrugAllergies = New System.Windows.Forms.TextBox()
-        Me.Medications = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Tdate = New System.Windows.Forms.DateTimePicker()
-        Me.Back = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.DrugStatus = New System.Windows.Forms.Label()
+        Me.Med = New System.Windows.Forms.Button()
+        Me.SumitButton = New System.Windows.Forms.Button()
+        Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
+        Me.appref = New System.Windows.Forms.Button()
+        Me.Appbut = New System.Windows.Forms.Button()
+        Me.AppointStatus = New System.Windows.Forms.Label()
+        Me.his_id = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel2.SuspendLayout()
+        Me.TableLayoutPanel3.SuspendLayout()
+        Me.TableLayoutPanel4.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel5.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -111,13 +119,12 @@ Partial Class Treatment
         '
         'TableLayoutPanel1
         '
-        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnCount = 1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.12405!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.875952!))
-        Me.TableLayoutPanel1.Controls.Add(Me.PictureBox2, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.SumitButton, 0, 2)
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Back, 1, 3)
+        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel3, 0, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel4, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
@@ -125,66 +132,36 @@ Partial Class Treatment
         Me.TableLayoutPanel1.RowCount = 4
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.81992!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.18008!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 114.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 145.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1225, 838)
         Me.TableLayoutPanel1.TabIndex = 1
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(481, 22)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(191, 127)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 8
-        Me.PictureBox2.TabStop = False
-        '
-        'SumitButton
-        '
-        Me.SumitButton.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.SumitButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.SumitButton.BackgroundImage = CType(resources.GetObject("SumitButton.BackgroundImage"), System.Drawing.Image)
-        Me.SumitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.SumitButton.FlatAppearance.BorderSize = 0
-        Me.SumitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.SumitButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.SumitButton.Location = New System.Drawing.Point(357, 647)
-        Me.SumitButton.Margin = New System.Windows.Forms.Padding(4)
-        Me.SumitButton.Name = "SumitButton"
-        Me.SumitButton.Size = New System.Drawing.Size(439, 72)
-        Me.SumitButton.TabIndex = 7
-        Me.SumitButton.UseVisualStyleBackColor = False
         '
         'TableLayoutPanel2
         '
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 554.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 558.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label11, 0, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label8, 1, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label7, 2, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.Label6, 1, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.Label4, 1, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label3, 2, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label2, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.tel, 2, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.ward, 2, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Diagnosis, 0, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.ptno, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.p8, 0, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.appnum, 2, 7)
-        Me.TableLayoutPanel2.Controls.Add(Me.appnumsss, 2, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.DrugAllergies, 0, 7)
-        Me.TableLayoutPanel2.Controls.Add(Me.Medications, 2, 5)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label1, 2, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label9, 0, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.Tdate, 0, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.his_id, 2, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.ward, 2, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.tel, 2, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label3, 2, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label7, 2, 4)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label1, 2, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(4, 176)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4)
@@ -199,7 +176,7 @@ Partial Class Treatment
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 68.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1145, 463)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1217, 463)
         Me.TableLayoutPanel2.TabIndex = 9
         '
         'Label11
@@ -219,7 +196,7 @@ Partial Class Treatment
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(583, 189)
+        Me.Label10.Location = New System.Drawing.Point(649, 189)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(3, 26)
@@ -231,7 +208,7 @@ Partial Class Treatment
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(583, 129)
+        Me.Label8.Location = New System.Drawing.Point(649, 129)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(3, 28)
@@ -243,7 +220,7 @@ Partial Class Treatment
         '
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(594, 99)
+        Me.Label7.Location = New System.Drawing.Point(662, 189)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(348, 23)
@@ -255,7 +232,7 @@ Partial Class Treatment
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(583, 99)
+        Me.Label6.Location = New System.Drawing.Point(649, 99)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(3, 23)
@@ -280,7 +257,7 @@ Partial Class Treatment
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(583, 27)
+        Me.Label4.Location = New System.Drawing.Point(649, 27)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(3, 28)
@@ -292,7 +269,7 @@ Partial Class Treatment
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(594, 0)
+        Me.Label3.Location = New System.Drawing.Point(662, 99)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(275, 23)
@@ -304,7 +281,7 @@ Partial Class Treatment
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(583, 0)
+        Me.Label2.Location = New System.Drawing.Point(649, 0)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(3, 23)
@@ -316,7 +293,7 @@ Partial Class Treatment
         '
         Me.tel.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.tel.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.tel.Location = New System.Drawing.Point(677, 131)
+        Me.tel.Location = New System.Drawing.Point(747, 228)
         Me.tel.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tel.Multiline = True
         Me.tel.Name = "tel"
@@ -327,7 +304,7 @@ Partial Class Treatment
         '
         Me.ward.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ward.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ward.Location = New System.Drawing.Point(677, 36)
+        Me.ward.Location = New System.Drawing.Point(747, 132)
         Me.ward.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ward.Multiline = True
         Me.ward.Name = "ward"
@@ -338,7 +315,7 @@ Partial Class Treatment
         '
         Me.Diagnosis.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Diagnosis.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Diagnosis.Location = New System.Drawing.Point(99, 131)
+        Me.Diagnosis.Location = New System.Drawing.Point(132, 131)
         Me.Diagnosis.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Diagnosis.Multiline = True
         Me.Diagnosis.Name = "Diagnosis"
@@ -349,7 +326,7 @@ Partial Class Treatment
         '
         Me.ptno.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ptno.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ptno.Location = New System.Drawing.Point(99, 36)
+        Me.ptno.Location = New System.Drawing.Point(132, 36)
         Me.ptno.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ptno.Multiline = True
         Me.ptno.Name = "ptno"
@@ -368,64 +345,16 @@ Partial Class Treatment
         Me.p8.Text = "Patient num"
         Me.p8.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'appnum
-        '
-        Me.appnum.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.appnum.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.appnum.Location = New System.Drawing.Point(677, 328)
-        Me.appnum.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.appnum.Multiline = True
-        Me.appnum.Name = "appnum"
-        Me.appnum.Size = New System.Drawing.Size(381, 58)
-        Me.appnum.TabIndex = 28
-        '
-        'appnumsss
-        '
-        Me.appnumsss.AllowDrop = True
-        Me.appnumsss.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.appnumsss.ForeColor = System.Drawing.Color.White
-        Me.appnumsss.Location = New System.Drawing.Point(594, 294)
-        Me.appnumsss.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.appnumsss.Name = "appnumsss"
-        Me.appnumsss.Size = New System.Drawing.Size(326, 29)
-        Me.appnumsss.TabIndex = 32
-        Me.appnumsss.Text = "Appointment"
-        Me.appnumsss.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
         'DrugAllergies
         '
         Me.DrugAllergies.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.DrugAllergies.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.DrugAllergies.Location = New System.Drawing.Point(99, 328)
+        Me.DrugAllergies.Location = New System.Drawing.Point(132, 328)
         Me.DrugAllergies.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DrugAllergies.Multiline = True
         Me.DrugAllergies.Name = "DrugAllergies"
         Me.DrugAllergies.Size = New System.Drawing.Size(381, 58)
         Me.DrugAllergies.TabIndex = 27
-        '
-        'Medications
-        '
-        Me.Medications.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Medications.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Medications.Location = New System.Drawing.Point(677, 227)
-        Me.Medications.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Medications.Multiline = True
-        Me.Medications.Name = "Medications"
-        Me.Medications.Size = New System.Drawing.Size(381, 58)
-        Me.Medications.TabIndex = 26
-        '
-        'Label1
-        '
-        Me.Label1.AllowDrop = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(594, 189)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(291, 30)
-        Me.Label1.TabIndex = 30
-        Me.Label1.Text = "Medications"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label9
         '
@@ -445,26 +374,184 @@ Partial Class Treatment
         Me.Tdate.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Tdate.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Tdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.Tdate.Location = New System.Drawing.Point(100, 239)
+        Me.Tdate.Location = New System.Drawing.Point(133, 239)
         Me.Tdate.Name = "Tdate"
         Me.Tdate.Size = New System.Drawing.Size(378, 34)
         Me.Tdate.TabIndex = 33
         '
-        'Back
+        'TableLayoutPanel3
         '
-        Me.Back.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Back.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Back.BackgroundImage = CType(resources.GetObject("Back.BackgroundImage"), System.Drawing.Image)
-        Me.Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Back.FlatAppearance.BorderSize = 0
-        Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Back.Location = New System.Drawing.Point(1177, 782)
-        Me.Back.Margin = New System.Windows.Forms.Padding(4)
-        Me.Back.Name = "Back"
-        Me.Back.Size = New System.Drawing.Size(44, 52)
-        Me.Back.TabIndex = 10
-        Me.Back.UseVisualStyleBackColor = False
+        Me.TableLayoutPanel3.ColumnCount = 2
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.65053!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.34947!))
+        Me.TableLayoutPanel3.Controls.Add(Me.DrugStatus, 0, 0)
+        Me.TableLayoutPanel3.Controls.Add(Me.Med, 0, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.SumitButton, 1, 1)
+        Me.TableLayoutPanel3.Location = New System.Drawing.Point(3, 646)
+        Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
+        Me.TableLayoutPanel3.RowCount = 2
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 113.0!))
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(1219, 138)
+        Me.TableLayoutPanel3.TabIndex = 11
+        '
+        'DrugStatus
+        '
+        Me.DrugStatus.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.DrugStatus.AutoSize = True
+        Me.DrugStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.DrugStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.DrugStatus.Location = New System.Drawing.Point(225, 1)
+        Me.DrugStatus.Name = "DrugStatus"
+        Me.DrugStatus.Size = New System.Drawing.Size(204, 22)
+        Me.DrugStatus.TabIndex = 12
+        Me.DrugStatus.Text = "There is no medicine list"
+        '
+        'Med
+        '
+        Me.Med.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Med.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Med.BackgroundImage = CType(resources.GetObject("Med.BackgroundImage"), System.Drawing.Image)
+        Me.Med.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Med.FlatAppearance.BorderSize = 0
+        Me.Med.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Med.ForeColor = System.Drawing.SystemColors.Highlight
+        Me.Med.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Med.Location = New System.Drawing.Point(107, 48)
+        Me.Med.Margin = New System.Windows.Forms.Padding(4)
+        Me.Med.Name = "Med"
+        Me.Med.Size = New System.Drawing.Size(439, 66)
+        Me.Med.TabIndex = 8
+        Me.Med.UseVisualStyleBackColor = False
+        '
+        'SumitButton
+        '
+        Me.SumitButton.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.SumitButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.SumitButton.BackgroundImage = CType(resources.GetObject("SumitButton.BackgroundImage"), System.Drawing.Image)
+        Me.SumitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.SumitButton.FlatAppearance.BorderSize = 0
+        Me.SumitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SumitButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.SumitButton.Location = New System.Drawing.Point(717, 45)
+        Me.SumitButton.Margin = New System.Windows.Forms.Padding(4)
+        Me.SumitButton.Name = "SumitButton"
+        Me.SumitButton.Size = New System.Drawing.Size(439, 72)
+        Me.SumitButton.TabIndex = 7
+        Me.SumitButton.UseVisualStyleBackColor = False
+        '
+        'TableLayoutPanel4
+        '
+        Me.TableLayoutPanel4.ColumnCount = 2
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.48647!))
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.51353!))
+        Me.TableLayoutPanel4.Controls.Add(Me.PictureBox2, 0, 0)
+        Me.TableLayoutPanel4.Controls.Add(Me.TableLayoutPanel5, 1, 0)
+        Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel4.Location = New System.Drawing.Point(3, 3)
+        Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
+        Me.TableLayoutPanel4.RowCount = 1
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1219, 166)
+        Me.TableLayoutPanel4.TabIndex = 12
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(230, 19)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(191, 127)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 10
+        Me.PictureBox2.TabStop = False
+        '
+        'TableLayoutPanel5
+        '
+        Me.TableLayoutPanel5.ColumnCount = 1
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.74101!))
+        Me.TableLayoutPanel5.Controls.Add(Me.appref, 0, 0)
+        Me.TableLayoutPanel5.Controls.Add(Me.Appbut, 0, 1)
+        Me.TableLayoutPanel5.Controls.Add(Me.AppointStatus, 0, 2)
+        Me.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel5.Location = New System.Drawing.Point(655, 3)
+        Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
+        Me.TableLayoutPanel5.RowCount = 3
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69.0!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25.0!))
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(561, 160)
+        Me.TableLayoutPanel5.TabIndex = 11
+        '
+        'appref
+        '
+        Me.appref.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.appref.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.appref.BackgroundImage = CType(resources.GetObject("appref.BackgroundImage"), System.Drawing.Image)
+        Me.appref.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.appref.FlatAppearance.BorderSize = 0
+        Me.appref.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.appref.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.appref.Location = New System.Drawing.Point(74, 5)
+        Me.appref.Margin = New System.Windows.Forms.Padding(4)
+        Me.appref.Name = "appref"
+        Me.appref.Size = New System.Drawing.Size(413, 57)
+        Me.appref.TabIndex = 12
+        Me.appref.UseVisualStyleBackColor = False
+        '
+        'Appbut
+        '
+        Me.Appbut.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.Appbut.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Appbut.BackgroundImage = CType(resources.GetObject("Appbut.BackgroundImage"), System.Drawing.Image)
+        Me.Appbut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Appbut.FlatAppearance.BorderSize = 0
+        Me.Appbut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Appbut.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Appbut.Location = New System.Drawing.Point(74, 74)
+        Me.Appbut.Margin = New System.Windows.Forms.Padding(4)
+        Me.Appbut.Name = "Appbut"
+        Me.Appbut.Size = New System.Drawing.Size(413, 57)
+        Me.Appbut.TabIndex = 10
+        Me.Appbut.UseVisualStyleBackColor = False
+        '
+        'AppointStatus
+        '
+        Me.AppointStatus.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.AppointStatus.AutoSize = True
+        Me.AppointStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.AppointStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.AppointStatus.Location = New System.Drawing.Point(156, 136)
+        Me.AppointStatus.Name = "AppointStatus"
+        Me.AppointStatus.Size = New System.Drawing.Size(248, 22)
+        Me.AppointStatus.TabIndex = 11
+        Me.AppointStatus.Text = "Haven't made an appointment"
+        '
+        'his_id
+        '
+        Me.his_id.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.his_id.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.his_id.Enabled = False
+        Me.his_id.Location = New System.Drawing.Point(747, 35)
+        Me.his_id.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.his_id.Multiline = True
+        Me.his_id.Name = "his_id"
+        Me.his_id.Size = New System.Drawing.Size(381, 56)
+        Me.his_id.TabIndex = 35
+        '
+        'Label1
+        '
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(662, 0)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(275, 23)
+        Me.Label1.TabIndex = 36
+        Me.Label1.Text = "History id"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Treatment
         '
@@ -483,9 +570,14 @@ Partial Class Treatment
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
+        Me.TableLayoutPanel3.ResumeLayout(False)
+        Me.TableLayoutPanel3.PerformLayout()
+        Me.TableLayoutPanel4.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel5.ResumeLayout(False)
+        Me.TableLayoutPanel5.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -504,14 +596,12 @@ Partial Class Treatment
     Friend WithEvents Panel2 As Panel
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Home As Button
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents SumitButton As Button
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents tel As TextBox
     Friend WithEvents Diagnosis As TextBox
     Friend WithEvents ward As TextBox
     Friend WithEvents ptno As TextBox
-    Friend WithEvents Back As Button
     Friend WithEvents p8 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label8 As Label
@@ -521,12 +611,19 @@ Partial Class Treatment
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Medications As TextBox
     Friend WithEvents DrugAllergies As TextBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents appnum As TextBox
-    Friend WithEvents appnumsss As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Tdate As DateTimePicker
+    Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
+    Friend WithEvents Med As Button
+    Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents DrugStatus As Label
+    Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
+    Friend WithEvents Appbut As Button
+    Friend WithEvents AppointStatus As Label
+    Friend WithEvents appref As Button
+    Friend WithEvents his_id As TextBox
+    Friend WithEvents Label1 As Label
 End Class

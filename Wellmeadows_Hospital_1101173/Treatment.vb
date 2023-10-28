@@ -7,6 +7,8 @@ Public Class Treatment
     Public rowValueSave As List(Of List(Of String))
     Public dataApp() As String
     Public examRoom As String
+    Public id As String
+
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
@@ -18,7 +20,7 @@ Public Class Treatment
 
 
 
-    Private Sub Back_Click_1(sender As Object, e As EventArgs) Handles Back.Click
+    Private Sub Back_Click_1(sender As Object, e As EventArgs)
         Pagecontroller.BackPage(Me)
     End Sub
 
@@ -37,11 +39,13 @@ Public Class Treatment
                 Dim cmd As New OracleCommand(sql, connection)
                 cmd.ExecuteNonQuery()
             Next
-            Dim dataApp() As String = {$"'{appnum.Text}'", $"TO_DATE('{Appointment.examdate.Value.ToString("yyyy-MM-dd")}','YYYY-MM-DD')",
+            Dim dataApp() As String = {$"'{AppointStatus.Text}'", $"TO_DATE('{Appointment.examdate.Value.ToString("yyyy-MM-dd")}','YYYY-MM-DD')",
             $"'{examRoom}'", $"{result}"}
-            InsetFlexible(String.Join(",", dataApp), "PATIENTAPPOINTMENT")
+            If dataApp.Length < 1 Then
+                InsetFlexible(String.Join(",", dataApp), "PATIENTAPPOINTMENT")
+            End If
             MessageBox.Show("เพิ่มเสร็จสมบูรณ์")
-        End If
+            End If
 
 
     End Sub
@@ -67,16 +71,51 @@ Public Class Treatment
         FormSearch.Show()
     End Sub
 
-    Private Sub Medications_TextChanged(sender As Object, e As EventArgs) Handles Medications.Click
+    Private Sub Medications_TextChanged(sender As Object, e As EventArgs)
         PrescribeMenu.Show()
         PrescribeMenu.ptno.Text = ptno.Text
 
     End Sub
 
-    Private Sub appnum_TextChanged(sender As Object, e As EventArgs) Handles appnum.Click
+    Private Sub appnum_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Medications_TextChanged_1(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Med_Click(sender As Object, e As EventArgs) Handles Med.Click
+        PrescribeMenu.Show()
+        PrescribeMenu.ptno.Text = ptno.Text
+    End Sub
+
+    Private Sub Appbut_Click(sender As Object, e As EventArgs) Handles Appbut.Click
         Appointment.ptno.Text = ptno.Text
         Appointment.Show()
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles appref.Click
+        FormSearch.seachTable = "PATIENTAPPOINTMENT"
+        FormSearch.cellColumn = "MH_ID"
+        FormSearch.returnText = his_id
+        FormSearch.returnMode = True
+        FormSearch.Show()
+    End Sub
 
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Public Sub FetchData()
+        Dim reader As OracleDataReader = GetData.Getdata(his_id.Text, "H.MH_ID", "PATIENTAPPOINTMENT A, MEDICAL_HISTORY H", "A.MH_ID = H.MH_ID AND ")
+        While reader.Read()
+            ptno.Text = reader("PATIENT_NUM").ToString()
+            Diagnosis.Text = reader("DIAGNOSIS").ToString()
+            tel.Text = reader("TREAT_REV").ToString()
+            ward.Text = reader("WARD_NUM").ToString()
+            DrugAllergies.Text = reader("DRUG_ALLERGIES").ToString()
+            Tdate.Value = reader("TREATMENT_DATE")
+        End While
+    End Sub
 End Class

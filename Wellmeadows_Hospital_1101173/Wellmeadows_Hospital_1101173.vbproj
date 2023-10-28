@@ -171,6 +171,12 @@
     <Compile Include="PatientIn_report.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SelectFunction.Designer.vb">
+      <DependentUpon>SelectFunction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectFunction.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="setChrageN.Designer.vb">
       <DependentUpon>setChrageN.vb</DependentUpon>
     </Compile>
@@ -181,6 +187,18 @@
       <DependentUpon>DrugToPatientReport.vb</DependentUpon>
     </Compile>
     <Compile Include="DrugToPatientReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wardlist.Designer.vb">
+      <DependentUpon>Wardlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wardlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaittinglistRepot.Designer.vb">
+      <DependentUpon>WaittinglistRepot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WaittinglistRepot.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StaffByWardReport.Designer.vb">
@@ -254,12 +272,6 @@
     </Compile>
     <Compile Include="UserControl1.vb">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Wardlist.Designer.vb">
-      <DependentUpon>Wardlist.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Wardlist.vb">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboard.Designer.vb">
       <DependentUpon>Dashboard.vb</DependentUpon>
@@ -411,12 +423,22 @@
     <EmbeddedResource Include="PatientIn_report.resx">
       <DependentUpon>PatientIn_report.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportWaittingList.rdlc" />
     <EmbeddedResource Include="ReportDrugtoPatient.rdlc" />
+    <EmbeddedResource Include="SelectFunction.resx">
+      <DependentUpon>SelectFunction.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="setChrageN.resx">
       <DependentUpon>setChrageN.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DrugToPatientReport.resx">
       <DependentUpon>DrugToPatientReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wardlist.resx">
+      <DependentUpon>Wardlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaittinglistRepot.resx">
+      <DependentUpon>WaittinglistRepot.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffByWardReport.resx">
       <DependentUpon>StaffByWardReport.vb</DependentUpon>
@@ -452,9 +474,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SuppliesRegister.resx">
       <DependentUpon>SuppliesRegister.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Wardlist.resx">
-      <DependentUpon>Wardlist.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>

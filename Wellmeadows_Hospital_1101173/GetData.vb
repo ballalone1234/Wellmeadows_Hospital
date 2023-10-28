@@ -1,4 +1,5 @@
-﻿Imports Oracle.ManagedDataAccess.Client
+﻿Imports Microsoft.Reporting.Map.WebForms.BingMaps
+Imports Oracle.ManagedDataAccess.Client
 
 Module GetData
     Public pa_id As String
@@ -257,6 +258,34 @@ Module GetData
         Return date_format
     End Function
 
+    Public Function Getdata(key_id, column, table, where) As OracleDataReader
+        Dim Data = New List(Of OracleDataReader)
+        Dim connection As New OracleConnection(Connect())
+
+        ' สร้างคำสั่ง SQL ด้วย WHERE clause เพื่อกรองข้อมูลที่เลือก
+        Dim sql As String = $"SELECT * FROM {table} WHERE {where} {column} = '{key_id}'"
+
+        ' สร้าง OracleCommand
+        Dim command As New OracleCommand(sql, connection)
+
+
+
+        ' เปิดการเชื่อมต่อ
+        connection.Open()
+
+        ' สร้าง OracleDataReader เพื่ออ่านข้อมูล
+        Dim reader As OracleDataReader = command.ExecuteReader()
+
+        ' นำข้อมูลที่เหลือมาแสดง
+        Return reader
+
+        ' ปิดการเชื่อมต่อและปล่อยทรัพยากร
+
+        reader.Close()
+        connection.Close()
+    End Function
+
+
     Public Function GetSeach(table, textS)
         Dim column As String = GetColumn(table)
         Dim columArray() As String = Split(column, ",")
@@ -315,7 +344,7 @@ Module GetData
     End Sub
 
 
-    Public Function UpdateBedOrInsertToWaittinglist(bed_num, patient_num) As Boolean
+    Public Function UpdateBedOrInsertToWaittinglist(bed_num, patient_num, ward_no) As Boolean
         ' สร้าง Connection String สำหรับ Oracle Database
         Dim checkBed = GetCountForDash("BED", $" WHERE patient_num IS NULL AND bed_num = '{bed_num}'")
         If checkBed = 1 Then
@@ -323,7 +352,7 @@ Module GetData
             MessageBox.Show("เตียงว่าง")
             Return True
         Else
-            Dim data() As String = {"q_seq.NEXTVAL", bed_num, patient_num, "'false'"}
+            Dim data() As String = {"q_seq.NEXTVAL", bed_num, patient_num, "'false'", "SYSDATE", ward_no}
             InsetFlexible(String.Join(",", data), "WATTING_LIST")
             MessageBox.Show("เตียงไม่ว่าง")
             Return False

@@ -31,10 +31,12 @@ Partial Class PatientList
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.ptno = New System.Windows.Forms.TextBox()
         Me.inward = New System.Windows.Forms.Button()
         Me.OPD_Report = New System.Windows.Forms.Button()
+        Me.ptno = New System.Windows.Forms.TextBox()
         Me.drugtopa = New System.Windows.Forms.Button()
+        Me.waittinglist = New System.Windows.Forms.Button()
+        Me.watReport = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Back = New System.Windows.Forms.Button()
         Me.PATIENTSBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
@@ -54,6 +56,7 @@ Partial Class PatientList
         Me.PATIENTSBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.PATIENTSTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.PATIENTSTableAdapter()
         Me.TableAdapterManager = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.TableAdapterManager()
+        Me.inpatient = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -154,63 +157,87 @@ Partial Class PatientList
         '
         'TableLayoutPanel3
         '
-        Me.TableLayoutPanel3.ColumnCount = 5
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 231.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 214.0!))
+        Me.TableLayoutPanel3.ColumnCount = 7
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.76923!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.23077!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 174.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel3.Controls.Add(Me.inward, 1, 1)
         Me.TableLayoutPanel3.Controls.Add(Me.OPD_Report, 2, 1)
-        Me.TableLayoutPanel3.Controls.Add(Me.drugtopa, 3, 1)
         Me.TableLayoutPanel3.Controls.Add(Me.ptno, 0, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.drugtopa, 3, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.waittinglist, 4, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.watReport, 5, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.inward, 6, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.inpatient, 1, 1)
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 2
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.92308!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63.07692!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(800, 65)
+        Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(963, 65)
         Me.TableLayoutPanel3.TabIndex = 1
-        '
-        'ptno
-        '
-        Me.ptno.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.ptno.Location = New System.Drawing.Point(3, 27)
-        Me.ptno.Name = "ptno"
-        Me.ptno.Size = New System.Drawing.Size(94, 30)
-        Me.ptno.TabIndex = 0
         '
         'inward
         '
-        Me.inward.Location = New System.Drawing.Point(124, 27)
+        Me.inward.Location = New System.Drawing.Point(840, 27)
         Me.inward.Name = "inward"
-        Me.inward.Size = New System.Drawing.Size(115, 35)
+        Me.inward.Size = New System.Drawing.Size(105, 35)
         Me.inward.TabIndex = 4
         Me.inward.Text = "In Ward Report"
         Me.inward.UseVisualStyleBackColor = True
         '
         'OPD_Report
         '
-        Me.OPD_Report.Location = New System.Drawing.Point(245, 27)
+        Me.OPD_Report.Location = New System.Drawing.Point(328, 27)
         Me.OPD_Report.Name = "OPD_Report"
         Me.OPD_Report.Size = New System.Drawing.Size(103, 35)
         Me.OPD_Report.TabIndex = 2
         Me.OPD_Report.Text = "OPD Report"
         Me.OPD_Report.UseVisualStyleBackColor = True
         '
+        'ptno
+        '
+        Me.ptno.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ptno.Location = New System.Drawing.Point(3, 27)
+        Me.ptno.Name = "ptno"
+        Me.ptno.Size = New System.Drawing.Size(143, 30)
+        Me.ptno.TabIndex = 0
+        '
         'drugtopa
         '
-        Me.drugtopa.Location = New System.Drawing.Point(358, 27)
+        Me.drugtopa.Location = New System.Drawing.Point(446, 27)
         Me.drugtopa.Name = "drugtopa"
         Me.drugtopa.Size = New System.Drawing.Size(161, 35)
         Me.drugtopa.TabIndex = 3
         Me.drugtopa.Text = "Drug to patient report"
         Me.drugtopa.UseVisualStyleBackColor = True
+        '
+        'waittinglist
+        '
+        Me.waittinglist.Location = New System.Drawing.Point(620, 27)
+        Me.waittinglist.Name = "waittinglist"
+        Me.waittinglist.Size = New System.Drawing.Size(96, 35)
+        Me.waittinglist.TabIndex = 5
+        Me.waittinglist.Text = "waitting list"
+        Me.waittinglist.UseVisualStyleBackColor = True
+        '
+        'watReport
+        '
+        Me.watReport.Location = New System.Drawing.Point(722, 27)
+        Me.watReport.Name = "watReport"
+        Me.watReport.Size = New System.Drawing.Size(111, 35)
+        Me.watReport.TabIndex = 6
+        Me.watReport.Text = "waitting report"
+        Me.watReport.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -388,6 +415,15 @@ Partial Class PatientList
         Me.TableAdapterManager.WORK_INTableAdapter = Nothing
         Me.TableAdapterManager.WORKEXPTableAdapter = Nothing
         '
+        'inpatient
+        '
+        Me.inpatient.Location = New System.Drawing.Point(194, 27)
+        Me.inpatient.Name = "inpatient"
+        Me.inpatient.Size = New System.Drawing.Size(117, 35)
+        Me.inpatient.TabIndex = 7
+        Me.inpatient.Text = "Inpatients list"
+        Me.inpatient.UseVisualStyleBackColor = True
+        '
         'PatientList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -459,4 +495,7 @@ Partial Class PatientList
     Friend WithEvents drugtopa As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents inward As Button
+    Friend WithEvents waittinglist As Button
+    Friend WithEvents watReport As Button
+    Friend WithEvents inpatient As Button
 End Class
