@@ -30,11 +30,7 @@ Partial Class AllocatePatient
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.actualleave = New System.Windows.Forms.DateTimePicker()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -44,8 +40,6 @@ Partial Class AllocatePatient
         Me.Label2 = New System.Windows.Forms.Label()
         Me.patientno = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.dateleave = New System.Windows.Forms.DateTimePicker()
-        Me.dateplace = New System.Windows.Forms.DateTimePicker()
         Me.waitingdate = New System.Windows.Forms.DateTimePicker()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -118,15 +112,9 @@ Partial Class AllocatePatient
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 558.0!))
-        Me.TableLayoutPanel2.Controls.Add(Me.Label7, 0, 8)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label16, 2, 6)
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 560.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label15, 1, 6)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label14, 0, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.Label13, 1, 5)
-        Me.TableLayoutPanel2.Controls.Add(Me.actualleave, 2, 5)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label12, 2, 4)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label11, 0, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label8, 1, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.Label6, 1, 2)
@@ -136,14 +124,14 @@ Partial Class AllocatePatient
         Me.TableLayoutPanel2.Controls.Add(Me.Label2, 1, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.patientno, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label1, 0, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.dateleave, 0, 5)
-        Me.TableLayoutPanel2.Controls.Add(Me.dateplace, 0, 7)
-        Me.TableLayoutPanel2.Controls.Add(Me.waitingdate, 0, 9)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label9, 2, 8)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel3, 0, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.Wardno, 2, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.BedNo, 2, 9)
-        Me.TableLayoutPanel2.Controls.Add(Me.ExDay, 2, 7)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label7, 2, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.waitingdate, 2, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.ExDay, 0, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label16, 0, 4)
+        Me.TableLayoutPanel2.Controls.Add(Me.BedNo, 2, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label9, 2, 4)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(4, 181)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4)
@@ -167,10 +155,10 @@ Partial Class AllocatePatient
         '
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(4, 306)
+        Me.Label7.Location = New System.Drawing.Point(588, 72)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(327, 27)
+        Me.Label7.Size = New System.Drawing.Size(299, 23)
         Me.Label7.TabIndex = 47
         Me.Label7.Text = "Waiting Date"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -179,7 +167,7 @@ Partial Class AllocatePatient
         '
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(590, 228)
+        Me.Label16.Location = New System.Drawing.Point(4, 144)
         Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(301, 23)
@@ -191,7 +179,7 @@ Partial Class AllocatePatient
         '
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(579, 228)
+        Me.Label15.Location = New System.Drawing.Point(577, 228)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(3, 23)
@@ -199,23 +187,11 @@ Partial Class AllocatePatient
         Me.Label15.Text = "Actual Leave"
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label14
-        '
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(4, 228)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(299, 23)
-        Me.Label14.TabIndex = 41
-        Me.Label14.Text = "Date Place"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
         'Label13
         '
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(579, 174)
+        Me.Label13.Location = New System.Drawing.Point(577, 174)
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(3, 23)
@@ -223,46 +199,11 @@ Partial Class AllocatePatient
         Me.Label13.Text = "Actual Leave"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'actualleave
-        '
-        Me.actualleave.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.actualleave.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.actualleave.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.actualleave.Location = New System.Drawing.Point(673, 184)
-        Me.actualleave.Margin = New System.Windows.Forms.Padding(4)
-        Me.actualleave.Name = "actualleave"
-        Me.actualleave.Size = New System.Drawing.Size(385, 34)
-        Me.actualleave.TabIndex = 37
-        '
-        'Label12
-        '
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(590, 144)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(288, 22)
-        Me.Label12.TabIndex = 33
-        Me.Label12.Text = "Actual Leave"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label11
-        '
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(4, 144)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(315, 22)
-        Me.Label11.TabIndex = 30
-        Me.Label11.Text = "Date Leave"
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
         'Label10
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(579, 144)
+        Me.Label10.Location = New System.Drawing.Point(577, 144)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(3, 22)
@@ -274,7 +215,7 @@ Partial Class AllocatePatient
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(579, 95)
+        Me.Label8.Location = New System.Drawing.Point(577, 95)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(3, 28)
@@ -286,7 +227,7 @@ Partial Class AllocatePatient
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(579, 72)
+        Me.Label6.Location = New System.Drawing.Point(577, 72)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(3, 23)
@@ -310,7 +251,7 @@ Partial Class AllocatePatient
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(579, 26)
+        Me.Label4.Location = New System.Drawing.Point(577, 26)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(3, 28)
@@ -322,7 +263,7 @@ Partial Class AllocatePatient
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(590, 0)
+        Me.Label3.Location = New System.Drawing.Point(588, 0)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(248, 20)
@@ -334,7 +275,7 @@ Partial Class AllocatePatient
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(579, 0)
+        Me.Label2.Location = New System.Drawing.Point(577, 0)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(3, 20)
@@ -348,7 +289,7 @@ Partial Class AllocatePatient
         Me.patientno.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.patientno.Enabled = False
         Me.patientno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.patientno.Location = New System.Drawing.Point(97, 31)
+        Me.patientno.Location = New System.Drawing.Point(96, 31)
         Me.patientno.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.patientno.Multiline = True
         Me.patientno.Name = "patientno"
@@ -368,34 +309,12 @@ Partial Class AllocatePatient
         Me.Label1.Text = "Patient No"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'dateleave
-        '
-        Me.dateleave.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.dateleave.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.dateleave.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dateleave.Location = New System.Drawing.Point(95, 184)
-        Me.dateleave.Margin = New System.Windows.Forms.Padding(4)
-        Me.dateleave.Name = "dateleave"
-        Me.dateleave.Size = New System.Drawing.Size(385, 34)
-        Me.dateleave.TabIndex = 26
-        '
-        'dateplace
-        '
-        Me.dateplace.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.dateplace.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.dateplace.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dateplace.Location = New System.Drawing.Point(95, 262)
-        Me.dateplace.Margin = New System.Windows.Forms.Padding(4)
-        Me.dateplace.Name = "dateplace"
-        Me.dateplace.Size = New System.Drawing.Size(385, 34)
-        Me.dateplace.TabIndex = 45
-        '
         'waitingdate
         '
         Me.waitingdate.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.waitingdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
         Me.waitingdate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.waitingdate.Location = New System.Drawing.Point(95, 347)
+        Me.waitingdate.Location = New System.Drawing.Point(672, 102)
         Me.waitingdate.Margin = New System.Windows.Forms.Padding(4)
         Me.waitingdate.Name = "waitingdate"
         Me.waitingdate.Size = New System.Drawing.Size(385, 34)
@@ -405,10 +324,10 @@ Partial Class AllocatePatient
         '
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(590, 306)
+        Me.Label9.Location = New System.Drawing.Point(588, 144)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(248, 27)
+        Me.Label9.Size = New System.Drawing.Size(287, 27)
         Me.Label9.TabIndex = 49
         Me.Label9.Text = "Bed num"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -420,7 +339,7 @@ Partial Class AllocatePatient
         Me.Panel3.Location = New System.Drawing.Point(4, 99)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(567, 41)
+        Me.Panel3.Size = New System.Drawing.Size(565, 41)
         Me.Panel3.TabIndex = 51
         '
         'outp
@@ -433,13 +352,13 @@ Partial Class AllocatePatient
         Me.outp.Name = "outp"
         Me.outp.Size = New System.Drawing.Size(161, 29)
         Me.outp.TabIndex = 1
-        Me.outp.TabStop = True
         Me.outp.Text = "OUTPATIENT"
         Me.outp.UseVisualStyleBackColor = True
         '
         'inp
         '
         Me.inp.AutoSize = True
+        Me.inp.Checked = True
         Me.inp.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.5!)
         Me.inp.ForeColor = System.Drawing.Color.White
         Me.inp.Location = New System.Drawing.Point(93, 4)
@@ -456,7 +375,7 @@ Partial Class AllocatePatient
         Me.Wardno.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Wardno.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Wardno.FormattingEnabled = True
-        Me.Wardno.Location = New System.Drawing.Point(674, 30)
+        Me.Wardno.Location = New System.Drawing.Point(673, 30)
         Me.Wardno.Name = "Wardno"
         Me.Wardno.Size = New System.Drawing.Size(383, 37)
         Me.Wardno.TabIndex = 52
@@ -466,7 +385,7 @@ Partial Class AllocatePatient
         Me.BedNo.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.BedNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.BedNo.FormattingEnabled = True
-        Me.BedNo.Location = New System.Drawing.Point(674, 346)
+        Me.BedNo.Location = New System.Drawing.Point(673, 182)
         Me.BedNo.Name = "BedNo"
         Me.BedNo.Size = New System.Drawing.Size(383, 37)
         Me.BedNo.TabIndex = 53
@@ -475,7 +394,7 @@ Partial Class AllocatePatient
         '
         Me.ExDay.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ExDay.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ExDay.Location = New System.Drawing.Point(672, 259)
+        Me.ExDay.Location = New System.Drawing.Point(93, 180)
         Me.ExDay.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ExDay.Multiline = True
         Me.ExDay.Name = "ExDay"
@@ -608,16 +527,10 @@ Partial Class AllocatePatient
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents dateleave As DateTimePicker
-    Friend WithEvents Label11 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents dateplace As DateTimePicker
     Friend WithEvents Label16 As Label
-    Friend WithEvents actualleave As DateTimePicker
-    Friend WithEvents Label12 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents waitingdate As DateTimePicker
     Friend WithEvents Label9 As Label

@@ -46,8 +46,8 @@
 
     Private Sub StaffList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'Hospital.LIST_STAFF' table. You can move, or remove it, as needed.
-        setWard.Checked = True
-        LIST_STAFFDataGridView.DataSource = GetSeach("LIST_STAFF", ptno.Text)
+
+        LIST_STAFFDataGridView.DataSource = GetSeach("WARD", ptno.Text)
 
     End Sub
 
@@ -60,46 +60,25 @@
     End Sub
 
     Private Sub ptno_KeyUp(sender As Object, e As KeyEventArgs) Handles ptno.KeyUp
-        LIST_STAFFDataGridView.DataSource = GetSeach("LIST_STAFF", ptno.Text)
+        LIST_STAFFDataGridView.DataSource = GetSeach("WARD", ptno.Text)
     End Sub
 
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles LIST_STAFFDataGridView.CellClick
 
 
-        Dim cellValue As Object = LIST_STAFFDataGridView.Rows(e.RowIndex).Cells("STAFF_NUM").Value
-        LIST_STAFFDataGridView.Text = cellValue.ToString()
-
-        Debug.Write(LIST_STAFFDataGridView.Rows(e.RowIndex))
-        Dim result As DialogResult = MessageBox.Show($"Do you want to select {cellValue.ToString()} ?", "Confirmation", MessageBoxButtons.YesNoCancel)
-
-        If result = DialogResult.Yes Then
-            If setWard.Checked Then
-                setWardStaff.Show()
-                setWardStaff.staffno.Text = cellValue.ToString()
-            ElseIf setCharge.Checked Then
-                setChargeN.Show()
-                setChargeN.staffno.Text = cellValue.ToString()
-            End If
-
-
-
-        ElseIf result = DialogResult.No Then
-
-        ElseIf result = DialogResult.Cancel Then
-
-        End If
-    End Sub
-
-    Private Sub setWard_CheckedChanged(sender As Object, e As EventArgs) Handles setWard.CheckedChanged
 
     End Sub
 
-    Private Sub setCharge_CheckedChanged(sender As Object, e As EventArgs) Handles setCharge.CheckedChanged
+    Private Sub setWard_CheckedChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub setCharge_CheckedChanged(sender As Object, e As EventArgs)
         ptno.Text = "Charge Nurse"
         LIST_STAFFDataGridView.DataSource = GetSeach("LIST_STAFF", ptno.Text)
     End Sub
 
-    Private Sub ReporyByWard_Click(sender As Object, e As EventArgs) Handles ReporyByWard.Click
+    Private Sub ReporyByWard_Click(sender As Object, e As EventArgs)
         StaffByWardReport.Show()
 
     End Sub

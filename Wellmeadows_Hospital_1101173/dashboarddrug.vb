@@ -94,11 +94,13 @@ Public Class dashboarddrug
 
             ' ตรวจสอบว่ามีข้อมูลใน DataTable หรือไม่
             If dataTable.Rows.Count > 0 Then
+
                 ' กำหนดข้อมูลใน Chart
                 Chart1.DataSource = dataTable
-                Chart1.Series("Series1").XValueMember = "MONTH"
-                Chart1.Series("Series1").YValueMembers = "Count"
-                Chart1.Series("Series1").IsValueShownAsLabel = True ' แสดงค่าเป็น Label
+                Chart1.Series("จำนวนยา").XValueMember = "MONTH"
+                Chart1.Series("จำนวนยา").YValueMembers = "Count"
+                Chart1.Series("จำนวนยา").IsValueShownAsLabel = True ' แสดงค่าเป็น Label
+
                 ' แสดง Chart
                 Chart1.DataBind()
             Else
@@ -113,7 +115,11 @@ Public Class dashboarddrug
         End Try
     End Sub
 
-    Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
-        NextPage(Me, dashboardsup)
-    End Sub
+
+
+
+
+
+
+
 End Class

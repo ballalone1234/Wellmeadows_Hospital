@@ -68,7 +68,34 @@
         NextPage(Me, dashboarddrug)
     End Sub
 
-    Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
-        NextPage(Me, dashboardsup)
+    Private Sub dashboardward_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Chart1.Series("จำนวนสตาฟ").Points.AddXY("Ward 1", 5)
+        Chart1.Series("จำนวนสตาฟ").Points.AddXY("Ward 2", 10)
+        Chart1.Series("จำนวนสตาฟ").Points.AddXY("Ward 3", 9)
+        Chart1.Series("จำนวนสตาฟ").Points.AddXY("Ward 4", 10)
+        Chart1.Series("จำนวนสตาฟ").Points.AddXY("Ward 5", 8)
+        Chart1.Series("จำนวนสตาฟ").Points.AddXY("Ward 6", 11)
+        Chart1.Series("จำนวนสตาฟ").IsValueShownAsLabel = True ' แสดงค่าเป็น Label
+        Chart2.Series("จำนวนผู้ป่วย").Points.AddXY("Ward 1", 20)
+        Chart2.Series("จำนวนผู้ป่วย").Points.AddXY("Ward 2", 30)
+        Chart2.Series("จำนวนผู้ป่วย").Points.AddXY("Ward 3", 25)
+        Chart2.Series("จำนวนผู้ป่วย").Points.AddXY("Ward 4", 15)
+        Chart2.Series("จำนวนผู้ป่วย").Points.AddXY("Ward 5", 8)
+        Chart2.Series("จำนวนผู้ป่วย").Points.AddXY("Ward 6", 19)
+        Chart2.Series("จำนวนผู้ป่วย").IsValueShownAsLabel = True ' แสดงค่าเป็น Label
+        Chart3.Series("เตียงที่ใช้").Points.AddXY("Ward 1", 20)
+        Chart3.Series("เตียงที่ใช้").Points.AddXY("Ward 2", 30)
+        Chart3.Series("เตียงที่ใช้").Points.AddXY("Ward 3", 25)
+        Chart3.Series("เตียงที่ใช้").Points.AddXY("Ward 4", 15)
+        Chart3.Series("เตียงที่ใช้").Points.AddXY("Ward 5", 8)
+        Chart3.Series("เตียงที่ใช้").Points.AddXY("Ward 6", 19)
+        Chart3.Series("เตียงที่ใช้").IsValueShownAsLabel = True ' แสดงค่าเป็น Label
+        Chart3.Series("เตียงที่มี").Points.AddXY("Ward 1", 30)
+        Chart3.Series("เตียงที่มี").Points.AddXY("Ward 2", 31)
+        Chart3.Series("เตียงที่มี").Points.AddXY("Ward 3", 25)
+        Chart3.Series("เตียงที่มี").Points.AddXY("Ward 4", 17)
+        Chart3.Series("เตียงที่มี").Points.AddXY("Ward 5", 7)
+        Chart3.Series("เตียงที่มี").Points.AddXY("Ward 6", 20)
+        Chart3.Series("เตียงที่มี").IsValueShownAsLabel = True ' แสดงค่าเป็น Label
     End Sub
 End Class

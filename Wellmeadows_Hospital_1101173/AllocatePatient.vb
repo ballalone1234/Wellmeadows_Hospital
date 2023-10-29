@@ -61,12 +61,16 @@ Public Class AllocatePatient
         Dim patient_type As String = ""
         If inp.Checked Then
             table = "ALLOCATEDTO"
-            data = {BedNo.SelectedItem, $"'{patientno.Text}'", $"'{Wardno.SelectedItem.VALUE.ToString()}'", $"{Getdate(dateplace)}",
-            $"{Getdate(dateleave)}", $"{Getdate(actualleave)}", $"'{ExDay.Text}'"}
+            data = {BedNo.SelectedItem, $"'{patientno.Text}'", $"'{Wardno.SelectedItem.VALUE.ToString()}'", $"SYSDATE",
+            $"SYSDATE + {ExDay.Text}", $"NULL", $"'{ExDay.Text}'"}
             patient_type = "in"
             If UpdateBedOrInsertToWaittinglist(BedNo.SelectedItem, patientno.Text, Wardno.SelectedItem.VALUE) Then
                 If Allocate(String.Join(",", data), table) > 0 Then
                     UpdateData("PATIENTS", "PATIENT_TYPE", "PATIENT_NUM", patientno.Text, patient_type)
+                    MessageBox.Show("ส่งไปที่คลินิกแล้ว")
+                    PatientList.Show()
+                    PatientList.Reload()
+                    Close()
                 End If
             End If
         ElseIf outp.Checked Then
@@ -85,24 +89,30 @@ Public Class AllocatePatient
     End Sub
 
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles outp.CheckedChanged
-        actualleave.Hide()
+        waitingdate.Hide()
         ExDay.Hide()
-        dateleave.Hide()
-        dateplace.Hide()
         BedNo.Hide()
 
     End Sub
 
     Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles inp.CheckedChanged
-        actualleave.Show()
+        waitingdate.Show()
         ExDay.Show()
-        dateleave.Show()
-        dateplace.Show()
         BedNo.Show()
 
     End Sub
 
     Private Sub ExDay_TextChanged(sender As Object, e As EventArgs) Handles ExDay.TextChanged
 
+    End Sub
+
+    Private Sub patientno_TextChanged(sender As Object, e As EventArgs) Handles patientno.Click
+        FormSearch.seachTable = "PATIENTS"
+        FormSearch.cellColumn = "PATIENT_NUM"
+
+        FormSearch.returnText = patientno
+
+
+        FormSearch.Show()
     End Sub
 End Class

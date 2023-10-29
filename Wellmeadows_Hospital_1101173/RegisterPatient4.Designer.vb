@@ -246,7 +246,7 @@ Partial Class RegisterPatient4
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 565.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 566.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Panel7, 2, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.Label11, 2, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 4)
@@ -283,7 +283,7 @@ Partial Class RegisterPatient4
         '
         Me.Panel7.Controls.Add(Me.TextBox2)
         Me.Panel7.Controls.Add(Me.Label13)
-        Me.Panel7.Location = New System.Drawing.Point(554, 295)
+        Me.Panel7.Location = New System.Drawing.Point(553, 295)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(541, 203)
@@ -318,7 +318,7 @@ Partial Class RegisterPatient4
         '
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(554, 193)
+        Me.Label11.Location = New System.Drawing.Point(553, 193)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(299, 26)
@@ -330,7 +330,7 @@ Partial Class RegisterPatient4
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(544, 193)
+        Me.Label10.Location = New System.Drawing.Point(543, 193)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(2, 26)
@@ -342,7 +342,7 @@ Partial Class RegisterPatient4
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(544, 128)
+        Me.Label8.Location = New System.Drawing.Point(543, 128)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(2, 28)
@@ -354,7 +354,7 @@ Partial Class RegisterPatient4
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(544, 97)
+        Me.Label6.Location = New System.Drawing.Point(543, 97)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(2, 23)
@@ -378,7 +378,7 @@ Partial Class RegisterPatient4
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(544, 26)
+        Me.Label4.Location = New System.Drawing.Point(543, 26)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(2, 28)
@@ -390,7 +390,7 @@ Partial Class RegisterPatient4
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(554, 0)
+        Me.Label3.Location = New System.Drawing.Point(553, 0)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(291, 23)
@@ -402,7 +402,7 @@ Partial Class RegisterPatient4
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(544, 0)
+        Me.Label2.Location = New System.Drawing.Point(543, 0)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(2, 23)
@@ -507,7 +507,7 @@ Partial Class RegisterPatient4
         Me.Panel6.Location = New System.Drawing.Point(4, 295)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(532, 203)
+        Me.Panel6.Size = New System.Drawing.Size(531, 203)
         Me.Panel6.TabIndex = 27
         '
         'Panel11
@@ -524,7 +524,7 @@ Partial Class RegisterPatient4
         Me.TextBox1.BackColor = System.Drawing.Color.LightGray
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(76, 27)
+        Me.TextBox1.Location = New System.Drawing.Point(75, 27)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
@@ -597,7 +597,7 @@ Partial Class RegisterPatient4
         Me.TableLayoutPanel3.ColumnCount = 3
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 565.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 566.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.Label16, 1, 4)
         Me.TableLayoutPanel3.Controls.Add(Me.Label17, 1, 3)
         Me.TableLayoutPanel3.Controls.Add(Me.Label18, 1, 2)
@@ -634,7 +634,7 @@ Partial Class RegisterPatient4
         '
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(544, 200)
+        Me.Label16.Location = New System.Drawing.Point(543, 200)
         Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(2, 26)
@@ -646,7 +646,7 @@ Partial Class RegisterPatient4
         '
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(544, 129)
+        Me.Label17.Location = New System.Drawing.Point(543, 129)
         Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(2, 28)
@@ -658,7 +658,7 @@ Partial Class RegisterPatient4
         '
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(544, 106)
+        Me.Label18.Location = New System.Drawing.Point(543, 106)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(2, 23)
@@ -682,7 +682,7 @@ Partial Class RegisterPatient4
         '
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label20.ForeColor = System.Drawing.Color.White
-        Me.Label20.Location = New System.Drawing.Point(544, 37)
+        Me.Label20.Location = New System.Drawing.Point(543, 37)
         Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(2, 28)
@@ -694,7 +694,7 @@ Partial Class RegisterPatient4
         '
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label21.ForeColor = System.Drawing.Color.White
-        Me.Label21.Location = New System.Drawing.Point(554, 0)
+        Me.Label21.Location = New System.Drawing.Point(553, 0)
         Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(291, 23)
@@ -706,7 +706,7 @@ Partial Class RegisterPatient4
         '
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label22.ForeColor = System.Drawing.Color.White
-        Me.Label22.Location = New System.Drawing.Point(544, 0)
+        Me.Label22.Location = New System.Drawing.Point(543, 0)
         Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(2, 23)
@@ -794,7 +794,7 @@ Partial Class RegisterPatient4
         '
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(554, 106)
+        Me.Label15.Location = New System.Drawing.Point(553, 106)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(233, 23)
@@ -878,7 +878,7 @@ Partial Class RegisterPatient4
         Me.TableLayoutPanel4.ColumnCount = 3
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 565.0!))
+        Me.TableLayoutPanel4.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 566.0!))
         Me.TableLayoutPanel4.Controls.Add(Me.AlloButton, 2, 5)
         Me.TableLayoutPanel4.Controls.Add(Me.Label14, 1, 4)
         Me.TableLayoutPanel4.Controls.Add(Me.Label25, 1, 3)
@@ -930,7 +930,7 @@ Partial Class RegisterPatient4
         '
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(544, 187)
+        Me.Label14.Location = New System.Drawing.Point(543, 187)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(2, 26)
@@ -942,7 +942,7 @@ Partial Class RegisterPatient4
         '
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label25.ForeColor = System.Drawing.Color.White
-        Me.Label25.Location = New System.Drawing.Point(544, 119)
+        Me.Label25.Location = New System.Drawing.Point(543, 119)
         Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(2, 28)
@@ -954,7 +954,7 @@ Partial Class RegisterPatient4
         '
         Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label27.ForeColor = System.Drawing.Color.White
-        Me.Label27.Location = New System.Drawing.Point(544, 92)
+        Me.Label27.Location = New System.Drawing.Point(543, 92)
         Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(2, 23)
@@ -978,7 +978,7 @@ Partial Class RegisterPatient4
         '
         Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label29.ForeColor = System.Drawing.Color.White
-        Me.Label29.Location = New System.Drawing.Point(544, 25)
+        Me.Label29.Location = New System.Drawing.Point(543, 25)
         Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(2, 28)
@@ -990,7 +990,7 @@ Partial Class RegisterPatient4
         '
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label30.ForeColor = System.Drawing.Color.White
-        Me.Label30.Location = New System.Drawing.Point(554, 0)
+        Me.Label30.Location = New System.Drawing.Point(553, 0)
         Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label30.Name = "Label30"
         Me.Label30.Size = New System.Drawing.Size(276, 23)
@@ -1002,7 +1002,7 @@ Partial Class RegisterPatient4
         '
         Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label31.ForeColor = System.Drawing.Color.White
-        Me.Label31.Location = New System.Drawing.Point(544, 0)
+        Me.Label31.Location = New System.Drawing.Point(543, 0)
         Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(2, 23)
@@ -1066,7 +1066,7 @@ Partial Class RegisterPatient4
         '
         Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label34.ForeColor = System.Drawing.Color.White
-        Me.Label34.Location = New System.Drawing.Point(554, 92)
+        Me.Label34.Location = New System.Drawing.Point(553, 92)
         Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(191, 23)
