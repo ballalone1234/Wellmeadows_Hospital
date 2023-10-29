@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class dashboardpatient
+Partial Class dashboardsup
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,16 +23,15 @@ Partial Class dashboardpatient
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dashboardpatient))
+        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dashboardsup))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel16 = New System.Windows.Forms.TableLayoutPanel()
@@ -43,25 +42,16 @@ Partial Class dashboardpatient
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
-        Me.TableLayoutPanel9 = New System.Windows.Forms.TableLayoutPanel()
-        Me.TableLayoutPanel10 = New System.Windows.Forms.TableLayoutPanel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
-        Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
-        Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Chart3 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.PATIENTSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Hospital = New Wellmeadows_Hospital_1101173.Hospital()
-        Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Chart2 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.PATIENTSTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.PATIENTSTableAdapter()
+        Me.Chart2 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.TableLayoutPanel8 = New System.Windows.Forms.TableLayoutPanel()
+        Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Back = New System.Windows.Forms.Button()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
@@ -81,22 +71,14 @@ Partial Class dashboardpatient
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
-        Me.TableLayoutPanel9.SuspendLayout()
-        Me.TableLayoutPanel10.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
-        Me.TableLayoutPanel5.SuspendLayout()
-        Me.TableLayoutPanel7.SuspendLayout()
-        CType(Me.Chart3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PATIENTSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Hospital, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TableLayoutPanel6.SuspendLayout()
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TableLayoutPanel8.SuspendLayout()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel8.SuspendLayout()
+        Me.TableLayoutPanel5.SuspendLayout()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -242,7 +224,6 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel2.Controls.Add(Me.PictureBox5, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel9, 2, 0)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 3)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
@@ -250,45 +231,6 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37.0!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(912, 37)
         Me.TableLayoutPanel2.TabIndex = 11
-        '
-        'TableLayoutPanel9
-        '
-        Me.TableLayoutPanel9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TableLayoutPanel9.ColumnCount = 2
-        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.90909!))
-        Me.TableLayoutPanel9.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.09091!))
-        Me.TableLayoutPanel9.Controls.Add(Me.PictureBox10, 0, 0)
-        Me.TableLayoutPanel9.Controls.Add(Me.TableLayoutPanel10, 1, 0)
-        Me.TableLayoutPanel9.Location = New System.Drawing.Point(685, 3)
-        Me.TableLayoutPanel9.Name = "TableLayoutPanel9"
-        Me.TableLayoutPanel9.RowCount = 1
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31.0!))
-        Me.TableLayoutPanel9.Size = New System.Drawing.Size(224, 31)
-        Me.TableLayoutPanel9.TabIndex = 1
-        '
-        'TableLayoutPanel10
-        '
-        Me.TableLayoutPanel10.ColumnCount = 1
-        Me.TableLayoutPanel10.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel10.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel10.Controls.Add(Me.PictureBox11, 0, 0)
-        Me.TableLayoutPanel10.Controls.Add(Me.TextBox1, 0, 1)
-        Me.TableLayoutPanel10.Location = New System.Drawing.Point(49, 3)
-        Me.TableLayoutPanel10.Name = "TableLayoutPanel10"
-        Me.TableLayoutPanel10.RowCount = 2
-        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel10.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel10.Size = New System.Drawing.Size(172, 25)
-        Me.TableLayoutPanel10.TabIndex = 5
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.Location = New System.Drawing.Point(35, 15)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(101, 20)
-        Me.TextBox1.TabIndex = 2
         '
         'TableLayoutPanel4
         '
@@ -302,58 +244,9 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel4.RowCount = 2
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel4.Size = New System.Drawing.Size(912, 553)
         Me.TableLayoutPanel4.TabIndex = 12
-        '
-        'TableLayoutPanel5
-        '
-        Me.TableLayoutPanel5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.TableLayoutPanel5.BackColor = System.Drawing.Color.White
-        Me.TableLayoutPanel5.ColumnCount = 2
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel5.Controls.Add(Me.TableLayoutPanel7, 1, 0)
-        Me.TableLayoutPanel5.Controls.Add(Me.TableLayoutPanel6, 0, 0)
-        Me.TableLayoutPanel5.Location = New System.Drawing.Point(3, 3)
-        Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
-        Me.TableLayoutPanel5.RowCount = 1
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 270.0!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(906, 270)
-        Me.TableLayoutPanel5.TabIndex = 0
-        '
-        'TableLayoutPanel7
-        '
-        Me.TableLayoutPanel7.ColumnCount = 1
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel7.Controls.Add(Me.Chart3, 0, 1)
-        Me.TableLayoutPanel7.Controls.Add(Me.PictureBox8, 0, 0)
-        Me.TableLayoutPanel7.Location = New System.Drawing.Point(456, 3)
-        Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
-        Me.TableLayoutPanel7.RowCount = 2
-        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.574468!))
-        Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.42553!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(447, 264)
-        Me.TableLayoutPanel7.TabIndex = 1
-        '
-        'Chart3
-        '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart3.ChartAreas.Add(ChartArea1)
-        Me.Chart3.DataSource = Me.PATIENTSBindingSource
-        Legend1.Name = "Legend1"
-        Me.Chart3.Legends.Add(Legend1)
-        Me.Chart3.Location = New System.Drawing.Point(3, 28)
-        Me.Chart3.Name = "Chart3"
-        Series1.ChartArea = "ChartArea1"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Me.Chart3.Series.Add(Series1)
-        Me.Chart3.Size = New System.Drawing.Size(441, 233)
-        Me.Chart3.TabIndex = 3
-        Me.Chart3.Text = "Chart3"
         '
         'PATIENTSBindingSource
         '
@@ -365,38 +258,33 @@ Partial Class dashboardpatient
         Me.Hospital.DataSetName = "Hospital"
         Me.Hospital.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'TableLayoutPanel6
+        'PATIENTSTableAdapter
         '
-        Me.TableLayoutPanel6.ColumnCount = 1
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel6.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel6.Controls.Add(Me.PictureBox7, 0, 0)
-        Me.TableLayoutPanel6.Controls.Add(Me.Chart1, 0, 1)
-        Me.TableLayoutPanel6.Location = New System.Drawing.Point(3, 3)
-        Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
-        Me.TableLayoutPanel6.RowCount = 2
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.574468!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.42553!))
-        Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(447, 264)
-        Me.TableLayoutPanel6.TabIndex = 0
+        Me.PATIENTSTableAdapter.ClearBeforeFill = True
         '
-        'Chart1
+        'Chart2
         '
         ChartArea2.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea2)
+        Me.Chart2.ChartAreas.Add(ChartArea2)
         Legend2.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend2)
-        Me.Chart1.Location = New System.Drawing.Point(3, 28)
-        Me.Chart1.Name = "Chart1"
+        Me.Chart2.Legends.Add(Legend2)
+        Me.Chart2.Location = New System.Drawing.Point(3, 30)
+        Me.Chart2.Name = "Chart2"
         Series2.ChartArea = "ChartArea1"
-        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie
         Series2.Legend = "Legend1"
-        Series2.Name = "Series1"
-        Me.Chart1.Series.Add(Series2)
-        Me.Chart1.Size = New System.Drawing.Size(441, 233)
-        Me.Chart1.TabIndex = 2
-        Me.Chart1.Text = "Chart1"
+        Series2.Name = "ปริมาณยาคงคลัง"
+        Series3.ChartArea = "ChartArea1"
+        Series3.Legend = "Legend1"
+        Series3.Name = "ปริมาณยาที่ใช้"
+        Series4.ChartArea = "ChartArea1"
+        Series4.Legend = "Legend1"
+        Series4.Name = "ปริมาณยาสั่งซื้อ"
+        Me.Chart2.Series.Add(Series2)
+        Me.Chart2.Series.Add(Series3)
+        Me.Chart2.Series.Add(Series4)
+        Me.Chart2.Size = New System.Drawing.Size(900, 227)
+        Me.Chart2.TabIndex = 1
+        Me.Chart2.Text = "drug use"
         '
         'TableLayoutPanel8
         '
@@ -411,28 +299,42 @@ Partial Class dashboardpatient
         Me.TableLayoutPanel8.RowCount = 2
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.72664!))
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.27335!))
-        Me.TableLayoutPanel8.Size = New System.Drawing.Size(906, 271)
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(906, 260)
         Me.TableLayoutPanel8.TabIndex = 1
         '
-        'Chart2
+        'TableLayoutPanel5
         '
-        ChartArea3.Name = "ChartArea1"
-        Me.Chart2.ChartAreas.Add(ChartArea3)
-        Legend3.Name = "Legend1"
-        Me.Chart2.Legends.Add(Legend3)
-        Me.Chart2.Location = New System.Drawing.Point(3, 32)
-        Me.Chart2.Name = "Chart2"
-        Series3.ChartArea = "ChartArea1"
-        Series3.Legend = "Legend1"
-        Series3.Name = "Series1"
-        Me.Chart2.Series.Add(Series3)
-        Me.Chart2.Size = New System.Drawing.Size(900, 236)
-        Me.Chart2.TabIndex = 1
-        Me.Chart2.Text = "Chart2"
+        Me.TableLayoutPanel5.BackColor = System.Drawing.Color.White
+        Me.TableLayoutPanel5.ColumnCount = 1
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.TableLayoutPanel5.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel5.Controls.Add(Me.PictureBox7, 0, 0)
+        Me.TableLayoutPanel5.Controls.Add(Me.Chart1, 0, 1)
+        Me.TableLayoutPanel5.Location = New System.Drawing.Point(3, 3)
+        Me.TableLayoutPanel5.Name = "TableLayoutPanel5"
+        Me.TableLayoutPanel5.RowCount = 3
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.72664!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.27335!))
+        Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(906, 270)
+        Me.TableLayoutPanel5.TabIndex = 2
         '
-        'PATIENTSTableAdapter
+        'Chart1
         '
-        Me.PATIENTSTableAdapter.ClearBeforeFill = True
+        ChartArea1.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea1)
+        Legend1.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend1)
+        Me.Chart1.Location = New System.Drawing.Point(3, 29)
+        Me.Chart1.Name = "Chart1"
+        Series1.ChartArea = "ChartArea1"
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line
+        Series1.Legend = "Legend1"
+        Series1.Name = "มูลค่าการจัดซื้อ"
+        Me.Chart1.Series.Add(Series1)
+        Me.Chart1.Size = New System.Drawing.Size(900, 217)
+        Me.Chart1.TabIndex = 1
+        Me.Chart1.Text = "value"
         '
         'Back
         '
@@ -451,7 +353,7 @@ Partial Class dashboardpatient
         '
         'PictureBox5
         '
-        Me.PictureBox5.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.immage
+        Me.PictureBox5.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.i1mage2
         Me.PictureBox5.Location = New System.Drawing.Point(307, 3)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(298, 31)
@@ -459,54 +361,22 @@ Partial Class dashboardpatient
         Me.PictureBox5.TabIndex = 0
         Me.PictureBox5.TabStop = False
         '
-        'PictureBox10
-        '
-        Me.PictureBox10.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.imagee
-        Me.PictureBox10.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(40, 25)
-        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox10.TabIndex = 4
-        Me.PictureBox10.TabStop = False
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox11.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.imagee__2_
-        Me.PictureBox11.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(166, 6)
-        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox11.TabIndex = 1
-        Me.PictureBox11.TabStop = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.imagge1
-        Me.PictureBox8.Location = New System.Drawing.Point(3, 3)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(441, 19)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox8.TabIndex = 1
-        Me.PictureBox8.TabStop = False
-        '
         'PictureBox7
         '
-        Me.PictureBox7.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.imagge
+        Me.PictureBox7.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.i1mage3
         Me.PictureBox7.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(441, 19)
+        Me.PictureBox7.Size = New System.Drawing.Size(900, 20)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox7.TabIndex = 1
+        Me.PictureBox7.TabIndex = 0
         Me.PictureBox7.TabStop = False
         '
         'PictureBox9
         '
-        Me.PictureBox9.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.imagge2
+        Me.PictureBox9.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.i1mage5
         Me.PictureBox9.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(900, 23)
+        Me.PictureBox9.Size = New System.Drawing.Size(900, 21)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox9.TabIndex = 0
         Me.PictureBox9.TabStop = False
@@ -586,16 +456,17 @@ Partial Class dashboardpatient
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'dashboardpatient
+        'dashboardsup
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1040, 640)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "dashboardpatient"
+        Me.Name = "dashboardsup"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patient Menu"
         Me.Panel1.ResumeLayout(False)
@@ -608,23 +479,14 @@ Partial Class dashboardpatient
         Me.Panel2.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
-        Me.TableLayoutPanel9.ResumeLayout(False)
-        Me.TableLayoutPanel10.ResumeLayout(False)
-        Me.TableLayoutPanel10.PerformLayout()
         Me.TableLayoutPanel4.ResumeLayout(False)
-        Me.TableLayoutPanel5.ResumeLayout(False)
-        Me.TableLayoutPanel7.ResumeLayout(False)
-        CType(Me.Chart3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PATIENTSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Hospital, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TableLayoutPanel6.ResumeLayout(False)
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TableLayoutPanel8.ResumeLayout(False)
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel8.ResumeLayout(False)
+        Me.TableLayoutPanel5.ResumeLayout(False)
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
@@ -665,23 +527,14 @@ Partial Class dashboardpatient
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
-    Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
-    Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
-    Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
-    Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
-    Friend WithEvents PictureBox9 As PictureBox
-    Friend WithEvents Chart2 As DataVisualization.Charting.Chart
-    Friend WithEvents TableLayoutPanel9 As TableLayoutPanel
-    Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents TableLayoutPanel10 As TableLayoutPanel
-    Friend WithEvents PictureBox11 As PictureBox
-    Friend WithEvents Chart3 As DataVisualization.Charting.Chart
-    Friend WithEvents Chart1 As DataVisualization.Charting.Chart
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Hospital As Hospital
     Friend WithEvents PATIENTSBindingSource As BindingSource
     Friend WithEvents PATIENTSTableAdapter As HospitalTableAdapters.PATIENTSTableAdapter
     Friend WithEvents PictureBox12 As PictureBox
+    Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents Chart1 As DataVisualization.Charting.Chart
+    Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
+    Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents Chart2 As DataVisualization.Charting.Chart
 End Class

@@ -181,4 +181,8 @@ FROM PATIENTS GROUP BY TRUNC(MONTHS_BETWEEN(SYSDATE, TO_DATE(DOB, 'DD-MM-YYYY'))
     Private Sub Chart3_Click(sender As Object, e As EventArgs) Handles Chart3.Click
 
     End Sub
+
+    Private Sub PictureBox12_Click(sender As Object, e As EventArgs) Handles PictureBox12.Click
+        NextPage(Me, dashboardsup)
+    End Sub
 End Class

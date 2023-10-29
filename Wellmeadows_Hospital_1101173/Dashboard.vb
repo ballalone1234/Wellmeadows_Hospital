@@ -97,4 +97,8 @@
         WardC.Text = GetCountForDash("WARD", "")
 
     End Sub
+
+    Private Sub PictureBox18_Click(sender As Object, e As EventArgs) Handles PictureBox18.Click
+        NextPage(Me, dashboardsup)
+    End Sub
 End Class

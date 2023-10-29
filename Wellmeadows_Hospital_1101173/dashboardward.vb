@@ -67,4 +67,8 @@
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
         NextPage(Me, dashboarddrug)
     End Sub
+
+    Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
+        NextPage(Me, dashboardsup)
+    End Sub
 End Class

@@ -178,4 +178,7 @@ FROM STAFF GROUP BY TRUNC(MONTHS_BETWEEN(SYSDATE, TO_DATE(DOB, 'DD-MM-YYYY')) / 
 
     End Sub
 
+    Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
+        NextPage(Me, dashboardsup)
+    End Sub
 End Class
