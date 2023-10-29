@@ -171,6 +171,18 @@
     <Compile Include="PatientIn_report.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SetBed.Designer.vb">
+      <DependentUpon>SetBed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SetBed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetActualLeave.Designer.vb">
+      <DependentUpon>SetActualLeave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SetActualLeave.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SelectFunction.Designer.vb">
       <DependentUpon>SelectFunction.vb</DependentUpon>
     </Compile>
@@ -425,6 +437,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReportWaittingList.rdlc" />
     <EmbeddedResource Include="ReportDrugtoPatient.rdlc" />
+    <EmbeddedResource Include="SetBed.resx">
+      <DependentUpon>SetBed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetActualLeave.resx">
+      <DependentUpon>SetActualLeave.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SelectFunction.resx">
       <DependentUpon>SelectFunction.vb</DependentUpon>
     </EmbeddedResource>

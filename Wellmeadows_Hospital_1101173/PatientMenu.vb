@@ -35,7 +35,5 @@
         Pagecontroller.NextPage(Me, PatientList)
     End Sub
 
-    Private Sub waitingpt_Click(sender As Object, e As EventArgs) Handles waitingpt.Click
-        Pagecontroller.NextPage(Me, WaitingListPatient)
-    End Sub
+
 End Class

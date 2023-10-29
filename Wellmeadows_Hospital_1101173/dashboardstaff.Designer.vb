@@ -290,8 +290,8 @@ Partial Class dashboardstaff
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.12405!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.875952!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 99.5!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.5!))
         Me.TableLayoutPanel1.Controls.Add(Me.Back, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel4, 0, 1)
@@ -315,7 +315,7 @@ Partial Class dashboardstaff
         Me.Back.FlatAppearance.BorderSize = 0
         Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Back.Location = New System.Drawing.Point(1457, 782)
+        Me.Back.Location = New System.Drawing.Point(1544, 782)
         Me.Back.Margin = New System.Windows.Forms.Padding(4)
         Me.Back.Name = "Back"
         Me.Back.Size = New System.Drawing.Size(44, 52)
@@ -427,7 +427,7 @@ Partial Class dashboardstaff
         Me.TableLayoutPanel4.RowCount = 2
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1497, 647)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1584, 647)
         Me.TableLayoutPanel4.TabIndex = 13
         '
         'TableLayoutPanel5
@@ -445,7 +445,7 @@ Partial Class dashboardstaff
         Me.TableLayoutPanel5.RowCount = 1
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.TableLayoutPanel5.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 315.0!))
-        Me.TableLayoutPanel5.Size = New System.Drawing.Size(1489, 315)
+        Me.TableLayoutPanel5.Size = New System.Drawing.Size(1576, 315)
         Me.TableLayoutPanel5.TabIndex = 0
         '
         'TableLayoutPanel7
@@ -455,13 +455,13 @@ Partial Class dashboardstaff
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27.0!))
         Me.TableLayoutPanel7.Controls.Add(Me.Chart3, 0, 1)
         Me.TableLayoutPanel7.Controls.Add(Me.PictureBox8, 0, 0)
-        Me.TableLayoutPanel7.Location = New System.Drawing.Point(748, 4)
+        Me.TableLayoutPanel7.Location = New System.Drawing.Point(792, 4)
         Me.TableLayoutPanel7.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel7.Name = "TableLayoutPanel7"
         Me.TableLayoutPanel7.RowCount = 2
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.574468!))
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.42553!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(736, 307)
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(780, 307)
         Me.TableLayoutPanel7.TabIndex = 1
         '
         'Chart3
@@ -478,7 +478,7 @@ Partial Class dashboardstaff
         Series1.Legend = "Legend1"
         Series1.Name = "Series1"
         Me.Chart3.Series.Add(Series1)
-        Me.Chart3.Size = New System.Drawing.Size(728, 270)
+        Me.Chart3.Size = New System.Drawing.Size(772, 270)
         Me.Chart3.TabIndex = 3
         Me.Chart3.Text = "Chart3"
         '
@@ -553,7 +553,7 @@ Partial Class dashboardstaff
         Me.TableLayoutPanel8.RowCount = 2
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.72664!))
         Me.TableLayoutPanel8.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 89.27335!))
-        Me.TableLayoutPanel8.Size = New System.Drawing.Size(1489, 316)
+        Me.TableLayoutPanel8.Size = New System.Drawing.Size(1576, 316)
         Me.TableLayoutPanel8.TabIndex = 1
         '
         'PictureBox9

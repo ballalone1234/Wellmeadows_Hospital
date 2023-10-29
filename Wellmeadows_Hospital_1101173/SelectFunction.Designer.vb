@@ -23,10 +23,10 @@ Partial Class SelectFunction
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,25 +48,15 @@ Partial Class SelectFunction
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(575, 184)
         Me.TableLayoutPanel1.TabIndex = 0
         '
-        'Button1
+        'Button4
         '
-        Me.Button1.Location = New System.Drawing.Point(10, 10)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(10)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(267, 72)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(297, 10)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(10)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(267, 72)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button4.Location = New System.Drawing.Point(297, 102)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(10)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(267, 72)
+        Me.Button4.TabIndex = 3
+        Me.Button4.Text = "Button4"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -78,15 +68,25 @@ Partial Class SelectFunction
         Me.Button3.Text = "Button3"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Button4
+        'Button2
         '
-        Me.Button4.Location = New System.Drawing.Point(297, 102)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(10)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(267, 72)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button2.Location = New System.Drawing.Point(297, 10)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(10)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(267, 72)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(10, 10)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(10)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(267, 72)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'SelectFunction
         '

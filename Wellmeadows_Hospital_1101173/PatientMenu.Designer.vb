@@ -33,7 +33,6 @@ Partial Class PatientMenu
         Me.assignpt = New System.Windows.Forms.Button()
         Me.allocatept = New System.Windows.Forms.Button()
         Me.listpt = New System.Windows.Forms.Button()
-        Me.waitingpt = New System.Windows.Forms.Button()
         Me.Back = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,8 +47,9 @@ Partial Class PatientMenu
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(345, 681)
+        Me.Panel1.Size = New System.Drawing.Size(460, 838)
         Me.Panel1.TabIndex = 0
         '
         'Home
@@ -60,18 +60,20 @@ Partial Class PatientMenu
         Me.Home.FlatAppearance.BorderSize = 0
         Me.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Home.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Home.Location = New System.Drawing.Point(12, 12)
+        Me.Home.Location = New System.Drawing.Point(16, 15)
+        Me.Home.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Home.Name = "Home"
-        Me.Home.Size = New System.Drawing.Size(48, 53)
+        Me.Home.Size = New System.Drawing.Size(64, 65)
         Me.Home.TabIndex = 6
         Me.Home.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-14, 265)
+        Me.PictureBox1.Location = New System.Drawing.Point(-19, 326)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(374, 103)
+        Me.PictureBox1.Size = New System.Drawing.Size(499, 127)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -80,9 +82,10 @@ Partial Class PatientMenu
         '
         Me.Panel2.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(345, 0)
+        Me.Panel2.Location = New System.Drawing.Point(460, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(919, 681)
+        Me.Panel2.Size = New System.Drawing.Size(1225, 838)
         Me.Panel2.TabIndex = 1
         '
         'TableLayoutPanel1
@@ -96,16 +99,16 @@ Partial Class PatientMenu
         Me.TableLayoutPanel1.Controls.Add(Me.assignpt, 1, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.allocatept, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.listpt, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.waitingpt, 1, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.Back, 2, 2)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 3
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(919, 681)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1225, 838)
         Me.TableLayoutPanel1.TabIndex = 1
         '
         'prescribept
@@ -117,9 +120,10 @@ Partial Class PatientMenu
         Me.prescribept.FlatAppearance.BorderSize = 0
         Me.prescribept.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.prescribept.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.prescribept.Location = New System.Drawing.Point(67, 488)
+        Me.prescribept.Location = New System.Drawing.Point(90, 601)
+        Me.prescribept.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.prescribept.Name = "prescribept"
-        Me.prescribept.Size = New System.Drawing.Size(165, 158)
+        Me.prescribept.Size = New System.Drawing.Size(220, 194)
         Me.prescribept.TabIndex = 5
         Me.prescribept.UseVisualStyleBackColor = False
         '
@@ -132,9 +136,10 @@ Partial Class PatientMenu
         Me.registerpt.FlatAppearance.BorderSize = 0
         Me.registerpt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.registerpt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.registerpt.Location = New System.Drawing.Point(62, 34)
+        Me.registerpt.Location = New System.Drawing.Point(82, 42)
+        Me.registerpt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.registerpt.Name = "registerpt"
-        Me.registerpt.Size = New System.Drawing.Size(176, 158)
+        Me.registerpt.Size = New System.Drawing.Size(235, 194)
         Me.registerpt.TabIndex = 0
         Me.registerpt.UseVisualStyleBackColor = False
         '
@@ -147,9 +152,10 @@ Partial Class PatientMenu
         Me.assignpt.FlatAppearance.BorderSize = 0
         Me.assignpt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.assignpt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.assignpt.Location = New System.Drawing.Point(385, 34)
+        Me.assignpt.Location = New System.Drawing.Point(513, 42)
+        Me.assignpt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.assignpt.Name = "assignpt"
-        Me.assignpt.Size = New System.Drawing.Size(165, 158)
+        Me.assignpt.Size = New System.Drawing.Size(220, 194)
         Me.assignpt.TabIndex = 2
         Me.assignpt.UseVisualStyleBackColor = False
         '
@@ -162,9 +168,10 @@ Partial Class PatientMenu
         Me.allocatept.FlatAppearance.BorderSize = 0
         Me.allocatept.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.allocatept.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.allocatept.Location = New System.Drawing.Point(67, 261)
+        Me.allocatept.Location = New System.Drawing.Point(90, 321)
+        Me.allocatept.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.allocatept.Name = "allocatept"
-        Me.allocatept.Size = New System.Drawing.Size(165, 158)
+        Me.allocatept.Size = New System.Drawing.Size(220, 194)
         Me.allocatept.TabIndex = 1
         Me.allocatept.UseVisualStyleBackColor = False
         '
@@ -177,26 +184,12 @@ Partial Class PatientMenu
         Me.listpt.FlatAppearance.BorderSize = 0
         Me.listpt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.listpt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.listpt.Location = New System.Drawing.Point(401, 269)
+        Me.listpt.Location = New System.Drawing.Point(535, 331)
+        Me.listpt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.listpt.Name = "listpt"
-        Me.listpt.Size = New System.Drawing.Size(133, 142)
+        Me.listpt.Size = New System.Drawing.Size(177, 175)
         Me.listpt.TabIndex = 3
         Me.listpt.UseVisualStyleBackColor = False
-        '
-        'waitingpt
-        '
-        Me.waitingpt.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.waitingpt.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.waitingpt.BackgroundImage = CType(resources.GetObject("waitingpt.BackgroundImage"), System.Drawing.Image)
-        Me.waitingpt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.waitingpt.FlatAppearance.BorderSize = 0
-        Me.waitingpt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.waitingpt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.waitingpt.Location = New System.Drawing.Point(393, 494)
-        Me.waitingpt.Name = "waitingpt"
-        Me.waitingpt.Size = New System.Drawing.Size(149, 146)
-        Me.waitingpt.TabIndex = 4
-        Me.waitingpt.UseVisualStyleBackColor = False
         '
         'Back
         '
@@ -207,21 +200,23 @@ Partial Class PatientMenu
         Me.Back.FlatAppearance.BorderSize = 0
         Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Back.Location = New System.Drawing.Point(883, 636)
+        Me.Back.Location = New System.Drawing.Point(1177, 782)
+        Me.Back.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Back.Name = "Back"
-        Me.Back.Size = New System.Drawing.Size(33, 42)
+        Me.Back.Size = New System.Drawing.Size(44, 52)
         Me.Back.TabIndex = 7
         Me.Back.UseVisualStyleBackColor = False
         '
         'PatientMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1264, 681)
+        Me.ClientSize = New System.Drawing.Size(1685, 838)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "PatientMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patient Menu"
@@ -254,7 +249,6 @@ Partial Class PatientMenu
     Friend WithEvents assignpt As Button
     Friend WithEvents allocatept As Button
     Friend WithEvents listpt As Button
-    Friend WithEvents waitingpt As Button
     Friend WithEvents Home As Button
     Friend WithEvents Back As Button
 End Class

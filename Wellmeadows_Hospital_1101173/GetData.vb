@@ -297,6 +297,10 @@ Module GetData
 
         Next
         sqltest = sqltest.Substring(0, sqltest.Length - 3)
+        If table.Equals("ALLOCATEDTO") Then
+            sqltest += " AND ACTUAL_LEAVE IS NULL"
+        End If
+
         Console.WriteLine(sqltest)
         Using connection As OracleConnection = New OracleConnection(Connect())
             Dim cmd As New OracleCommand(sqltest, connection)
@@ -330,6 +334,23 @@ Module GetData
 
     Public Sub UpdateData(table, column, column_where, id, value)
         Dim query As String = $"UPDATE {table} SET {column} = '{value}' WHERE {column_where} = '{id}'"
+        Console.WriteLine(query)
+        Using connection As New OracleConnection(Connect())
+            Using command As New OracleCommand(query, connection)
+                Try
+                    connection.Open()
+                    command.ExecuteNonQuery()
+                    MessageBox.Show("Data updated successfully.")
+                Catch ex As Exception
+                    MessageBox.Show("Error: " & ex.Message)
+                End Try
+            End Using
+        End Using
+    End Sub
+
+    Public Sub UpdateData2(table, column, column_where, id, value)
+        Dim query As String = $"UPDATE {table} SET {column} = {value} WHERE {column_where} = '{id}'"
+        Console.WriteLine(query)
         Using connection As New OracleConnection(Connect())
             Using command As New OracleCommand(query, connection)
                 Try
@@ -346,8 +367,13 @@ Module GetData
 
     Public Function UpdateBedOrInsertToWaittinglist(bed_num, patient_num, ward_no) As Boolean
         ' สร้าง Connection String สำหรับ Oracle Database
+        Dim checkBedWat = GetCountForDash("ALLOCATEDTO", $" WHERE patient_num  = '{patient_num}'")
         Dim checkBed = GetCountForDash("BED", $" WHERE patient_num IS NULL AND bed_num = '{bed_num}'")
-        If checkBed = 1 Then
+        If checkBedWat = 1 Then
+            MessageBox.Show("อยู่ในคิวแล้ว กรุณารอคิว")
+            UpdateData("WATTING_LIST", "BED_NUM", "PATIENT_NUM", patient_num, bed_num)
+            Return False
+        ElseIf checkBed = 1 Then
             UpdateData("BED", "PATIENT_NUM", "BED_NUM", bed_num, patient_num)
             MessageBox.Show("เตียงว่าง")
             Return True
