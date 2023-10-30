@@ -31,14 +31,13 @@ Partial Class PatientList
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.inward = New System.Windows.Forms.Button()
         Me.OPD_Report = New System.Windows.Forms.Button()
         Me.ptno = New System.Windows.Forms.TextBox()
         Me.drugtopa = New System.Windows.Forms.Button()
         Me.waittinglist = New System.Windows.Forms.Button()
         Me.watReport = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Back = New System.Windows.Forms.Button()
+        Me.inward = New System.Windows.Forms.Button()
+        Me.inpatient = New System.Windows.Forms.Button()
         Me.PATIENTSBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.PATIENTSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -56,18 +55,18 @@ Partial Class PatientList
         Me.PATIENTSBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.PATIENTSTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.PATIENTSTableAdapter()
         Me.TableAdapterManager = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.TableAdapterManager()
-        Me.inpatient = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PATIENTSBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PATIENTSBindingNavigator.SuspendLayout()
         CType(Me.PATIENTSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Hospital, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -120,20 +119,16 @@ Partial Class PatientList
         '
         'TableLayoutPanel1
         '
-        Me.TableLayoutPanel1.ColumnCount = 2
+        Me.TableLayoutPanel1.ColumnCount = 1
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.12405!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.875952!))
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.Back, 1, 3)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 4
+        Me.TableLayoutPanel1.RowCount = 2
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.747127!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94.25288!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 114.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1225, 838)
         Me.TableLayoutPanel1.TabIndex = 1
         '
@@ -144,7 +139,7 @@ Partial Class PatientList
         Me.TableLayoutPanel2.Controls.Add(Me.TableLayoutPanel3, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.DataGridView1, 0, 1)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(4, 41)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(4, 52)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 2
@@ -152,7 +147,7 @@ Partial Class PatientList
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.02521!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1145, 598)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1217, 782)
         Me.TableLayoutPanel2.TabIndex = 9
         '
         'TableLayoutPanel3
@@ -164,7 +159,7 @@ Partial Class PatientList
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 174.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 126.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
@@ -185,15 +180,6 @@ Partial Class PatientList
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(963, 65)
         Me.TableLayoutPanel3.TabIndex = 1
-        '
-        'inward
-        '
-        Me.inward.Location = New System.Drawing.Point(840, 27)
-        Me.inward.Name = "inward"
-        Me.inward.Size = New System.Drawing.Size(105, 35)
-        Me.inward.TabIndex = 4
-        Me.inward.Text = "In Ward Report"
-        Me.inward.UseVisualStyleBackColor = True
         '
         'OPD_Report
         '
@@ -239,32 +225,23 @@ Partial Class PatientList
         Me.watReport.Text = "waitting report"
         Me.watReport.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'inward
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.Location = New System.Drawing.Point(3, 74)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(1139, 521)
-        Me.DataGridView1.TabIndex = 2
+        Me.inward.Location = New System.Drawing.Point(840, 27)
+        Me.inward.Name = "inward"
+        Me.inward.Size = New System.Drawing.Size(105, 35)
+        Me.inward.TabIndex = 4
+        Me.inward.Text = "In Ward Report"
+        Me.inward.UseVisualStyleBackColor = True
         '
-        'Back
+        'inpatient
         '
-        Me.Back.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Back.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Back.BackgroundImage = CType(resources.GetObject("Back.BackgroundImage"), System.Drawing.Image)
-        Me.Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Back.FlatAppearance.BorderSize = 0
-        Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Back.Location = New System.Drawing.Point(1177, 782)
-        Me.Back.Margin = New System.Windows.Forms.Padding(4)
-        Me.Back.Name = "Back"
-        Me.Back.Size = New System.Drawing.Size(44, 52)
-        Me.Back.TabIndex = 10
-        Me.Back.UseVisualStyleBackColor = False
+        Me.inpatient.Location = New System.Drawing.Point(194, 27)
+        Me.inpatient.Name = "inpatient"
+        Me.inpatient.Size = New System.Drawing.Size(117, 35)
+        Me.inpatient.TabIndex = 7
+        Me.inpatient.Text = "Inpatients list"
+        Me.inpatient.UseVisualStyleBackColor = True
         '
         'PATIENTSBindingNavigator
         '
@@ -415,14 +392,16 @@ Partial Class PatientList
         Me.TableAdapterManager.WORK_INTableAdapter = Nothing
         Me.TableAdapterManager.WORKEXPTableAdapter = Nothing
         '
-        'inpatient
+        'DataGridView1
         '
-        Me.inpatient.Location = New System.Drawing.Point(194, 27)
-        Me.inpatient.Name = "inpatient"
-        Me.inpatient.Size = New System.Drawing.Size(117, 35)
-        Me.inpatient.TabIndex = 7
-        Me.inpatient.Text = "Inpatients list"
-        Me.inpatient.UseVisualStyleBackColor = True
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView1.Location = New System.Drawing.Point(3, 96)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(1211, 683)
+        Me.DataGridView1.TabIndex = 2
         '
         'PatientList
         '
@@ -445,12 +424,12 @@ Partial Class PatientList
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PATIENTSBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PATIENTSBindingNavigator.ResumeLayout(False)
         Me.PATIENTSBindingNavigator.PerformLayout()
         CType(Me.PATIENTSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Hospital, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -471,7 +450,6 @@ Partial Class PatientList
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Home As Button
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
-    Friend WithEvents Back As Button
     Friend WithEvents Hospital As Hospital
     Friend WithEvents PATIENTSBindingSource As BindingSource
     Friend WithEvents PATIENTSTableAdapter As HospitalTableAdapters.PATIENTSTableAdapter
@@ -493,9 +471,9 @@ Partial Class PatientList
     Friend WithEvents ptno As TextBox
     Friend WithEvents OPD_Report As Button
     Friend WithEvents drugtopa As Button
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents inward As Button
     Friend WithEvents waittinglist As Button
     Friend WithEvents watReport As Button
     Friend WithEvents inpatient As Button
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

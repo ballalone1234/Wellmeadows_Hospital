@@ -13,7 +13,7 @@
 
 
 
-    Private Sub Back_Click_1(sender As Object, e As EventArgs) Handles Back.Click
+    Private Sub Back_Click_1(sender As Object, e As EventArgs) 
         Pagecontroller.BackPage(Me)
     End Sub
 

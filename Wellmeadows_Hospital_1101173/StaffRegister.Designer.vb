@@ -37,6 +37,9 @@ Partial Class StaffRegister
         Me.Panel32 = New System.Windows.Forms.Panel()
         Me.Panel29 = New System.Windows.Forms.Panel()
         Me.Qua_g = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel35 = New System.Windows.Forms.Panel()
         Me.Panel39 = New System.Windows.Forms.Panel()
@@ -91,7 +94,6 @@ Partial Class StaffRegister
         Me.address = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.staff_name = New System.Windows.Forms.TextBox()
-        Me.staff_no = New System.Windows.Forms.TextBox()
         Me.position = New System.Windows.Forms.TextBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.work_location = New System.Windows.Forms.TextBox()
@@ -124,7 +126,6 @@ Partial Class StaffRegister
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.salary = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel28 = New System.Windows.Forms.Panel()
         Me.Panel34 = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -138,9 +139,6 @@ Partial Class StaffRegister
         Me.Label27 = New System.Windows.Forms.Label()
         Me.TextBox22 = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -170,7 +168,6 @@ Partial Class StaffRegister
         Me.Panel7.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
-        Me.Panel6.SuspendLayout()
         Me.Panel10.SuspendLayout()
         Me.Panel17.SuspendLayout()
         Me.Panel8.SuspendLayout()
@@ -284,7 +281,9 @@ Partial Class StaffRegister
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.98861!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.01139!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 546.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 547.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.Label13, 0, 5)
+        Me.TableLayoutPanel2.Controls.Add(Me.work_location, 0, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel30, 1, 14)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel29, 2, 14)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel23, 2, 13)
@@ -301,26 +300,24 @@ Partial Class StaffRegister
         Me.TableLayoutPanel2.Controls.Add(Me.Label6, 1, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.Label4, 1, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label2, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.DOB, 0, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel3, 2, 6)
         Me.TableLayoutPanel2.Controls.Add(Me.Label11, 2, 5)
         Me.TableLayoutPanel2.Controls.Add(Me.address, 2, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label7, 2, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.staff_name, 0, 4)
-        Me.TableLayoutPanel2.Controls.Add(Me.staff_no, 0, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.position, 2, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel4, 0, 7)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel6, 0, 8)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label9, 0, 5)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel10, 2, 9)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.Label3, 2, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel17, 2, 11)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel8, 0, 13)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel5, 2, 7)
-        Me.TableLayoutPanel2.Controls.Add(Me.Label1, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Panel28, 0, 14)
         Me.TableLayoutPanel2.Controls.Add(Me.Label12, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.staff_name, 0, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.DOB, 0, 4)
+        Me.TableLayoutPanel2.Controls.Add(Me.Label9, 0, 3)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(4, 238)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
@@ -347,7 +344,7 @@ Partial Class StaffRegister
         '
         Me.Panel30.Controls.Add(Me.Panel38)
         Me.Panel30.Controls.Add(Me.Panel32)
-        Me.Panel30.Location = New System.Drawing.Point(558, 1314)
+        Me.Panel30.Location = New System.Drawing.Point(557, 1314)
         Me.Panel30.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel30.Name = "Panel30"
         Me.Panel30.Size = New System.Drawing.Size(21, 158)
@@ -388,7 +385,7 @@ Partial Class StaffRegister
         Me.Panel29.Controls.Add(Me.Button2)
         Me.Panel29.Controls.Add(Me.Panel35)
         Me.Panel29.Controls.Add(Me.Panel33)
-        Me.Panel29.Location = New System.Drawing.Point(587, 1314)
+        Me.Panel29.Location = New System.Drawing.Point(586, 1314)
         Me.Panel29.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel29.Name = "Panel29"
         Me.Panel29.Size = New System.Drawing.Size(537, 536)
@@ -405,6 +402,27 @@ Partial Class StaffRegister
         Me.Qua_g.RowTemplate.Height = 24
         Me.Qua_g.Size = New System.Drawing.Size(428, 150)
         Me.Qua_g.TabIndex = 44
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.HeaderText = "inst_name"
+        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.Width = 125
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Qua_type"
+        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.Width = 125
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Date"
+        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.Width = 125
         '
         'Button2
         '
@@ -445,11 +463,11 @@ Partial Class StaffRegister
         '
         Me.qua_type.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.qua_type.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.qua_type.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.qua_type.Location = New System.Drawing.Point(71, 30)
         Me.qua_type.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.qua_type.Multiline = True
         Me.qua_type.Name = "qua_type"
-        Me.qua_type.Size = New System.Drawing.Size(381, 40)
+        Me.qua_type.Size = New System.Drawing.Size(381, 41)
         Me.qua_type.TabIndex = 30
         '
         'Label29
@@ -491,7 +509,7 @@ Partial Class StaffRegister
         Me.Panel23.Controls.Add(Me.Panel24)
         Me.Panel23.Controls.Add(Me.Panel25)
         Me.Panel23.Controls.Add(Me.Panel26)
-        Me.Panel23.Location = New System.Drawing.Point(587, 948)
+        Me.Panel23.Location = New System.Drawing.Point(586, 948)
         Me.Panel23.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel23.Name = "Panel23"
         Me.Panel23.Size = New System.Drawing.Size(536, 314)
@@ -534,10 +552,11 @@ Partial Class StaffRegister
         '
         'eeedate
         '
-        Me.eeedate.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.eeedate.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.eeedate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.eeedate.Location = New System.Drawing.Point(72, 35)
         Me.eeedate.Name = "eeedate"
-        Me.eeedate.Size = New System.Drawing.Size(384, 34)
+        Me.eeedate.Size = New System.Drawing.Size(384, 38)
         Me.eeedate.TabIndex = 33
         '
         'Label25
@@ -574,11 +593,11 @@ Partial Class StaffRegister
         '
         Me.Pos.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Pos.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Pos.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Pos.Location = New System.Drawing.Point(71, 30)
         Me.Pos.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Pos.Multiline = True
         Me.Pos.Name = "Pos"
-        Me.Pos.Size = New System.Drawing.Size(381, 40)
+        Me.Pos.Size = New System.Drawing.Size(381, 38)
         Me.Pos.TabIndex = 30
         '
         'Label26
@@ -596,7 +615,7 @@ Partial Class StaffRegister
         'Panel20
         '
         Me.Panel20.Controls.Add(Me.TextBox18)
-        Me.Panel20.Location = New System.Drawing.Point(587, 886)
+        Me.Panel20.Location = New System.Drawing.Point(586, 886)
         Me.Panel20.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(536, 54)
@@ -617,7 +636,7 @@ Partial Class StaffRegister
         'Panel19
         '
         Me.Panel19.Controls.Add(Me.TextBox17)
-        Me.Panel19.Location = New System.Drawing.Point(558, 886)
+        Me.Panel19.Location = New System.Drawing.Point(557, 886)
         Me.Panel19.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel19.Name = "Panel19"
         Me.Panel19.Size = New System.Drawing.Size(21, 54)
@@ -642,7 +661,7 @@ Partial Class StaffRegister
         Me.Panel18.Location = New System.Drawing.Point(4, 886)
         Me.Panel18.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel18.Name = "Panel18"
-        Me.Panel18.Size = New System.Drawing.Size(546, 54)
+        Me.Panel18.Size = New System.Drawing.Size(545, 54)
         Me.Panel18.TabIndex = 39
         '
         'Label17
@@ -662,7 +681,7 @@ Partial Class StaffRegister
         Me.TextBox16.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBox16.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.TextBox16.Enabled = False
-        Me.TextBox16.Location = New System.Drawing.Point(-14, -27)
+        Me.TextBox16.Location = New System.Drawing.Point(-15, -27)
         Me.TextBox16.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox16.Multiline = True
         Me.TextBox16.Name = "TextBox16"
@@ -748,7 +767,7 @@ Partial Class StaffRegister
         'Panel13
         '
         Me.Panel13.Controls.Add(Me.TextBox12)
-        Me.Panel13.Location = New System.Drawing.Point(558, 590)
+        Me.Panel13.Location = New System.Drawing.Point(557, 590)
         Me.Panel13.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel13.Name = "Panel13"
         Me.Panel13.Size = New System.Drawing.Size(21, 58)
@@ -769,7 +788,7 @@ Partial Class StaffRegister
         'Panel12
         '
         Me.Panel12.Controls.Add(Me.TextBox11)
-        Me.Panel12.Location = New System.Drawing.Point(587, 590)
+        Me.Panel12.Location = New System.Drawing.Point(586, 590)
         Me.Panel12.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(536, 58)
@@ -794,7 +813,7 @@ Partial Class StaffRegister
         Me.Panel11.Location = New System.Drawing.Point(4, 590)
         Me.Panel11.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(546, 58)
+        Me.Panel11.Size = New System.Drawing.Size(545, 58)
         Me.Panel11.TabIndex = 37
         '
         'Label21
@@ -814,7 +833,7 @@ Partial Class StaffRegister
         Me.TextBox8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.TextBox8.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.TextBox8.Enabled = False
-        Me.TextBox8.Location = New System.Drawing.Point(-14, -6)
+        Me.TextBox8.Location = New System.Drawing.Point(-15, -6)
         Me.TextBox8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox8.Multiline = True
         Me.TextBox8.Name = "TextBox8"
@@ -825,7 +844,7 @@ Partial Class StaffRegister
         '
         Me.Panel7.Controls.Add(Me.salary_level)
         Me.Panel7.Controls.Add(Me.Label16)
-        Me.Panel7.Location = New System.Drawing.Point(587, 415)
+        Me.Panel7.Location = New System.Drawing.Point(586, 415)
         Me.Panel7.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(536, 69)
@@ -835,11 +854,11 @@ Partial Class StaffRegister
         '
         Me.salary_level.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.salary_level.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.salary_level.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.salary_level.Location = New System.Drawing.Point(76, 22)
         Me.salary_level.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.salary_level.Multiline = True
         Me.salary_level.Name = "salary_level"
-        Me.salary_level.Size = New System.Drawing.Size(381, 43)
+        Me.salary_level.Size = New System.Drawing.Size(381, 41)
         Me.salary_level.TabIndex = 30
         '
         'Label16
@@ -858,7 +877,7 @@ Partial Class StaffRegister
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(558, 168)
+        Me.Label10.Location = New System.Drawing.Point(557, 168)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(4, 26)
@@ -870,7 +889,7 @@ Partial Class StaffRegister
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(558, 141)
+        Me.Label8.Location = New System.Drawing.Point(557, 141)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(4, 27)
@@ -882,7 +901,7 @@ Partial Class StaffRegister
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(558, 66)
+        Me.Label6.Location = New System.Drawing.Point(557, 66)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(4, 23)
@@ -894,7 +913,7 @@ Partial Class StaffRegister
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(558, 41)
+        Me.Label4.Location = New System.Drawing.Point(557, 41)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(4, 23)
@@ -906,7 +925,7 @@ Partial Class StaffRegister
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(558, 0)
+        Me.Label2.Location = New System.Drawing.Point(557, 0)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(3, 23)
@@ -917,19 +936,19 @@ Partial Class StaffRegister
         'DOB
         '
         Me.DOB.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.DOB.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.DOB.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DOB.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DOB.Location = New System.Drawing.Point(84, 279)
+        Me.DOB.Location = New System.Drawing.Point(84, 186)
         Me.DOB.Margin = New System.Windows.Forms.Padding(4)
         Me.DOB.Name = "DOB"
-        Me.DOB.Size = New System.Drawing.Size(385, 34)
+        Me.DOB.Size = New System.Drawing.Size(385, 38)
         Me.DOB.TabIndex = 27
         '
         'Panel3
         '
         Me.Panel3.Controls.Add(Me.sexfemale)
         Me.Panel3.Controls.Add(Me.sexmale)
-        Me.Panel3.Location = New System.Drawing.Point(587, 277)
+        Me.Panel3.Location = New System.Drawing.Point(586, 277)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(525, 39)
@@ -967,7 +986,7 @@ Partial Class StaffRegister
         '
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(587, 243)
+        Me.Label11.Location = New System.Drawing.Point(586, 243)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(195, 26)
@@ -979,18 +998,18 @@ Partial Class StaffRegister
         '
         Me.address.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.address.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.address.Location = New System.Drawing.Point(666, 176)
+        Me.address.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.address.Location = New System.Drawing.Point(665, 185)
         Me.address.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.address.Multiline = True
         Me.address.Name = "address"
-        Me.address.Size = New System.Drawing.Size(381, 58)
+        Me.address.Size = New System.Drawing.Size(381, 41)
         Me.address.TabIndex = 10
         '
         'Label7
         '
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(587, 141)
+        Me.Label7.Location = New System.Drawing.Point(586, 141)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(243, 23)
@@ -1002,39 +1021,28 @@ Partial Class StaffRegister
         '
         Me.staff_name.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.staff_name.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.staff_name.Location = New System.Drawing.Point(86, 176)
+        Me.staff_name.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.staff_name.Location = New System.Drawing.Point(86, 83)
         Me.staff_name.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.staff_name.Multiline = True
         Me.staff_name.Name = "staff_name"
-        Me.staff_name.Size = New System.Drawing.Size(381, 58)
+        Me.staff_name.Size = New System.Drawing.Size(381, 41)
         Me.staff_name.TabIndex = 8
-        '
-        'staff_no
-        '
-        Me.staff_no.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.staff_no.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.staff_no.Location = New System.Drawing.Point(86, 76)
-        Me.staff_no.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.staff_no.Multiline = True
-        Me.staff_no.Name = "staff_no"
-        Me.staff_no.Size = New System.Drawing.Size(381, 54)
-        Me.staff_no.TabIndex = 5
         '
         'position
         '
         Me.position.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.position.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.position.Location = New System.Drawing.Point(666, 76)
+        Me.position.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.position.Location = New System.Drawing.Point(665, 83)
         Me.position.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.position.Multiline = True
         Me.position.Name = "position"
-        Me.position.Size = New System.Drawing.Size(381, 54)
+        Me.position.Size = New System.Drawing.Size(381, 41)
         Me.position.TabIndex = 7
         '
         'Panel4
         '
-        Me.Panel4.Controls.Add(Me.work_location)
-        Me.Panel4.Controls.Add(Me.Label13)
+        Me.Panel4.Controls.Add(Me.Label15)
+        Me.Panel4.Controls.Add(Me.NIN)
         Me.Panel4.Location = New System.Drawing.Point(4, 324)
         Me.Panel4.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel4.Name = "Panel4"
@@ -1045,29 +1053,27 @@ Partial Class StaffRegister
         '
         Me.work_location.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.work_location.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.work_location.Location = New System.Drawing.Point(81, 27)
+        Me.work_location.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.work_location.Location = New System.Drawing.Point(86, 276)
         Me.work_location.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.work_location.Multiline = True
         Me.work_location.Name = "work_location"
-        Me.work_location.Size = New System.Drawing.Size(381, 46)
+        Me.work_location.Size = New System.Drawing.Size(381, 41)
         Me.work_location.TabIndex = 30
         '
         'Label13
         '
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(45, 0)
+        Me.Label13.Location = New System.Drawing.Point(4, 243)
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(211, 22)
+        Me.Label13.Size = New System.Drawing.Size(302, 22)
         Me.Label13.TabIndex = 31
         Me.Label13.Text = "Work Location"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Panel6
         '
-        Me.Panel6.Controls.Add(Me.NIN)
-        Me.Panel6.Controls.Add(Me.Label15)
         Me.Panel6.Location = New System.Drawing.Point(4, 415)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel6.Name = "Panel6"
@@ -1078,18 +1084,18 @@ Partial Class StaffRegister
         '
         Me.NIN.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.NIN.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.NIN.Location = New System.Drawing.Point(80, 22)
+        Me.NIN.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.NIN.Location = New System.Drawing.Point(81, 30)
         Me.NIN.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.NIN.Multiline = True
         Me.NIN.Name = "NIN"
-        Me.NIN.Size = New System.Drawing.Size(381, 43)
+        Me.NIN.Size = New System.Drawing.Size(381, 41)
         Me.NIN.TabIndex = 30
         '
         'Label15
         '
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(-5, -4)
+        Me.Label15.Location = New System.Drawing.Point(4, -4)
         Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(215, 23)
@@ -1101,7 +1107,7 @@ Partial Class StaffRegister
         '
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(4, 243)
+        Me.Label9.Location = New System.Drawing.Point(4, 141)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(239, 26)
@@ -1113,7 +1119,7 @@ Partial Class StaffRegister
         '
         Me.Panel10.Controls.Add(Me.tel)
         Me.Panel10.Controls.Add(Me.Label19)
-        Me.Panel10.Location = New System.Drawing.Point(587, 499)
+        Me.Panel10.Location = New System.Drawing.Point(586, 499)
         Me.Panel10.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel10.Name = "Panel10"
         Me.Panel10.Size = New System.Drawing.Size(536, 78)
@@ -1123,11 +1129,11 @@ Partial Class StaffRegister
         '
         Me.tel.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.tel.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.tel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.tel.Location = New System.Drawing.Point(76, 26)
         Me.tel.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tel.Multiline = True
         Me.tel.Name = "tel"
-        Me.tel.Size = New System.Drawing.Size(381, 34)
+        Me.tel.Size = New System.Drawing.Size(381, 41)
         Me.tel.TabIndex = 30
         '
         'Label19
@@ -1146,7 +1152,7 @@ Partial Class StaffRegister
         '
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(4, 141)
+        Me.Label5.Location = New System.Drawing.Point(4, 41)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(283, 23)
@@ -1158,7 +1164,7 @@ Partial Class StaffRegister
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(587, 41)
+        Me.Label3.Location = New System.Drawing.Point(586, 41)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(223, 23)
@@ -1170,7 +1176,7 @@ Partial Class StaffRegister
         '
         Me.Panel17.Controls.Add(Me.work_type)
         Me.Panel17.Controls.Add(Me.Label23)
-        Me.Panel17.Location = New System.Drawing.Point(587, 656)
+        Me.Panel17.Location = New System.Drawing.Point(586, 656)
         Me.Panel17.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(536, 124)
@@ -1263,10 +1269,11 @@ Partial Class StaffRegister
         '
         'startdate
         '
-        Me.startdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.startdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.startdate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.startdate.Location = New System.Drawing.Point(77, 35)
         Me.startdate.Name = "startdate"
-        Me.startdate.Size = New System.Drawing.Size(384, 34)
+        Me.startdate.Size = New System.Drawing.Size(384, 38)
         Me.startdate.TabIndex = 32
         '
         'Label24
@@ -1303,11 +1310,11 @@ Partial Class StaffRegister
         '
         Me.Organi.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Organi.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Organi.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Organi.Location = New System.Drawing.Point(75, 30)
         Me.Organi.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Organi.Multiline = True
         Me.Organi.Name = "Organi"
-        Me.Organi.Size = New System.Drawing.Size(381, 40)
+        Me.Organi.Size = New System.Drawing.Size(381, 38)
         Me.Organi.TabIndex = 30
         '
         'Label18
@@ -1326,7 +1333,7 @@ Partial Class StaffRegister
         '
         Me.Panel5.Controls.Add(Me.salary)
         Me.Panel5.Controls.Add(Me.Label14)
-        Me.Panel5.Location = New System.Drawing.Point(587, 324)
+        Me.Panel5.Location = New System.Drawing.Point(586, 324)
         Me.Panel5.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(536, 76)
@@ -1336,11 +1343,11 @@ Partial Class StaffRegister
         '
         Me.salary.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.salary.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.salary.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.salary.Location = New System.Drawing.Point(76, 27)
         Me.salary.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.salary.Multiline = True
         Me.salary.Name = "salary"
-        Me.salary.Size = New System.Drawing.Size(381, 46)
+        Me.salary.Size = New System.Drawing.Size(381, 41)
         Me.salary.TabIndex = 30
         '
         'Label14
@@ -1355,18 +1362,6 @@ Partial Class StaffRegister
         Me.Label14.Text = "Salary"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label1
-        '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(4, 41)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(256, 23)
-        Me.Label1.TabIndex = 16
-        Me.Label1.Text = "Staff No"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
         'Panel28
         '
         Me.Panel28.Controls.Add(Me.Panel34)
@@ -1374,7 +1369,7 @@ Partial Class StaffRegister
         Me.Panel28.Location = New System.Drawing.Point(4, 1314)
         Me.Panel28.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel28.Name = "Panel28"
-        Me.Panel28.Size = New System.Drawing.Size(546, 500)
+        Me.Panel28.Size = New System.Drawing.Size(545, 500)
         Me.Panel28.TabIndex = 43
         '
         'Panel34
@@ -1417,12 +1412,12 @@ Partial Class StaffRegister
         'qua_date
         '
         Me.qua_date.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.qua_date.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.qua_date.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.qua_date.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.qua_date.Location = New System.Drawing.Point(71, 38)
         Me.qua_date.Margin = New System.Windows.Forms.Padding(4)
         Me.qua_date.Name = "qua_date"
-        Me.qua_date.Size = New System.Drawing.Size(385, 34)
+        Me.qua_date.Size = New System.Drawing.Size(385, 38)
         Me.qua_date.TabIndex = 44
         '
         'Label30
@@ -1451,11 +1446,11 @@ Partial Class StaffRegister
         '
         Me.inst.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.inst.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.inst.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.inst.Location = New System.Drawing.Point(71, 30)
         Me.inst.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.inst.Multiline = True
         Me.inst.Name = "inst"
-        Me.inst.Size = New System.Drawing.Size(381, 40)
+        Me.inst.Size = New System.Drawing.Size(381, 41)
         Me.inst.TabIndex = 30
         '
         'Label28
@@ -1516,27 +1511,6 @@ Partial Class StaffRegister
         Me.Label12.Text = "STAFF INFORMATION"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.HeaderText = "inst_name"
-        Me.DataGridViewTextBoxColumn5.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        Me.DataGridViewTextBoxColumn5.Width = 125
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Qua_type"
-        Me.DataGridViewTextBoxColumn6.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.Width = 125
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Date"
-        Me.DataGridViewTextBoxColumn7.MinimumWidth = 6
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        Me.DataGridViewTextBoxColumn7.Width = 125
-        '
         'StaffRegister
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1595,8 +1569,6 @@ Partial Class StaffRegister
         Me.Panel3.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
         Me.Panel17.ResumeLayout(False)
@@ -1638,9 +1610,7 @@ Partial Class StaffRegister
     Friend WithEvents address As TextBox
     Friend WithEvents staff_name As TextBox
     Friend WithEvents position As TextBox
-    Friend WithEvents staff_no As TextBox
     Friend WithEvents Back As Button
-    Friend WithEvents Label1 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label

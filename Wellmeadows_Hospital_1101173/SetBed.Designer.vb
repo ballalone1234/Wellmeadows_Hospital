@@ -65,9 +65,9 @@ Partial Class SetBed
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.40246!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.59754!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label2, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.BedNo, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Wardno, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label1, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.BedNo, 1, 1)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 26)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 2
@@ -94,9 +94,9 @@ Partial Class SetBed
         Me.BedNo.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.BedNo.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.BedNo.FormattingEnabled = True
-        Me.BedNo.Location = New System.Drawing.Point(3, 39)
+        Me.BedNo.Location = New System.Drawing.Point(341, 39)
         Me.BedNo.Name = "BedNo"
-        Me.BedNo.Size = New System.Drawing.Size(332, 37)
+        Me.BedNo.Size = New System.Drawing.Size(225, 37)
         Me.BedNo.TabIndex = 54
         '
         'Wardno
@@ -104,9 +104,9 @@ Partial Class SetBed
         Me.Wardno.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Wardno.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Wardno.FormattingEnabled = True
-        Me.Wardno.Location = New System.Drawing.Point(341, 39)
+        Me.Wardno.Location = New System.Drawing.Point(18, 39)
         Me.Wardno.Name = "Wardno"
-        Me.Wardno.Size = New System.Drawing.Size(225, 37)
+        Me.Wardno.Size = New System.Drawing.Size(301, 37)
         Me.Wardno.TabIndex = 53
         '
         'Label1

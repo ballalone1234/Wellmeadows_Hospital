@@ -367,9 +367,9 @@ Module GetData
 
     Public Function UpdateBedOrInsertToWaittinglist(bed_num, patient_num, ward_no) As Boolean
         ' สร้าง Connection String สำหรับ Oracle Database
-        Dim checkBedWat = GetCountForDash("ALLOCATEDTO", $" WHERE patient_num  = '{patient_num}'")
+        Dim checkBedWat = GetCountForDash("WATTING_LIST", $" WHERE patient_num  = '{patient_num}'")
         Dim checkBed = GetCountForDash("BED", $" WHERE patient_num IS NULL AND bed_num = '{bed_num}'")
-        If checkBedWat = 1 Then
+        If checkBedWat >= 1 Then
             MessageBox.Show("อยู่ในคิวแล้ว กรุณารอคิว")
             UpdateData("WATTING_LIST", "BED_NUM", "PATIENT_NUM", patient_num, bed_num)
             Return False
