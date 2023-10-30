@@ -70,7 +70,46 @@ Public Class dashboardsup
     End Sub
 
     Private Sub dashboardpatient_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Dim rand As New Random()
+        For i As Integer = 2018 To 2023
+            Dim value As Integer = 1800000 + rand.Next(-50000, 50000)
+            Chart1.Series("มูลค่าการจัดซื้อ").Points.AddXY(i.ToString(), value)
+        Next
+        Chart1.Series("มูลค่าการจัดซื้อ").IsValueShownAsLabel = True
+        For i As Integer = 2018 To 2023
+            Dim value As Integer = 200000 + rand.Next(-50000, 50000)
+            Chart2.Series("ปริมาณยาคงคลัง").Points.AddXY(i.ToString(), value)
+        Next
+        Chart2.Series("ปริมาณยาคงคลัง").IsValueShownAsLabel = True
+        For i As Integer = 2018 To 2023
+            Dim value As Integer = 200000 + rand.Next(-50000, 50000)
+            Chart2.Series("ปริมาณยาที่ใช้").Points.AddXY(i.ToString(), value)
+        Next
+        Chart2.Series("ปริมาณยาที่ใช้").IsValueShownAsLabel = True
+        For i As Integer = 2018 To 2023
+            Dim value As Integer = 200000 + rand.Next(-50000, 50000)
+            Chart2.Series("ปริมาณยาสั่งซื้อ").Points.AddXY(i.ToString(), value)
+        Next
+        Chart2.Series("ปริมาณยาสั่งซื้อ").IsValueShownAsLabel = True
+        For i As Integer = 2018 To 2023
+            Dim value As Integer = 1800000 + rand.Next(-50000, 50000)
+            Chart4.Series("มูลค่าการจัดซื้อ").Points.AddXY(i.ToString(), value)
+        Next
+        For i As Integer = 2018 To 2023
+            Dim value As Integer = 200000 + rand.Next(-50000, 50000)
+            Chart3.Series("ปริมาณที่ใช้").Points.AddXY(i.ToString(), value)
+        Next
+        Chart3.Series("ปริมาณที่ใช้").IsValueShownAsLabel = True
+        For i As Integer = 2018 To 2023
+            Dim value As Integer = 200000 + rand.Next(-50000, 50000)
+            Chart3.Series("ปริมาณที่ชำรุด/ทิ้ง").Points.AddXY(i.ToString(), value)
+        Next
+        Chart3.Series("ปริมาณที่ชำรุด/ทิ้ง").IsValueShownAsLabel = True
+        For i As Integer = 2018 To 2023
+            Dim value As Integer = 200000 + rand.Next(-50000, 50000)
+            Chart3.Series("ปริมาณที่สั่งซื้อ").Points.AddXY(i.ToString(), value)
+        Next
+        Chart3.Series("ปริมาณที่สั่งซื้อ").IsValueShownAsLabel = True
     End Sub
 
     Private Sub Chart3_Click(sender As Object, e As EventArgs)

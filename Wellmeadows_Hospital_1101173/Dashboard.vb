@@ -95,7 +95,8 @@
         BedA.Text = GetCountForDash("BED", "WHERE PATIENT_NUM IS NULL")
         BedNa.Text = GetCountForDash("BED", "WHERE PATIENT_NUM IS NOT NULL")
         WardC.Text = GetCountForDash("WARD", "")
-
+        TextBox7.Text = GetCountForDash("STAFF", "WHERE POSITION like '%D%'")
+        TextBox8.Text = GetCountForDash("STAFF", "WHERE POSITION like '%C%'")
     End Sub
 
     Private Sub PictureBox18_Click(sender As Object, e As EventArgs) Handles PictureBox18.Click
