@@ -98,4 +98,8 @@
         Chart3.Series("เตียงที่มี").Points.AddXY("Ward 6", 20)
         Chart3.Series("เตียงที่มี").IsValueShownAsLabel = True ' แสดงค่าเป็น Label
     End Sub
+
+    Private Sub PictureBox12_Click(sender As Object, e As EventArgs) Handles PictureBox12.Click
+        NextPage(Me, dashboardsup)
+    End Sub
 End Class

@@ -16,7 +16,7 @@ Public Class dashboardsup
 
 
 
-    Private Sub Back_Click_1(sender As Object, e As EventArgs) Handles Back.Click
+    Private Sub Back_Click_1(sender As Object, e As EventArgs)
         Pagecontroller.BackPage(Me)
     End Sub
 
@@ -53,7 +53,7 @@ Public Class dashboardsup
 
     End Sub
 
-    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
+    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
@@ -91,5 +91,9 @@ Public Class dashboardsup
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         NextPage(Me, dashboardpatient)
+    End Sub
+
+    Private Sub Chart2_Click(sender As Object, e As EventArgs) Handles Chart2.Click
+
     End Sub
 End Class

@@ -650,6 +650,11 @@
     <None Include="Resources\i1mage3.png" />
     <None Include="Resources\i1mage4.png" />
     <None Include="Resources\i1mage5.png" />
+    <None Include="Resources\imag1e.png" />
+    <None Include="Resources\imag1e1.png" />
+    <None Include="Resources\ima1ge2.png" />
+    <None Include="Resources\ima1ge3.png" />
+    <None Include="Resources\imag1e2.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
