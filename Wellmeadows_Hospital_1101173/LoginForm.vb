@@ -23,7 +23,7 @@ Public Class LoginForm
                         MessageBox.Show("ล็อกอินสำเร็จ!" & txtUsername.Text)
                         staff_id = txtUsername.Text
                         NextPage(Me, MainMenu)
-                        Status_user.Show()
+                        Status.Show()
                         ' ทำสิ่งที่คุณต้องการหลังจากล็อกอินสำเร็จ
                     Else
                         MessageBox.Show("ล็อกอินล้มเหลว กรุณาตรวจสอบชื่อผู้ใช้งานและรหัสผ่าน")

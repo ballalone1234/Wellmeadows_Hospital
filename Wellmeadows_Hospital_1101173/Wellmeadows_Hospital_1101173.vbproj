@@ -171,6 +171,12 @@
     <Compile Include="PatientIn_report.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Status.Designer.vb">
+      <DependentUpon>Status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Status.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SetBed.Designer.vb">
       <DependentUpon>SetBed.vb</DependentUpon>
     </Compile>
@@ -449,6 +455,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReportWaittingList.rdlc" />
     <EmbeddedResource Include="ReportDrugtoPatient.rdlc" />
+    <EmbeddedResource Include="Status.resx">
+      <DependentUpon>Status.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SetBed.resx">
       <DependentUpon>SetBed.vb</DependentUpon>
     </EmbeddedResource>

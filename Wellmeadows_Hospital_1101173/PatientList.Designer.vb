@@ -38,6 +38,7 @@ Partial Class PatientList
         Me.watReport = New System.Windows.Forms.Button()
         Me.inward = New System.Windows.Forms.Button()
         Me.inpatient = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.PATIENTSBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.PATIENTSBindingSource = New System.Windows.Forms.BindingSource(Me.components)
@@ -55,18 +56,17 @@ Partial Class PatientList
         Me.PATIENTSBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.PATIENTSTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.PATIENTSTableAdapter()
         Me.TableAdapterManager = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.TableAdapterManager()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PATIENTSBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PATIENTSBindingNavigator.SuspendLayout()
         CType(Me.PATIENTSBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Hospital, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -243,6 +243,17 @@ Partial Class PatientList
         Me.inpatient.Text = "Inpatients list"
         Me.inpatient.UseVisualStyleBackColor = True
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView1.Location = New System.Drawing.Point(3, 96)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 51
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(1211, 683)
+        Me.DataGridView1.TabIndex = 2
+        '
         'PATIENTSBindingNavigator
         '
         Me.PATIENTSBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
@@ -258,7 +269,7 @@ Partial Class PatientList
         Me.PATIENTSBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.PATIENTSBindingNavigator.Name = "PATIENTSBindingNavigator"
         Me.PATIENTSBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.PATIENTSBindingNavigator.Size = New System.Drawing.Size(1225, 27)
+        Me.PATIENTSBindingNavigator.Size = New System.Drawing.Size(1225, 31)
         Me.PATIENTSBindingNavigator.TabIndex = 2
         Me.PATIENTSBindingNavigator.Text = "BindingNavigator1"
         '
@@ -268,7 +279,7 @@ Partial Class PatientList
         Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(29, 28)
         Me.BindingNavigatorAddNewItem.Text = "Add new"
         '
         'PATIENTSBindingSource
@@ -284,7 +295,7 @@ Partial Class PatientList
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 24)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(45, 28)
         Me.BindingNavigatorCountItem.Text = "of {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
@@ -294,7 +305,7 @@ Partial Class PatientList
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(29, 28)
         Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'BindingNavigatorMoveFirstItem
@@ -303,7 +314,7 @@ Partial Class PatientList
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(29, 28)
         Me.BindingNavigatorMoveFirstItem.Text = "Move first"
         '
         'BindingNavigatorMovePreviousItem
@@ -312,13 +323,13 @@ Partial Class PatientList
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(29, 28)
         Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 31)
         '
         'BindingNavigatorPositionItem
         '
@@ -333,7 +344,7 @@ Partial Class PatientList
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 31)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -341,7 +352,7 @@ Partial Class PatientList
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(29, 28)
         Me.BindingNavigatorMoveNextItem.Text = "Move next"
         '
         'BindingNavigatorMoveLastItem
@@ -350,20 +361,20 @@ Partial Class PatientList
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 24)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(29, 28)
         Me.BindingNavigatorMoveLastItem.Text = "Move last"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 27)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 31)
         '
         'PATIENTSBindingNavigatorSaveItem
         '
         Me.PATIENTSBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.PATIENTSBindingNavigatorSaveItem.Image = CType(resources.GetObject("PATIENTSBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.PATIENTSBindingNavigatorSaveItem.Name = "PATIENTSBindingNavigatorSaveItem"
-        Me.PATIENTSBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 24)
+        Me.PATIENTSBindingNavigatorSaveItem.Size = New System.Drawing.Size(29, 28)
         Me.PATIENTSBindingNavigatorSaveItem.Text = "Save Data"
         '
         'PATIENTSTableAdapter
@@ -392,17 +403,6 @@ Partial Class PatientList
         Me.TableAdapterManager.WORK_INTableAdapter = Nothing
         Me.TableAdapterManager.WORKEXPTableAdapter = Nothing
         '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.Location = New System.Drawing.Point(3, 96)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(1211, 683)
-        Me.DataGridView1.TabIndex = 2
-        '
         'PatientList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -424,12 +424,12 @@ Partial Class PatientList
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PATIENTSBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PATIENTSBindingNavigator.ResumeLayout(False)
         Me.PATIENTSBindingNavigator.PerformLayout()
         CType(Me.PATIENTSBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Hospital, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
