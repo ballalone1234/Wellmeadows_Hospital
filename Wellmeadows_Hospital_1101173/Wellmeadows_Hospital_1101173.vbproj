@@ -201,6 +201,18 @@
     <Compile Include="DrugToPatientReport.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Bedlist.Designer.vb">
+      <DependentUpon>Bedlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bedlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wardmenu.Designer.vb">
+      <DependentUpon>Wardmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wardmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Wardlist.Designer.vb">
       <DependentUpon>Wardlist.vb</DependentUpon>
     </Compile>
@@ -452,6 +464,12 @@
     <EmbeddedResource Include="DrugToPatientReport.resx">
       <DependentUpon>DrugToPatientReport.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Bedlist.resx">
+      <DependentUpon>Bedlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wardmenu.resx">
+      <DependentUpon>Wardmenu.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wardlist.resx">
       <DependentUpon>Wardlist.vb</DependentUpon>
     </EmbeddedResource>
@@ -655,6 +673,11 @@
     <None Include="Resources\ima1ge2.png" />
     <None Include="Resources\ima1ge3.png" />
     <None Include="Resources\imag1e2.png" />
+    <None Include="Resources\ima1ge4.png" />
+    <None Include="Resources\im1age.png" />
+    <None Include="Resources\im1age1.png" />
+    <None Include="Resources\im1age2.png" />
+    <None Include="Resources\im1age3.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">

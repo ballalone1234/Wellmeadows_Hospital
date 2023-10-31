@@ -13,7 +13,7 @@
     End Sub
 
     Private Sub wardicon_Click(sender As Object, e As EventArgs) Handles wardicon.Click
-        Pagecontroller.NextPage(Me, Wardlist)
+        Pagecontroller.NextPage(Me, Wardmenu)
     End Sub
 
     Private Sub supileicon_Click(sender As Object, e As EventArgs) Handles supileicon.Click
