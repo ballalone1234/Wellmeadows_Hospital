@@ -24,7 +24,6 @@ Public Class RegisterPatient2
         Dim result As Int32 = RegisPatient(String.Join(",", param))
         If result > 0 Then
 
-            MessageBox.Show("ลงทะเบียนเสร็จสิ้น")
             NextPage(Me, RegisterPatient3)
             p_id = result
             RegisterPatient4.pid = result

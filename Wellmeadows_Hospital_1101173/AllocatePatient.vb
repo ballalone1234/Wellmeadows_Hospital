@@ -38,6 +38,7 @@ Public Class AllocatePatient
     End Sub
 
     Private Sub Wardno_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Wardno.SelectedIndexChanged
+        BedNo.Items.Clear()
         Dim selectedValue As String = Wardno.SelectedItem.VALUE.ToString()
         Debug.WriteLine(selectedValue)
         Dim connection As New OracleConnection(Connect())

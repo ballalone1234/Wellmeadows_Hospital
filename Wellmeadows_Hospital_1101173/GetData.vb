@@ -77,7 +77,7 @@ Module GetData
             cmd.ExecuteNonQuery()
             connection.Close()
 
-            Return GetSeq()
+            Return 1
         Catch ex As OracleException When ex.Number = 1 AndAlso ex.Message.Contains("PATIENTS_UK1")
             ' จัดการกับข้อผิดพลาดที่เกิดจาก unique constraint violation
             MessageBox.Show("cid is already exist")
@@ -90,6 +90,25 @@ Module GetData
 
     End Function
 
+    'ฟังชั้น ดึงข้อมูล patient_num จาก cid
+    Public Function GetPatientNum(cid)
+        Using connection As New OracleConnection(Connect())
+            connection.Open()
+
+            Dim sql As String = $"SELECT patient_num FROM patients WHERE cid = '{cid}'"
+            Debug.Write(sql)
+            Using command As New OracleCommand(sql, connection)
+                Using reader As OracleDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+                        Dim patientNum As String = reader.GetString(0)
+                        Return patientNum
+                    Else
+                        ' ไม่พบข้อมูลที่ต้องการ
+                    End If
+                End Using
+            End Using
+        End Using
+    End Function
     Public Function RegisPatientKin(ByVal data As String) As Int32
         'Dim column As String = String.Join(",", )
 
