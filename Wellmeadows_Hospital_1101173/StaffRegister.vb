@@ -44,8 +44,8 @@ Public Class StaffRegister
         ElseIf sexfemale.Checked Then
             sex = "female"
         End If
-        Dim data() As String = {$"STAFF_SEQ.NEXTVAL ", $"'{position.Text}'", $"'{staff_name.Text}'", $"'{address.Text}'", $"TO_DATE('{DOB.Value.ToString("yyyy-MM-dd")}','YYYY-MM-DD')", $"'{sex}'",
-            $"'{work_location.Text}'", $"'{salary.Text}'", $"'{NIN.Text}'", $"'{tel.Text}'", $"'{worked_per_week.Text}'", $"'{work_type.Text}'", $"'{payment_type.Text}'", $"'{salary_level.Text}'"}
+        Dim data() As String = {$"STAFF_SEQ.NEXTVAL ", $"'{position.SelectedItem}'", $"'{staff_name.Text}'", $"'{address.Text}'", $"TO_DATE('{DOB.Value.ToString("yyyy-MM-dd")}','YYYY-MM-DD')", $"'{sex}'",
+            $"'{work_location.Text}'", $"'{salary.Text}'", $"'{NIN.Text}'", $"'{tel.Text}'", $"'{worked_per_week.Text}'", $"'{work_type.SelectedItem}'", $"'{payment_type.SelectedItem}'", $"'{salary_level.Text}'"}
         Dim result As Int32 = RegisStaff(String.Join(",", data))
         If result > 0 Then
             MessageBox.Show("ลงทะเบียนบุคลากรสำเร็จ")
@@ -72,11 +72,11 @@ Public Class StaffRegister
                 Dim cmd As New OracleCommand(sql, connection)
                 cmd.ExecuteNonQuery()
             Next
-
+            NextPage(Me, StaffList)
         End If
     End Sub
 
-    Private Sub TextBox14_TextChanged(sender As Object, e As EventArgs) Handles payment_type.TextChanged
+    Private Sub TextBox14_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -92,7 +92,7 @@ Public Class StaffRegister
         Qua_g.Rows.Add(row)
     End Sub
 
-    Private Sub position_TextChanged(sender As Object, e As EventArgs) Handles position.TextChanged
+    Private Sub position_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -388,7 +388,7 @@ Public Class StaffRegister
 
     End Sub
 
-    Private Sub work_type_TextChanged(sender As Object, e As EventArgs) Handles work_type.TextChanged
+    Private Sub work_type_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
