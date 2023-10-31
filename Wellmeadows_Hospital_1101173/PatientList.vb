@@ -69,13 +69,14 @@
         table = "ALLOCATEDTO"
         DataGridView1.DataSource = GetSeach(table, ptno.Text)
     End Sub
-
+    Dim cellValue2 As Object
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
 
         If table = "ALLOCATEDTO" Then
 
 
             Dim cellValue As Object = DataGridView1.Rows(e.RowIndex).Cells("PATIENT_NUM").Value
+            cellValue2 = DataGridView1.Rows(e.RowIndex).Cells("BED_NUM").Value
             DataGridView1.Text = cellValue.ToString()
 
             Debug.Write(DataGridView1.Rows(e.RowIndex))
@@ -114,9 +115,9 @@
             Debug.Write(DataGridView1.Rows(e.RowIndex))
             SelectFunction.Show()
             SelectFunction.Button1.Text = "Choose bed"
-            SelectFunction.Button3.Text = "Delete"
-            SelectFunction.Button2.Text = "Update Actual leave"
-            SelectFunction.Button4.Text = "Update bed"
+            SelectFunction.Button3.Hide()
+            SelectFunction.Button2.Hide()
+            SelectFunction.Button4.Hide()
             SelectFunction.Func1 = Sub()
                                        SetBed.Show()
                                    End Sub
@@ -130,6 +131,7 @@
     Public Sub SetActual(val)
         Try
             UpdateData2("ALLOCATEDTO", "ACTUAL_LEAVE", "PATIENT_NUM", DataGridView1.Text, val)
+            UpdateData2("BED", "PATIENT_NUM", "BED_NUM", cellValue2.ToString(), "NULL")
             MessageBox.Show("Update Actual leave success")
             Reload()
         Catch ex As Exception
@@ -139,6 +141,7 @@
     Public Sub SetBedv(val)
         Try
             UpdateData2("BED", "PATIENT_NUM", "BED_NUM", val, DataGridView1.Text)
+            DeleteData("WATTING_BED", "PATIENT_NUM", DataGridView1.Text)
             MessageBox.Show("Update Bed success")
             Reload()
         Catch ex As Exception

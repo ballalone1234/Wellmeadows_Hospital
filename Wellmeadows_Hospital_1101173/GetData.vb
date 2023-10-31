@@ -364,6 +364,27 @@ Module GetData
         End Using
     End Sub
 
+    'ฟังชั่น Update ข้อมูล หลายๆข้อมูลใน Column ที่แตกต่างกัน
+
+
+
+
+    'ฟั่งชั่น Delete ข้อมูล
+    Public Sub DeleteData(table, column, id)
+        Dim query As String = $"DELETE FROM {table} WHERE {column} = '{id}'"
+        Console.WriteLine(query)
+        Using connection As New OracleConnection(Connect())
+            Using command As New OracleCommand(query, connection)
+                Try
+                    connection.Open()
+                    command.ExecuteNonQuery()
+                    MessageBox.Show("Data deleted successfully.")
+                Catch ex As Exception
+                    MessageBox.Show("Error: " & ex.Message)
+                End Try
+            End Using
+        End Using
+    End Sub
 
     Public Function UpdateBedOrInsertToWaittinglist(bed_num, patient_num, ward_no) As Boolean
         ' สร้าง Connection String สำหรับ Oracle Database
