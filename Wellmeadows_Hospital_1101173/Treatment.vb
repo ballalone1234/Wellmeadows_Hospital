@@ -118,4 +118,6 @@ Public Class Treatment
             Tdate.Value = reader("TREATMENT_DATE")
         End While
     End Sub
+
+
 End Class

@@ -32,20 +32,22 @@ Partial Class Treatment
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.tel = New System.Windows.Forms.TextBox()
-        Me.ward = New System.Windows.Forms.TextBox()
         Me.Diagnosis = New System.Windows.Forms.TextBox()
         Me.ptno = New System.Windows.Forms.TextBox()
         Me.p8 = New System.Windows.Forms.Label()
         Me.DrugAllergies = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Tdate = New System.Windows.Forms.DateTimePicker()
+        Me.his_id = New System.Windows.Forms.TextBox()
+        Me.ward = New System.Windows.Forms.TextBox()
+        Me.tel = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.DrugStatus = New System.Windows.Forms.Label()
         Me.Med = New System.Windows.Forms.Button()
@@ -56,8 +58,6 @@ Partial Class Treatment
         Me.appref = New System.Windows.Forms.Button()
         Me.Appbut = New System.Windows.Forms.Button()
         Me.AppointStatus = New System.Windows.Forms.Label()
-        Me.his_id = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -142,7 +142,7 @@ Partial Class Treatment
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 558.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 559.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label11, 0, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label8, 1, 3)
@@ -196,7 +196,7 @@ Partial Class Treatment
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(649, 189)
+        Me.Label10.Location = New System.Drawing.Point(648, 189)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(3, 26)
@@ -208,7 +208,7 @@ Partial Class Treatment
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(649, 129)
+        Me.Label8.Location = New System.Drawing.Point(648, 129)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(3, 28)
@@ -216,23 +216,11 @@ Partial Class Treatment
         Me.Label8.Text = "Marital status"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label7
-        '
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(662, 189)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(348, 23)
-        Me.Label7.TabIndex = 22
-        Me.Label7.Text = "Treatment Received"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
         'Label6
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(649, 99)
+        Me.Label6.Location = New System.Drawing.Point(648, 99)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(3, 23)
@@ -257,7 +245,7 @@ Partial Class Treatment
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(649, 27)
+        Me.Label4.Location = New System.Drawing.Point(648, 27)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(3, 28)
@@ -265,23 +253,11 @@ Partial Class Treatment
         Me.Label4.Text = "Marital status"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label3
-        '
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(662, 99)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(275, 23)
-        Me.Label3.TabIndex = 18
-        Me.Label3.Text = "Ward num"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(649, 0)
+        Me.Label2.Location = New System.Drawing.Point(648, 0)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(3, 23)
@@ -289,33 +265,11 @@ Partial Class Treatment
         Me.Label2.Text = "Patients No"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'tel
-        '
-        Me.tel.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.tel.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.tel.Location = New System.Drawing.Point(747, 228)
-        Me.tel.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.tel.Multiline = True
-        Me.tel.Name = "tel"
-        Me.tel.Size = New System.Drawing.Size(381, 56)
-        Me.tel.TabIndex = 10
-        '
-        'ward
-        '
-        Me.ward.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.ward.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ward.Location = New System.Drawing.Point(747, 132)
-        Me.ward.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ward.Multiline = True
-        Me.ward.Name = "ward"
-        Me.ward.Size = New System.Drawing.Size(381, 54)
-        Me.ward.TabIndex = 7
-        '
         'Diagnosis
         '
         Me.Diagnosis.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Diagnosis.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Diagnosis.Location = New System.Drawing.Point(132, 131)
+        Me.Diagnosis.Location = New System.Drawing.Point(131, 131)
         Me.Diagnosis.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Diagnosis.Multiline = True
         Me.Diagnosis.Name = "Diagnosis"
@@ -326,7 +280,7 @@ Partial Class Treatment
         '
         Me.ptno.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ptno.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ptno.Location = New System.Drawing.Point(132, 36)
+        Me.ptno.Location = New System.Drawing.Point(131, 36)
         Me.ptno.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ptno.Multiline = True
         Me.ptno.Name = "ptno"
@@ -349,7 +303,7 @@ Partial Class Treatment
         '
         Me.DrugAllergies.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.DrugAllergies.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.DrugAllergies.Location = New System.Drawing.Point(132, 328)
+        Me.DrugAllergies.Location = New System.Drawing.Point(131, 328)
         Me.DrugAllergies.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DrugAllergies.Multiline = True
         Me.DrugAllergies.Name = "DrugAllergies"
@@ -378,6 +332,76 @@ Partial Class Treatment
         Me.Tdate.Name = "Tdate"
         Me.Tdate.Size = New System.Drawing.Size(378, 34)
         Me.Tdate.TabIndex = 33
+        '
+        'his_id
+        '
+        Me.his_id.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.his_id.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.his_id.Enabled = False
+        Me.his_id.Location = New System.Drawing.Point(746, 35)
+        Me.his_id.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.his_id.Multiline = True
+        Me.his_id.Name = "his_id"
+        Me.his_id.Size = New System.Drawing.Size(381, 56)
+        Me.his_id.TabIndex = 35
+        '
+        'ward
+        '
+        Me.ward.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.ward.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ward.Location = New System.Drawing.Point(746, 132)
+        Me.ward.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ward.Multiline = True
+        Me.ward.Name = "ward"
+        Me.ward.Size = New System.Drawing.Size(381, 54)
+        Me.ward.TabIndex = 7
+        '
+        'tel
+        '
+        Me.tel.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.tel.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.tel.Location = New System.Drawing.Point(746, 228)
+        Me.tel.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.tel.Multiline = True
+        Me.tel.Name = "tel"
+        Me.tel.Size = New System.Drawing.Size(381, 56)
+        Me.tel.TabIndex = 10
+        '
+        'Label3
+        '
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(661, 99)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(275, 23)
+        Me.Label3.TabIndex = 18
+        Me.Label3.Text = "Ward num"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label7
+        '
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(661, 189)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(348, 23)
+        Me.Label7.TabIndex = 22
+        Me.Label7.Text = "Treatment Received"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label1
+        '
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(661, 0)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(275, 23)
+        Me.Label1.TabIndex = 36
+        Me.Label1.Text = "History id"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'TableLayoutPanel3
         '
@@ -528,30 +552,6 @@ Partial Class Treatment
         Me.AppointStatus.Size = New System.Drawing.Size(248, 22)
         Me.AppointStatus.TabIndex = 11
         Me.AppointStatus.Text = "Haven't made an appointment"
-        '
-        'his_id
-        '
-        Me.his_id.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.his_id.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.his_id.Enabled = False
-        Me.his_id.Location = New System.Drawing.Point(747, 35)
-        Me.his_id.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.his_id.Multiline = True
-        Me.his_id.Name = "his_id"
-        Me.his_id.Size = New System.Drawing.Size(381, 56)
-        Me.his_id.TabIndex = 35
-        '
-        'Label1
-        '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(662, 0)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(275, 23)
-        Me.Label1.TabIndex = 36
-        Me.Label1.Text = "History id"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Treatment
         '

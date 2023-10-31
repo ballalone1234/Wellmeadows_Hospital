@@ -340,8 +340,12 @@ Public Class StaffRegister
 
     End Sub
 
-    Private Sub work_location_TextChanged(sender As Object, e As EventArgs) Handles work_location.TextChanged
+    Private Sub work_location_TextChanged(sender As Object, e As EventArgs) Handles work_location.Click
+        FormSearch.seachTable = "WARD"
+        FormSearch.cellColumn = "WARD_NUM"
+        FormSearch.returnText = work_location
 
+        FormSearch.Show()
     End Sub
 
     Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click

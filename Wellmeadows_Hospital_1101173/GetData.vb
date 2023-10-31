@@ -446,6 +446,26 @@ Module GetData
         connection.Close()
     End Sub
 
+    'ฟั่งชั่นดึงข้อมูล 1 แถว ในตราง staff และ ดึงมาเฉพาะ staff_name และ position
+    Public Function GetStaffNameAndPosition(staff_id)
+        Using connection As New OracleConnection(Connect())
+            connection.Open()
+
+            Dim sql As String = $"SELECT staff_name, position FROM staff WHERE staff_num = '{staff_id}'"
+            Debug.Write(sql)
+            Using command As New OracleCommand(sql, connection)
+                Using reader As OracleDataReader = command.ExecuteReader()
+                    If reader.Read() Then
+                        Dim staffName As String = reader.GetString(0)
+                        Dim position As String = reader.GetString(1)
+                        Return staffName + " (" + position + ")"
+                    Else
+                        ' ไม่พบข้อมูลที่ต้องการ
+                    End If
+                End Using
+            End Using
+        End Using
+    End Function
 
 
 End Module
