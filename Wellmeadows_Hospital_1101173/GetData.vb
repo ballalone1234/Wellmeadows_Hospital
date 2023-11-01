@@ -46,21 +46,23 @@ Module GetData
         connection.Close()
     End Function
 
-    Public Function GetSeqStaff()
-        Dim connection As New OracleConnection(Connect())
-        connection.Open()
-
-        ' สร้างคำสั่ง SQL สำหรับเรียกใช้ค่าจาก Sequence
-        Dim getSequenceSql As String = "SELECT staff_seq.CURRVAL FROM DUAL"
-        Dim cmd As New OracleCommand(getSequenceSql, connection)
-
-        ' สร้างตัวแปรเพื่อเก็บค่าที่ได้จาก Sequence
-        Dim generatedPatientNum As Decimal = Convert.ToDecimal(cmd.ExecuteScalar())
-
-        ' ตอนนี้ค่า generatedPatientNum จะเป็นค่าล่าสุดที่ได้จาก Sequence
-        Console.WriteLine("Generated PATIENT_NUM: " & generatedPatientNum)
-        Return generatedPatientNum
-        connection.Close()
+    Public Function GetSeqStaff() As Int32
+        Try
+            Dim connection As New OracleConnection(Connect())
+            connection.Open()
+            Dim sql As String = "SELECT MAX(STAFF_NUM) FROM STAFF"
+            Dim cmd As New OracleCommand(sql, connection)
+            Dim maxStaffNum As Object = cmd.ExecuteScalar()
+            connection.Close()
+            If maxStaffNum IsNot Nothing AndAlso Int32.TryParse(maxStaffNum.ToString(), maxStaffNum) Then
+                Return maxStaffNum
+            Else
+                Return 0
+            End If
+        Catch ex As Exception
+            MessageBox.Show("เกิดข้อผิดพลาดในการเชื่อมต่อกับฐานข้อมูล: " & ex.Message)
+            Return 0
+        End Try
     End Function
     Public Function RegisPatient(ByVal data As String)
         Dim col() As String = {"PATIENT_NUM", "PATIENT_NAME", "MARITAL_STATUS", "DATE_REGIST", "DOB", "TELEPHONE", "CID", "ADDRESS", "SEX", "ML_NO"}
@@ -271,6 +273,8 @@ Module GetData
         End Try
 
     End Function
+
+
 
     Public Function Getdate(ByVal Dd As DateTimePicker)
         Dim date_format As String = $"TO_DATE('{Dd.Value.ToString("yyyy-MM-dd")}','YYYY-MM-DD')"

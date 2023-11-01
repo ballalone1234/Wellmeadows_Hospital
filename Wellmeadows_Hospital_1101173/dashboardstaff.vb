@@ -160,9 +160,9 @@ FROM STAFF GROUP BY TRUNC(MONTHS_BETWEEN(SYSDATE, TO_DATE(DOB, 'DD-MM-YYYY')) / 
             If dataTable2.Rows.Count > 0 Then
                 ' กำหนดข้อมูลใน Chart
                 Chart2.DataSource = dataTable3
-                Chart2.Series("Series1").XValueMember = "age"
-                Chart2.Series("Series1").YValueMembers = "Count"
-                Chart2.Series("Series1").IsValueShownAsLabel = True ' แสดงค่าเป็น Label
+                Chart2.Series("อายุ").XValueMember = "age"
+                Chart2.Series("อายุ").YValueMembers = "Count"
+                Chart2.Series("อายุ").IsValueShownAsLabel = True ' แสดงค่าเป็น Label
                 ' แสดง Chart
                 Chart3.DataBind()
             Else
