@@ -82,6 +82,7 @@
             SelectFunction.Button4.Text = "Detail"
             SelectFunction.Func1 = Sub()
                                        If position.Equals("Charge Nurse") Then
+                                           setWardStaff.staffno.Text = LIST_STAFFDataGridView.Text
                                            setWardStaff.Show()
                                        Else
                                            MessageBox.Show("เฉพาะ Charge Nurse เท่านั้น")
@@ -89,6 +90,7 @@
                                    End Sub
             SelectFunction.Func2 = Sub()
                                        If position.Equals("HR") Then
+                                           setChargeN.staffno.Text = LIST_STAFFDataGridView.Text
                                            setChargeN.Show()
                                        Else
                                            MessageBox.Show("เฉพาะ HR เท่านั้น")
