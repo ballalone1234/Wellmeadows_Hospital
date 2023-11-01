@@ -98,7 +98,7 @@ Partial Class Appointment
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 552.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 553.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label8, 1, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.Label7, 2, 2)
@@ -131,7 +131,7 @@ Partial Class Appointment
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(635, 190)
+        Me.Label10.Location = New System.Drawing.Point(634, 190)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(3, 26)
@@ -143,7 +143,7 @@ Partial Class Appointment
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(635, 117)
+        Me.Label8.Location = New System.Drawing.Point(634, 117)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(3, 28)
@@ -155,7 +155,7 @@ Partial Class Appointment
         '
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(647, 94)
+        Me.Label7.Location = New System.Drawing.Point(646, 94)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(243, 23)
@@ -167,7 +167,7 @@ Partial Class Appointment
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(635, 94)
+        Me.Label6.Location = New System.Drawing.Point(634, 94)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(3, 23)
@@ -191,7 +191,7 @@ Partial Class Appointment
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(635, 24)
+        Me.Label4.Location = New System.Drawing.Point(634, 24)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(3, 28)
@@ -203,7 +203,7 @@ Partial Class Appointment
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(647, 0)
+        Me.Label3.Location = New System.Drawing.Point(646, 0)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(291, 23)
@@ -215,7 +215,7 @@ Partial Class Appointment
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(635, 0)
+        Me.Label2.Location = New System.Drawing.Point(634, 0)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(3, 23)
@@ -227,22 +227,22 @@ Partial Class Appointment
         '
         Me.wardno.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.wardno.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.wardno.Location = New System.Drawing.Point(729, 124)
+        Me.wardno.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.wardno.Location = New System.Drawing.Point(728, 133)
         Me.wardno.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.wardno.Multiline = True
         Me.wardno.Name = "wardno"
-        Me.wardno.Size = New System.Drawing.Size(381, 58)
+        Me.wardno.Size = New System.Drawing.Size(381, 41)
         Me.wardno.TabIndex = 10
         '
         'examroom
         '
         Me.examroom.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.examroom.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.examroom.Location = New System.Drawing.Point(125, 124)
+        Me.examroom.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.examroom.Location = New System.Drawing.Point(124, 133)
         Me.examroom.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.examroom.Multiline = True
         Me.examroom.Name = "examroom"
-        Me.examroom.Size = New System.Drawing.Size(381, 58)
+        Me.examroom.Size = New System.Drawing.Size(381, 41)
         Me.examroom.TabIndex = 8
         '
         'Label1
@@ -261,22 +261,22 @@ Partial Class Appointment
         '
         Me.ptno.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ptno.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ptno.Location = New System.Drawing.Point(125, 32)
+        Me.ptno.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.ptno.Location = New System.Drawing.Point(124, 38)
         Me.ptno.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ptno.Multiline = True
         Me.ptno.Name = "ptno"
-        Me.ptno.Size = New System.Drawing.Size(381, 54)
+        Me.ptno.Size = New System.Drawing.Size(381, 41)
         Me.ptno.TabIndex = 5
         '
         'examdate
         '
         Me.examdate.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.examdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
+        Me.examdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.examdate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.examdate.Location = New System.Drawing.Point(727, 42)
+        Me.examdate.Location = New System.Drawing.Point(726, 38)
         Me.examdate.Margin = New System.Windows.Forms.Padding(4)
         Me.examdate.Name = "examdate"
-        Me.examdate.Size = New System.Drawing.Size(385, 34)
+        Me.examdate.Size = New System.Drawing.Size(385, 41)
         Me.examdate.TabIndex = 28
         '
         'PictureBox2

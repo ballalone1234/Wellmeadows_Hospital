@@ -41,11 +41,16 @@ Public Class Treatment
             Next
             Dim dataApp() As String = {$"'{AppointStatus.Text}'", $"TO_DATE('{Appointment.examdate.Value.ToString("yyyy-MM-dd")}','YYYY-MM-DD')",
             $"'{examRoom}'", $"{result}"}
-            If dataApp.Length < 1 Then
+            If AppointStatus.Text.Equals("Haven't made an appointment") Then
+
+            Else
                 InsetFlexible(String.Join(",", dataApp), "PATIENTAPPOINTMENT")
             End If
+            PatientList.Show()
+            Close()
+            PrescribeMenu.Close()
             MessageBox.Show("เพิ่มเสร็จสมบูรณ์")
-            End If
+        End If
 
 
     End Sub
