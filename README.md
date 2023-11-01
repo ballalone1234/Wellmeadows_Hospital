@@ -20,4 +20,6 @@ https://github.com/ballalone1234/Wellmeadows_Hospital.git
 
 ![image](./Pic/2.png)
 
- 
+4. เริ่ม Login และใช้ Program ได้เลย
+
+ ![image](./Pic/3.png)
