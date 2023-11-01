@@ -14,7 +14,7 @@ https://github.com/ballalone1234/Wellmeadows_Hospital.git
 ```
 2. ทำการเปิดโปรเจคนี้ด้วยโปรแกรม Visual Studio 2022 และเลือก Clone a repository แล้วกด Next จากนั้นใส่ลิ้งด้านบนลงไปในช่อง Repository location และกด Clone ต่อไป:
 
-![image](./Pic/1.png)
+![image](./Pic/12.png)
 
 3. หลังจาก Clone เสร็จแล้วให้กดปุ่ม Start หากไม่มี ให้กดเปิด Project ที่มี นามสกุลไฟล์เป็น .sin ตรงแถบ Solution Explorer
 
