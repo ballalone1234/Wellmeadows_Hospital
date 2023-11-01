@@ -66,6 +66,7 @@
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles LIST_STAFFDataGridView.CellClick
         Dim go As TextBox = New TextBox()
         Dim cellValue As Object = LIST_STAFFDataGridView.Rows(e.RowIndex).Cells("WARD_NUM").Value
+        Dim cellValue2 As Object = LIST_STAFFDataGridView.Rows(e.RowIndex).Cells("WARD_NAME").Value
         LIST_STAFFDataGridView.Text = cellValue.ToString()
 
         Debug.Write(LIST_STAFFDataGridView.Rows(e.RowIndex))
@@ -85,9 +86,9 @@
                                End Sub
 
         SelectFunction.Func2 = Sub()
-                                   FormSearch.seachTable = "PATIENTS"
+                                   FormSearch.seachTable = "DETAIL_CURRENT_PATIENTS_IN_WARD"
                                    FormSearch.cellColumn = "PATIENT_NUM"
-                                   FormSearch.search.Text = LIST_STAFFDataGridView.Text
+                                   FormSearch.search.Text = cellValue2.ToString()
                                    FormSearch.singleMode = True
                                    FormSearch.returnText = go
                                    FormSearch.Show()

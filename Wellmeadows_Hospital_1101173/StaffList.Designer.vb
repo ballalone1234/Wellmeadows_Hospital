@@ -34,23 +34,22 @@ Partial Class StaffList
         Me.ReporyByWard = New System.Windows.Forms.Button()
         Me.LIST_STAFFDataGridView = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.Back = New System.Windows.Forms.Button()
         Me.LIST_STAFFBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Hospital = New Wellmeadows_Hospital_1101173.Hospital()
         Me.STAFFBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.STAFFTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.STAFFTableAdapter()
         Me.TableAdapterManager = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.TableAdapterManager()
         Me.LIST_STAFFTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.LIST_STAFFTableAdapter()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         CType(Me.LIST_STAFFDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.LIST_STAFFBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Hospital, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.STAFFBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -93,10 +92,9 @@ Partial Class StaffList
         '
         'Panel2
         '
+        Me.Panel2.Controls.Add(Me.TableLayoutPanel2)
         Me.Panel2.Controls.Add(Me.TableLayoutPanel3)
-        Me.Panel2.Controls.Add(Me.LIST_STAFFDataGridView)
         Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 93)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
@@ -111,7 +109,7 @@ Partial Class StaffList
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.14516!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 186.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 245.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 246.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
@@ -145,7 +143,7 @@ Partial Class StaffList
         '
         'ReporyByWard
         '
-        Me.ReporyByWard.Location = New System.Drawing.Point(232, 35)
+        Me.ReporyByWard.Location = New System.Drawing.Point(231, 35)
         Me.ReporyByWard.Name = "ReporyByWard"
         Me.ReporyByWard.Size = New System.Drawing.Size(142, 23)
         Me.ReporyByWard.TabIndex = 4
@@ -154,13 +152,12 @@ Partial Class StaffList
         '
         'LIST_STAFFDataGridView
         '
-        Me.LIST_STAFFDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
         Me.LIST_STAFFDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.LIST_STAFFDataGridView.Location = New System.Drawing.Point(31, 117)
+        Me.LIST_STAFFDataGridView.Location = New System.Drawing.Point(3, 3)
         Me.LIST_STAFFDataGridView.Name = "LIST_STAFFDataGridView"
         Me.LIST_STAFFDataGridView.RowHeadersWidth = 51
         Me.LIST_STAFFDataGridView.RowTemplate.Height = 24
-        Me.LIST_STAFFDataGridView.Size = New System.Drawing.Size(1665, 632)
+        Me.LIST_STAFFDataGridView.Size = New System.Drawing.Size(1403, 619)
         Me.LIST_STAFFDataGridView.TabIndex = 11
         '
         'Button1
@@ -178,37 +175,6 @@ Partial Class StaffList
         Me.Button1.Size = New System.Drawing.Size(44, 52)
         Me.Button1.TabIndex = 11
         Me.Button1.UseVisualStyleBackColor = False
-        '
-        'TableLayoutPanel1
-        '
-        Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 95.6327!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.367301!))
-        Me.TableLayoutPanel1.Controls.Add(Me.Back, 1, 1)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(8, 846)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 2
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.497621!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.50238!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1191, 1236)
-        Me.TableLayoutPanel1.TabIndex = 1
-        '
-        'Back
-        '
-        Me.Back.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Back.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Back.BackgroundImage = CType(resources.GetObject("Back.BackgroundImage"), System.Drawing.Image)
-        Me.Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Back.FlatAppearance.BorderSize = 0
-        Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Back.Location = New System.Drawing.Point(1168, 1180)
-        Me.Back.Margin = New System.Windows.Forms.Padding(4)
-        Me.Back.Name = "Back"
-        Me.Back.Size = New System.Drawing.Size(19, 52)
-        Me.Back.TabIndex = 10
-        Me.Back.UseVisualStyleBackColor = False
         '
         'LIST_STAFFBindingSource
         '
@@ -255,6 +221,18 @@ Partial Class StaffList
         '
         Me.LIST_STAFFTableAdapter.ClearBeforeFill = True
         '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.ColumnCount = 1
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.LIST_STAFFDataGridView, 0, 0)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(16, 99)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 1
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1409, 625)
+        Me.TableLayoutPanel2.TabIndex = 13
+        '
         'StaffList
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -275,10 +253,10 @@ Partial Class StaffList
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
         CType(Me.LIST_STAFFDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TableLayoutPanel1.ResumeLayout(False)
         CType(Me.LIST_STAFFBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Hospital, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.STAFFBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TableLayoutPanel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -295,9 +273,7 @@ Partial Class StaffList
     End Sub
 
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Home As Button
-    Friend WithEvents Back As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Hospital As Hospital
     Friend WithEvents STAFFBindingSource As BindingSource
@@ -310,4 +286,5 @@ Partial Class StaffList
     Friend WithEvents ptno As TextBox
     Friend WithEvents Fillter As Button
     Friend WithEvents ReporyByWard As Button
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
 End Class

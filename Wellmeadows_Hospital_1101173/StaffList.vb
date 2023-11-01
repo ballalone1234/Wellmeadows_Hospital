@@ -11,7 +11,7 @@
 
 
 
-    Private Sub Back_Click_1(sender As Object, e As EventArgs) Handles Back.Click
+    Private Sub Back_Click_1(sender As Object, e As EventArgs)
         Pagecontroller.BackPage(Me)
     End Sub
 
@@ -27,7 +27,7 @@
 
     End Sub
 
-    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
+    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
