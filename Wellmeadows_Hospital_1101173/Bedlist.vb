@@ -1,6 +1,7 @@
 ﻿Public Class Bedlist
     Private Sub PatientMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        DataGridView1.DataSource = GetSeach("BED", ward.SelectedItem)
+        GetDropdown(ward, "WARD", "WARD_NAME", "WARD_NUM")
     End Sub
 
     Private Sub registerpt_Click(sender As Object, e As EventArgs)
@@ -51,6 +52,11 @@
     End Sub
 
     Private Sub TableLayoutPanel2_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel2.Paint
+
+    End Sub
+
+    Private Sub ward_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ward.SelectedIndexChanged
+        DataGridView1.DataSource = GetSeach2("BED", ward.SelectedItem.VALUE.ToString())
 
     End Sub
 End Class

@@ -330,6 +330,31 @@ Module GetData
             End Using
         End Using
     End Function
+    Public Function GetSeach2(table, textS)
+        Dim column As String = GetColumn(table)
+        Dim columArray() As String = Split(column, ",")
+
+
+        Dim sqltest As String = $"SELECT {column} FROM {table} WHERE "
+        For Each item As String In columArray
+            sqltest += item + $" like '{textS}' OR "
+
+        Next
+        sqltest = sqltest.Substring(0, sqltest.Length - 3)
+        If table.Equals("ALLOCATEDTO") Then
+            sqltest += " AND ACTUAL_LEAVE IS NULL"
+        End If
+
+        Console.WriteLine(sqltest)
+        Using connection As OracleConnection = New OracleConnection(Connect())
+            Dim cmd As New OracleCommand(sqltest, connection)
+            Using sda As OracleDataAdapter = New OracleDataAdapter(cmd)
+                Dim dt As DataTable = New DataTable()
+                sda.Fill(dt)
+                Return dt
+            End Using
+        End Using
+    End Function
 
     Public Function GetDataOnceCol(table, column, id)
 
@@ -464,7 +489,7 @@ Module GetData
         reader.Close()
         connection.Close()
     End Sub
-
+    Public position As String = ""
     'ฟั่งชั่นดึงข้อมูล 1 แถว ในตราง staff และ ดึงมาเฉพาะ staff_name และ position
     Public Function GetStaffNameAndPosition(staff_id)
         Using connection As New OracleConnection(Connect())
@@ -476,7 +501,7 @@ Module GetData
                 Using reader As OracleDataReader = command.ExecuteReader()
                     If reader.Read() Then
                         Dim staffName As String = reader.GetString(0)
-                        Dim position As String = reader.GetString(1)
+                        position = reader.GetString(1)
                         Return staffName + " (" + position + ")"
                     Else
                         ' ไม่พบข้อมูลที่ต้องการ

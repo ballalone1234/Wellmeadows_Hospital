@@ -46,7 +46,7 @@
 
     Private Sub StaffList_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'Hospital.LIST_STAFF' table. You can move, or remove it, as needed.
-        setWard.Checked = True
+
         LIST_STAFFDataGridView.DataSource = GetSeach("LIST_STAFF", ptno.Text)
 
     End Sub
@@ -62,7 +62,9 @@
     Private Sub ptno_KeyUp(sender As Object, e As KeyEventArgs) Handles ptno.KeyUp
         LIST_STAFFDataGridView.DataSource = GetSeach("LIST_STAFF", ptno.Text)
     End Sub
-
+    Public Sub Reload()
+        LIST_STAFFDataGridView.DataSource = GetSeach("LIST_STAFF", ptno.Text)
+    End Sub
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles LIST_STAFFDataGridView.CellClick
 
 
@@ -73,13 +75,26 @@
         Dim result As DialogResult = MessageBox.Show($"Do you want to select {cellValue.ToString()} ?", "Confirmation", MessageBoxButtons.YesNoCancel)
 
         If result = DialogResult.Yes Then
-            If setWard.Checked Then
-                setWardStaff.Show()
-                setWardStaff.staffno.Text = cellValue.ToString()
-            ElseIf setCharge.Checked Then
-                setChargeN.Show()
-                setChargeN.staffno.Text = cellValue.ToString()
-            End If
+            SelectFunction.Show()
+            SelectFunction.Button1.Text = "Set staff ward"
+            SelectFunction.Button2.Text = "Set charge nurse ward"
+            SelectFunction.Button3.Text = "Update"
+            SelectFunction.Button4.Text = "Detail"
+            SelectFunction.Func1 = Sub()
+                                       If position.Equals("Charge Nurse") Then
+                                           setWardStaff.Show()
+                                       Else
+                                           MessageBox.Show("เฉพาะ Charge Nurse เท่านั้น")
+                                       End If
+                                   End Sub
+            SelectFunction.Func2 = Sub()
+                                       If position.Equals("HR") Then
+                                           setChargeN.Show()
+                                       Else
+                                           MessageBox.Show("เฉพาะ HR เท่านั้น")
+                                       End If
+                                   End Sub
+
 
 
 
@@ -90,17 +105,23 @@
         End If
     End Sub
 
-    Private Sub setWard_CheckedChanged(sender As Object, e As EventArgs) Handles setWard.CheckedChanged
+    Private Sub setWard_CheckedChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub setCharge_CheckedChanged(sender As Object, e As EventArgs) Handles setCharge.CheckedChanged
+    Private Sub setCharge_CheckedChanged(sender As Object, e As EventArgs)
         ptno.Text = "Charge Nurse"
         LIST_STAFFDataGridView.DataSource = GetSeach("LIST_STAFF", ptno.Text)
     End Sub
 
     Private Sub ReporyByWard_Click(sender As Object, e As EventArgs) Handles ReporyByWard.Click
-        StaffByWardReport.Show()
+
+        If position.Equals("Charge Nurse") Or position.Equals("HR") Then
+            StaffByWardReport.Show()
+        Else
+            MessageBox.Show("เฉพาะ Charge Nurse และ HR เท่านั้น")
+        End If
+
 
     End Sub
 End Class

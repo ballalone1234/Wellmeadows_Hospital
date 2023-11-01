@@ -33,7 +33,12 @@
 
 
     Private Sub OPD_Report_Click(sender As Object, e As EventArgs) Handles OPD_Report.Click
-        PatientOPD_report.Show()
+        If position.Equals("Charge Nurse") Or position.Equals("Medical Director") Then
+            PatientOPD_report.Show()
+        Else
+            MessageBox.Show("เฉพาะ Charge Nurse และ Medical Director เท่านั้น")
+        End If
+
     End Sub
 
     Private Sub inward_Click(sender As Object, e As EventArgs) Handles inward.Click

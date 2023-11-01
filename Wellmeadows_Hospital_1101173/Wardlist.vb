@@ -64,6 +64,42 @@
     End Sub
 
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles LIST_STAFFDataGridView.CellClick
+        Dim go As TextBox = New TextBox()
+        Dim cellValue As Object = LIST_STAFFDataGridView.Rows(e.RowIndex).Cells("WARD_NUM").Value
+        LIST_STAFFDataGridView.Text = cellValue.ToString()
+
+        Debug.Write(LIST_STAFFDataGridView.Rows(e.RowIndex))
+
+        SelectFunction.Show()
+        SelectFunction.Button1.Text = "Check staff"
+        SelectFunction.Button2.Text = "Check pateint"
+        SelectFunction.Button3.Text = "Check bed"
+        SelectFunction.Button4.Hide()
+        SelectFunction.Func1 = Sub()
+                                   FormSearch.seachTable = "STAFF"
+                                   FormSearch.cellColumn = "STAFF_NUM"
+                                   FormSearch.search.Text = LIST_STAFFDataGridView.Text
+                                   FormSearch.singleMode = True
+                                   FormSearch.returnText = go
+                                   FormSearch.Show()
+                               End Sub
+
+        SelectFunction.Func2 = Sub()
+                                   FormSearch.seachTable = "PATIENTS"
+                                   FormSearch.cellColumn = "PATIENT_NUM"
+                                   FormSearch.search.Text = LIST_STAFFDataGridView.Text
+                                   FormSearch.singleMode = True
+                                   FormSearch.returnText = go
+                                   FormSearch.Show()
+                               End Sub
+        SelectFunction.Func3 = Sub()
+                                   FormSearch.seachTable = "BED"
+                                   FormSearch.cellColumn = "BED_NUM"
+                                   FormSearch.search.Text = LIST_STAFFDataGridView.Text
+                                   FormSearch.singleMode = True
+                                   FormSearch.returnText = go
+                                   FormSearch.Show()
+                               End Sub
 
 
 

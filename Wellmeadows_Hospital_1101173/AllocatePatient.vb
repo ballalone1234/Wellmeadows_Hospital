@@ -110,10 +110,7 @@ Public Class AllocatePatient
     Private Sub patientno_TextChanged(sender As Object, e As EventArgs) Handles patientno.Click
         FormSearch.seachTable = "PATIENTS"
         FormSearch.cellColumn = "PATIENT_NUM"
-
         FormSearch.returnText = patientno
-
-
         FormSearch.Show()
     End Sub
 End Class

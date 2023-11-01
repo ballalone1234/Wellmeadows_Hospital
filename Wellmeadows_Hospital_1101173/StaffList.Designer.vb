@@ -31,8 +31,7 @@ Partial Class StaffList
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.ptno = New System.Windows.Forms.TextBox()
         Me.Fillter = New System.Windows.Forms.Button()
-        Me.setWard = New System.Windows.Forms.RadioButton()
-        Me.setCharge = New System.Windows.Forms.RadioButton()
+        Me.ReporyByWard = New System.Windows.Forms.Button()
         Me.LIST_STAFFDataGridView = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
@@ -43,7 +42,6 @@ Partial Class StaffList
         Me.STAFFTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.STAFFTableAdapter()
         Me.TableAdapterManager = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.TableAdapterManager()
         Me.LIST_STAFFTableAdapter = New Wellmeadows_Hospital_1101173.HospitalTableAdapters.LIST_STAFFTableAdapter()
-        Me.ReporyByWard = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -111,18 +109,16 @@ Partial Class StaffList
         Me.TableLayoutPanel3.ColumnCount = 5
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.85484!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 43.14516!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 167.0!))
-        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 244.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 186.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99.0!))
+        Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 245.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
         Me.TableLayoutPanel3.Controls.Add(Me.ptno, 0, 1)
         Me.TableLayoutPanel3.Controls.Add(Me.Fillter, 1, 1)
-        Me.TableLayoutPanel3.Controls.Add(Me.setWard, 2, 1)
-        Me.TableLayoutPanel3.Controls.Add(Me.setCharge, 3, 1)
-        Me.TableLayoutPanel3.Controls.Add(Me.ReporyByWard, 4, 1)
+        Me.TableLayoutPanel3.Controls.Add(Me.ReporyByWard, 2, 1)
         Me.TableLayoutPanel3.Location = New System.Drawing.Point(16, 28)
         Me.TableLayoutPanel3.Name = "TableLayoutPanel3"
         Me.TableLayoutPanel3.RowCount = 2
@@ -135,41 +131,26 @@ Partial Class StaffList
         '
         Me.ptno.Location = New System.Drawing.Point(3, 35)
         Me.ptno.Name = "ptno"
-        Me.ptno.Size = New System.Drawing.Size(125, 22)
+        Me.ptno.Size = New System.Drawing.Size(124, 22)
         Me.ptno.TabIndex = 0
         '
         'Fillter
         '
-        Me.Fillter.Location = New System.Drawing.Point(134, 35)
+        Me.Fillter.Location = New System.Drawing.Point(133, 35)
         Me.Fillter.Name = "Fillter"
         Me.Fillter.Size = New System.Drawing.Size(75, 23)
         Me.Fillter.TabIndex = 1
         Me.Fillter.Text = "Search"
         Me.Fillter.UseVisualStyleBackColor = True
         '
-        'setWard
+        'ReporyByWard
         '
-        Me.setWard.AutoSize = True
-        Me.setWard.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.setWard.Location = New System.Drawing.Point(233, 35)
-        Me.setWard.Name = "setWard"
-        Me.setWard.Size = New System.Drawing.Size(107, 20)
-        Me.setWard.TabIndex = 2
-        Me.setWard.TabStop = True
-        Me.setWard.Text = "Set staff ward"
-        Me.setWard.UseVisualStyleBackColor = True
-        '
-        'setCharge
-        '
-        Me.setCharge.AutoSize = True
-        Me.setCharge.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.setCharge.Location = New System.Drawing.Point(351, 35)
-        Me.setCharge.Name = "setCharge"
-        Me.setCharge.Size = New System.Drawing.Size(161, 20)
-        Me.setCharge.TabIndex = 3
-        Me.setCharge.TabStop = True
-        Me.setCharge.Text = "Set charge nurse ward"
-        Me.setCharge.UseVisualStyleBackColor = True
+        Me.ReporyByWard.Location = New System.Drawing.Point(232, 35)
+        Me.ReporyByWard.Name = "ReporyByWard"
+        Me.ReporyByWard.Size = New System.Drawing.Size(142, 23)
+        Me.ReporyByWard.TabIndex = 4
+        Me.ReporyByWard.Text = "Report by ward"
+        Me.ReporyByWard.UseVisualStyleBackColor = True
         '
         'LIST_STAFFDataGridView
         '
@@ -255,11 +236,14 @@ Partial Class StaffList
         Me.TableAdapterManager.ASSIGNEDTOTableAdapter = Nothing
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.BEDTableAdapter = Nothing
+        Me.TableAdapterManager.DRUGTableAdapter = Nothing
         Me.TableAdapterManager.LOCALDOCTORTableAdapter = Nothing
+        Me.TableAdapterManager.MEDICAL_HISTORYTableAdapter = Nothing
         Me.TableAdapterManager.PATIENTAPPOINTMENTTableAdapter = Nothing
         Me.TableAdapterManager.PATIENTSNEXTOFKINTableAdapter = Nothing
         Me.TableAdapterManager.PATIENTSTableAdapter = Nothing
         Me.TableAdapterManager.PATIENTTTableAdapter = Nothing
+        Me.TableAdapterManager.PRESCRIBEDTableAdapter = Nothing
         Me.TableAdapterManager.QUALIFICATIONTableAdapter = Nothing
         Me.TableAdapterManager.STAFFTableAdapter = Me.STAFFTableAdapter
         Me.TableAdapterManager.UpdateOrder = Wellmeadows_Hospital_1101173.HospitalTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
@@ -270,15 +254,6 @@ Partial Class StaffList
         'LIST_STAFFTableAdapter
         '
         Me.LIST_STAFFTableAdapter.ClearBeforeFill = True
-        '
-        'ReporyByWard
-        '
-        Me.ReporyByWard.Location = New System.Drawing.Point(518, 35)
-        Me.ReporyByWard.Name = "ReporyByWard"
-        Me.ReporyByWard.Size = New System.Drawing.Size(142, 23)
-        Me.ReporyByWard.TabIndex = 4
-        Me.ReporyByWard.Text = "Report by ward"
-        Me.ReporyByWard.UseVisualStyleBackColor = True
         '
         'StaffList
         '
@@ -334,7 +309,5 @@ Partial Class StaffList
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents ptno As TextBox
     Friend WithEvents Fillter As Button
-    Friend WithEvents setWard As RadioButton
-    Friend WithEvents setCharge As RadioButton
     Friend WithEvents ReporyByWard As Button
 End Class

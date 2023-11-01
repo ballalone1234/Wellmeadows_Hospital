@@ -60,8 +60,9 @@ Partial Class RegisterPatient3
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(345, 681)
+        Me.Panel1.Size = New System.Drawing.Size(460, 838)
         Me.Panel1.TabIndex = 0
         '
         'Home
@@ -72,18 +73,20 @@ Partial Class RegisterPatient3
         Me.Home.FlatAppearance.BorderSize = 0
         Me.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Home.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Home.Location = New System.Drawing.Point(12, 12)
+        Me.Home.Location = New System.Drawing.Point(16, 15)
+        Me.Home.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Home.Name = "Home"
-        Me.Home.Size = New System.Drawing.Size(48, 53)
+        Me.Home.Size = New System.Drawing.Size(64, 65)
         Me.Home.TabIndex = 6
         Me.Home.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-14, 265)
+        Me.PictureBox1.Location = New System.Drawing.Point(-19, 326)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(374, 103)
+        Me.PictureBox1.Size = New System.Drawing.Size(499, 127)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -92,9 +95,10 @@ Partial Class RegisterPatient3
         '
         Me.Panel2.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(345, 0)
+        Me.Panel2.Location = New System.Drawing.Point(460, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(919, 681)
+        Me.Panel2.Size = New System.Drawing.Size(1225, 838)
         Me.Panel2.TabIndex = 1
         '
         'TableLayoutPanel1
@@ -108,22 +112,24 @@ Partial Class RegisterPatient3
         Me.TableLayoutPanel1.Controls.Add(Me.Back, 1, 3)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 4
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.81992!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.18008!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 93.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(919, 681)
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 114.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1225, 838)
         Me.TableLayoutPanel1.TabIndex = 1
         '
         'PictureBox2
         '
         Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(361, 18)
+        Me.PictureBox2.Location = New System.Drawing.Point(481, 22)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(143, 103)
+        Me.PictureBox2.Size = New System.Drawing.Size(191, 127)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 8
         Me.PictureBox2.TabStop = False
@@ -137,9 +143,10 @@ Partial Class RegisterPatient3
         Me.SumitButton.FlatAppearance.BorderSize = 0
         Me.SumitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.SumitButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.SumitButton.Location = New System.Drawing.Point(268, 525)
+        Me.SumitButton.Location = New System.Drawing.Point(357, 647)
+        Me.SumitButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SumitButton.Name = "SumitButton"
-        Me.SumitButton.Size = New System.Drawing.Size(329, 59)
+        Me.SumitButton.Size = New System.Drawing.Size(439, 72)
         Me.SumitButton.TabIndex = 7
         Me.SumitButton.UseVisualStyleBackColor = False
         '
@@ -148,7 +155,7 @@ Partial Class RegisterPatient3
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.00885!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.99115!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 410.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 548.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label10, 1, 4)
         Me.TableLayoutPanel2.Controls.Add(Me.Label8, 1, 3)
         Me.TableLayoutPanel2.Controls.Add(Me.Label7, 2, 2)
@@ -163,26 +170,28 @@ Partial Class RegisterPatient3
         Me.TableLayoutPanel2.Controls.Add(Me.kinname, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 143)
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(4, 176)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 7
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.67568!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.32433!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 19.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 143.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(859, 376)
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 176.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(1145, 463)
         Me.TableLayoutPanel2.TabIndex = 9
         '
         'Label10
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(443, 154)
+        Me.Label10.Location = New System.Drawing.Point(589, 190)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(2, 21)
+        Me.Label10.Size = New System.Drawing.Size(3, 26)
         Me.Label10.TabIndex = 25
         Me.Label10.Text = "Marital status"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -191,9 +200,10 @@ Partial Class RegisterPatient3
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(443, 95)
+        Me.Label8.Location = New System.Drawing.Point(589, 117)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(2, 23)
+        Me.Label8.Size = New System.Drawing.Size(3, 28)
         Me.Label8.TabIndex = 23
         Me.Label8.Text = "Marital status"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -202,9 +212,10 @@ Partial Class RegisterPatient3
         '
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(451, 76)
+        Me.Label7.Location = New System.Drawing.Point(600, 94)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(141, 19)
+        Me.Label7.Size = New System.Drawing.Size(188, 23)
         Me.Label7.TabIndex = 22
         Me.Label7.Text = "Tel."
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -213,9 +224,10 @@ Partial Class RegisterPatient3
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(443, 76)
+        Me.Label6.Location = New System.Drawing.Point(589, 94)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(2, 19)
+        Me.Label6.Size = New System.Drawing.Size(3, 23)
         Me.Label6.TabIndex = 21
         Me.Label6.Text = "Marital status"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -224,9 +236,10 @@ Partial Class RegisterPatient3
         '
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(3, 76)
+        Me.Label5.Location = New System.Drawing.Point(4, 94)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(209, 19)
+        Me.Label5.Size = New System.Drawing.Size(279, 23)
         Me.Label5.TabIndex = 20
         Me.Label5.Text = "Address"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -235,9 +248,10 @@ Partial Class RegisterPatient3
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(443, 19)
+        Me.Label4.Location = New System.Drawing.Point(589, 24)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(2, 23)
+        Me.Label4.Size = New System.Drawing.Size(3, 28)
         Me.Label4.TabIndex = 19
         Me.Label4.Text = "Marital status"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -246,9 +260,10 @@ Partial Class RegisterPatient3
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(451, 0)
+        Me.Label3.Location = New System.Drawing.Point(600, 0)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(202, 19)
+        Me.Label3.Size = New System.Drawing.Size(269, 23)
         Me.Label3.TabIndex = 18
         Me.Label3.Text = "Relationship"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -257,9 +272,10 @@ Partial Class RegisterPatient3
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(443, 0)
+        Me.Label2.Location = New System.Drawing.Point(589, 0)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(2, 19)
+        Me.Label2.Size = New System.Drawing.Size(3, 23)
         Me.Label2.TabIndex = 17
         Me.Label2.Text = "Patients No"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -268,53 +284,54 @@ Partial Class RegisterPatient3
         '
         Me.tel.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.tel.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.tel.Location = New System.Drawing.Point(510, 100)
-        Me.tel.Margin = New System.Windows.Forms.Padding(2)
-        Me.tel.Multiline = True
+        Me.tel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.tel.Location = New System.Drawing.Point(680, 133)
+        Me.tel.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.tel.Name = "tel"
-        Me.tel.Size = New System.Drawing.Size(287, 48)
+        Me.tel.Size = New System.Drawing.Size(381, 41)
         Me.tel.TabIndex = 10
         '
         'relationship
         '
         Me.relationship.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.relationship.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.relationship.Location = New System.Drawing.Point(510, 25)
-        Me.relationship.Margin = New System.Windows.Forms.Padding(2)
-        Me.relationship.Multiline = True
+        Me.relationship.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.relationship.Location = New System.Drawing.Point(680, 38)
+        Me.relationship.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.relationship.Name = "relationship"
-        Me.relationship.Size = New System.Drawing.Size(287, 45)
+        Me.relationship.Size = New System.Drawing.Size(381, 41)
         Me.relationship.TabIndex = 7
         '
         'address
         '
         Me.address.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.address.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.address.Location = New System.Drawing.Point(76, 100)
-        Me.address.Margin = New System.Windows.Forms.Padding(2)
-        Me.address.Multiline = True
+        Me.address.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.address.Location = New System.Drawing.Point(102, 133)
+        Me.address.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.address.Name = "address"
-        Me.address.Size = New System.Drawing.Size(287, 48)
+        Me.address.Size = New System.Drawing.Size(381, 41)
         Me.address.TabIndex = 8
         '
         'kinname
         '
         Me.kinname.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.kinname.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.kinname.Location = New System.Drawing.Point(76, 25)
-        Me.kinname.Margin = New System.Windows.Forms.Padding(2)
-        Me.kinname.Multiline = True
+        Me.kinname.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.kinname.Location = New System.Drawing.Point(102, 38)
+        Me.kinname.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.kinname.Name = "kinname"
-        Me.kinname.Size = New System.Drawing.Size(287, 45)
+        Me.kinname.Size = New System.Drawing.Size(381, 41)
         Me.kinname.TabIndex = 5
         '
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(3, 0)
+        Me.Label1.Location = New System.Drawing.Point(4, 0)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(221, 19)
+        Me.Label1.Size = New System.Drawing.Size(295, 23)
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "Kin Name"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -328,21 +345,23 @@ Partial Class RegisterPatient3
         Me.Back.FlatAppearance.BorderSize = 0
         Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Back.Location = New System.Drawing.Point(883, 636)
+        Me.Back.Location = New System.Drawing.Point(1177, 782)
+        Me.Back.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Back.Name = "Back"
-        Me.Back.Size = New System.Drawing.Size(33, 42)
+        Me.Back.Size = New System.Drawing.Size(44, 52)
         Me.Back.TabIndex = 10
         Me.Back.UseVisualStyleBackColor = False
         '
         'RegisterPatient3
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1264, 681)
+        Me.ClientSize = New System.Drawing.Size(1685, 838)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "RegisterPatient3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patient Menu"

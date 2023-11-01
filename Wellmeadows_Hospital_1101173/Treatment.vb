@@ -100,6 +100,8 @@ Public Class Treatment
         FormSearch.cellColumn = "MH_ID"
         FormSearch.returnText = his_id
         FormSearch.returnMode = True
+        FormSearch.func = AddressOf FetchData
+
         FormSearch.Show()
     End Sub
 
@@ -107,7 +109,7 @@ Public Class Treatment
 
     End Sub
 
-    Public Sub FetchData()
+    Private Sub FetchData()
         Dim reader As OracleDataReader = GetData.Getdata(his_id.Text, "H.MH_ID", "PATIENTAPPOINTMENT A, MEDICAL_HISTORY H", "A.MH_ID = H.MH_ID AND ")
         While reader.Read()
             ptno.Text = reader("PATIENT_NUM").ToString()

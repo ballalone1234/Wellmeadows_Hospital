@@ -4,7 +4,12 @@
     End Sub
 
     Private Sub registerpt_Click(sender As Object, e As EventArgs) Handles registerstaff.Click
-        Pagecontroller.NextPage(Me, StaffRegister)
+        If position = "HR" Then
+            NextPage(Me, StaffRegister)
+        Else
+            MessageBox.Show("เฉพาะ HR เท่านั้น")
+        End If
+
     End Sub
 
     Private Sub Home_Click(sender As Object, e As EventArgs) Handles Home.Click
