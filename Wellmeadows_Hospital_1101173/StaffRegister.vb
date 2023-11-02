@@ -72,7 +72,9 @@ Public Class StaffRegister
                 Dim cmd As New OracleCommand(sql, connection)
                 cmd.ExecuteNonQuery()
             Next
+            Close()
             NextPage(Me, StaffList)
+            StaffList.Reload()
         End If
     End Sub
 
