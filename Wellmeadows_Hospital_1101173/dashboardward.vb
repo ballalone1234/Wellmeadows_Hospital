@@ -69,6 +69,7 @@
     End Sub
 
     Private Sub dashboardward_Load(sender As Object, e As EventArgs) Handles Me.Load
+
         Chart1.Series("จำนวนสตาฟ").Points.AddXY("Ward 1", 5)
         Chart1.Series("จำนวนสตาฟ").Points.AddXY("Ward 2", 10)
         Chart1.Series("จำนวนสตาฟ").Points.AddXY("Ward 3", 9)

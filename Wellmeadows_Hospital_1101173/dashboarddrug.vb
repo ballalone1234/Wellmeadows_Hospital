@@ -71,14 +71,20 @@ Public Class dashboarddrug
     End Sub
 
     Private Sub dashboarddrug_Load(sender As Object, e As EventArgs) Handles Me.Load
+        GetDropdown2(MonthD, "PRESCRIBED", "MONTH", "to_char(START_DATE, 'Month') as MONTH", "MONTH")
+        LoadChart()
+    End Sub
+
+    Private where As String = " WHERE to_char(START_DATE, 'Month') = to_char(SYSDATE, 'Month') "
+    Public Sub LoadChart()
+
         ' ตั้งค่าการเชื่อมต่อกับ Oracle Database
 
         ' สร้าง OracleConnection
         Dim connection As New OracleConnection(Connect())
 
         ' SQL Query สำหรับดึงข้อมูลจาก Oracle Database
-        Dim query As String = "SELECT to_char(START_DATE, 'Month') as MONTH  , count(*) as COUNT FROM prescribed GROUP by  to_char(START_DATE, 'Month') 
-"
+        Dim query As String = $"SELECT DRUG_NAME  , count(*) as COUNT FROM prescribed p left join DRUG d on p.DRUG_NUM = d.DRUG_NUM {where} GROUP by DRUG_NAME "
 
         ' สร้าง DataTable เพื่อเก็บข้อมูล
         Dim dataTable As New DataTable()
@@ -97,7 +103,7 @@ Public Class dashboarddrug
 
                 ' กำหนดข้อมูลใน Chart
                 Chart1.DataSource = dataTable
-                Chart1.Series("จำนวนยา").XValueMember = "MONTH"
+                Chart1.Series("จำนวนยา").XValueMember = "DRUG_NAME"
                 Chart1.Series("จำนวนยา").YValueMembers = "Count"
                 Chart1.Series("จำนวนยา").IsValueShownAsLabel = True ' แสดงค่าเป็น Label
 
@@ -114,8 +120,12 @@ Public Class dashboarddrug
             connection.Close()
         End Try
     End Sub
-
     Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
         NextPage(Me, dashboardsup)
+    End Sub
+
+    Private Sub MonthD_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MonthD.SelectedIndexChanged
+        where = $" WHERE to_char(START_DATE, 'Month') = '{MonthD.SelectedItem.VALUE}'"
+        LoadChart()
     End Sub
 End Class

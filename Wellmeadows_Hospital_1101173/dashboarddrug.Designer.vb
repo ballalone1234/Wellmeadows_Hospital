@@ -49,6 +49,7 @@ Partial Class dashboarddrug
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.MonthD = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TableLayoutPanel3.SuspendLayout()
@@ -275,8 +276,8 @@ Partial Class dashboarddrug
         'TableLayoutPanel1
         '
         Me.TableLayoutPanel1.ColumnCount = 2
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 94.12405!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.875952!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 99.38556!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.6144393!))
         Me.TableLayoutPanel1.Controls.Add(Me.Back, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel2, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.TableLayoutPanel4, 0, 1)
@@ -300,7 +301,7 @@ Partial Class dashboarddrug
         Me.Back.FlatAppearance.BorderSize = 0
         Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Back.Location = New System.Drawing.Point(1176, 731)
+        Me.Back.Location = New System.Drawing.Point(1245, 731)
         Me.Back.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Back.Name = "Back"
         Me.Back.Size = New System.Drawing.Size(44, 52)
@@ -314,6 +315,7 @@ Partial Class dashboarddrug
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel2.Controls.Add(Me.PictureBox5, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.MonthD, 2, 0)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(5, 5)
         Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
@@ -348,7 +350,7 @@ Partial Class dashboarddrug
         Me.TableLayoutPanel4.RowCount = 2
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.844107!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.15589!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1213, 606)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(1284, 606)
         Me.TableLayoutPanel4.TabIndex = 12
         '
         'TableLayoutPanel5
@@ -381,6 +383,9 @@ Partial Class dashboarddrug
         '
         ChartArea1.Name = "ChartArea1"
         Me.Chart1.ChartAreas.Add(ChartArea1)
+        Legend1.IsTextAutoFit = False
+        Legend1.ItemColumnSpacing = 1
+        Legend1.MaximumAutoSize = 25.0!
         Legend1.Name = "Legend1"
         Me.Chart1.Legends.Add(Legend1)
         Me.Chart1.Location = New System.Drawing.Point(5, 46)
@@ -390,9 +395,19 @@ Partial Class dashboarddrug
         Series1.Legend = "Legend1"
         Series1.Name = "จำนวนยา"
         Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(1203, 555)
+        Me.Chart1.Size = New System.Drawing.Size(1274, 555)
         Me.Chart1.TabIndex = 1
         Me.Chart1.Text = "Chart1"
+        '
+        'MonthD
+        '
+        Me.MonthD.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.MonthD.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.MonthD.FormattingEnabled = True
+        Me.MonthD.Location = New System.Drawing.Point(1042, 3)
+        Me.MonthD.Name = "MonthD"
+        Me.MonthD.Size = New System.Drawing.Size(168, 44)
+        Me.MonthD.TabIndex = 1
         '
         'dashboarddrug
         '
@@ -464,4 +479,5 @@ Partial Class dashboarddrug
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
     Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents MonthD As ComboBox
 End Class

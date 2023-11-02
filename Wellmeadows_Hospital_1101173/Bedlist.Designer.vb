@@ -49,7 +49,7 @@ Partial Class Bedlist
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(460, 838)
         Me.Panel1.TabIndex = 0
@@ -63,7 +63,7 @@ Partial Class Bedlist
         Me.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Home.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Home.Location = New System.Drawing.Point(16, 15)
-        Me.Home.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Home.Margin = New System.Windows.Forms.Padding(4)
         Me.Home.Name = "Home"
         Me.Home.Size = New System.Drawing.Size(64, 65)
         Me.Home.TabIndex = 6
@@ -73,7 +73,7 @@ Partial Class Bedlist
         '
         Me.PictureBox1.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.im1age5
         Me.PictureBox1.Location = New System.Drawing.Point(4, 321)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(448, 126)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -85,7 +85,7 @@ Partial Class Bedlist
         Me.Panel2.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(460, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1225, 838)
         Me.Panel2.TabIndex = 1
@@ -101,7 +101,7 @@ Partial Class Bedlist
         Me.TableLayoutPanel1.Controls.Add(Me.DataGridView1, 1, 1)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 4
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.25113!))
@@ -121,7 +121,7 @@ Partial Class Bedlist
         Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Back.Location = New System.Drawing.Point(1111, 739)
-        Me.Back.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Back.Margin = New System.Windows.Forms.Padding(4)
         Me.Back.Name = "Back"
         Me.Back.Size = New System.Drawing.Size(48, 49)
         Me.Back.TabIndex = 11
@@ -136,7 +136,7 @@ Partial Class Bedlist
         Me.TableLayoutPanel2.Controls.Add(Me.ward, 1, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.PictureBox2, 0, 1)
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(586, 4)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 3
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.0!))
@@ -149,7 +149,7 @@ Partial Class Bedlist
         '
         Me.ward.FormattingEnabled = True
         Me.ward.Location = New System.Drawing.Point(290, 27)
-        Me.ward.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ward.Margin = New System.Windows.Forms.Padding(4)
         Me.ward.Name = "ward"
         Me.ward.Size = New System.Drawing.Size(277, 24)
         Me.ward.TabIndex = 1
@@ -158,7 +158,7 @@ Partial Class Bedlist
         '
         Me.PictureBox2.Image = Global.Wellmeadows_Hospital_1101173.My.Resources.Resources.im1age3
         Me.PictureBox2.Location = New System.Drawing.Point(4, 27)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(278, 23)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -169,7 +169,7 @@ Partial Class Bedlist
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(65, 98)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.Size = New System.Drawing.Size(1094, 628)
@@ -184,7 +184,7 @@ Partial Class Bedlist
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Bedlist"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patient Menu"

@@ -493,6 +493,26 @@ Module GetData
         reader.Close()
         connection.Close()
     End Sub
+
+    Public Sub GetDropdown2(comboBox As ComboBox, table As String, display As String, column As String, value As String)
+        Dim connection As New OracleConnection(Connect())
+        connection.Open()
+        Dim sql As String = $"SELECT DISTINCT {column}  FROM {table}"
+        Dim command As New OracleCommand(sql, connection)
+        Dim reader As OracleDataReader = command.ExecuteReader()
+        ' เซ็ต DisplayMember เป็นชื่อคอลัมน์ที่คุณต้องการให้แสดงใน ComboBox
+        comboBox.DisplayMember = "DISPLAY"
+        ' เซ็ต ValueMember เป็นชื่อคอลัมน์ที่คุณต้องการให้เป็นค่า value ของ ComboBox
+        comboBox.ValueMember = "VALUE"
+
+        While reader.Read()
+            ' เพิ่มข้อมูลลงใน ComboBox โดยใช้ชื่อคอลัมน์ที่ต้องการแสดง
+            comboBox.Items.Add(New With {.DISPLAY = reader(display).ToString(), .VALUE = reader(value).ToString()})
+
+        End While
+        reader.Close()
+        connection.Close()
+    End Sub
     Public position As String = ""
     'ฟั่งชั่นดึงข้อมูล 1 แถว ในตราง staff และ ดึงมาเฉพาะ staff_name และ position
     Public Function GetStaffNameAndPosition(staff_id)
