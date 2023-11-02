@@ -50,7 +50,7 @@ Partial Class AssignPatient
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(460, 838)
         Me.Panel1.TabIndex = 0
@@ -64,7 +64,7 @@ Partial Class AssignPatient
         Me.Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Home.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Home.Location = New System.Drawing.Point(16, 15)
-        Me.Home.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Home.Margin = New System.Windows.Forms.Padding(4)
         Me.Home.Name = "Home"
         Me.Home.Size = New System.Drawing.Size(64, 65)
         Me.Home.TabIndex = 6
@@ -74,7 +74,7 @@ Partial Class AssignPatient
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(-19, 326)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(499, 127)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -86,7 +86,7 @@ Partial Class AssignPatient
         Me.Panel2.Controls.Add(Me.TableLayoutPanel1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(460, 0)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1225, 838)
         Me.Panel2.TabIndex = 1
@@ -101,7 +101,7 @@ Partial Class AssignPatient
         Me.TableLayoutPanel1.Controls.Add(Me.PictureBox2, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
-        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 4
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.23706!))
@@ -121,7 +121,7 @@ Partial Class AssignPatient
         Me.TableLayoutPanel2.Controls.Add(Me.assignbtn, 0, 5)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(4, 315)
-        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TableLayoutPanel2.Margin = New System.Windows.Forms.Padding(4)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 6
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.73563!))
@@ -137,6 +137,7 @@ Partial Class AssignPatient
         '
         Me.patientno.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.patientno.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.patientno.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.patientno.Location = New System.Drawing.Point(363, 35)
         Me.patientno.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.patientno.Multiline = True
@@ -166,7 +167,7 @@ Partial Class AssignPatient
         Me.searchassign.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.searchassign.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.searchassign.Location = New System.Drawing.Point(358, 273)
-        Me.searchassign.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.searchassign.Margin = New System.Windows.Forms.Padding(4)
         Me.searchassign.Name = "searchassign"
         Me.searchassign.Size = New System.Drawing.Size(428, 60)
         Me.searchassign.TabIndex = 11
@@ -182,7 +183,7 @@ Partial Class AssignPatient
         Me.assignbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.assignbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.assignbtn.Location = New System.Drawing.Point(383, 352)
-        Me.assignbtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.assignbtn.Margin = New System.Windows.Forms.Padding(4)
         Me.assignbtn.Name = "assignbtn"
         Me.assignbtn.Size = New System.Drawing.Size(379, 62)
         Me.assignbtn.TabIndex = 17
@@ -198,7 +199,7 @@ Partial Class AssignPatient
         Me.Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Back.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Back.Location = New System.Drawing.Point(1177, 782)
-        Me.Back.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Back.Margin = New System.Windows.Forms.Padding(4)
         Me.Back.Name = "Back"
         Me.Back.Size = New System.Drawing.Size(44, 52)
         Me.Back.TabIndex = 10
@@ -209,7 +210,7 @@ Partial Class AssignPatient
         Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(4, 189)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(1145, 118)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -225,7 +226,7 @@ Partial Class AssignPatient
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "AssignPatient"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patient Menu"

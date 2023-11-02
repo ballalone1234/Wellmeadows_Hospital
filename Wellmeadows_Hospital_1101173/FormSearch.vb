@@ -5,7 +5,9 @@
     Public singleMode As Boolean = False
     Public returnRows As Object
     Public cellColumn As String
+    Public Order As String = ""
     Public func As Action
+    Private OrderMode As Boolean = False
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
@@ -38,9 +40,13 @@
         If result = DialogResult.Yes Then
             returnText.Text = cellValue.ToString()
             If returnMode Then
+                Me.Close()
+
                 func()
+            Else
+                Me.Close()
+
             End If
-            Me.Close()
         ElseIf result = DialogResult.No Then
 
         ElseIf result = DialogResult.Cancel Then
@@ -50,5 +56,24 @@
 
     Private Sub FormSearch_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         SelectFunction.Hide()
+    End Sub
+
+    Private Sub OrderBTN_Click(sender As Object, e As EventArgs) Handles OrderBTN.Click
+        If Not OrderMode Then
+            Order = $" ORDER BY {cellColumn} DESC "
+            If singleMode Then
+                DataSearch.DataSource = GetSeach2(seachTable, search.Text)
+            Else
+                DataSearch.DataSource = GetSeach(seachTable, search.Text)
+            End If
+        Else
+            Order = $" ORDER BY {cellColumn} ASC "
+            If singleMode Then
+                DataSearch.DataSource = GetSeach2(seachTable, search.Text)
+            Else
+                DataSearch.DataSource = GetSeach(seachTable, search.Text)
+            End If
+        End If
+        OrderMode = Not OrderMode
     End Sub
 End Class

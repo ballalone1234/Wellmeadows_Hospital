@@ -64,7 +64,8 @@ Public Class Treatment
         FormSearch.cellColumn = "PATIENT_NUM"
 
         FormSearch.returnText = ptno
-
+        FormSearch.returnMode = True
+        FormSearch.func = AddressOf FetchData
         FormSearch.Show()
     End Sub
 
@@ -100,8 +101,8 @@ Public Class Treatment
         Appointment.Show()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles appref.Click
-        FormSearch.seachTable = "PATIENTAPPOINTMENT"
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        FormSearch.seachTable = "MEDICAL_HISTORY"
         FormSearch.cellColumn = "MH_ID"
         FormSearch.returnText = his_id
         FormSearch.returnMode = True
@@ -115,16 +116,53 @@ Public Class Treatment
     End Sub
 
     Private Sub FetchData()
-        Dim reader As OracleDataReader = GetData.Getdata(his_id.Text, "H.MH_ID", "PATIENTAPPOINTMENT A, MEDICAL_HISTORY H", "A.MH_ID = H.MH_ID AND ")
-        While reader.Read()
-            ptno.Text = reader("PATIENT_NUM").ToString()
-            Diagnosis.Text = reader("DIAGNOSIS").ToString()
-            tel.Text = reader("TREAT_REV").ToString()
-            ward.Text = reader("WARD_NUM").ToString()
-            DrugAllergies.Text = reader("DRUG_ALLERGIES").ToString()
-            Tdate.Value = reader("TREATMENT_DATE")
-        End While
+        Try
+            Dim reader As OracleDataReader = GetData.Getdata(his_id.Text, "H.MH_ID", "PATIENTAPPOINTMENT A, MEDICAL_HISTORY H", "A.MH_ID = H.MH_ID AND ")
+            While reader.Read()
+                ptno.Text = reader("PATIENT_NUM").ToString()
+
+            End While
+            reader.Close()
+
+
+        Catch ex As Exception
+            Console.WriteLine(ex)
+        End Try
+        Console.WriteLine("ggg")
+        FormSearch.search.Text = ptno.Text
+        FormSearch.seachTable = "MEDICAL_HISTORY"
+        FormSearch.cellColumn = "MH_ID"
+        FormSearch.returnText = his_id
+        FormSearch.returnMode = True
+        FormSearch.func = AddressOf FetchData2
+        FormSearch.Show()
+
+
     End Sub
 
+    Public Sub FetchData2()
+        Console.WriteLine("ggssfsfg")
+
+        Try
+            Dim reader As OracleDataReader = GetData.Getdata(his_id.Text, "H.MH_ID", "PATIENTAPPOINTMENT A, MEDICAL_HISTORY H", "A.MH_ID = H.MH_ID AND ")
+            While reader.Read()
+                ptno.Text = reader("PATIENT_NUM").ToString()
+                Diagnosis.Text = reader("DIAGNOSIS").ToString()
+                tel.Text = reader("TREAT_REV").ToString()
+                ward.Text = reader("WARD_NUM").ToString()
+                DrugAllergies.Text = reader("DRUG_ALLERGIES").ToString()
+                Tdate.Value = reader("TREATMENT_DATE")
+                Diagnosis.Enabled = True
+                tel.Enabled = True
+                ward.Enabled = True
+                DrugAllergies.Enabled = True
+                Tdate.Enabled = True
+                Diagnosis.Enabled = True
+
+            End While
+        Catch ex As Exception
+            Console.WriteLine(ex)
+        End Try
+    End Sub
 
 End Class

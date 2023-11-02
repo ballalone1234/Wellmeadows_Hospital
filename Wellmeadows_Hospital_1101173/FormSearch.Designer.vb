@@ -25,6 +25,7 @@ Partial Class FormSearch
         Me.DataSearch = New System.Windows.Forms.DataGridView()
         Me.search = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.OrderBTN = New System.Windows.Forms.Button()
         CType(Me.DataSearch, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -56,11 +57,21 @@ Partial Class FormSearch
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Search"
         '
+        'OrderBTN
+        '
+        Me.OrderBTN.Location = New System.Drawing.Point(240, 26)
+        Me.OrderBTN.Name = "OrderBTN"
+        Me.OrderBTN.Size = New System.Drawing.Size(108, 23)
+        Me.OrderBTN.TabIndex = 3
+        Me.OrderBTN.Text = "Order"
+        Me.OrderBTN.UseVisualStyleBackColor = True
+        '
         'FormSearch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1902, 665)
+        Me.Controls.Add(Me.OrderBTN)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.search)
         Me.Controls.Add(Me.DataSearch)
@@ -75,4 +86,5 @@ Partial Class FormSearch
     Friend WithEvents DataSearch As DataGridView
     Friend WithEvents search As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents OrderBTN As Button
 End Class

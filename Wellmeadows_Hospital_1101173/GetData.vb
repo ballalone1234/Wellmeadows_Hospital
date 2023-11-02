@@ -323,6 +323,7 @@ Module GetData
         If table.Equals("ALLOCATEDTO") Then
             sqltest += " AND ACTUAL_LEAVE IS NULL"
         End If
+        sqltest += FormSearch.Order
 
         Console.WriteLine(sqltest)
         Using connection As OracleConnection = New OracleConnection(Connect())
@@ -348,7 +349,7 @@ Module GetData
         If table.Equals("ALLOCATEDTO") Then
             sqltest += " AND ACTUAL_LEAVE IS NULL"
         End If
-
+        sqltest += FormSearch.Order
         Console.WriteLine(sqltest)
         Using connection As OracleConnection = New OracleConnection(Connect())
             Dim cmd As New OracleCommand(sqltest, connection)
